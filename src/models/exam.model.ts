@@ -11,8 +11,10 @@ import Views from './views.model';
 export default class Exam extends Model<Exam> {
 
     @PrimaryKey
-    @Column(DataType.UUID)
-    public id: number;
+    @Column({
+        defaultValue: DataType.UUIDV4,
+        type: DataType.UUID
+    }) public id: number;
 
     @Column(DataType.STRING(15))
     public pid?: string;
@@ -64,7 +66,7 @@ export default class Exam extends Model<Exam> {
     public consultingId?: number;
 
     @BelongsTo(() => Doctor)
-    public consultingingDoctor?: Doctor;
+    public consultingDoctor?: Doctor;
 
     @ForeignKey(() => Insurance)
     @Column(DataType.UUID)
@@ -82,7 +84,7 @@ export default class Exam extends Model<Exam> {
     @CreatedAt
     @Column(DataType.DATE)
     public createdAt?: Date;
-  
+
     @UpdatedAt
     @Column(DataType.DATE)
     public updatedAt?: Date;

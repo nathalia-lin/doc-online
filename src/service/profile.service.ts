@@ -1,10 +1,10 @@
 import { Injectable, Inject } from '@nestjs/common';
-import { v4 as uuid } from 'uuid';
 
-import Profile from 'src/models/profile.model';
-import User from 'src/models/user.model';
-import Patient from 'src/models/patient.model';
-import Doctor from 'src/models/doctor.model';
+import { CreateProfileDto } from '../dto/profile.dto';
+import Profile from '../models/profile.model';
+import User from '../models/user.model';
+import Patient from '../models/patient.model';
+import Doctor from '../models/doctor.model';
 
 @Injectable()
 export class ProfileService {
@@ -12,26 +12,8 @@ export class ProfileService {
     @Inject('ProfileRepository') private readonly profileRepository: typeof Profile
   ) { }
 
-  async create(
-    firstName: string,
-    lastName: string,
-    sex: string,
-    birthdate: Date,
-    phone: string,
-    email: string
-  ) {
-    const id: string = uuid();
-    const newProfile = await this.profileRepository.create({
-      id,
-      firstName,
-      lastName,
-      sex,
-      birthdate,
-      phone,
-      email
-    });
-
-    return newProfile;
+  async create(createProfileDto: CreateProfileDto): Promise<Profile> {
+    return await this.profileRepository.create<Profile>(createProfileDto);;
   }
 
   async findAll() {

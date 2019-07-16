@@ -1,22 +1,15 @@
 import { Controller, Get, Post, Body, Put, Delete, Param } from '@nestjs/common';
 
-import { LoginService } from 'src/service/login.service';
+import { CreateLoginDto } from '../dto/login.dto';
+import { LoginService } from '../service/login.service';
 
 @Controller('login')
 export class LoginController {
     constructor(private readonly loginService: LoginService) { }
 
     @Post()
-    create(
-        @Body('userId') userId: number,
-        @Body('username') username: string,
-        @Body('password') password: string
-    ) {
-        return this.loginService.create(
-            userId,
-            username,
-            password
-        );
+    create(@Body() createLoginDto: CreateLoginDto) {
+        return this.loginService.create(createLoginDto);
     }
 
     @Get()

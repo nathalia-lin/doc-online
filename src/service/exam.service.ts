@@ -1,12 +1,12 @@
 import { Injectable, Inject } from '@nestjs/common';
-import { v4 as uuid } from 'uuid';
 
-import Exam from 'src/models/exam.model';
-import Site from 'src/models/site.model';
-import Patient from 'src/models/patient.model';
-import Doctor from 'src/models/doctor.model';
-import Insurance from 'src/models/insurance.model';
-import Views from 'src/models/views.model';
+import { CreateExamDto } from '../dto/exam.dto';
+import Exam from '../models/exam.model';
+import Site from '../models/site.model';
+import Patient from '../models/patient.model';
+import Doctor from '../models/doctor.model';
+import Insurance from '../models/insurance.model';
+import Views from '../models/views.model';
 
 @Injectable()
 export class ExamService {
@@ -14,45 +14,15 @@ export class ExamService {
         @Inject('ExamRepository') private readonly examRepository: typeof Exam
     ) { }
 
-    async create(
-        pid: string,
-        accessionNum: string,
-        studyInstanceUID: string,
-        networkId: string,
-        siteId: number,
-        modality: string,
-        description: string,
-        examDate: Date,
-        statusType: string,
-        patientId: number,
-        requestingId: number,
-        consultingId: number,
-        insuranceId: number,
-        lastReportView: Date,
-        lastImageView: number
-    ) {
-        const id: string = uuid();
-        const newExam = await this.examRepository.create({
-            id,
-            pid,
-            accessionNum,
-            studyInstanceUID,
-            networkId,
-            siteId,
-            modality,
-            description,
-            examDate,
-            statusType,
-            patientId,
-            requestingId,
-            consultingId,
-            insuranceId,
-            lastReportView,
-            lastImageView
-        });
-
-        return newExam;
+    async create(createExamDto: CreateExamDto): Promise<Exam> {
+        try {
+            return await this.examRepository.create<Exam>(createExamDto);
+       }
+       catch(err) {
+           console.log(err)
+       }
     }
+
 
     async findAll() {
         return await this.examRepository.findAll<Exam>();

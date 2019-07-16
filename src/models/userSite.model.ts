@@ -1,4 +1,4 @@
-import { Table, Column, Model, ForeignKey, CreatedAt, DataType, PrimaryKey, UpdatedAt, HasOne, HasMany, BelongsTo } from 'sequelize-typescript';
+import { Table, Column, Model, ForeignKey, CreatedAt, DataType, PrimaryKey } from 'sequelize-typescript';
 
 import Site from './site.model';
 import User from './user.model';
@@ -7,8 +7,10 @@ import User from './user.model';
 export default class UserSite extends Model<UserSite> {
 
   @PrimaryKey
-  @Column(DataType.UUID)
-  public id: number;
+  @Column({
+    defaultValue: DataType.UUIDV4,
+    type: DataType.UUID
+  }) public id: number;
 
   @ForeignKey(() => User)
   @Column(DataType.UUID)
@@ -24,9 +26,5 @@ export default class UserSite extends Model<UserSite> {
   @CreatedAt
   @Column(DataType.DATE)
   public createdAt?: Date;
-
-  @UpdatedAt
-  @Column(DataType.DATE)
-  public updatedAt?: Date;
 
 }

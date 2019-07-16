@@ -10,8 +10,10 @@ export default class SiteNotification extends Model<SiteNotification> {
   public id: number;
 
   @ForeignKey(() => Site)
-  @Column(DataType.UUID)
-  public siteId?: number;
+  @Column({
+    defaultValue: DataType.UUIDV4,
+    type: DataType.UUID
+  }) public siteId?: number;
 
   @BelongsTo(() => Site)
   public site: Site;

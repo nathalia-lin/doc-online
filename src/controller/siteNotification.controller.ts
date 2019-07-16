@@ -1,37 +1,15 @@
 import { Controller, Get, Post, Body, Param, Delete } from '@nestjs/common';
-import { SiteNotificationService } from 'src/service/siteNotification.service';
+
+import { CreateSiteNotificationDto } from '../dto/siteNotification.dto';
+import { SiteNotificationService } from '../service/siteNotification.service';
 
 @Controller('sitenotification')
 export class SiteNotificationController {
     constructor(private readonly siteNotificationService: SiteNotificationService) { }
 
     @Post()
-    create(
-        @Body('siteId') siteId: number,
-        @Body('type') type: string,
-        @Body('smtpHostname') smtpHostname: string,
-        @Body('smtpPort') smtpPort: string,
-        @Body('smptUsername') smptUsername: string,
-        @Body('smptPassword') smptPassword: string,
-        @Body('smptSsl') smptSsl: boolean,
-        @Body('smsHostname') smsHostname: string,
-        @Body('smsPort') smsPort: number,
-        @Body('smsUsername') smsUsername: string,
-        @Body('smsPassword') smsPassword: string
-    ) {
-        return this.siteNotificationService.create(
-            siteId,
-            type,
-            smtpHostname,
-            smtpPort,
-            smptUsername,
-            smptPassword,
-            smptSsl,
-            smsHostname,
-            smsPort,
-            smsUsername,
-            smsPassword
-        );
+    create(@Body() createSiteNotificationDto: CreateSiteNotificationDto) {
+        return this.siteNotificationService.create(createSiteNotificationDto);
     }
 
     @Get()

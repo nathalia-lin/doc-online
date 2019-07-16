@@ -1,5 +1,7 @@
 import { Controller, Get, Post, Body, Param, Delete } from '@nestjs/common';
-import { SiteRuleService } from 'src/service/siteRule.service';
+
+import { CreateSiteRuleDto } from '../dto/siteRule.dto';
+import { SiteRuleService } from '../service/siteRule.service';
 
 @Controller('siterule')
 export class SiteRuleController {
@@ -7,37 +9,8 @@ export class SiteRuleController {
 
     @Post()
     create(
-        @Body('siteId') siteId: number,
-        @Body('urlCheckNetwork') urlCheckNetwork: string,
-        @Body('urlReportInternal') urlReportInternal: string,
-        @Body('urlReportExternal') urlReportExternal: string,
-        @Body('urlReportFormatOpen') urlReportFormatOpen: string,
-        @Body('urlWebviewerInternal') urlWebviewerInternal: string,
-        @Body('urlWebviewerExternal') urlWebviewerExternal: string,
-        @Body('urlKeyImagesInternal') urlKeyImagesInternal: string,
-        @Body('urlKeyImagesExternal') urlKeyImagesExternal: string,
-        @Body('urlExportImages') urlExportImages: string,
-        @Body('examsPerPage') examsPerPage: number,
-        @Body('allowReportStatus') allowReportStatus: string,
-        @Body('notifyPatientEmail') notifyPatientEmail: boolean,
-        @Body('notifyPatientSMS') notifyPatientSMS: boolean
-    ) {
-        return this.siteRuleService.create(
-            siteId,
-            urlCheckNetwork,
-            urlReportInternal,
-            urlReportExternal,
-            urlReportFormatOpen,
-            urlWebviewerInternal,
-            urlWebviewerExternal,
-            urlKeyImagesInternal,
-            urlKeyImagesExternal,
-            urlExportImages,
-            examsPerPage,
-            allowReportStatus,
-            notifyPatientEmail,
-            notifyPatientSMS
-        );
+        @Body() createSiteRuleDto: CreateSiteRuleDto) {
+        return this.siteRuleService.create(createSiteRuleDto);
     }
 
     @Get()

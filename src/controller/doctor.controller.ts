@@ -1,24 +1,15 @@
 import { Controller, Get, Post, Body, Put, Delete, Param } from '@nestjs/common';
 
-import { DoctorService } from 'src/service/doctor.service';
+import { CreateDoctorDto } from '../dto/doctor.dto';
+import { DoctorService } from '../service/doctor.service';
 
 @Controller('doctor')
 export class DoctorController {
     constructor(private readonly doctorService: DoctorService) { }
 
     @Post()
-    create(
-        @Body('profileId') profileId: number,
-        @Body('docType') docType: string,
-        @Body('docIssuer') docIssuer: string,
-        @Body('docNum') docNum: string
-    ) {
-        return this.doctorService.create(
-            profileId,
-            docType,
-            docIssuer,
-            docNum
-        );
+    create(@Body() createDoctorDto: CreateDoctorDto) {
+        return this.doctorService.create(createDoctorDto);
     }
 
     @Get()

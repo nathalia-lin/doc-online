@@ -1,4 +1,4 @@
-import { Table, Column, Model, BelongsTo, ForeignKey, PrimaryKey, HasMany, DataType, CreatedAt, UpdatedAt } from 'sequelize-typescript';
+import { Table, Column, Model, BelongsTo, ForeignKey, PrimaryKey, HasMany, DataType } from 'sequelize-typescript';
 
 import Profile from './profile.model';
 import Exam from './exam.model';
@@ -7,8 +7,10 @@ import Exam from './exam.model';
 export default class Doctor extends Model<Doctor> {
 
     @PrimaryKey
-    @Column(DataType.UUID)
-    public id: number;
+    @Column({
+        defaultValue: DataType.UUIDV4,
+        type: DataType.UUID
+    }) public id: number;
 
     @ForeignKey(() => Profile)
     @Column(DataType.UUID)
@@ -28,13 +30,5 @@ export default class Doctor extends Model<Doctor> {
 
     @HasMany(() => Exam)
     public exams?: Exam[];
-    
-    @CreatedAt
-    @Column(DataType.DATE)
-    public createdAt?: Date;
-  
-    @UpdatedAt
-    @Column(DataType.DATE)
-    public updatedAt?: Date;
-    
+
 }

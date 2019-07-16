@@ -1,8 +1,8 @@
 import { Injectable, Inject } from '@nestjs/common';
-import { v4 as uuid } from 'uuid';
 
-import User from 'src/models/user.model';
-import Login from 'src/models/login.model';
+import { CreateLoginDto } from '../dto/login.dto';
+import User from '../models/user.model';
+import Login from '../models/login.model';
 
 @Injectable()
 export class LoginService {
@@ -10,20 +10,8 @@ export class LoginService {
         @Inject('LoginRepository') private readonly loginRepository: typeof Login
     ) { }
 
-    async create(
-        userId: number,
-        username: string,
-        password: string
-    ) {
-        const id: string = uuid();
-        const newLogin = await this.loginRepository.create({
-            id,
-            userId,
-            username,
-            password
-        });
-
-        return newLogin;
+    async create(createLoginDto: CreateLoginDto): Promise<Login> {
+        return  await this.loginRepository.create<Login>(createLoginDto);;
     }
 
     async findAll() {

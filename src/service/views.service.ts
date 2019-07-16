@@ -1,9 +1,9 @@
 import { Injectable, Inject } from "@nestjs/common";
-import { v4 as uuid } from 'uuid';
 
-import Views from "src/models/views.model";
-import User from "src/models/user.model";
-import Exam from "src/models/exam.model";
+import { CreateViewsDto } from "../dto/views.dto";
+import Views from "../models/views.model";
+import User from "../models/user.model";
+import Exam from "../models/exam.model";
 
 @Injectable()
 export class ViewsService {
@@ -12,23 +12,10 @@ export class ViewsService {
         @Inject('ViewsRepository') private readonly viewsRepository: typeof Views
     ) { }
 
-    async create(
-        examId: number,
-        userId: number,
-        dateViewed: Date,
-        typeViewed: string
-    ) {
-        const id: string = uuid();
-        const newView = await this.viewsRepository.create({
-            id, 
-            examId,
-            userId,
-            dateViewed,
-            typeViewed
-        });
-
-        return newView;
+    async create(createViewsDto: CreateViewsDto): Promise<Views> {
+        return await this.viewsRepository.create<Views>(createViewsDto);;
     }
+
     public async findAll() {
         return await this.viewsRepository.findAll<Views>();
     }

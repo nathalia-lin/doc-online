@@ -1,8 +1,8 @@
 import { Module } from "@nestjs/common";
 
 import { DatabaseModule } from "../database/database.module";
-import { SiteRuleController } from "src/controller/siteRule.controller";
-import { SiteRuleService } from "src/service/siteRule.service";
+import { SiteRuleController } from "../controller/siteRule.controller";
+import { SiteRuleService } from "../service/siteRule.service";
 import { SiteRuleProvider } from "../provider/siteRule.provider";
 
 @Module({

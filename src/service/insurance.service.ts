@@ -1,9 +1,10 @@
 import { Injectable, Inject } from '@nestjs/common';
-import { v4 as uuid } from 'uuid';
-import Insurance from 'src/models/insurance.model';
-import Site from 'src/models/site.model';
-import User from 'src/models/user.model';
-import Exam from 'src/models/exam.model';
+
+import { CreateInsuranceDto } from '../dto/insurance.dto';
+import Insurance from '../models/insurance.model';
+import Site from '../models/site.model';
+import User from '../models/user.model';
+import Exam from '../models/exam.model';
 
 @Injectable()
 export class InsuranceService {
@@ -11,18 +12,8 @@ export class InsuranceService {
         @Inject('InsuranceRepository') private readonly insuranceRepository: typeof Insurance
     ) { }
 
-    async create(
-        siteId: number,
-        name: string
-    ) {
-        const id: string = uuid();
-        const newInsurance = await this.insuranceRepository.create({
-            id,
-            siteId,
-            name
-        });
-
-        return newInsurance;
+    async create(createInsuranceDto: CreateInsuranceDto): Promise<Insurance> {
+        return await this.insuranceRepository.create(createInsuranceDto);;
     }
 
     async findAll() {

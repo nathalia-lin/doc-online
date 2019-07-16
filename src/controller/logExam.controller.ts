@@ -1,22 +1,15 @@
 import { Controller, Get, Post, Body, Put, Delete, Param } from '@nestjs/common';
 
-import { LogExamService } from 'src/service/logExam.service';
+import { CreateLogExamDto } from '../dto/logExam.dto';
+import { LogExamService } from '../service/logExam.service';
 
 @Controller('logexam')
 export class LogExamController {
     constructor(private readonly logExamService: LogExamService) { }
 
     @Post()
-    create(
-        @Body('examId') examId: number,
-        @Body('datePosted') datePosted: Date,
-        @Body('postedData') postedData: string
-    ) {
-        return this.logExamService.create(
-            examId,
-            datePosted,
-            postedData
-        );
+    create(@Body() createLogExamDto: CreateLogExamDto) {
+        return this.logExamService.create(createLogExamDto);
     }
 
     @Get()

@@ -1,7 +1,7 @@
 import { Injectable, Inject } from '@nestjs/common';
-import { v4 as uuid } from 'uuid';
 
-import LogExam from 'src/models/logExam.model';
+import { CreateLogExamDto } from '../dto/logExam.dto';
+import LogExam from '../models/logExam.model';
 
 @Injectable()
 export class LogExamService {
@@ -9,20 +9,8 @@ export class LogExamService {
         @Inject('LogExamRepository') private readonly logExamRepository: typeof LogExam
     ) { }
 
-    async create(
-        examId: number,
-        datePosted: Date,
-        postedData: string
-    ) {
-        const id: string = uuid();
-        const newLogExam = await this.logExamRepository.create({
-            id,
-            examId,
-            datePosted,
-            postedData
-        });
-
-        return newLogExam;
+    async create(createLogExamDto: CreateLogExamDto): Promise<LogExam> {
+        return await this.logExamRepository.create<LogExam>(createLogExamDto);;
     }
 
     async findAll() {

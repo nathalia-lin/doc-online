@@ -1,4 +1,4 @@
-import { Table, Column, Model, BelongsTo, ForeignKey, PrimaryKey, DataType, CreatedAt, UpdatedAt } from 'sequelize-typescript';
+import { Table, Column, Model, BelongsTo, ForeignKey, PrimaryKey, DataType } from 'sequelize-typescript';
 
 import User from './user.model';
 
@@ -10,8 +10,10 @@ export default class Login extends Model<Login> {
     public id: number;
 
     @ForeignKey(() => User)
-    @Column(DataType.UUID)
-    public userId: number;
+    @Column({
+        defaultValue: DataType.UUIDV4,
+        type: DataType.UUID
+    }) public userId: number;
 
     @BelongsTo(() => User)
     public user: User;
@@ -21,14 +23,5 @@ export default class Login extends Model<Login> {
 
     @Column(DataType.STRING(25))
     public password?: string;
-
-    @CreatedAt
-    @Column(DataType.DATE)
-    public createdAt?: Date;
-  
-    @UpdatedAt
-    @Column(DataType.DATE)
-    public updatedAt?: Date;
-  
 
 }

@@ -1,20 +1,15 @@
 import { Controller, Get, Post, Body, Put, Delete, Param } from '@nestjs/common';
 
-import { UserInsuranceService } from 'src/service/userInsurance.service';
+import { CreateUserInsuranceDto } from '../dto/userInsurance.dto';
+import { UserInsuranceService } from '../service/userInsurance.service';
 
 @Controller('userinsurance')
 export class UserInsuranceController {
     constructor(private readonly userInsuranceService: UserInsuranceService) { }
 
     @Post()
-    create(
-        @Body('insuranceId') insuranceId: number,
-        @Body('userId') userId: number
-    ) {
-        return this.userInsuranceService.create(
-            insuranceId,
-            userId
-        );
+    create(@Body() createUserInsuranceDto: CreateUserInsuranceDto) {
+        return this.userInsuranceService.create(createUserInsuranceDto);
     }
 
     @Get()

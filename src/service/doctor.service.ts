@@ -1,9 +1,9 @@
 import { Injectable, Inject } from '@nestjs/common';
-import { v4 as uuid } from 'uuid';
 
-import Doctor from 'src/models/doctor.model';
-import Profile from 'src/models/profile.model';
-import Exam from 'src/models/exam.model';
+import { CreateDoctorDto } from '../dto/doctor.dto';
+import Doctor from '../models/doctor.model';
+import Profile from '../models/profile.model';
+import Exam from '../models/exam.model';
 
 @Injectable()
 export class DoctorService {
@@ -11,22 +11,8 @@ export class DoctorService {
         @Inject('DoctorRepository') private readonly doctorRepository: typeof Doctor
     ) { }
 
-    async create(
-        profileId: number,
-        docType: string,
-        docIssuer: string,
-        docNum: string
-    ) {
-        const id: string = uuid();
-        const newDoctor = await this.doctorRepository.create({
-            id,
-            profileId,
-            docType,
-            docIssuer,
-            docNum
-        });
-
-        return newDoctor;
+    async create(createDoctorDto: CreateDoctorDto): Promise<Doctor> {
+        return await this.doctorRepository.create<Doctor>(createDoctorDto);;
     }
 
     async findAll() {

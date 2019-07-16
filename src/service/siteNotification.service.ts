@@ -1,8 +1,8 @@
 import { Injectable, Inject } from '@nestjs/common';
-import { v4 as uuid } from 'uuid';
 
-import Site from 'src/models/site.model';
-import SiteNotification from 'src/models/siteNotification.model';
+import { CreateSiteNotificationDto } from '../dto/siteNotification.dto';
+import Site from '../models/site.model';
+import SiteNotification from '../models/siteNotification.model';
 
 @Injectable()
 export class SiteNotificationService {
@@ -10,37 +10,8 @@ export class SiteNotificationService {
     @Inject('SiteNotificationRepository') private readonly siteNotificationRepository: typeof SiteNotification
   ) { }
 
-  async create(
-    siteId: number,
-    type: string,
-    smtpHostname: string,
-    smtpPort: string,
-    smptUsername: string,
-    smptPassword: string,
-    smptSsl: boolean,
-    smsHostname: string,
-    smsPort: number,
-    smsUsername: string,
-    smsPassword: string
-  ) {
-    const id: string = uuid();
-
-    const newSiteNotification = await this.siteNotificationRepository.create({
-      id,
-      siteId,
-      type,
-      smtpHostname,
-      smtpPort,
-      smptUsername,
-      smptPassword,
-      smptSsl,
-      smsHostname,
-      smsPort,
-      smsUsername,
-      smsPassword
-    });
-
-    return newSiteNotification;
+  async create(createSiteNotificationDto: CreateSiteNotificationDto): Promise<SiteNotification> {
+    return await this.siteNotificationRepository.create<SiteNotification>(createSiteNotificationDto);
   }
 
   async findAll() {

@@ -1,8 +1,8 @@
 import { Module } from "@nestjs/common";
 
 import { DatabaseModule } from "../database/database.module";
-import { DoctorController } from "src/controller/doctor.controller";
-import { DoctorService } from "src/service/doctor.service";
+import { DoctorController } from "../controller/doctor.controller";
+import { DoctorService } from "../service/doctor.service";
 import { DoctorProvider } from "../provider/doctor.provider";
 
 @Module({

@@ -1,27 +1,15 @@
 import { Controller, Get, Post, Body, Param, Delete } from '@nestjs/common';
 
-import { ProfileService } from 'src/service/profile.service';
+import { CreateProfileDto } from '../dto/profile.dto';
+import { ProfileService } from '../service/profile.service';
 
 @Controller('profile')
 export class ProfileController {
     constructor(private readonly profileService: ProfileService) { }
 
     @Post()
-    create(
-        @Body('firstName') firstName: string,
-        @Body('lastName') lastName: string,
-        @Body('sex') sex: string,
-        @Body('birthdate') birthdate: Date,
-        @Body('phone') phone: string,
-        @Body('email') email: string
-    ) {
-        return this.profileService.create(
-            firstName, 
-            lastName, 
-            sex, 
-            birthdate, 
-            phone, 
-            email);
+    create(@Body() createProfileDot: CreateProfileDto) {
+        return this.profileService.create(createProfileDot);
     }
 
     @Get()

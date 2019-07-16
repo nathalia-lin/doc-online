@@ -1,4 +1,4 @@
-import { Table, Column, Model, ForeignKey, PrimaryKey, DataType, CreatedAt, UpdatedAt } from 'sequelize-typescript';
+import { Table, Column, Model, ForeignKey, PrimaryKey, DataType } from 'sequelize-typescript';
 
 import User from './user.model';
 import Insurance from './insurance.model';
@@ -7,8 +7,10 @@ import Insurance from './insurance.model';
 export default class UserInsurance extends Model<UserInsurance> {
 
     @PrimaryKey
-    @Column(DataType.UUID)
-    public id: number;
+    @Column({
+        defaultValue: DataType.UUIDV4,
+        type: DataType.UUID
+    }) public id: number;
 
     @ForeignKey(() => Insurance)
     @Column(DataType.UUID)
@@ -18,11 +20,4 @@ export default class UserInsurance extends Model<UserInsurance> {
     @Column(DataType.UUID)
     public userId?: number;
 
-    @CreatedAt
-    @Column(DataType.DATE)
-    public createdAt?: Date;
-
-    @UpdatedAt
-    @Column(DataType.DATE)
-    public updatedAt?: Date;
 }

@@ -1,4 +1,4 @@
-import { Table, Column, Model, PrimaryKey, HasOne, DataType, CreatedAt, UpdatedAt } from 'sequelize-typescript';
+import { Table, Column, Model, PrimaryKey, HasOne, DataType } from 'sequelize-typescript';
 
 import User from './user.model';
 import Patient from './patient.model';
@@ -8,8 +8,10 @@ import Doctor from './doctor.model';
 export default class Profile extends Model<Profile> {
 
   @PrimaryKey
-  @Column(DataType.UUID)
-  public id: number;
+  @Column({
+    defaultValue: DataType.UUIDV4,
+    type: DataType.UUID
+  }) public id: number;
 
   @Column(DataType.STRING(30))
   public firstName?: string;
@@ -28,14 +30,6 @@ export default class Profile extends Model<Profile> {
 
   @Column(DataType.STRING(50))
   public email?: string;
-
-  @CreatedAt
-  @Column(DataType.DATE)
-  public createdAt?: Date;
-
-  @UpdatedAt
-  @Column(DataType.DATE)
-  public updatedAt?: Date;
 
   @HasOne(() => User)
   public user: User;

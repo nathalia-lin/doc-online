@@ -1,9 +1,7 @@
 import { Injectable, Inject } from "@nestjs/common";
-import { v4 as uuid } from 'uuid';
 
-import UserSite from "src/models/userSite.model";
-import User from "src/models/user.model";
-import Site from "src/models/site.model";
+import { CreateUserSiteDto } from "../dto/userSite.dto";
+import UserSite from "../models/userSite.model";
 
 @Injectable()
 export class UserSiteService {
@@ -12,20 +10,8 @@ export class UserSiteService {
         @Inject('UserSiteRepository') private readonly userSiteRepository: typeof UserSite
     ) { }
 
-    async create(
-        userId: number,
-        siteId: number,
-        createdBy: string
-    ) {
-        const id: string = uuid();
-        const newUser = await this.userSiteRepository.create({
-            id, 
-            userId,
-            siteId,
-            createdBy
-        });
-
-        return newUser;
+    async create(createUserSiteDto: CreateUserSiteDto): Promise<UserSite> {
+        return await this.userSiteRepository.create<UserSite>(createUserSiteDto);;
     }
     public async findAll() {
         return await this.userSiteRepository.findAll<UserSite>();

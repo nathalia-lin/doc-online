@@ -1,22 +1,15 @@
 import { Controller, Get, Post, Body, Put, Delete, Param } from '@nestjs/common';
 
-import { UserSiteService } from 'src/service/userSite.service';
+import { CreateUserSiteDto } from '../dto/userSite.dto';
+import { UserSiteService } from '../service/userSite.service';
 
 @Controller('usersite')
 export class UserSiteController {
     constructor(private readonly userSiteService: UserSiteService) { }
 
     @Post()
-    create(
-        @Body('userId') userId: number,
-        @Body('siteId') siteId: number,
-        @Body('createdBy') createdBy: string
-    ) {
-        return this.userSiteService.create(
-            userId,
-            siteId,
-            createdBy
-        );
+    create(@Body() createUserSiteDto: CreateUserSiteDto) {
+        return this.userSiteService.create(createUserSiteDto);
     }
 
     @Get()

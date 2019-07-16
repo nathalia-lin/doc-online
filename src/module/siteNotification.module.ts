@@ -1,8 +1,8 @@
 import { Module } from "@nestjs/common";
 
 import { DatabaseModule } from "../database/database.module";
-import { SiteNotificationService } from "src/service/siteNotification.service";
-import { SiteNotificationController } from "src/controller/siteNotification.controller";
+import { SiteNotificationService } from "../service/siteNotification.service";
+import { SiteNotificationController } from "../controller/siteNotification.controller";
 import { SiteNotificationProvider } from "../provider/siteNotification.provider";
 
 @Module({

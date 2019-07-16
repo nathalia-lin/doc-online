@@ -9,10 +9,12 @@ import Exam from './exam.model';
 
 @Table({ tableName: 'site' })
 export default class Site extends Model<Site> {
-  
+
   @PrimaryKey
-  @Column(DataType.UUID)
-  public id?: number;
+  @Column({
+    defaultValue: DataType.UUIDV4,
+    type: DataType.UUID
+  }) public id?: number;
 
   @Column(DataType.UUID)
   public parentId?: number;
@@ -38,18 +40,18 @@ export default class Site extends Model<Site> {
   public name?: string;
 
   @Column(DataType.UUID)
-  public addressId?: number;
+  public addressId?: string;
 
-  
+
   @HasOne(() => SiteRule)
-  public siteRule: SiteRule;
+  public siteRule?: SiteRule;
 
   @HasOne(() => SiteNotification)
-  public siteNotification: SiteNotification;
+  public siteNotification?: SiteNotification;
 
   @BelongsToMany(() => User, () => UserSite)
   public users?: User[];
-  
+
   @HasMany(() => Insurance)
   public insurances?: Insurance[];
 

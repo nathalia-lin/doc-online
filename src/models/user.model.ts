@@ -12,8 +12,10 @@ import UserInsurance from './userInsurance.model';
 export default class User extends Model<User> {
 
   @PrimaryKey
-  @Column(DataType.UUID)
-  public id: number;
+  @Column({
+    defaultValue: DataType.UUIDV4,
+    type: DataType.UUID
+  }) public id: number;
 
   @ForeignKey(() => Profile)
   @Column(DataType.UUID)
@@ -47,7 +49,7 @@ export default class User extends Model<User> {
 
   @Column(DataType.DATE)
   public termApproved?: Date;
-  
+
 
   @HasMany(() => Login)
   public login?: Login[];

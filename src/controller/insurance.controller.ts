@@ -1,20 +1,15 @@
 import { Controller, Get, Post, Body, Put, Delete, Param } from '@nestjs/common';
 
-import { InsuranceService } from 'src/service/insurance.service';
+import { CreateInsuranceDto } from '../dto/insurance.dto';
+import { InsuranceService } from '../service/insurance.service';
 
 @Controller('insurance')
 export class InsuranceController {
     constructor(private readonly insuranceService: InsuranceService) { }
 
     @Post()
-    create(
-        @Body('siteId') siteId: number,
-        @Body('name') name: string
-    ) {
-        return this.insuranceService.create(
-            siteId,
-            name
-        );
+    create(@Body() createInsuranceDto: CreateInsuranceDto) {
+        return this.insuranceService.create(createInsuranceDto);
     }
 
     @Get()

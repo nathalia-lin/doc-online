@@ -7,8 +7,10 @@ import Exam from './exam.model';
 export default class Views extends Model<Views> {
 
     @PrimaryKey
-    @Column(DataType.UUID)
-    public id: number;
+    @Column({
+        defaultValue: DataType.UUIDV4,
+        type: DataType.UUID
+    }) public id: number;
 
     @ForeignKey(() => Exam)
     @Column(DataType.UUID)

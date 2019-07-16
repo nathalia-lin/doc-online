@@ -1,8 +1,8 @@
 import { Injectable, Inject } from '@nestjs/common';
-import { v4 as uuid } from 'uuid';
 
-import SiteRule from 'src/models/siteRule.model';
-import Site from 'src/models/site.model';
+import { CreateSiteRuleDto } from '../dto/siteRule.dto';
+import SiteRule from '../models/siteRule.model';
+import Site from '../models/site.model';
 
 @Injectable()
 export class SiteRuleService {
@@ -10,43 +10,8 @@ export class SiteRuleService {
     @Inject('SiteRuleRepository') private readonly siteRuleRepository: typeof SiteRule
   ) { }
 
-  async create(
-    siteId: number,
-    urlCheckNetwork: string,
-    urlReportInternal: string,
-    urlReportExternal: string,
-    urlReportFormatOpen: string,
-    urlWebviewerInternal: string,
-    urlWebviewerExternal: string,
-    urlKeyImagesInternal: string,
-    urlKeyImagesExternal: string,
-    urlExportImages: string,
-    examsPerPage: number,
-    allowReportStatus: string,
-    notifyPatientEmail: boolean,
-    notifyPatientSMS: boolean
-  ) {
-    const id: string = uuid();
-
-    const newSiteRule = await this.siteRuleRepository.create({
-      id,
-      siteId,
-      urlCheckNetwork,
-      urlReportInternal,
-      urlReportExternal,
-      urlReportFormatOpen,
-      urlWebviewerInternal,
-      urlWebviewerExternal,
-      urlKeyImagesInternal,
-      urlKeyImagesExternal,
-      urlExportImages,
-      examsPerPage,
-      allowReportStatus,
-      notifyPatientEmail,
-      notifyPatientSMS
-    });
-
-    return newSiteRule;
+  async create(createSiteRuleDto: CreateSiteRuleDto): Promise<SiteRule> {
+    return await this.siteRuleRepository.create<SiteRule>(createSiteRuleDto);;
   }
 
   async findAll() {

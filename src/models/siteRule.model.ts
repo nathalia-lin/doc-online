@@ -1,4 +1,4 @@
-import { Table, Column, Model, ForeignKey, BelongsTo, PrimaryKey, DataType, CreatedAt, UpdatedAt } from 'sequelize-typescript';
+import { Table, Column, Model, ForeignKey, BelongsTo, PrimaryKey, DataType } from 'sequelize-typescript';
 
 import Site from './site.model';
 
@@ -10,8 +10,10 @@ export default class SiteRule extends Model<SiteRule> {
     public id: number;
 
     @ForeignKey(() => Site)
-    @Column(DataType.UUID)
-    public siteId?: number;
+    @Column({
+        defaultValue: DataType.UUIDV4,
+        type: DataType.UUID
+    }) public siteId?: number;
 
     @BelongsTo(() => Site)
     public site: Site;
@@ -54,13 +56,5 @@ export default class SiteRule extends Model<SiteRule> {
 
     @Column(DataType.BOOLEAN)
     public notifyPatientSMS?: boolean;
-
-    @CreatedAt
-    @Column(DataType.DATE)
-    public createdAt?: Date;
-
-    @UpdatedAt
-    @Column(DataType.DATE)
-    public updatedAt?: Date;
 
 }
