@@ -19,6 +19,7 @@ const userSite_module_1 = require("./userSite.module");
 const views_module_1 = require("./views.module");
 const logExam_module_1 = require("./logExam.module");
 const insurance_module_1 = require("./insurance.module");
+const plan_module_1 = require("./plan.module");
 const userInsurance_module_1 = require("./userInsurance.module");
 const exam_module_1 = require("./exam.module");
 let AppModule = class AppModule {
@@ -38,6 +39,7 @@ AppModule = __decorate([
             views_module_1.ViewsModule,
             logExam_module_1.LogExamModule,
             insurance_module_1.InsuranceModule,
+            plan_module_1.PlanModule,
             userInsurance_module_1.UserInsuranceModule,
             exam_module_1.ExamModule
         ],

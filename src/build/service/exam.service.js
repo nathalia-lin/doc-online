@@ -33,13 +33,14 @@ const userSite_service_1 = require("./userSite.service");
 const login_service_1 = require("./login.service");
 const userInsurance_service_1 = require("./userInsurance.service");
 const insurance_service_1 = require("./insurance.service");
+const plan_service_1 = require("./plan.service");
 const site_model_1 = __importDefault(require("../models/site.model"));
 const patient_model_1 = __importDefault(require("../models/patient.model"));
 const doctor_model_1 = __importDefault(require("../models/doctor.model"));
 const insurance_model_1 = __importDefault(require("../models/insurance.model"));
 const views_model_1 = __importDefault(require("../models/views.model"));
 let ExamService = class ExamService {
-    constructor(examRepository, siteService, profileService, patientService, doctorService, userService, userSiteService, loginService, insuranceService, userInsuranceService) {
+    constructor(examRepository, siteService, profileService, patientService, doctorService, userService, userSiteService, loginService, insuranceService, userInsuranceService, planService) {
         this.examRepository = examRepository;
         this.siteService = siteService;
         this.profileService = profileService;
@@ -50,18 +51,9 @@ let ExamService = class ExamService {
         this.loginService = loginService;
         this.insuranceService = insuranceService;
         this.userInsuranceService = userInsuranceService;
+        this.planService = planService;
     }
-    create(createExamDto) {
-        return __awaiter(this, void 0, void 0, function* () {
-            try {
-                return yield this.examRepository.create(createExamDto);
-            }
-            catch (err) {
-                console.log(err);
-            }
-        });
-    }
-    createRelation(networkId, studyInstanceUID, studyDate, accessionNum, modality, statusType, reqProcDescription, insuranceId, insuranceName, patientId, name, socialName, birthDate, sex, reqDoctorDocType, reqDoctorDocNum, reqDoctorDocIssuer, reqDoctorName, loginUsername, loginPassword, consDoctorDocNum, consDoctorName) {
+    create(networkId, studyInstanceUID, studyDate, accessionNum, modality, statusType, reqProcDescription, insuranceId, insuranceName, planId, planName, patientId, name, socialName, birthDate, sex, reqDoctorDocType, reqDoctorDocNum, reqDoctorDocIssuer, reqDoctorName, loginUsername, loginPassword, consDoctorDocNum, consDoctorName) {
         return __awaiter(this, void 0, void 0, function* () {
             let newProfile, newUser, newUserSite;
             let siteId = yield this.siteExists(networkId);
@@ -91,17 +83,11 @@ let ExamService = class ExamService {
             yield this.loginService.create(login);
             let insurance = yield this.insuranceService.find({ 'id': insuranceId })[0];
             if (!insurance) {
-                insurance = {
-                    'id': insuranceId,
-                    'siteId': siteId,
-                    'name': insuranceName
-                };
-                yield this.insuranceService.create(insurance);
-                let userInsurance = {
-                    'insuranceId': insuranceId,
-                    'userId': newUser.id,
-                };
-                yield this.userInsuranceService.create(userInsurance);
+                yield this.createInsurance(insuranceId, siteId, insuranceName, newUser.id);
+            }
+            let plan = yield this.planService.find({ 'insuranceId': insuranceId });
+            if (!plan) {
+                yield this.createPlan(planId, planName, insuranceId);
             }
             if (!reqDoctor) {
                 const reqDoctorSocialName = reqDoctorName.split(" ")[0];
@@ -145,7 +131,7 @@ let ExamService = class ExamService {
                 'lastReportView': null,
                 'lastImageView': null,
             };
-            yield this.examRepository.create(exam);
+            yield this.createExam(exam);
         });
     }
     siteExists(networkId) {
@@ -226,6 +212,32 @@ let ExamService = class ExamService {
         });
     }
     ;
+    createInsurance(insuranceId, siteId, insuranceName, userId) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let insurance = {
+                'id': insuranceId,
+                'siteId': siteId,
+                'name': insuranceName
+            };
+            yield this.insuranceService.create(insurance);
+            let userInsurance = {
+                'insuranceId': insuranceId,
+                'userId': userId,
+            };
+            yield this.userInsuranceService.create(userInsurance);
+        });
+    }
+    ;
+    createPlan(planId, insuranceId, planName) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let plan = {
+                'id': planId,
+                'insuranceId': insuranceId,
+                'name': planName
+            };
+            yield this.planService.create(plan);
+        });
+    }
     createDoctorLogin(user, doctor) {
         return __awaiter(this, void 0, void 0, function* () {
             let profile = yield this.profileService.find({
@@ -237,6 +249,11 @@ let ExamService = class ExamService {
                 'password': doctor.docNum + '@' + profile[0].socialName
             };
             yield this.loginService.create(login);
+        });
+    }
+    createExam(createExamDto) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.examRepository.create(createExamDto);
         });
     }
     find(where) {
@@ -271,6 +288,7 @@ ExamService = __decorate([
     __param(7, common_1.Inject('LoginService')),
     __param(8, common_1.Inject('InsuranceService')),
     __param(9, common_1.Inject('UserInsuranceService')),
+    __param(10, common_1.Inject('PlanService')),
     __metadata("design:paramtypes", [Object, site_service_1.SiteService,
         profile_service_1.ProfileService,
         patient_service_1.PatientService,
@@ -279,6 +297,7 @@ ExamService = __decorate([
         userSite_service_1.UserSiteService,
         login_service_1.LoginService,
         insurance_service_1.InsuranceService,
-        userInsurance_service_1.UserInsuranceService])
+        userInsurance_service_1.UserInsuranceService,
+        plan_service_1.PlanService])
 ], ExamService);
 exports.ExamService = ExamService;

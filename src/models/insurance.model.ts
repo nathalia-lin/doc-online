@@ -4,6 +4,7 @@ import Site from './site.model';
 import User from './user.model';
 import UserInsurance from './userInsurance.model';
 import Exam from './exam.model';
+import Plan from './plan.model';
 
 @Table({ tableName: 'insurance' })
 export default class Insurance extends Model<Insurance> {
@@ -29,5 +30,8 @@ export default class Insurance extends Model<Insurance> {
 
     @HasMany(() => Exam)
     public exams?: Exam[];
+
+    @HasMany(() => Plan)
+    public plans?: Plan[];
 
 }

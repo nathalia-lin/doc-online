@@ -12,6 +12,7 @@ import { UserSiteModule } from './userSite.module';
 import { ViewsModule } from './views.module';
 import { LogExamModule } from './logExam.module';
 import { InsuranceModule } from './insurance.module';
+import { PlanModule } from './plan.module';
 import { UserInsuranceModule } from './userInsurance.module';
 import { ExamModule } from './exam.module';
 
@@ -29,6 +30,7 @@ import { ExamModule } from './exam.module';
     ViewsModule,
     LogExamModule,
     InsuranceModule,
+    PlanModule,
     UserInsuranceModule,
     ExamModule
   ],

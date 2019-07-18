@@ -22,10 +22,10 @@ export class ExamController {
         // reportDate,
         // reviewedBy
 
-        @Body('networkID') networkId: string,
-        @Body('studyInstanceUID') studyInstanceUid: string,
+        @Body('networkID') networkID: string,
+        @Body('studyInstanceUID') studyInstanceUID: string,
         @Body('studyDate') studyDate: Date,
-        @Body('accessionNumber') accessionNum: string,
+        @Body('accessionNumber') accessionNumber: string,
         // @Body('admissionID') admissionId: number,
         // @Body('orderID') orderID: number,
         @Body('modality') modality: string,
@@ -35,8 +35,8 @@ export class ExamController {
         @Body('reqProcDescription') reqProcDescription: string,
         @Body('insuranceID') insuranceID: number,
         @Body('insuranceName') insuranceName: string,
-        // @Body('planID') planID: number,
-        // @Body('planName') planName: string,
+        @Body('planID') planID: number,
+        @Body('planName') planName: string,
         @Body('patientID') patientID: number,
         @Body('patientName') patientName: string,
         @Body('patientSocialName') patientSocialName: string,
@@ -57,11 +57,11 @@ export class ExamController {
         // @Body('echo') echo: boolean
 
     ) {
-        return this.examService.createRelation(
-            networkId,
-            studyInstanceUid,
+        return this.examService.create(
+            networkID,
+            studyInstanceUID,
             studyDate,
-            accessionNum,
+            accessionNumber,
             // admissionId,
             // orderID,
             modality,
@@ -71,8 +71,8 @@ export class ExamController {
             reqProcDescription,
             insuranceID,
             insuranceName,
-            // planID,
-            // planName,
+            planID,
+            planName,
             patientID,
             patientName,
             patientSocialName,
@@ -92,6 +92,23 @@ export class ExamController {
             // reviewedBy
         );
     }
+
+    // @Put(':id')
+    // update(
+    //     @Body('studyInstanceUID') studyInstanceUID: string,
+    //     @Body('accessionNumber') accessionNumber: string,
+    //     @Body('networkID') networkID: string,
+    //     @Body('patientID') patientID: number,
+    //     @Body('studyStatus') studyStatus: string
+    // ) {
+    //     return this.examService.update(
+    //         studyInstanceUID,
+    //         accessionNumber,
+    //         networkID, 
+    //         patientID,
+    //         studyStatus
+    //     );
+    // }
 
     @Get(':id')
     show(@Param('id')  where: any) {

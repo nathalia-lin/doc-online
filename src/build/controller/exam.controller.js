@@ -18,8 +18,8 @@ let ExamController = class ExamController {
     constructor(examService) {
         this.examService = examService;
     }
-    create(networkId, studyInstanceUid, studyDate, accessionNum, modality, studyStatus, reqProcDescription, insuranceID, insuranceName, patientID, patientName, patientSocialName, patientBirthDate, patientSex, refPhysicianType, refPhysicianCRM, refPhysicianUF, refPhysicianName, protocolID, protocolPwd, readingPhysician, reqPhysicianName) {
-        return this.examService.createRelation(networkId, studyInstanceUid, studyDate, accessionNum, modality, studyStatus, reqProcDescription, insuranceID, insuranceName, patientID, patientName, patientSocialName, patientBirthDate, patientSex, refPhysicianType, refPhysicianCRM, refPhysicianUF, refPhysicianName, protocolID, protocolPwd, readingPhysician, reqPhysicianName);
+    create(networkID, studyInstanceUID, studyDate, accessionNumber, modality, studyStatus, reqProcDescription, insuranceID, insuranceName, planID, planName, patientID, patientName, patientSocialName, patientBirthDate, patientSex, refPhysicianType, refPhysicianCRM, refPhysicianUF, refPhysicianName, protocolID, protocolPwd, readingPhysician, reqPhysicianName) {
+        return this.examService.create(networkID, studyInstanceUID, studyDate, accessionNumber, modality, studyStatus, reqProcDescription, insuranceID, insuranceName, planID, planName, patientID, patientName, patientSocialName, patientBirthDate, patientSex, refPhysicianType, refPhysicianCRM, refPhysicianUF, refPhysicianName, protocolID, protocolPwd, readingPhysician, reqPhysicianName);
     }
     show(where) {
         return this.examService.find(where);
@@ -39,21 +39,23 @@ __decorate([
     __param(6, common_1.Body('reqProcDescription')),
     __param(7, common_1.Body('insuranceID')),
     __param(8, common_1.Body('insuranceName')),
-    __param(9, common_1.Body('patientID')),
-    __param(10, common_1.Body('patientName')),
-    __param(11, common_1.Body('patientSocialName')),
-    __param(12, common_1.Body('patientBirthDate')),
-    __param(13, common_1.Body('patientSex')),
-    __param(14, common_1.Body('refPhysicianType')),
-    __param(15, common_1.Body('refPhysicianCRM (depreciado) | refPhysicianNum')),
-    __param(16, common_1.Body('refPhysicianUF')),
-    __param(17, common_1.Body('refPhysicianName')),
-    __param(18, common_1.Body('protocolID')),
-    __param(19, common_1.Body('protocolPwd')),
-    __param(20, common_1.Body('readingPhysician')),
-    __param(21, common_1.Body('reqPhysicianName')),
+    __param(9, common_1.Body('planID')),
+    __param(10, common_1.Body('planName')),
+    __param(11, common_1.Body('patientID')),
+    __param(12, common_1.Body('patientName')),
+    __param(13, common_1.Body('patientSocialName')),
+    __param(14, common_1.Body('patientBirthDate')),
+    __param(15, common_1.Body('patientSex')),
+    __param(16, common_1.Body('refPhysicianType')),
+    __param(17, common_1.Body('refPhysicianCRM (depreciado) | refPhysicianNum')),
+    __param(18, common_1.Body('refPhysicianUF')),
+    __param(19, common_1.Body('refPhysicianName')),
+    __param(20, common_1.Body('protocolID')),
+    __param(21, common_1.Body('protocolPwd')),
+    __param(22, common_1.Body('readingPhysician')),
+    __param(23, common_1.Body('reqPhysicianName')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String, String, Date, String, String, String, String, Number, String, Number, String, String, Date, String, String, String, String, String, String, String, String, String]),
+    __metadata("design:paramtypes", [String, String, Date, String, String, String, String, Number, String, Number, String, Number, String, String, Date, String, String, String, String, String, String, String, String, String]),
     __metadata("design:returntype", void 0)
 ], ExamController.prototype, "create", null);
 __decorate([

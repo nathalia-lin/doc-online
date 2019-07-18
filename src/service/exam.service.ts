@@ -9,6 +9,7 @@ import { UserSiteService } from './userSite.service';
 import { LoginService } from './login.service';
 import { UserInsuranceService } from './userInsurance.service';
 import { InsuranceService } from './insurance.service';
+import { PlanService } from './plan.service';
 
 import User from '../models/user.model';
 import Site from '../models/site.model';
@@ -19,14 +20,15 @@ import Views from '../models/views.model';
 import Exam from '../models/exam.model';
 
 import { CreateExamDto } from '../dto/exam.dto';
-import { CreateProfileDto } from 'src/dto/profile.dto';
-import { CreatePatientDto } from 'src/dto/patient.dto';
-import { CreateDoctorDto } from 'src/dto/doctor.dto';
-import { CreateUserDto } from 'src/dto/user.dto';
-import { CreateUserSiteDto } from 'src/dto/userSite.dto';
-import { CreateLoginDto } from 'src/dto/login.dto';
-import { CreateInsuranceDto } from 'src/dto/insurance.dto';
-import { CreateUserInsuranceDto } from 'src/dto/userInsurance.dto';
+import { CreateProfileDto } from '../dto/profile.dto';
+import { CreatePatientDto } from '../dto/patient.dto';
+import { CreateDoctorDto } from '../dto/doctor.dto';
+import { CreateUserDto } from '../dto/user.dto';
+import { CreateUserSiteDto } from '../dto/userSite.dto';
+import { CreateLoginDto } from '../dto/login.dto';
+import { CreateInsuranceDto } from '../dto/insurance.dto';
+import { CreateUserInsuranceDto } from '../dto/userInsurance.dto';
+import { CreatePlanDto } from '../dto/plan.dto';
 
 @Injectable()
 export class ExamService {
@@ -43,18 +45,10 @@ export class ExamService {
         @Inject('LoginService') private loginService: LoginService,
         @Inject('InsuranceService') private insuranceService: InsuranceService,
         @Inject('UserInsuranceService') private userInsuranceService: UserInsuranceService,
+        @Inject('PlanService') private planService: PlanService,
     ) { }
 
-    async create(createExamDto: CreateExamDto): Promise<Exam> {
-        try {
-            return await this.examRepository.create<Exam>(createExamDto);
-        }
-        catch (err) {
-            console.log(err)
-        }
-    }
-
-    async createRelation(
+    async create(
         networkId: string,
         studyInstanceUID: string,
         studyDate: Date,
@@ -68,8 +62,8 @@ export class ExamService {
         reqProcDescription: string,
         insuranceId: number,
         insuranceName: string,
-        // planID, - createmodel
-        // planName, - createmodel
+        planId: number,
+        planName: string, 
         patientId: number,
         name: string,
         socialName: string,
@@ -125,26 +119,19 @@ export class ExamService {
         } as CreateLoginDto;
         await this.loginService.create(login);
 
-        // After creating a patient, check if they have an insurance
+        // If they don't have an insurance, create one
         let insurance = await this.insuranceService.find({ 'id': insuranceId })[0];
-
-        // If not
         if (!insurance) {
-            // Create an insurance and user insurance
-            insurance = {
-                'id': insuranceId,
-                'siteId': siteId,
-                'name': insuranceName
-            } as CreateInsuranceDto;
-            await this.insuranceService.create(insurance);
-            
-            let userInsurance = {
-                'insuranceId': insuranceId,
-                'userId': newUser.id,
-            } as CreateUserInsuranceDto;
-            await this.userInsuranceService.create(userInsurance);
+            await this.createInsurance(insuranceId, siteId, insuranceName, newUser.id);
         }
 
+        // PRECISA DO USER NO PLANO???
+        // If they don't have a plan, create one
+        let plan = await this.planService.find({'insuranceId': insuranceId});
+        if (!plan) {
+            await this.createPlan(planId, planName, insuranceId);
+        }
+        
         // REQUESTING DOCTOR
         if (!reqDoctor) {
             const reqDoctorSocialName = reqDoctorName.split(" ")[0];
@@ -192,7 +179,7 @@ export class ExamService {
             'lastReportView': null,
             'lastImageView': null,
         } as CreateExamDto;
-        await this.examRepository.create(exam);
+        await this.createExam(exam);
     }
 
     // Check if site exists
@@ -209,7 +196,6 @@ export class ExamService {
         }
     }
 
-    // Create profile
     async createProfile(name, socialName, sex, birthdate, phone, email) {
         let newProfile = {
             'name': name,
@@ -222,7 +208,6 @@ export class ExamService {
         return await this.profileService.create(newProfile);
     }
 
-    // Create patient
     async createPatient(id, profileId, pid) {
         let newPatient = {
             'id': id,
@@ -232,7 +217,6 @@ export class ExamService {
         return await this.patientService.create(newPatient);
     }
 
-    // Create doctor
     async createDoctor(profileId, docType, docIssuer, docNum) {
         let newDoctor = {
             'profileId': profileId.id,
@@ -243,7 +227,6 @@ export class ExamService {
         return await this.doctorService.create(newDoctor);
     }
 
-    // Create user
     async createUser(profileId, createdAt, createdBy, lastAccess, profiles, active, recoveryKey, lastRecovery, termApproved) {
         let newUser = {
             'profileId': profileId.id,
@@ -259,7 +242,6 @@ export class ExamService {
         return await this.userService.create(newUser);
     }
 
-    // Create user site login
     async createUserSite(user, siteId, createdBy, createdAt) {
         let newUserSite = {
             'userId': user.id,
@@ -270,7 +252,30 @@ export class ExamService {
         return await this.userSiteService.create(newUserSite)
     };
 
-    // Create doctor login
+    async createInsurance(insuranceId, siteId, insuranceName, userId) {
+        let insurance = {
+            'id': insuranceId,
+            'siteId': siteId,
+            'name': insuranceName
+        } as CreateInsuranceDto;
+        await this.insuranceService.create(insurance);
+
+        let userInsurance = {
+            'insuranceId': insuranceId,
+            'userId': userId,
+        } as CreateUserInsuranceDto;
+        await this.userInsuranceService.create(userInsurance);
+    };
+
+    async createPlan(planId, insuranceId, planName) {
+        let plan = {
+            'id': planId,
+            'insuranceId': insuranceId,
+            'name': planName
+        } as CreatePlanDto;
+        await this.planService.create(plan);
+    }
+    
     async createDoctorLogin(user: User, doctor: Doctor) {
         let profile = await this.profileService.find({
             'id': doctor.profileId
@@ -282,6 +287,28 @@ export class ExamService {
         } as CreateLoginDto;
         await this.loginService.create(login);
     }
+
+    async createExam(createExamDto: CreateExamDto): Promise<Exam> {
+        return await this.examRepository.create<Exam>(createExamDto);
+    }
+
+    // async update(
+    //     studyInstanceUid: string,
+    //     accessionNum: string,
+    //     networkId: string, 
+    //     patientId: number,
+    //     studyStatus: string
+    // ) {
+    //     let exam = this.find({
+    //         studyInstanceUid,
+    //         accessionNum,
+    //         networkId, 
+    //         patientId,
+    //         studyStatus
+    //     });
+
+    //     await this.examRepository.update();
+    // }
 
     async find(where: any) {
         if (typeof where === 'string') {

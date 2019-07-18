@@ -8,8 +8,7 @@ export class SiteRuleController {
     constructor(private readonly siteRuleService: SiteRuleService) { }
 
     @Post()
-    create(
-        @Body() createSiteRuleDto: CreateSiteRuleDto) {
+    create(@Body() createSiteRuleDto: CreateSiteRuleDto) {
         return this.siteRuleService.create(createSiteRuleDto);
     }
 

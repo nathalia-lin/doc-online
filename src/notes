@@ -11,3 +11,7 @@
 - when user is created - create user site
 - from site - create insurance
 - when insurance and site is created, create user insurance
+
+https://medium.com/@edtimmer/sequelize-associations-basics-bde90c0deeaa
+https://stackoverflow.com/questions/53931866/join-or-populate-query-in-sequelize
+
