@@ -1,0 +1,13 @@
+1. get all id's
+2. siteid - check if the model exists - if not, return error
+3. check other id's, if they exists, just add to exam, else create them
+4. look for patientid - if patient doesn't exist, go back and create profile
+5. if profile exists, but user doesnt, create users and a login account
+
+- Existing => site, site notification, and site rules
+- create exam
+- from exam - directly create log-exams and views(?)
+- indirectly look at patients/doctors and create profile/users/logins
+- when user is created - create user site
+- from site - create insurance
+- when insurance and site is created, create user insurance

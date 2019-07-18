@@ -18,7 +18,10 @@ let Login = class Login extends sequelize_typescript_1.Model {
 };
 __decorate([
     sequelize_typescript_1.PrimaryKey,
-    sequelize_typescript_1.Column(sequelize_typescript_1.DataType.UUID),
+    sequelize_typescript_1.Column({
+        defaultValue: sequelize_typescript_1.DataType.UUIDV4,
+        type: sequelize_typescript_1.DataType.UUID
+    }),
     __metadata("design:type", Number)
 ], Login.prototype, "id", void 0);
 __decorate([

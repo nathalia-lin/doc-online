@@ -29,11 +29,11 @@ __decorate([
 __decorate([
     sequelize_typescript_1.Column(sequelize_typescript_1.DataType.STRING(30)),
     __metadata("design:type", String)
-], Profile.prototype, "firstName", void 0);
+], Profile.prototype, "name", void 0);
 __decorate([
     sequelize_typescript_1.Column(sequelize_typescript_1.DataType.STRING(150)),
     __metadata("design:type", String)
-], Profile.prototype, "lastName", void 0);
+], Profile.prototype, "socialName", void 0);
 __decorate([
     sequelize_typescript_1.Column(sequelize_typescript_1.DataType.STRING(1)),
     __metadata("design:type", String)

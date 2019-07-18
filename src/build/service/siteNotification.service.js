@@ -34,15 +34,13 @@ let SiteNotificationService = class SiteNotificationService {
             return yield this.siteNotificationRepository.create(createSiteNotificationDto);
         });
     }
-    findAll() {
+    find(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.siteNotificationRepository.findAll();
-        });
-    }
-    findOne(siteNotificationId) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const siteNotification = yield this.siteNotificationRepository.findOne({
-                where: { 'id': siteNotificationId }, include: [site_model_1.default]
+            if (typeof where === 'string') {
+                where = { 'id': where };
+            }
+            const siteNotification = yield this.siteNotificationRepository.findAll({
+                where: where, include: [site_model_1.default]
             });
             return siteNotification;
         });

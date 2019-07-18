@@ -12,14 +12,9 @@ export class UserInsuranceController {
         return this.userInsuranceService.create(createUserInsuranceDto);
     }
 
-    @Get()
-    showAll() {
-        return this.userInsuranceService.findAll();
-    }
-
     @Get(':id')
-    showOne(@Param('id') userInsuranceId: number) {
-        return this.userInsuranceService.findOne(userInsuranceId);
+    showOne(@Param('id') where: any) {
+        return this.userInsuranceService.find(where);
     }
 
     @Delete(':id')

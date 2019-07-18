@@ -22,11 +22,8 @@ let ProfileController = class ProfileController {
     create(createProfileDot) {
         return this.profileService.create(createProfileDot);
     }
-    showAll() {
-        return this.profileService.findAll();
-    }
-    showOne(profileId) {
-        return this.profileService.findOne(profileId);
+    showOne(where) {
+        return this.profileService.find(where);
     }
     deleteOne(profileId) {
         return this.profileService.deleteOne(profileId);
@@ -40,16 +37,10 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], ProfileController.prototype, "create", null);
 __decorate([
-    common_1.Get(),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", void 0)
-], ProfileController.prototype, "showAll", null);
-__decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number]),
+    __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], ProfileController.prototype, "showOne", null);
 __decorate([

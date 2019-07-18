@@ -35,15 +35,13 @@ let LoginService = class LoginService {
             ;
         });
     }
-    findAll() {
+    find(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.loginRepository.findAll();
-        });
-    }
-    findOne(loginId) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const login = yield this.loginRepository.findOne({
-                where: { 'id': loginId }, include: [user_model_1.default]
+            if (typeof where === 'string') {
+                where = { 'id': where };
+            }
+            const login = yield this.loginRepository.findAll({
+                where: where, include: [user_model_1.default]
             });
             return login;
         });

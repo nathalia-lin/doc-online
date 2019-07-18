@@ -17,7 +17,8 @@ SiteRuleModule = __decorate([
     common_1.Module({
         imports: [database_module_1.DatabaseModule],
         controllers: [siteRule_controller_1.SiteRuleController],
-        providers: [siteRule_service_1.SiteRuleService, ...siteRule_provider_1.SiteRuleProvider]
+        providers: [siteRule_service_1.SiteRuleService, ...siteRule_provider_1.SiteRuleProvider],
+        exports: [siteRule_service_1.SiteRuleService]
     })
 ], SiteRuleModule);
 exports.SiteRuleModule = SiteRuleModule;

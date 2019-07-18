@@ -12,14 +12,9 @@ export class UserSiteController {
         return this.userSiteService.create(createUserSiteDto);
     }
 
-    @Get()
-    showAll() {
-        return this.userSiteService.findAll();
-    }
-
     @Get(':id')
-    showOne(@Param('id') userSiteId: number) {
-        return this.userSiteService.findOne(userSiteId);
+    showOne(@Param('id') where: any) {
+        return this.userSiteService.find(where);
     }
 
     @Delete(':id')

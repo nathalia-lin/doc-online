@@ -37,15 +37,13 @@ let ProfileService = class ProfileService {
             ;
         });
     }
-    findAll() {
+    find(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.profileRepository.findAll();
-        });
-    }
-    findOne(profileId) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const profile = yield this.profileRepository.findOne({
-                where: { 'id': profileId }, include: [user_model_1.default, patient_model_1.default, doctor_model_1.default]
+            if (typeof where === 'string') {
+                where = { 'id': where };
+            }
+            const profile = yield this.profileRepository.findAll({
+                where: where, include: [user_model_1.default, patient_model_1.default, doctor_model_1.default]
             });
             return profile;
         });

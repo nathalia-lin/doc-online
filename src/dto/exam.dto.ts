@@ -1,5 +1,5 @@
 export class CreateExamDto {
-    readonly id: number;
+    readonly id?: number;
     readonly createdAt: Date;
     readonly updatedAt: Date;
     readonly pid: string;

@@ -38,15 +38,13 @@ let UserService = class UserService {
             return yield this.userRepository.create(createUserDto);
         });
     }
-    findAll() {
+    find(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.userRepository.findAll();
-        });
-    }
-    findOne(userId) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const user = yield this.userRepository.findOne({
-                where: { 'id': userId }, include: [profile_model_1.default, login_model_1.default, site_model_1.default, views_model_1.default, insurance_model_1.default]
+            if (typeof where === 'string') {
+                where = { 'id': where };
+            }
+            const user = yield this.userRepository.findAll({
+                where: where, include: [profile_model_1.default, login_model_1.default, site_model_1.default, views_model_1.default, insurance_model_1.default]
             });
             return user;
         });

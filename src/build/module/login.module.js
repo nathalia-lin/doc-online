@@ -17,7 +17,8 @@ LoginModule = __decorate([
     common_1.Module({
         imports: [database_module_1.DatabaseModule],
         controllers: [login_controller_1.LoginController],
-        providers: [login_service_1.LoginService, ...login_provider_1.LoginProvider]
+        providers: [login_service_1.LoginService, ...login_provider_1.LoginProvider],
+        exports: [login_service_1.LoginService]
     })
 ], LoginModule);
 exports.LoginModule = LoginModule;

@@ -13,13 +13,12 @@ export class LogExamService {
         return await this.logExamRepository.create<LogExam>(createLogExamDto);;
     }
 
-    async findAll() {
-        return await this.logExamRepository.findAll<LogExam>();
-    }
-
-    async findOne(logExamId: number) {
-        const logExam = await this.logExamRepository.findOne({
-            where: { 'id': logExamId }
+    async find(where: any) {
+        if (typeof where === 'string') {
+            where = { 'id': where };
+        }
+        const logExam = await this.logExamRepository.findAll({
+            where: where
         });
         return logExam;
     }

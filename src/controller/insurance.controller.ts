@@ -12,14 +12,9 @@ export class InsuranceController {
         return this.insuranceService.create(createInsuranceDto);
     }
 
-    @Get()
-    showAll() {
-        return this.insuranceService.findAll();
-    }
-
     @Get(':id')
-    showOne(@Param('id') insuranceId: number) {
-        return this.insuranceService.findOne(insuranceId);
+    show(@Param('id') where: any) {
+        return this.insuranceService.find(where);
     }
 
     @Delete(':id')

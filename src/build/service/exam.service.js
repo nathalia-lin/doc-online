@@ -24,14 +24,32 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
+const site_service_1 = require("./site.service");
+const profile_service_1 = require("./profile.service");
+const patient_service_1 = require("./patient.service");
+const doctor_service_1 = require("./doctor.service");
+const user_service_1 = require("./user.service");
+const userSite_service_1 = require("./userSite.service");
+const login_service_1 = require("./login.service");
+const userInsurance_service_1 = require("./userInsurance.service");
+const insurance_service_1 = require("./insurance.service");
 const site_model_1 = __importDefault(require("../models/site.model"));
 const patient_model_1 = __importDefault(require("../models/patient.model"));
 const doctor_model_1 = __importDefault(require("../models/doctor.model"));
 const insurance_model_1 = __importDefault(require("../models/insurance.model"));
 const views_model_1 = __importDefault(require("../models/views.model"));
 let ExamService = class ExamService {
-    constructor(examRepository) {
+    constructor(examRepository, siteService, profileService, patientService, doctorService, userService, userSiteService, loginService, insuranceService, userInsuranceService) {
         this.examRepository = examRepository;
+        this.siteService = siteService;
+        this.profileService = profileService;
+        this.patientService = patientService;
+        this.doctorService = doctorService;
+        this.userService = userService;
+        this.userSiteService = userSiteService;
+        this.loginService = loginService;
+        this.insuranceService = insuranceService;
+        this.userInsuranceService = userInsuranceService;
     }
     create(createExamDto) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -43,15 +61,191 @@ let ExamService = class ExamService {
             }
         });
     }
-    findAll() {
+    createRelation(networkId, studyInstanceUID, studyDate, accessionNum, modality, statusType, reqProcDescription, insuranceId, insuranceName, patientId, name, socialName, birthDate, sex, reqDoctorDocType, reqDoctorDocNum, reqDoctorDocIssuer, reqDoctorName, loginUsername, loginPassword, consDoctorDocNum, consDoctorName) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.examRepository.findAll();
+            let newProfile, newUser, newUserSite;
+            let siteId = yield this.siteExists(networkId);
+            let patient = yield this.patientService.find({ 'id': patientId })[0];
+            let reqDoctor = yield this.doctorService.find({
+                'docType': reqDoctorDocType,
+                'docIssuer': reqDoctorDocIssuer,
+                'docNum': reqDoctorDocNum
+            })[0];
+            let consDoctor;
+            if (consDoctorName) {
+                consDoctor = yield this.doctorService.find({
+                    'docNum': consDoctorDocNum
+                })[0];
+            }
+            if (!patient) {
+                newProfile = yield this.createProfile(name, socialName, sex, birthDate, null, null);
+                patient = yield this.createPatient(patientId, newProfile, null);
+                newUser = yield this.createUser(newProfile, null, null, null, null, null, null, null, null);
+                newUserSite = yield this.createUserSite(newUser, siteId, null, null);
+            }
+            let login = {
+                'userId': newUser.id,
+                'username': loginUsername,
+                'password': loginPassword
+            };
+            yield this.loginService.create(login);
+            let insurance = yield this.insuranceService.find({ 'id': insuranceId })[0];
+            if (!insurance) {
+                insurance = {
+                    'id': insuranceId,
+                    'siteId': siteId,
+                    'name': insuranceName
+                };
+                yield this.insuranceService.create(insurance);
+                let userInsurance = {
+                    'insuranceId': insuranceId,
+                    'userId': newUser.id,
+                };
+                yield this.userInsuranceService.create(userInsurance);
+            }
+            if (!reqDoctor) {
+                const reqDoctorSocialName = reqDoctorName.split(" ")[0];
+                newProfile = yield this.createProfile(reqDoctorName, reqDoctorSocialName, null, null, null, null);
+                reqDoctor = yield this.createDoctor(newProfile, reqDoctorDocType, reqDoctorDocIssuer, reqDoctorDocNum);
+                newUser = yield this.createUser(newProfile, null, null, null, null, null, null, null, null);
+                newUserSite = yield this.createUserSite(newUser, siteId, null, null);
+            }
+            yield this.createDoctorLogin(newUser, reqDoctor);
+            let consDoctorId;
+            if (consDoctorName) {
+                if (!consDoctor) {
+                    const consDoctorSocialName = consDoctorName.split(" ")[0];
+                    newProfile = yield this.createProfile(consDoctorName, consDoctorSocialName, null, null, null, null);
+                    consDoctor = yield this.createDoctor(newProfile, null, null, consDoctorDocNum);
+                    newUser = yield this.createUser(newProfile, null, null, null, null, null, null, null, null);
+                    newUserSite = yield this.createUserSite(newUser, siteId, null, null);
+                }
+                consDoctorId = consDoctor.id;
+                yield this.createDoctorLogin(newUser, consDoctor);
+            }
+            else {
+                consDoctorId = null;
+            }
+            let exam = {
+                'createdAt': null,
+                'updatedAt': null,
+                'pid': null,
+                'accessionNum': accessionNum,
+                'studyInstanceUID': studyInstanceUID,
+                'networkId': networkId,
+                'siteId': siteId,
+                'modality': modality,
+                'description': reqProcDescription,
+                'examDate': studyDate,
+                'statusType': statusType,
+                'patientId': patientId,
+                'requestingId': reqDoctor.id,
+                'consultingId': consDoctorId,
+                'insuranceId': insuranceId,
+                'lastReportView': null,
+                'lastImageView': null,
+            };
+            yield this.examRepository.create(exam);
         });
     }
-    findOne(examId) {
+    siteExists(networkId) {
         return __awaiter(this, void 0, void 0, function* () {
-            const exam = yield this.examRepository.findOne({
-                where: { 'id': examId }, include: [site_model_1.default, patient_model_1.default, doctor_model_1.default, insurance_model_1.default, views_model_1.default]
+            let site = yield this.siteService.find({
+                'networkId': networkId
+            });
+            if (site.length > 1) {
+                throw new Error('Too many sites');
+            }
+            else if (site.length == 1) {
+                return site[0].id;
+            }
+            else {
+                throw new Error('Site does not exist');
+            }
+        });
+    }
+    createProfile(name, socialName, sex, birthdate, phone, email) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let newProfile = {
+                'name': name,
+                'socialName': socialName,
+                'sex': sex,
+                'birthdate': birthdate,
+                'phone': phone,
+                'email': email
+            };
+            return yield this.profileService.create(newProfile);
+        });
+    }
+    createPatient(id, profileId, pid) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let newPatient = {
+                'id': id,
+                'profileId': profileId.id,
+                'pid': pid,
+            };
+            return yield this.patientService.create(newPatient);
+        });
+    }
+    createDoctor(profileId, docType, docIssuer, docNum) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let newDoctor = {
+                'profileId': profileId.id,
+                'docType': docType,
+                'docIssuer': docIssuer,
+                'docNum': docNum,
+            };
+            return yield this.doctorService.create(newDoctor);
+        });
+    }
+    createUser(profileId, createdAt, createdBy, lastAccess, profiles, active, recoveryKey, lastRecovery, termApproved) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let newUser = {
+                'profileId': profileId.id,
+                'createdAt': createdAt,
+                'updatedAt': createdBy,
+                'lastAccess': lastAccess,
+                'profiles': profiles,
+                'active': active,
+                'recoveryKey': recoveryKey,
+                'lastRecovery': lastRecovery,
+                'termApproved': termApproved
+            };
+            return yield this.userService.create(newUser);
+        });
+    }
+    createUserSite(user, siteId, createdBy, createdAt) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let newUserSite = {
+                'userId': user.id,
+                'siteId': siteId,
+                'createdBy': createdBy,
+                'createdAt': createdAt
+            };
+            return yield this.userSiteService.create(newUserSite);
+        });
+    }
+    ;
+    createDoctorLogin(user, doctor) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let profile = yield this.profileService.find({
+                'id': doctor.profileId
+            });
+            let login = {
+                'userId': user.id,
+                'username': doctor.docNum,
+                'password': doctor.docNum + '@' + profile[0].socialName
+            };
+            yield this.loginService.create(login);
+        });
+    }
+    find(where) {
+        return __awaiter(this, void 0, void 0, function* () {
+            if (typeof where === 'string') {
+                where = { 'id': where };
+            }
+            const exam = yield this.examRepository.find({
+                where: where, include: [site_model_1.default, patient_model_1.default, doctor_model_1.default, insurance_model_1.default, views_model_1.default]
             });
             return exam;
         });
@@ -68,6 +262,23 @@ let ExamService = class ExamService {
 ExamService = __decorate([
     common_1.Injectable(),
     __param(0, common_1.Inject('ExamRepository')),
-    __metadata("design:paramtypes", [Object])
+    __param(1, common_1.Inject('SiteService')),
+    __param(2, common_1.Inject('ProfileService')),
+    __param(3, common_1.Inject('PatientService')),
+    __param(4, common_1.Inject('DoctorService')),
+    __param(5, common_1.Inject('UserService')),
+    __param(6, common_1.Inject('UserSiteService')),
+    __param(7, common_1.Inject('LoginService')),
+    __param(8, common_1.Inject('InsuranceService')),
+    __param(9, common_1.Inject('UserInsuranceService')),
+    __metadata("design:paramtypes", [Object, site_service_1.SiteService,
+        profile_service_1.ProfileService,
+        patient_service_1.PatientService,
+        doctor_service_1.DoctorService,
+        user_service_1.UserService,
+        userSite_service_1.UserSiteService,
+        login_service_1.LoginService,
+        insurance_service_1.InsuranceService,
+        userInsurance_service_1.UserInsuranceService])
 ], ExamService);
 exports.ExamService = ExamService;

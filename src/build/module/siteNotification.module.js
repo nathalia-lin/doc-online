@@ -17,7 +17,8 @@ SiteNotificationModule = __decorate([
     common_1.Module({
         imports: [database_module_1.DatabaseModule],
         controllers: [siteNotification_controller_1.SiteNotificationController],
-        providers: [siteNotification_service_1.SiteNotificationService, ...siteNotification_provider_1.SiteNotificationProvider]
+        providers: [siteNotification_service_1.SiteNotificationService, ...siteNotification_provider_1.SiteNotificationProvider],
+        exports: [siteNotification_service_1.SiteNotificationService]
     })
 ], SiteNotificationModule);
 exports.SiteNotificationModule = SiteNotificationModule;

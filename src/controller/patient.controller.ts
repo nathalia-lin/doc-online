@@ -12,14 +12,9 @@ export class PatientController {
         return this.patientService.create(createPatientDto);
     }
 
-    @Get()
-    showAll() {
-        return this.patientService.findAll();
-    }
-
     @Get(':id')
-    showOne(@Param('id') patientId: number) {
-        return this.patientService.findOne(patientId);
+    showOne(@Param('id') where: any) {
+        return this.patientService.find(where);
     }
 
     @Delete(':id')

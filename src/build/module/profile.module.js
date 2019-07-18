@@ -17,7 +17,8 @@ ProfileModule = __decorate([
     common_1.Module({
         imports: [database_module_1.DatabaseModule],
         controllers: [profile_controllers_1.ProfileController],
-        providers: [profile_service_1.ProfileService, ...profile_provider_1.ProfileProvider]
+        providers: [profile_service_1.ProfileService, ...profile_provider_1.ProfileProvider],
+        exports: [profile_service_1.ProfileService]
     })
 ], ProfileModule);
 exports.ProfileModule = ProfileModule;

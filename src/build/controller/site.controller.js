@@ -22,11 +22,8 @@ let SiteController = class SiteController {
     create(createSiteDto) {
         return this.siteService.create(createSiteDto);
     }
-    showAll() {
-        return this.siteService.findAll();
-    }
-    showOne(siteId) {
-        return this.siteService.findOne(siteId);
+    showOne(where) {
+        return this.siteService.find(where);
     }
     deleteOne(siteId) {
         return this.siteService.deleteOne(siteId);
@@ -40,16 +37,10 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], SiteController.prototype, "create", null);
 __decorate([
-    common_1.Get(),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", void 0)
-], SiteController.prototype, "showAll", null);
-__decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number]),
+    __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], SiteController.prototype, "showOne", null);
 __decorate([

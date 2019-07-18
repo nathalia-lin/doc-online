@@ -17,7 +17,8 @@ DoctorModule = __decorate([
     common_1.Module({
         imports: [database_module_1.DatabaseModule],
         controllers: [doctor_controller_1.DoctorController],
-        providers: [doctor_service_1.DoctorService, ...doctor_provider_1.DoctorProvider]
+        providers: [doctor_service_1.DoctorService, ...doctor_provider_1.DoctorProvider],
+        exports: [doctor_service_1.DoctorService]
     })
 ], DoctorModule);
 exports.DoctorModule = DoctorModule;

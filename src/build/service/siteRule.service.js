@@ -35,15 +35,13 @@ let SiteRuleService = class SiteRuleService {
             ;
         });
     }
-    findAll() {
+    find(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.siteRuleRepository.findAll();
-        });
-    }
-    findOne(siteRuleId) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const siteRule = yield this.siteRuleRepository.findOne({
-                where: { 'id': siteRuleId }, include: [site_model_1.default]
+            if (typeof where === 'string') {
+                where = { 'id': where };
+            }
+            const siteRule = yield this.siteRuleRepository.findAll({
+                where: where, include: [site_model_1.default]
             });
             return siteRule;
         });

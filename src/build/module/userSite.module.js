@@ -17,7 +17,8 @@ UserSiteModule = __decorate([
     common_1.Module({
         imports: [database_module_1.DatabaseModule],
         controllers: [userSite_controller_1.UserSiteController],
-        providers: [userSite_service_1.UserSiteService, ...userSite_provider_1.UserSiteProvider]
+        providers: [userSite_service_1.UserSiteService, ...userSite_provider_1.UserSiteProvider],
+        exports: [userSite_service_1.UserSiteService]
     })
 ], UserSiteModule);
 exports.UserSiteModule = UserSiteModule;

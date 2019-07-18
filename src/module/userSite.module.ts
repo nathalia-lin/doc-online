@@ -8,7 +8,8 @@ import { UserSiteProvider } from "../provider/userSite.provider";
 @Module({
     imports: [DatabaseModule],
     controllers: [UserSiteController],
-    providers: [UserSiteService, ...UserSiteProvider]
+    providers: [UserSiteService, ...UserSiteProvider],
+    exports: [UserSiteService]
 })
 
 export class UserSiteModule { }

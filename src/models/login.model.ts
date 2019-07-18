@@ -6,8 +6,10 @@ import User from './user.model';
 export default class Login extends Model<Login> {
 
     @PrimaryKey
-    @Column(DataType.UUID)
-    public id: number;
+    @Column({
+        defaultValue: DataType.UUIDV4,
+        type: DataType.UUID
+    }) public id: number;
 
     @ForeignKey(() => User)
     @Column({

@@ -12,14 +12,9 @@ export class SiteNotificationController {
         return this.siteNotificationService.create(createSiteNotificationDto);
     }
 
-    @Get()
-    showAll() {
-        return this.siteNotificationService.findAll();
-    }
-
     @Get(':id')
-    showOne(@Param('id') siteNotificationId: number) {
-        return this.siteNotificationService.findOne(siteNotificationId);
+    showOne(@Param('id') where: any) {
+        return this.siteNotificationService.find(where);
     }
 
     @Delete(':id')

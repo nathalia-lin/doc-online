@@ -8,7 +8,8 @@ import { ViewsProvider } from "../provider/views.provider";
 @Module({
     imports: [DatabaseModule],
     controllers: [ViewsController],
-    providers: [ViewsService, ...ViewsProvider]
+    providers: [ViewsService, ...ViewsProvider],
+    exports: [ViewsService]
 })
 
 export class ViewsModule { }

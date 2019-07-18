@@ -14,13 +14,12 @@ export class UserInsuranceService {
         return await this.userInsuranceRepository.create<UserInsurance>(createUserInsuranceDto);;
     }
 
-    public async findAll() {
-        return await this.userInsuranceRepository.findAll<UserInsurance>();
-    }
-
-    async findOne(userInsuranceId: number) {
-        const userInsurance = await this.userInsuranceRepository.findOne({
-            where: { 'id': userInsuranceId }
+    async find(where: any) {
+        if (typeof where === 'string') {
+            where = { 'id': where };
+        }
+        const userInsurance = await this.userInsuranceRepository.findAll({
+            where: where
         });
         return userInsurance;
     }

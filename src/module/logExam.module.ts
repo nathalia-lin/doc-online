@@ -8,7 +8,8 @@ import { LogExamProvider } from "../provider/logExam.provider";
 @Module({
     imports: [DatabaseModule],
     controllers: [LogExamController],
-    providers: [LogExamService, ...LogExamProvider]
+    providers: [LogExamService, ...LogExamProvider],
+    exports: [LogExamService]
 })
 
 export class LogExamModule { }

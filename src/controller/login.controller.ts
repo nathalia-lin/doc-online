@@ -12,14 +12,9 @@ export class LoginController {
         return this.loginService.create(createLoginDto);
     }
 
-    @Get()
-    showAll() {
-        return this.loginService.findAll();
-    }
-
     @Get(':id')
-    showOne(@Param('id') loginId: number) {
-        return this.loginService.findOne(loginId);
+    showOne(@Param('id') where: any) {
+        return this.loginService.find(where);
     }
 
     @Delete(':id')

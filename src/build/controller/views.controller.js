@@ -22,11 +22,8 @@ let ViewsController = class ViewsController {
     create(createViewsDto) {
         return this.viewsService.create(createViewsDto);
     }
-    showAll() {
-        return this.viewsService.findAll();
-    }
-    showOne(viewId) {
-        return this.viewsService.findOne(viewId);
+    showOne(where) {
+        return this.viewsService.find(where);
     }
     deleteOne(viewId) {
         return this.viewsService.deleteOne(viewId);
@@ -40,16 +37,10 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], ViewsController.prototype, "create", null);
 __decorate([
-    common_1.Get(),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", void 0)
-], ViewsController.prototype, "showAll", null);
-__decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number]),
+    __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], ViewsController.prototype, "showOne", null);
 __decorate([

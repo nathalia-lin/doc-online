@@ -12,14 +12,9 @@ export class ViewsController {
         return this.viewsService.create(createViewsDto);
     }
 
-    @Get()
-    showAll() {
-        return this.viewsService.findAll();
-    }
-
     @Get(':id')
-    showOne(@Param('id') viewId: number) {
-        return this.viewsService.findOne(viewId);
+    showOne(@Param('id') where: any) {
+        return this.viewsService.find(where);
     }
 
     @Delete(':id')

@@ -22,11 +22,8 @@ let SiteNotificationController = class SiteNotificationController {
     create(createSiteNotificationDto) {
         return this.siteNotificationService.create(createSiteNotificationDto);
     }
-    showAll() {
-        return this.siteNotificationService.findAll();
-    }
-    showOne(siteNotificationId) {
-        return this.siteNotificationService.findOne(siteNotificationId);
+    showOne(where) {
+        return this.siteNotificationService.find(where);
     }
     deleteOne(siteNotificationId) {
         return this.siteNotificationService.deleteOne(siteNotificationId);
@@ -40,16 +37,10 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], SiteNotificationController.prototype, "create", null);
 __decorate([
-    common_1.Get(),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", void 0)
-], SiteNotificationController.prototype, "showAll", null);
-__decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number]),
+    __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], SiteNotificationController.prototype, "showOne", null);
 __decorate([

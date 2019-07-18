@@ -14,13 +14,12 @@ export class SiteRuleService {
     return await this.siteRuleRepository.create<SiteRule>(createSiteRuleDto);;
   }
 
-  async findAll() {
-    return await this.siteRuleRepository.findAll<SiteRule>();
-  }
-
-  async findOne(siteRuleId: number) {
-    const siteRule = await this.siteRuleRepository.findOne({
-      where: { 'id': siteRuleId }, include: [Site]
+  async find(where: any) {
+    if (typeof where === 'string') {
+      where = { 'id': where };
+    }
+    const siteRule = await this.siteRuleRepository.findAll({
+      where: where, include: [Site]
     });
     return siteRule;
   }

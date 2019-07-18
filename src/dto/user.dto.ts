@@ -1,5 +1,5 @@
 export class CreateUserDto {
-    readonly id: number;
+    readonly id?: number;
     readonly profileId: number;
     readonly createdAt: Date;
     readonly updatedAt: Date;

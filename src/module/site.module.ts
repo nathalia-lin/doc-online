@@ -8,7 +8,8 @@ import { SiteProvider } from "../provider/site.provider";
 @Module({
     imports: [DatabaseModule],
     controllers: [SiteController],
-    providers: [SiteService,...SiteProvider]
+    providers: [SiteService,...SiteProvider],
+    exports: [SiteService]
 })
 
 export class SiteModule { }

@@ -22,11 +22,8 @@ let DoctorController = class DoctorController {
     create(createDoctorDto) {
         return this.doctorService.create(createDoctorDto);
     }
-    showAll() {
-        return this.doctorService.findAll();
-    }
-    showOne(doctorId) {
-        return this.doctorService.findOne(doctorId);
+    show(where) {
+        return this.doctorService.find(where);
     }
     deleteOne(doctorId) {
         return this.doctorService.deleteOne(doctorId);
@@ -40,18 +37,12 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], DoctorController.prototype, "create", null);
 __decorate([
-    common_1.Get(),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", void 0)
-], DoctorController.prototype, "showAll", null);
-__decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number]),
+    __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
-], DoctorController.prototype, "showOne", null);
+], DoctorController.prototype, "show", null);
 __decorate([
     common_1.Delete(':id'),
     __param(0, common_1.Param('id')),

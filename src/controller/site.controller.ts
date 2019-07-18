@@ -12,14 +12,9 @@ export class SiteController {
         return this.siteService.create(createSiteDto);
     }
 
-    @Get()
-    showAll() {
-        return this.siteService.findAll();
-    }
-
     @Get(':id')
-    showOne(@Param('id') siteId: number) {
-        return this.siteService.findOne(siteId);
+    showOne(@Param('id') where: any) {
+        return this.siteService.find(where);
     }
 
     @Delete(':id')

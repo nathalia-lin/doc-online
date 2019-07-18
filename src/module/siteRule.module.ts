@@ -8,7 +8,8 @@ import { SiteRuleProvider } from "../provider/siteRule.provider";
 @Module({
     imports: [DatabaseModule],
     controllers: [SiteRuleController],
-    providers: [SiteRuleService, ...SiteRuleProvider]
+    providers: [SiteRuleService, ...SiteRuleProvider],
+    exports: [SiteRuleService]
 })
 
 export class SiteRuleModule { }

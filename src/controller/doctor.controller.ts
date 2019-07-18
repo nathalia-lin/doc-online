@@ -12,14 +12,10 @@ export class DoctorController {
         return this.doctorService.create(createDoctorDto);
     }
 
-    @Get()
-    showAll() {
-        return this.doctorService.findAll();
-    }
-
+    // is it supposed to be id?
     @Get(':id')
-    showOne(@Param('id') doctorId: number) {
-        return this.doctorService.findOne(doctorId);
+    show(@Param('id') where: any) {
+        return this.doctorService.find(where);
     }
 
     @Delete(':id')

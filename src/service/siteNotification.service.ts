@@ -14,13 +14,12 @@ export class SiteNotificationService {
     return await this.siteNotificationRepository.create<SiteNotification>(createSiteNotificationDto);
   }
 
-  async findAll() {
-    return await this.siteNotificationRepository.findAll<SiteNotification>();
-  }
-
-  async findOne(siteNotificationId: number) {
-    const siteNotification = await this.siteNotificationRepository.findOne({
-      where: { 'id': siteNotificationId }, include: [Site]
+  async find(where: any) {
+    if (typeof where === 'string') {
+      where = { 'id': where };
+    }
+    const siteNotification = await this.siteNotificationRepository.findAll({
+      where: where, include: [Site]
     });
     return siteNotification;
   }

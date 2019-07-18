@@ -13,14 +13,9 @@ export class SiteRuleController {
         return this.siteRuleService.create(createSiteRuleDto);
     }
 
-    @Get()
-    showAll() {
-        return this.siteRuleService.findAll();
-    }
-
     @Get(':id')
-    showOne(@Param('id') siteRuleId: number) {
-        return this.siteRuleService.findOne(siteRuleId);
+    showOne(@Param('id') where: any) {
+        return this.siteRuleService.find(where);
     }
 
     @Delete(':id')

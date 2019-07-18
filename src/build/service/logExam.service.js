@@ -31,15 +31,13 @@ let LogExamService = class LogExamService {
             ;
         });
     }
-    findAll() {
+    find(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.logExamRepository.findAll();
-        });
-    }
-    findOne(logExamId) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const logExam = yield this.logExamRepository.findOne({
-                where: { 'id': logExamId }
+            if (typeof where === 'string') {
+                where = { 'id': where };
+            }
+            const logExam = yield this.logExamRepository.findAll({
+                where: where
             });
             return logExam;
         });

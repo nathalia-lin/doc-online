@@ -17,7 +17,8 @@ SiteModule = __decorate([
     common_1.Module({
         imports: [database_module_1.DatabaseModule],
         controllers: [site_controller_1.SiteController],
-        providers: [site_service_1.SiteService, ...site_provider_1.SiteProvider]
+        providers: [site_service_1.SiteService, ...site_provider_1.SiteProvider],
+        exports: [site_service_1.SiteService]
     })
 ], SiteModule);
 exports.SiteModule = SiteModule;

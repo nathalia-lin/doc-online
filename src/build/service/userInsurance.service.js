@@ -31,15 +31,13 @@ let UserInsuranceService = class UserInsuranceService {
             ;
         });
     }
-    findAll() {
+    find(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.userInsuranceRepository.findAll();
-        });
-    }
-    findOne(userInsuranceId) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const userInsurance = yield this.userInsuranceRepository.findOne({
-                where: { 'id': userInsuranceId }
+            if (typeof where === 'string') {
+                where = { 'id': where };
+            }
+            const userInsurance = yield this.userInsuranceRepository.findAll({
+                where: where
             });
             return userInsurance;
         });

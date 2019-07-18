@@ -8,7 +8,8 @@ import { ProfileProvider } from "../provider/profile.provider";
 @Module({
     imports: [DatabaseModule],
     controllers: [ProfileController],
-    providers: [ProfileService, ...ProfileProvider]
+    providers: [ProfileService, ...ProfileProvider],
+    exports: [ProfileService]
 })
 
 export class ProfileModule { }

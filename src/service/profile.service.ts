@@ -16,13 +16,12 @@ export class ProfileService {
     return await this.profileRepository.create<Profile>(createProfileDto);;
   }
 
-  async findAll() {
-    return await this.profileRepository.findAll<Profile>();
-  }
-
-  async findOne(profileId: number) {
-    const profile = await this.profileRepository.findOne({
-      where: { 'id': profileId }, include: [User, Patient, Doctor]
+  async find(where: any) {
+    if (typeof where === 'string') {
+      where = { 'id': where };
+    }
+    const profile = await this.profileRepository.findAll({
+      where: where, include: [User, Patient, Doctor]
     });
     return profile;
   }

@@ -22,11 +22,8 @@ let SiteRuleController = class SiteRuleController {
     create(createSiteRuleDto) {
         return this.siteRuleService.create(createSiteRuleDto);
     }
-    showAll() {
-        return this.siteRuleService.findAll();
-    }
-    showOne(siteRuleId) {
-        return this.siteRuleService.findOne(siteRuleId);
+    showOne(where) {
+        return this.siteRuleService.find(where);
     }
     deleteOne(siteRuleId) {
         return this.siteRuleService.deleteOne(siteRuleId);
@@ -40,16 +37,10 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], SiteRuleController.prototype, "create", null);
 __decorate([
-    common_1.Get(),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", void 0)
-], SiteRuleController.prototype, "showAll", null);
-__decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number]),
+    __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], SiteRuleController.prototype, "showOne", null);
 __decorate([

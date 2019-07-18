@@ -22,11 +22,8 @@ let UserSiteController = class UserSiteController {
     create(createUserSiteDto) {
         return this.userSiteService.create(createUserSiteDto);
     }
-    showAll() {
-        return this.userSiteService.findAll();
-    }
-    showOne(userSiteId) {
-        return this.userSiteService.findOne(userSiteId);
+    showOne(where) {
+        return this.userSiteService.find(where);
     }
     deleteOne(userSiteId) {
         return this.userSiteService.deleteOne(userSiteId);
@@ -40,16 +37,10 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], UserSiteController.prototype, "create", null);
 __decorate([
-    common_1.Get(),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", void 0)
-], UserSiteController.prototype, "showAll", null);
-__decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number]),
+    __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], UserSiteController.prototype, "showOne", null);
 __decorate([

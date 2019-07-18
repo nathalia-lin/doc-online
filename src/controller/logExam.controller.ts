@@ -12,14 +12,9 @@ export class LogExamController {
         return this.logExamService.create(createLogExamDto);
     }
 
-    @Get()
-    showAll() {
-        return this.logExamService.findAll();
-    }
-
     @Get(':id')
-    showOne(@Param('id') logExamId: number) {
-        return this.logExamService.findOne(logExamId);
+    show(@Param('id') where: any) {
+        return this.logExamService.find(where);
     }
 
     @Delete(':id')

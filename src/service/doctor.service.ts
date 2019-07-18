@@ -15,13 +15,12 @@ export class DoctorService {
         return await this.doctorRepository.create<Doctor>(createDoctorDto);;
     }
 
-    async findAll() {
-        return await this.doctorRepository.findAll<Doctor>();
-    }
-
-    async findOne(doctorId: number) {
-        const doctor = await this.doctorRepository.findOne({
-            where: { 'id': doctorId }, include: [Profile, Exam]
+    async find(where: any) {
+        if (typeof where === 'string') {
+            where = { 'id': where };
+        }
+        const doctor = await this.doctorRepository.findAll({
+            where: where, include: [Profile, Exam]
         });
         return doctor;
     }

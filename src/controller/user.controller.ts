@@ -12,14 +12,9 @@ export class UserController {
         return this.userService.create(createUserDto);
     }
 
-    @Get()
-    showAll() {
-        return this.userService.findAll();
-    }
-
     @Get(':id')
-    showOne(@Param('id') userId: number) {
-        return this.userService.findOne(userId);
+    showOne(@Param('id') where: any) {
+        return this.userService.find(where);
     }
 
     @Delete(':id')

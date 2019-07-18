@@ -17,7 +17,8 @@ UserInsuranceModule = __decorate([
     common_1.Module({
         imports: [database_module_1.DatabaseModule],
         controllers: [userInsurance_controller_1.UserInsuranceController],
-        providers: [userInsurance_service_1.UserInsuranceService, ...userInsurance_provider_1.UserInsuranceProvider]
+        providers: [userInsurance_service_1.UserInsuranceService, ...userInsurance_provider_1.UserInsuranceProvider],
+        exports: [userInsurance_service_1.UserInsuranceService]
     })
 ], UserInsuranceModule);
 exports.UserInsuranceModule = UserInsuranceModule;

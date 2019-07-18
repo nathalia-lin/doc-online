@@ -12,14 +12,9 @@ export class ProfileController {
         return this.profileService.create(createProfileDot);
     }
 
-    @Get()
-    showAll() {
-        return this.profileService.findAll();
-    }
-
     @Get(':id')
-    showOne(@Param('id') profileId: number) {
-        return this.profileService.findOne(profileId);
+    showOne(@Param('id') where: any) {
+        return this.profileService.find(where);
     }
 
     @Delete(':id')

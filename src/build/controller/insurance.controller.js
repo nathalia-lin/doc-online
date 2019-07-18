@@ -22,11 +22,8 @@ let InsuranceController = class InsuranceController {
     create(createInsuranceDto) {
         return this.insuranceService.create(createInsuranceDto);
     }
-    showAll() {
-        return this.insuranceService.findAll();
-    }
-    showOne(insuranceId) {
-        return this.insuranceService.findOne(insuranceId);
+    show(where) {
+        return this.insuranceService.find(where);
     }
     deleteOne(insuranceId) {
         return this.insuranceService.deleteOne(insuranceId);
@@ -40,18 +37,12 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], InsuranceController.prototype, "create", null);
 __decorate([
-    common_1.Get(),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", void 0)
-], InsuranceController.prototype, "showAll", null);
-__decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number]),
+    __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
-], InsuranceController.prototype, "showOne", null);
+], InsuranceController.prototype, "show", null);
 __decorate([
     common_1.Delete(':id'),
     __param(0, common_1.Param('id')),

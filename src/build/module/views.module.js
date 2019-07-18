@@ -17,7 +17,8 @@ ViewsModule = __decorate([
     common_1.Module({
         imports: [database_module_1.DatabaseModule],
         controllers: [views_controller_1.ViewsController],
-        providers: [views_service_1.ViewsService, ...views_provider_1.ViewsProvider]
+        providers: [views_service_1.ViewsService, ...views_provider_1.ViewsProvider],
+        exports: [views_service_1.ViewsService]
     })
 ], ViewsModule);
 exports.ViewsModule = ViewsModule;

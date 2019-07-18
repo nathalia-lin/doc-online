@@ -31,15 +31,13 @@ let UserSiteService = class UserSiteService {
             ;
         });
     }
-    findAll() {
+    find(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.userSiteRepository.findAll();
-        });
-    }
-    findOne(userSiteId) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const userSite = yield this.userSiteRepository.findOne({
-                where: { 'id': userSiteId }
+            if (typeof where === 'string') {
+                where = { 'id': where };
+            }
+            const userSite = yield this.userSiteRepository.findAll({
+                where: where
             });
             return userSite;
         });

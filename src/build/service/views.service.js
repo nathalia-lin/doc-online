@@ -36,15 +36,13 @@ let ViewsService = class ViewsService {
             ;
         });
     }
-    findAll() {
+    find(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.viewsRepository.findAll();
-        });
-    }
-    findOne(viewId) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const view = yield this.viewsRepository.findOne({
-                where: { 'id': viewId }, include: [user_model_1.default, exam_model_1.default]
+            if (typeof where === 'string') {
+                where = { 'id': where };
+            }
+            const view = yield this.viewsRepository.findAll({
+                where: where, include: [user_model_1.default, exam_model_1.default]
             });
             return view;
         });

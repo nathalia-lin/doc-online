@@ -37,15 +37,13 @@ let InsuranceService = class InsuranceService {
             ;
         });
     }
-    findAll() {
+    find(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.insuranceRepository.findAll();
-        });
-    }
-    findOne(insuranceId) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const insurance = yield this.insuranceRepository.findOne({
-                where: { 'id': insuranceId }, include: [site_model_1.default, user_model_1.default, exam_model_1.default]
+            if (typeof where === 'string') {
+                where = { 'id': where };
+            }
+            const insurance = yield this.insuranceRepository.findAll({
+                where: where, include: [site_model_1.default, user_model_1.default, exam_model_1.default]
             });
             return insurance;
         });

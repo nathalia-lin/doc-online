@@ -13,13 +13,13 @@ export class UserSiteService {
     async create(createUserSiteDto: CreateUserSiteDto): Promise<UserSite> {
         return await this.userSiteRepository.create<UserSite>(createUserSiteDto);;
     }
-    public async findAll() {
-        return await this.userSiteRepository.findAll<UserSite>();
-    }
 
-    async findOne(userSiteId: number) {
-        const userSite = await this.userSiteRepository.findOne({
-            where: { 'id': userSiteId }
+    async find(where: any) {
+        if (typeof where === 'string') {
+            where = { 'id': where };
+        }
+        const userSite = await this.userSiteRepository.findAll({
+            where: where
         });
         return userSite;
     }

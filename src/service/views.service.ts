@@ -16,13 +16,12 @@ export class ViewsService {
         return await this.viewsRepository.create<Views>(createViewsDto);;
     }
 
-    public async findAll() {
-        return await this.viewsRepository.findAll<Views>();
-    }
-
-    async findOne(viewId: number) {
-        const view = await this.viewsRepository.findOne({
-            where: { 'id': viewId }, include: [User, Exam]
+    async find(where: any) {
+        if (typeof where === 'string') {
+            where = { 'id': where };
+        }
+        const view = await this.viewsRepository.findAll({
+            where: where, include: [User, Exam]
         });
         return view;
     }

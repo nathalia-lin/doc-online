@@ -14,10 +14,10 @@ export default class Profile extends Model<Profile> {
   }) public id: number;
 
   @Column(DataType.STRING(30))
-  public firstName?: string;
+  public name?: string;
 
   @Column(DataType.STRING(150))
-  public lastName?: string;
+  public socialName?: string;
 
   @Column(DataType.STRING(1))
   public sex?: string;
@@ -39,5 +39,6 @@ export default class Profile extends Model<Profile> {
 
   @HasOne(() => Doctor)
   public doctor: Doctor;
+
 }
 

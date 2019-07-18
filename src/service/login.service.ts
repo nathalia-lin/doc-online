@@ -11,16 +11,15 @@ export class LoginService {
     ) { }
 
     async create(createLoginDto: CreateLoginDto): Promise<Login> {
-        return  await this.loginRepository.create<Login>(createLoginDto);;
+        return await this.loginRepository.create<Login>(createLoginDto);;
     }
 
-    async findAll() {
-        return await this.loginRepository.findAll<Login>();
-    }
-
-    async findOne(loginId: number) {
-        const login = await this.loginRepository.findOne({
-            where: { 'id': loginId }, include: [User]
+    async find(where: any) {
+        if (typeof where === 'string') {
+            where = { 'id': where };
+        }
+        const login = await this.loginRepository.findAll({
+            where: where, include: [User]
         });
         return login;
     }

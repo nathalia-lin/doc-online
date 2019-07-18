@@ -36,15 +36,13 @@ let PatientService = class PatientService {
             ;
         });
     }
-    findAll() {
+    find(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.patientRepository.findAll();
-        });
-    }
-    findOne(patientId) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const patient = yield this.patientRepository.findOne({
-                where: { 'id': patientId }, include: [profile_model_1.default, exam_model_1.default]
+            if (typeof where === 'string') {
+                where = { 'id': where };
+            }
+            const patient = yield this.patientRepository.findAll({
+                where: where, include: [profile_model_1.default, exam_model_1.default]
             });
             return patient;
         });

@@ -8,7 +8,8 @@ import { UserInsuranceProvider } from "../provider/userInsurance.provider";
 @Module({
     imports: [DatabaseModule],
     controllers: [UserInsuranceController],
-    providers: [UserInsuranceService, ...UserInsuranceProvider]
+    providers: [UserInsuranceService, ...UserInsuranceProvider],
+    exports: [UserInsuranceService]
 })
 
 export class UserInsuranceModule { }

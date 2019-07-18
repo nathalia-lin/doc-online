@@ -22,11 +22,8 @@ let LogExamController = class LogExamController {
     create(createLogExamDto) {
         return this.logExamService.create(createLogExamDto);
     }
-    showAll() {
-        return this.logExamService.findAll();
-    }
-    showOne(logExamId) {
-        return this.logExamService.findOne(logExamId);
+    show(where) {
+        return this.logExamService.find(where);
     }
     deleteOne(logExamId) {
         return this.logExamService.deleteOne(logExamId);
@@ -40,18 +37,12 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], LogExamController.prototype, "create", null);
 __decorate([
-    common_1.Get(),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", void 0)
-], LogExamController.prototype, "showAll", null);
-__decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number]),
+    __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
-], LogExamController.prototype, "showOne", null);
+], LogExamController.prototype, "show", null);
 __decorate([
     common_1.Delete(':id'),
     __param(0, common_1.Param('id')),

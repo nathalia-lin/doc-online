@@ -8,7 +8,8 @@ import { SiteNotificationProvider } from "../provider/siteNotification.provider"
 @Module({
     imports: [DatabaseModule],
     controllers: [SiteNotificationController],
-    providers: [SiteNotificationService, ...SiteNotificationProvider]
+    providers: [SiteNotificationService, ...SiteNotificationProvider],
+    exports: [SiteNotificationService]
 })
 
 export class SiteNotificationModule { }

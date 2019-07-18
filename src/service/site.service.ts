@@ -18,13 +18,12 @@ export class SiteService {
     return await this.siteRepository.create<Site>(createSiteDto);;
   }
 
-  async findAll() {
-    return await this.siteRepository.findAll<Site>();
-  }
-
-  async findOne(siteId: number) {
-    const site = await this.siteRepository.findOne({
-      where: { 'id': siteId }, include: [SiteRule, SiteNotification, User, Insurance, Exam]
+  async find(where: any) {
+    if (typeof where === 'string') {
+      where = { 'id': where };
+    }
+    const site = await this.siteRepository.findAll({
+      where: where, include: [SiteRule, SiteNotification, User, Insurance, Exam]
     });
     return site;
   }

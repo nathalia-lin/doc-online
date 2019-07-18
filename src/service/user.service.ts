@@ -19,13 +19,12 @@ export class UserService {
         return await this.userRepository.create<User>(createUserDto);
     }
 
-    public async findAll() {
-        return await this.userRepository.findAll<User>();
-    }
-
-    async findOne(userId: number) {
-        const user = await this.userRepository.findOne({
-            where: { 'id': userId }, include: [Profile, Login, Site, Views, Insurance]
+    async find(where: any) {
+        if (typeof where === 'string') {
+            where = { 'id': where };
+        }
+        const user = await this.userRepository.findAll({
+            where: where, include: [Profile, Login, Site, Views, Insurance]
         });
         return user;
     }

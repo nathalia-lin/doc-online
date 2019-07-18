@@ -8,7 +8,8 @@ import { LoginProvider } from "../provider/login.provider";
 @Module({
     imports: [DatabaseModule],
     controllers: [LoginController],
-    providers: [LoginService, ...LoginProvider]
+    providers: [LoginService, ...LoginProvider],
+    exports: [LoginService]
 })
 
 export class LoginModule { }
