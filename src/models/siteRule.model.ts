@@ -6,14 +6,14 @@ import Site from './site.model';
 export default class SiteRule extends Model<SiteRule> {
 
     @PrimaryKey
-    @Column(DataType.UUID)
-    public id: number;
-
-    @ForeignKey(() => Site)
     @Column({
         defaultValue: DataType.UUIDV4,
         type: DataType.UUID
-    }) public siteId?: number;
+    }) public id?: number;
+
+    @ForeignKey(() => Site)
+    @Column(DataType.UUID) 
+    public siteId: number;
 
     @BelongsTo(() => Site)
     public site: Site;

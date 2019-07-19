@@ -1,17 +1,58 @@
-1. get all id's
-2. siteid - check if the model exists - if not, return error
-3. check other id's, if they exists, just add to exam, else create them
-4. look for patientid - if patient doesn't exist, go back and create profile
-5. if profile exists, but user doesnt, create users and a login account
+'use strict';
 
-- Existing => site, site notification, and site rules
-- create exam
-- from exam - directly create log-exams and views(?)
-- indirectly look at patients/doctors and create profile/users/logins
-- when user is created - create user site
-- from site - create insurance
-- when insurance and site is created, create user insurance
+module.exports = {
+  up: (queryInterface, Sequelize) => {
+    return queryInterface.bulkInsert('siteRule', [{
+      id: 'b10d46eb-ee54-4890-a7ff-4d3ac308dbc0',
+      siteId: '1f0560e8-8fa3-489f-a63e-76fcc21d9bb8',
+      urlCheckNetwork: 'abc',
+      urlReportInternal: 'abc',
+      urlReportExternal: 'abc',
+      urlReportFormatOpen: 'abc',
+      urlWebviewerInternal: 'abc',
+      urlWebviewerExternal: 'abc',
+      urlKeyImagesInternal: 'abc',
+      urlKeyImagesExternal: 'abc',
+      urlExportImages: 'abc',
+      examsPerPage: 2,
+      allowReportStatus: 'abc',
+      notifyPatientEmail: false,
+      notifyPatientSMS: false,
+    }, {
+      id: 'dce692c5-cc52-4471-9b59-2458268827e7',
+      siteId: '325565db-87dc-4cdd-8512-07f599b29fb6',
+      urlCheckNetwork: 'abc',
+      urlReportInternal: 'abc',
+      urlReportExternal: 'abc',
+      urlReportFormatOpen: 'abc',
+      urlWebviewerInternal: 'abc',
+      urlWebviewerExternal: 'abc',
+      urlKeyImagesInternal: 'abc',
+      urlKeyImagesExternal: 'abc',
+      urlExportImages: 'abc',
+      examsPerPage: 5,
+      allowReportStatus: 'abc',
+      notifyPatientEmail: true,
+      notifyPatientSMS: true,
+    }]);
+  },
 
-https://medium.com/@edtimmer/sequelize-associations-basics-bde90c0deeaa
-https://stackoverflow.com/questions/53931866/join-or-populate-query-in-sequelize
+  down: (queryInterface, Sequelize) => {
+    return queryInterface.bulkDelete('siteRule', null, {});
+  }
+};
 
+PACIENTE:
+
+1) POST: /api/login
+<- Token
+
+2) Criar middleware para validar authorization
+
+3) POST: /api/exams/search
+Authorization: {token}
+
+-> Retornar lista de exames do paciente logado;
+-> Passar no body filtros para aplicar na listagem;
+
+*************************

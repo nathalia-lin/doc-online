@@ -18,6 +18,7 @@ import { ViewsModule } from "./views.module";
 import { LogExamModule } from "./logExam.module";
 import { InsuranceModule } from "./insurance.module";
 import { UserInsuranceModule } from "./userInsurance.module";
+import { PlanModule } from "./plan.module";
 
 @Module({
     imports: [
@@ -34,7 +35,9 @@ import { UserInsuranceModule } from "./userInsurance.module";
         ViewsModule,
         LogExamModule,
         InsuranceModule,
-        UserInsuranceModule,],
+        UserInsuranceModule,
+        PlanModule
+    ],
     controllers: [ExamController],
     providers: [ExamService, ...ExamProvider]
 })

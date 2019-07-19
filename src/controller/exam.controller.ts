@@ -9,19 +9,6 @@ export class ExamController {
 
     @Post()
     create(
-
-        // admissionID,
-        // orderID,
-        // reqProcID,
-        // reqProcDate,
-        // reqProcDescription,
-        // planID,
-        // planName,
-        // reportextension,
-        // report,
-        // reportDate,
-        // reviewedBy
-
         @Body('networkID') networkID: string,
         @Body('studyInstanceUID') studyInstanceUID: string,
         @Body('studyDate') studyDate: Date,
@@ -93,25 +80,11 @@ export class ExamController {
         );
     }
 
-    // @Put(':id')
-    // update(
-    //     @Body('studyInstanceUID') studyInstanceUID: string,
-    //     @Body('accessionNumber') accessionNumber: string,
-    //     @Body('networkID') networkID: string,
-    //     @Body('patientID') patientID: number,
-    //     @Body('studyStatus') studyStatus: string
-    // ) {
-    //     return this.examService.update(
-    //         studyInstanceUID,
-    //         accessionNumber,
-    //         networkID, 
-    //         patientID,
-    //         studyStatus
-    //     );
-    // }
-
     @Get(':id')
     show(@Param('id')  where: any) {
+        // req.header('authorization')
+        // const success = jwt.verify(str...)
+        // next()
         return this.examService.find(where);
     }
 
