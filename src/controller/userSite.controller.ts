@@ -8,17 +8,17 @@ export class UserSiteController {
     constructor(private readonly userSiteService: UserSiteService) { }
 
     @Post()
-    create(@Body() createUserSiteDto: CreateUserSiteDto) {
-        return this.userSiteService.create(createUserSiteDto);
+    public async create(@Body() createUserSiteDto: CreateUserSiteDto) {
+        return await this.userSiteService.create(createUserSiteDto);
     }
 
     @Get(':id')
-    showOne(@Param('id') where: any) {
-        return this.userSiteService.find(where);
+    public async showOne(@Param('id') where: any) {
+        return await this.userSiteService.find(where);
     }
 
     @Delete(':id')
-    deleteOne(@Param('id') userSiteId: number) {
-        return this.userSiteService.deleteOne(userSiteId);
+    public async deleteOne(@Param('id') userSiteId: number) {
+        return await this.userSiteService.deleteOne(userSiteId);
     }
 }

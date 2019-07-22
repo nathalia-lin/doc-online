@@ -1,4 +1,6 @@
 import { Injectable, Inject } from '@nestjs/common';
+import * as jwt from 'jsonwebtoken';
+import crypto from 'crypto';
 
 import { CreateLoginDto } from '../dto/login.dto';
 import User from '../models/user.model';
@@ -12,6 +14,34 @@ export class LoginService {
 
     async create(createLoginDto: CreateLoginDto): Promise<Login> {
         return await this.loginRepository.create<Login>(createLoginDto);;
+    }
+
+    async authenticate(login: Login) {
+        const authLogin = await this.loginRepository.findOne({
+            where: {
+                'username': login.username,
+                'password': crypto.createHmac('sha256', login.password).digest('hex')
+            }
+        })
+
+        if (!login) {
+            throw new Error('Login not Found');
+        }
+        console.log(this.getToken(authLogin));
+        return this.getToken(authLogin);
+    }
+
+    async getToken(login: Login) {
+        const options = {
+            algorithm: 'HS256',
+            expiresIn: '30 days',
+            jwtid: ''
+        };
+        const payload = {
+            'id': login.id,
+            'username': login.username
+        };
+        return await jwt.sign(payload, 'secret', options);
     }
 
     async find(where: any) {

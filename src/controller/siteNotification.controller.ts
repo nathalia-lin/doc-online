@@ -8,17 +8,17 @@ export class SiteNotificationController {
     constructor(private readonly siteNotificationService: SiteNotificationService) { }
 
     @Post()
-    create(@Body() createSiteNotificationDto: CreateSiteNotificationDto) {
-        return this.siteNotificationService.create(createSiteNotificationDto);
+    public async create(@Body() createSiteNotificationDto: CreateSiteNotificationDto) {
+        return await this.siteNotificationService.create(createSiteNotificationDto);
     }
 
     @Get(':id')
-    showOne(@Param('id') where: any) {
-        return this.siteNotificationService.find(where);
+    public async showOne(@Param('id') where: any) {
+        return await this.siteNotificationService.find(where);
     }
 
     @Delete(':id')
-    deleteOne(@Param('id') siteNotificationId: number) {
-        return this.siteNotificationService.deleteOne(siteNotificationId);
+    public async deleteOne(@Param('id') siteNotificationId: number) {
+        return await this.siteNotificationService.deleteOne(siteNotificationId);
     }
 }

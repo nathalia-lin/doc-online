@@ -8,17 +8,17 @@ export class ViewsController {
     constructor(private readonly viewsService: ViewsService) { }
 
     @Post()
-    create(@Body() createViewsDto: CreateViewsDto) {
-        return this.viewsService.create(createViewsDto);
+    public async create(@Body() createViewsDto: CreateViewsDto) {
+        return await this.viewsService.create(createViewsDto);
     }
 
     @Get(':id')
-    showOne(@Param('id') where: any) {
-        return this.viewsService.find(where);
+    public async showOne(@Param('id') where: any) {
+        return await this.viewsService.find(where);
     }
 
     @Delete(':id')
-    deleteOne(@Param('id') viewId: number) {
-        return this.viewsService.deleteOne(viewId);
+    public async deleteOne(@Param('id') viewId: number) {
+        return await this.viewsService.deleteOne(viewId);
     }
 }

@@ -8,17 +8,17 @@ export class PatientController {
     constructor(private readonly patientService: PatientService) { }
 
     @Post()
-    create(@Body() createPatientDto: CreatePatientDto) {
-        return this.patientService.create(createPatientDto);
+    public async create(@Body() createPatientDto: CreatePatientDto) {
+        return await this.patientService.create(createPatientDto);
     }
 
     @Get(':id')
-    showOne(@Param('id') where: any) {
-        return this.patientService.find(where);
+    public async showOne(@Param('id') where: any) {
+        return await this.patientService.find(where);
     }
 
     @Delete(':id')
-    deleteOne(@Param('id') patientId: number) {
-        return this.patientService.deleteOne(patientId);
+    public async deleteOne(@Param('id') patientId: number) {
+        return await this.patientService.deleteOne(patientId);
     }
 }

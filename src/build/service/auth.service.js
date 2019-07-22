@@ -8,9 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
@@ -33,30 +30,19 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const jwt = __importStar(require("jsonwebtoken"));
 const crypto_1 = __importDefault(require("crypto"));
-const user_model_1 = __importDefault(require("../models/user.model"));
-let LoginService = class LoginService {
-    constructor(loginRepository) {
-        this.loginRepository = loginRepository;
-    }
-    create(createLoginDto) {
+const login_service_1 = require("./login.service");
+let AuthService = class AuthService {
+    authenticate(credentials) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.loginRepository.create(createLoginDto);
-            ;
-        });
-    }
-    authenticate(login) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const authLogin = yield this.loginRepository.findOne({
-                where: {
-                    'username': login.username,
-                    'password': crypto_1.default.createHmac('sha256', login.password).digest('hex')
-                }
+            const login = yield this.loginService.find({
+                'username': credentials.username,
+                'password': crypto_1.default.createHmac('sha256', credentials.password).digest('hex')
             });
             if (!login) {
                 throw new Error('Login not Found');
             }
-            console.log(this.getToken(authLogin));
-            return this.getToken(authLogin);
+            console.log(this.getToken(login[0]));
+            return this.getToken(login[0]);
         });
     }
     getToken(login) {
@@ -73,29 +59,12 @@ let LoginService = class LoginService {
             return yield jwt.sign(payload, 'secret', options);
         });
     }
-    find(where) {
-        return __awaiter(this, void 0, void 0, function* () {
-            if (typeof where === 'string') {
-                where = { 'id': where };
-            }
-            const login = yield this.loginRepository.findAll({
-                where: where, include: [user_model_1.default]
-            });
-            return login;
-        });
-    }
-    deleteOne(logId) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const deletedLog = yield this.loginRepository.destroy({
-                where: { 'id': logId }
-            });
-            return yield deletedLog;
-        });
-    }
 };
-LoginService = __decorate([
-    common_1.Injectable(),
-    __param(0, common_1.Inject('LoginRepository')),
-    __metadata("design:paramtypes", [Object])
-], LoginService);
-exports.LoginService = LoginService;
+__decorate([
+    common_1.Inject('LoginService'),
+    __metadata("design:type", login_service_1.LoginService)
+], AuthService.prototype, "loginService", void 0);
+AuthService = __decorate([
+    common_1.Injectable()
+], AuthService);
+exports.AuthService = AuthService;

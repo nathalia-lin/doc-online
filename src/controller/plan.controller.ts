@@ -8,17 +8,17 @@ export class PlanController {
     constructor(private readonly planService: PlanService) { }
 
     @Post()
-    create(@Body() createPlanDto: CreatePlanDto) {
-        return this.planService.create(createPlanDto);
+    public async create(@Body() createPlanDto: CreatePlanDto) {
+        return await this.planService.create(createPlanDto);
     }
 
     @Get(':id')
-    showOne(@Param('id') where: any) {
-        return this.planService.find(where);
+    public async showOne(@Param('id') where: any) {
+        return await this.planService.find(where);
     }
 
     @Delete(':id')
-    deleteOne(@Param('id') planId: number) {
-        return this.planService.deleteOne(planId);
+    public async deleteOne(@Param('id') planId: number) {
+        return await this.planService.deleteOne(planId);
     }
 }

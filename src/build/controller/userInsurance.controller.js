@@ -11,6 +11,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const userInsurance_dto_1 = require("../dto/userInsurance.dto");
@@ -20,13 +28,19 @@ let UserInsuranceController = class UserInsuranceController {
         this.userInsuranceService = userInsuranceService;
     }
     create(createUserInsuranceDto) {
-        return this.userInsuranceService.create(createUserInsuranceDto);
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.userInsuranceService.create(createUserInsuranceDto);
+        });
     }
     showOne(where) {
-        return this.userInsuranceService.find(where);
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.userInsuranceService.find(where);
+        });
     }
     deleteOne(userInsuranceId) {
-        return this.userInsuranceService.deleteOne(userInsuranceId);
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.userInsuranceService.deleteOne(userInsuranceId);
+        });
     }
 };
 __decorate([
@@ -34,21 +48,21 @@ __decorate([
     __param(0, common_1.Body()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [userInsurance_dto_1.CreateUserInsuranceDto]),
-    __metadata("design:returntype", void 0)
+    __metadata("design:returntype", Promise)
 ], UserInsuranceController.prototype, "create", null);
 __decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", void 0)
+    __metadata("design:returntype", Promise)
 ], UserInsuranceController.prototype, "showOne", null);
 __decorate([
     common_1.Delete(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number]),
-    __metadata("design:returntype", void 0)
+    __metadata("design:returntype", Promise)
 ], UserInsuranceController.prototype, "deleteOne", null);
 UserInsuranceController = __decorate([
     common_1.Controller('userinsurance'),

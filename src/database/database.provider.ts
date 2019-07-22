@@ -13,7 +13,7 @@ export const databaseProviders = [
         logging: true
       });
       
-      await sequelize.sync({force:true});
+      await sequelize.sync({});
       return sequelize;
     },
   },

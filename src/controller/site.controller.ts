@@ -8,17 +8,17 @@ export class SiteController {
     constructor(private readonly siteService: SiteService) { }
 
     @Post()
-    create(@Body() createSiteDto: CreateSiteDto) {
-        return this.siteService.create(createSiteDto);
+    public async create(@Body() createSiteDto: CreateSiteDto) {
+        return await this.siteService.create(createSiteDto);
     }
 
     @Get(':id')
-    showOne(@Param('id') where: any) {
-        return this.siteService.find(where);
+    public async showOne(@Param('id') where: any) {
+        return await this.siteService.find(where);
     }
 
     @Delete(':id')
-    deleteOne(@Param('id') siteId: number) {
-        return this.siteService.deleteOne(siteId);
+    public async deleteOne(@Param('id') siteId: number) {
+        return await this.siteService.deleteOne(siteId);
     }
 }

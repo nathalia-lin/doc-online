@@ -11,7 +11,14 @@ const database_module_1 = require("../database/database.module");
 const login_controller_1 = require("../controller/login.controller");
 const login_service_1 = require("../service/login.service");
 const login_provider_1 = require("../provider/login.provider");
+const auth_middleware_1 = require("../middleware/auth.middleware");
 let LoginModule = class LoginModule {
+    configure(consumer) {
+        consumer
+            .apply(auth_middleware_1.AuthMiddleware)
+            .exclude({ path: '/login/auth', method: common_1.RequestMethod.GET })
+            .forRoutes(login_controller_1.LoginController);
+    }
 };
 LoginModule = __decorate([
     common_1.Module({

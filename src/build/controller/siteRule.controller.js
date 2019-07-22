@@ -11,6 +11,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const siteRule_dto_1 = require("../dto/siteRule.dto");
@@ -20,13 +28,19 @@ let SiteRuleController = class SiteRuleController {
         this.siteRuleService = siteRuleService;
     }
     create(createSiteRuleDto) {
-        return this.siteRuleService.create(createSiteRuleDto);
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.siteRuleService.create(createSiteRuleDto);
+        });
     }
     showOne(where) {
-        return this.siteRuleService.find(where);
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.siteRuleService.find(where);
+        });
     }
     deleteOne(siteRuleId) {
-        return this.siteRuleService.deleteOne(siteRuleId);
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.siteRuleService.deleteOne(siteRuleId);
+        });
     }
 };
 __decorate([
@@ -34,21 +48,21 @@ __decorate([
     __param(0, common_1.Body()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [siteRule_dto_1.CreateSiteRuleDto]),
-    __metadata("design:returntype", void 0)
+    __metadata("design:returntype", Promise)
 ], SiteRuleController.prototype, "create", null);
 __decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", void 0)
+    __metadata("design:returntype", Promise)
 ], SiteRuleController.prototype, "showOne", null);
 __decorate([
     common_1.Delete(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number]),
-    __metadata("design:returntype", void 0)
+    __metadata("design:returntype", Promise)
 ], SiteRuleController.prototype, "deleteOne", null);
 SiteRuleController = __decorate([
     common_1.Controller('siterule'),

@@ -96,7 +96,7 @@ export class ExamService {
             patientUser = await this.createUser(patientProfile, null, null, null, null, null, null, null, null);
             patientUserSite = await this.createUserSite(patientUser, siteId, null, null);
         }
-        await this.createLogin(patientUser, null, loginUsername, loginPassword);
+        await this.createLogin(patientUser, null, loginPassword, loginUsername);
 
         let insurance = await this.insuranceService.find(insuranceId)[0];
         if (!insurance) {await this.createInsurance(insuranceId, siteId, insuranceName, patientUser.id)}
@@ -256,7 +256,7 @@ export class ExamService {
             return null
         }
         let profile = await this.profileService.find({ 'id': user.profileId })
-        if (typeof doctor === typeof Doctor) {
+        if (!password) {
             username = doctor.docNum;
             password = doctor.docNum + '@' + profile[0].socialName;
         }

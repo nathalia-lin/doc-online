@@ -8,17 +8,17 @@ export class LogExamController {
     constructor(private readonly logExamService: LogExamService) { }
 
     @Post()
-    create(@Body() createLogExamDto: CreateLogExamDto) {
-        return this.logExamService.create(createLogExamDto);
+    public async create(@Body() createLogExamDto: CreateLogExamDto) {
+        return await this.logExamService.create(createLogExamDto);
     }
 
     @Get(':id')
-    show(@Param('id') where: any) {
-        return this.logExamService.find(where);
+    public async show(@Param('id') where: any) {
+        return await this.logExamService.find(where);
     }
 
     @Delete(':id')
-    deleteOne(@Param('id') logExamId: number) {
-        return this.logExamService.deleteOne(logExamId);
+    public async deleteOne(@Param('id') logExamId: number) {
+        return await this.logExamService.deleteOne(logExamId);
     }
 }

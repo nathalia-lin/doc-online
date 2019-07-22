@@ -8,18 +8,18 @@ export class DoctorController {
     constructor(private readonly doctorService: DoctorService) { }
 
     @Post()
-    create(@Body() createDoctorDto: CreateDoctorDto) {
-        return this.doctorService.create(createDoctorDto);
+    public async create(@Body() createDoctorDto: CreateDoctorDto) {
+        return await this.doctorService.create(createDoctorDto);
     }
 
     // is it supposed to be id?
     @Get(':id')
-    show(@Param('id') where: any) {
-        return this.doctorService.find(where);
+    public async show(@Param('id') where: any) {
+        return await this.doctorService.find(where);
     }
 
     @Delete(':id')
-    deleteOne(@Param('id') doctorId: number) {
-        return this.doctorService.deleteOne(doctorId);
+    public async deleteOne(@Param('id') doctorId: number) {
+        return await this.doctorService.deleteOne(doctorId);
     }
 }

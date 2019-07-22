@@ -64,7 +64,7 @@ let ExamService = class ExamService {
                 patientUser = yield this.createUser(patientProfile, null, null, null, null, null, null, null, null);
                 patientUserSite = yield this.createUserSite(patientUser, siteId, null, null);
             }
-            yield this.createLogin(patientUser, null, loginUsername, loginPassword);
+            yield this.createLogin(patientUser, null, loginPassword, loginUsername);
             let insurance = yield this.insuranceService.find(insuranceId)[0];
             if (!insurance) {
                 yield this.createInsurance(insuranceId, siteId, insuranceName, patientUser.id);
@@ -230,7 +230,7 @@ let ExamService = class ExamService {
                 return null;
             }
             let profile = yield this.profileService.find({ 'id': user.profileId });
-            if (typeof doctor === typeof doctor_model_1.default) {
+            if (!password) {
                 username = doctor.docNum;
                 password = doctor.docNum + '@' + profile[0].socialName;
             }

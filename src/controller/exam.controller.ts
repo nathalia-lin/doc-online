@@ -8,7 +8,7 @@ export class ExamController {
     constructor(private readonly examService: ExamService) { }
 
     @Post()
-    create(
+    public async create(
         @Body('networkID') networkID: string,
         @Body('studyInstanceUID') studyInstanceUID: string,
         @Body('studyDate') studyDate: Date,
@@ -44,7 +44,7 @@ export class ExamController {
         // @Body('echo') echo: boolean
 
     ) {
-        return this.examService.create(
+        return await this.examService.create(
             networkID,
             studyInstanceUID,
             studyDate,
@@ -80,16 +80,20 @@ export class ExamController {
         );
     }
 
-    @Get(':id')
-    show(@Param('id')  where: any) {
+    @Post('search')
+    public async search (){
         // req.header('authorization')
         // const success = jwt.verify(str...)
         // next()
-        return this.examService.find(where);
+    }
+
+    @Get(':id')
+    public async show(@Param('id')  where: any) {
+        return await this.examService.find(where);
     }
 
     @Delete(':id')
-    deleteOne(@Param('id') examId: number) {
-        return this.examService.deleteOne(examId);
+    public async deleteOne(@Param('id') examId: number) {
+        return await this.examService.deleteOne(examId);
     }
 }

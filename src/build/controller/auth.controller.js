@@ -21,51 +21,29 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
-const user_dto_1 = require("../dto/user.dto");
-const user_service_1 = require("../service/user.service");
-let UserController = class UserController {
-    constructor(userService) {
-        this.userService = userService;
+const auth_service_1 = require("../service/auth.service");
+let AuthController = class AuthController {
+    constructor(authService) {
+        this.authService = authService;
     }
-    create(createUserDto) {
+    create(body, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.userService.create(createUserDto);
-        });
-    }
-    showOne(where) {
-        return __awaiter(this, void 0, void 0, function* () {
-            return yield this.userService.find(where);
-        });
-    }
-    deleteOne(userId) {
-        return __awaiter(this, void 0, void 0, function* () {
-            return yield this.userService.deleteOne(userId);
+            const token = yield this.authService.authenticate(body);
+            res.status(common_1.HttpStatus.ACCEPTED).json(token);
+            return token;
         });
     }
 };
 __decorate([
     common_1.Post(),
     __param(0, common_1.Body()),
+    __param(1, common_1.Res()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [user_dto_1.CreateUserDto]),
+    __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
-], UserController.prototype, "create", null);
-__decorate([
-    common_1.Get(':id'),
-    __param(0, common_1.Param('id')),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", Promise)
-], UserController.prototype, "showOne", null);
-__decorate([
-    common_1.Delete(':id'),
-    __param(0, common_1.Param('id')),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number]),
-    __metadata("design:returntype", Promise)
-], UserController.prototype, "deleteOne", null);
-UserController = __decorate([
-    common_1.Controller('user'),
-    __metadata("design:paramtypes", [user_service_1.UserService])
-], UserController);
-exports.UserController = UserController;
+], AuthController.prototype, "create", null);
+AuthController = __decorate([
+    common_1.Controller('auth'),
+    __metadata("design:paramtypes", [auth_service_1.AuthService])
+], AuthController);
+exports.AuthController = AuthController;

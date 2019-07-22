@@ -8,17 +8,17 @@ export class ProfileController {
     constructor(private readonly profileService: ProfileService) { }
 
     @Post()
-    create(@Body() createProfileDot: CreateProfileDto) {
-        return this.profileService.create(createProfileDot);
+    public async create(@Body() createProfileDot: CreateProfileDto) {
+        return await this.profileService.create(createProfileDot);
     }
 
     @Get(':id')
-    showOne(@Param('id') where: any) {
-        return this.profileService.find(where);
+    public async showOne(@Param('id') where: any) {
+        return await this.profileService.find(where);
     }
 
     @Delete(':id')
-    deleteOne(@Param('id') profileId: number) {
-        return this.profileService.deleteOne(profileId);
+    public async deleteOne(@Param('id') profileId: number) {
+        return await this.profileService.deleteOne(profileId);
     }
 }

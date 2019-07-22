@@ -8,17 +8,17 @@ export class InsuranceController {
     constructor(private readonly insuranceService: InsuranceService) { }
 
     @Post()
-    create(@Body() createInsuranceDto: CreateInsuranceDto) {
-        return this.insuranceService.create(createInsuranceDto);
+    public async create(@Body() createInsuranceDto: CreateInsuranceDto) {
+        return await this.insuranceService.create(createInsuranceDto);
     }
 
     @Get(':id')
-    show(@Param('id') where: any) {
-        return this.insuranceService.find(where);
+    public async show(@Param('id') where: any) {
+        return await this.insuranceService.find(where);
     }
 
     @Delete(':id')
-    deleteOne(@Param('id') insuranceId: number) {
-        return this.insuranceService.deleteOne(insuranceId);
+    public async deleteOne(@Param('id') insuranceId: number) {
+        return await this.insuranceService.deleteOne(insuranceId);
     }
 }

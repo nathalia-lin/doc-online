@@ -11,6 +11,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const login_dto_1 = require("../dto/login.dto");
@@ -20,13 +28,26 @@ let LoginController = class LoginController {
         this.loginService = loginService;
     }
     create(createLoginDto) {
-        return this.loginService.create(createLoginDto);
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.loginService.create(createLoginDto);
+        });
+    }
+    authenticate(body, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const token = yield this.loginService.authenticate(body);
+            res.status(common_1.HttpStatus.ACCEPTED).json(token);
+            return token;
+        });
     }
     showOne(where) {
-        return this.loginService.find(where);
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.loginService.find(where);
+        });
     }
     deleteOne(loginId) {
-        return this.loginService.deleteOne(loginId);
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.loginService.deleteOne(loginId);
+        });
     }
 };
 __decorate([
@@ -34,21 +55,29 @@ __decorate([
     __param(0, common_1.Body()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [login_dto_1.CreateLoginDto]),
-    __metadata("design:returntype", void 0)
+    __metadata("design:returntype", Promise)
 ], LoginController.prototype, "create", null);
+__decorate([
+    common_1.Get('auth'),
+    __param(0, common_1.Body()),
+    __param(1, common_1.Res()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", Promise)
+], LoginController.prototype, "authenticate", null);
 __decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", void 0)
+    __metadata("design:returntype", Promise)
 ], LoginController.prototype, "showOne", null);
 __decorate([
     common_1.Delete(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number]),
-    __metadata("design:returntype", void 0)
+    __metadata("design:returntype", Promise)
 ], LoginController.prototype, "deleteOne", null);
 LoginController = __decorate([
     common_1.Controller('login'),

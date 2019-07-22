@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Put, Delete, Param } from '@nestjs/common';
+import { Controller, Get, Post, Body, Put, Delete, Param, Res, HttpStatus } from '@nestjs/common';
 
 import { CreateLoginDto } from '../dto/login.dto';
 import { LoginService } from '../service/login.service';
@@ -8,17 +8,27 @@ export class LoginController {
     constructor(private readonly loginService: LoginService) { }
 
     @Post()
-    create(@Body() createLoginDto: CreateLoginDto) {
-        return this.loginService.create(createLoginDto);
+    public async create(@Body() createLoginDto: CreateLoginDto) {
+        return await this.loginService.create(createLoginDto);
+    }
+
+    @Get('auth')
+    public async authenticate(
+        @Body() body,
+        @Res() res,
+    ) {
+        const token = await this.loginService.authenticate(body);
+        res.status(HttpStatus.ACCEPTED).json(token);
+        return token;
     }
 
     @Get(':id')
-    showOne(@Param('id') where: any) {
-        return this.loginService.find(where);
+    public async showOne(@Param('id') where: any) {
+        return await this.loginService.find(where);
     }
 
     @Delete(':id')
-    deleteOne(@Param('id') loginId: number) {
-        return this.loginService.deleteOne(loginId);
+    public async deleteOne(@Param('id') loginId: number) {
+        return await this.loginService.deleteOne(loginId);
     }
 }
