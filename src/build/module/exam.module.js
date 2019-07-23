@@ -10,6 +10,7 @@ const common_1 = require("@nestjs/common");
 const database_module_1 = require("../database/database.module");
 const exam_controller_1 = require("../controller/exam.controller");
 const exam_service_1 = require("../service/exam.service");
+const exam_provider_1 = require("../provider/exam.provider");
 const site_module_1 = require("./site.module");
 const siteRule_module_1 = require("./siteRule.module");
 const siteNotification_module_1 = require("./siteNotification.module");
@@ -46,7 +47,7 @@ ExamModule = __decorate([
             plan_module_1.PlanModule
         ],
         controllers: [exam_controller_1.ExamController],
-        providers: [exam_service_1.ExamService]
+        providers: [exam_service_1.ExamService, ...exam_provider_1.ExamProvider]
     })
 ], ExamModule);
 exports.ExamModule = ExamModule;

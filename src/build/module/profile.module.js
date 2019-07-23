@@ -10,13 +10,14 @@ const common_1 = require("@nestjs/common");
 const database_module_1 = require("../database/database.module");
 const profile_controllers_1 = require("../controller/profile.controllers");
 const profile_service_1 = require("../service/profile.service");
+const profile_provider_1 = require("../provider/profile.provider");
 let ProfileModule = class ProfileModule {
 };
 ProfileModule = __decorate([
     common_1.Module({
         imports: [database_module_1.DatabaseModule],
         controllers: [profile_controllers_1.ProfileController],
-        providers: [profile_service_1.ProfileService],
+        providers: [profile_service_1.ProfileService, ...profile_provider_1.ProfileProvider],
         exports: [profile_service_1.ProfileService]
     })
 ], ProfileModule);

@@ -1,4 +1,4 @@
-import { Injectable } from "@nestjs/common";
+import { Injectable, Inject } from "@nestjs/common";
 
 import { CreateViewsDto } from "../dto/views.dto";
 import Views from "../models/views.model";
@@ -8,15 +8,19 @@ import Exam from "../models/exam.model";
 @Injectable()
 export class ViewsService {
 
+    constructor(
+        @Inject('ViewsRepository') private readonly viewsRepository: typeof Views
+    ) { }
+
     async create(createViewsDto: CreateViewsDto): Promise<Views> {
-        return await Views.create<Views>(createViewsDto);;
+        return await this.viewsRepository.create<Views>(createViewsDto);;
     }
 
     async find(where: any) {
         if (typeof where === 'string') {
             where = { 'id': where };
         }
-        const view = await Views.findAll({
+        const view = await this.viewsRepository.findAll({
             where: where, include: [User, Exam]
         });
         return view;
@@ -24,7 +28,7 @@ export class ViewsService {
 
     async deleteOne(viewId: number) {
 
-        const deletedView = await Views.destroy({
+        const deletedView = await this.viewsRepository.destroy({
             where: { 'id': viewId }
         });
 

@@ -10,6 +10,7 @@ const common_1 = require("@nestjs/common");
 const database_module_1 = require("../database/database.module");
 const login_controller_1 = require("../controller/login.controller");
 const login_service_1 = require("../service/login.service");
+const login_provider_1 = require("../provider/login.provider");
 const auth_middleware_1 = require("../middleware/auth.middleware");
 let LoginModule = class LoginModule {
     configure(consumer) {
@@ -23,7 +24,7 @@ LoginModule = __decorate([
     common_1.Module({
         imports: [database_module_1.DatabaseModule],
         controllers: [login_controller_1.LoginController],
-        providers: [login_service_1.LoginService],
+        providers: [login_service_1.LoginService, ...login_provider_1.LoginProvider],
         exports: [login_service_1.LoginService]
     })
 ], LoginModule);

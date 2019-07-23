@@ -39,9 +39,9 @@ const patient_model_1 = __importDefault(require("../models/patient.model"));
 const doctor_model_1 = __importDefault(require("../models/doctor.model"));
 const insurance_model_1 = __importDefault(require("../models/insurance.model"));
 const views_model_1 = __importDefault(require("../models/views.model"));
-const exam_model_1 = __importDefault(require("../models/exam.model"));
 let ExamService = class ExamService {
-    constructor(siteService, profileService, patientService, doctorService, userService, userSiteService, loginService, insuranceService, userInsuranceService, planService) {
+    constructor(examRepository, siteService, profileService, patientService, doctorService, userService, userSiteService, loginService, insuranceService, userInsuranceService, planService) {
+        this.examRepository = examRepository;
         this.siteService = siteService;
         this.profileService = profileService;
         this.patientService = patientService;
@@ -65,17 +65,14 @@ let ExamService = class ExamService {
                 patientUserSite = yield this.createUserSite(patientUser, siteId, null, null);
             }
             yield this.createLogin(patientUser, null, loginPassword, loginUsername);
-            console.log('PATIENT');
             let insurance = yield this.insuranceService.find(insuranceId);
             if (!insurance[0]) {
                 yield this.createInsurance(insuranceId, siteId, insuranceName, patientUser.id);
             }
-            console.log('INSURANCE');
             let plan = yield this.planService.find({ 'insuranceId': insuranceId });
             if (!plan[0]) {
                 yield this.createPlan(planId, insuranceId, planName);
             }
-            console.log('PLANO');
             let reqDoctorProfile, reqDoctorUser, reqDoctorUserSite;
             let reqDoctor = yield this.doctorService.find({
                 'docType': reqDoctorDocType,
@@ -90,7 +87,6 @@ let ExamService = class ExamService {
                 reqDoctorUserSite = yield this.createUserSite(reqDoctorUser, siteId, null, null);
             }
             yield this.createLogin(reqDoctorUser, reqDoctor);
-            console.log('REQUESTING');
             let consDoctorProfile, consDoctorUser, consDoctorUserSite;
             let consDoctor = yield this.doctorService.find({ 'docNum': consDoctorDocNum })[0];
             if (consDoctorName && !consDoctor) {
@@ -102,7 +98,6 @@ let ExamService = class ExamService {
             }
             let consDoctorId = yield this.getConsDoctorId(consDoctorName, consDoctor);
             yield this.createLogin(consDoctorUser, consDoctor);
-            console.log('CONSULTING');
             let exam = {
                 'createdAt': null,
                 'updatedAt': null,
@@ -123,7 +118,6 @@ let ExamService = class ExamService {
                 'lastImageView': null,
             };
             yield this.createExam(exam);
-            console.log('EXAM');
         });
     }
     search(patientId) {
@@ -265,7 +259,7 @@ let ExamService = class ExamService {
     }
     createExam(createExamDto) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield exam_model_1.default.create(createExamDto);
+            return yield this.examRepository.create(createExamDto);
         });
     }
     find(where) {
@@ -273,7 +267,7 @@ let ExamService = class ExamService {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const exam = yield exam_model_1.default.findAll({
+            const exam = yield this.examRepository.findAll({
                 where: where,
                 include: [site_model_1.default, patient_model_1.default, insurance_model_1.default, views_model_1.default, { model: doctor_model_1.default, as: 'requestingDoctor' }, { model: doctor_model_1.default, as: 'consultingDoctor' }]
             });
@@ -282,7 +276,7 @@ let ExamService = class ExamService {
     }
     deleteOne(examId) {
         return __awaiter(this, void 0, void 0, function* () {
-            const deletedExam = yield exam_model_1.default.destroy({
+            const deletedExam = yield this.examRepository.destroy({
                 where: { 'id': examId }
             });
             return yield deletedExam;
@@ -291,17 +285,18 @@ let ExamService = class ExamService {
 };
 ExamService = __decorate([
     common_1.Injectable(),
-    __param(0, common_1.Inject('SiteService')),
-    __param(1, common_1.Inject('ProfileService')),
-    __param(2, common_1.Inject('PatientService')),
-    __param(3, common_1.Inject('DoctorService')),
-    __param(4, common_1.Inject('UserService')),
-    __param(5, common_1.Inject('UserSiteService')),
-    __param(6, common_1.Inject('LoginService')),
-    __param(7, common_1.Inject('InsuranceService')),
-    __param(8, common_1.Inject('UserInsuranceService')),
-    __param(9, common_1.Inject('PlanService')),
-    __metadata("design:paramtypes", [site_service_1.SiteService,
+    __param(0, common_1.Inject('ExamRepository')),
+    __param(1, common_1.Inject('SiteService')),
+    __param(2, common_1.Inject('ProfileService')),
+    __param(3, common_1.Inject('PatientService')),
+    __param(4, common_1.Inject('DoctorService')),
+    __param(5, common_1.Inject('UserService')),
+    __param(6, common_1.Inject('UserSiteService')),
+    __param(7, common_1.Inject('LoginService')),
+    __param(8, common_1.Inject('InsuranceService')),
+    __param(9, common_1.Inject('UserInsuranceService')),
+    __param(10, common_1.Inject('PlanService')),
+    __metadata("design:paramtypes", [Object, site_service_1.SiteService,
         profile_service_1.ProfileService,
         patient_service_1.PatientService,
         doctor_service_1.DoctorService,

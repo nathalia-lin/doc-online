@@ -19,10 +19,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const doctor_dto_1 = require("../dto/doctor.dto");
 const doctor_service_1 = require("../service/doctor.service");
+const doctor_model_1 = __importDefault(require("../models/doctor.model"));
 let DoctorController = class DoctorController {
     constructor(doctorService) {
         this.doctorService = doctorService;
@@ -35,6 +39,11 @@ let DoctorController = class DoctorController {
     show(where) {
         return __awaiter(this, void 0, void 0, function* () {
             return yield this.doctorService.find(where);
+        });
+    }
+    showAll() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield doctor_model_1.default.findAll();
         });
     }
     deleteOne(doctorId) {
@@ -57,6 +66,12 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], DoctorController.prototype, "show", null);
+__decorate([
+    common_1.Get(),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], DoctorController.prototype, "showAll", null);
 __decorate([
     common_1.Delete(':id'),
     __param(0, common_1.Param('id')),

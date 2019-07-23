@@ -5,6 +5,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
@@ -13,16 +19,15 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
-const logExam_model_1 = __importDefault(require("../models/logExam.model"));
 let LogExamService = class LogExamService {
+    constructor(logExamRepository) {
+        this.logExamRepository = logExamRepository;
+    }
     create(createLogExamDto) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield logExam_model_1.default.create(createLogExamDto);
+            return yield this.logExamRepository.create(createLogExamDto);
             ;
         });
     }
@@ -31,7 +36,7 @@ let LogExamService = class LogExamService {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const logExam = yield logExam_model_1.default.findAll({
+            const logExam = yield this.logExamRepository.findAll({
                 where: where
             });
             return logExam;
@@ -39,7 +44,7 @@ let LogExamService = class LogExamService {
     }
     deleteOne(logExamId) {
         return __awaiter(this, void 0, void 0, function* () {
-            const deletedLogExam = yield logExam_model_1.default.destroy({
+            const deletedLogExam = yield this.logExamRepository.destroy({
                 where: { 'id': logExamId }
             });
             return yield deletedLogExam;
@@ -47,6 +52,8 @@ let LogExamService = class LogExamService {
     }
 };
 LogExamService = __decorate([
-    common_1.Injectable()
+    common_1.Injectable(),
+    __param(0, common_1.Inject('LogExamRepository')),
+    __metadata("design:paramtypes", [Object])
 ], LogExamService);
 exports.LogExamService = LogExamService;
