@@ -58,14 +58,14 @@ export default class Exam extends Model<Exam> {
     @Column(DataType.UUID)
     public requestingId?: number;
 
-    @BelongsTo(() => Doctor)
+    @BelongsTo(() => Doctor, 'requestingId')
     public requestingDoctor?: Doctor;
 
     @ForeignKey(() => Doctor)
     @Column(DataType.UUID)
     public consultingId?: number;
 
-    @BelongsTo(() => Doctor)
+    @BelongsTo(() => Doctor, 'consultingId')
     public consultingDoctor?: Doctor;
 
     @ForeignKey(() => Insurance)

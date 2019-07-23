@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Put, Delete, Param } from '@nestjs/common';
+import { Controller, Get, Post, Body, Put, Delete, Param, Req } from '@nestjs/common';
 
 import { CreateUserDto } from '../dto/user.dto';
 import { UserService } from '../service/user.service';
@@ -13,7 +13,8 @@ export class UserController {
     }
 
     @Get(':id')
-    public async showOne(@Param('id') where: any) {
+    public async showOne(@Param('id') where: any, @Req() req) {
+        console.log(req.username)
         return await this.userService.find(where);
     }
 

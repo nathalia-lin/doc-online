@@ -32,8 +32,9 @@ let UserController = class UserController {
             return yield this.userService.create(createUserDto);
         });
     }
-    showOne(where) {
+    showOne(where, req) {
         return __awaiter(this, void 0, void 0, function* () {
+            console.log(req.username);
             return yield this.userService.find(where);
         });
     }
@@ -52,9 +53,9 @@ __decorate([
 ], UserController.prototype, "create", null);
 __decorate([
     common_1.Get(':id'),
-    __param(0, common_1.Param('id')),
+    __param(0, common_1.Param('id')), __param(1, common_1.Req()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
+    __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "showOne", null);
 __decorate([

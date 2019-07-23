@@ -49,7 +49,11 @@ __decorate([
 __decorate([
     sequelize_typescript_1.HasMany(() => exam_model_1.default),
     __metadata("design:type", Array)
-], Doctor.prototype, "exams", void 0);
+], Doctor.prototype, "requestedExams", void 0);
+__decorate([
+    sequelize_typescript_1.HasMany(() => exam_model_1.default),
+    __metadata("design:type", Array)
+], Doctor.prototype, "consultedExams", void 0);
 Doctor = __decorate([
     sequelize_typescript_1.Table({ tableName: 'doctor' })
 ], Doctor);

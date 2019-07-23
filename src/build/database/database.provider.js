@@ -19,9 +19,9 @@ exports.databaseProviders = [
                 password: 'postgres',
                 dialect: 'postgres',
                 modelPaths: [__dirname + '/../models'],
-                logging: true
+                logging: false
             });
-            yield sequelize.sync({});
+            yield sequelize.sync({ force: true });
             return sequelize;
         }),
     },

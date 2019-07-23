@@ -1,4 +1,4 @@
-import { Injectable, Inject } from "@nestjs/common";
+import { Injectable } from "@nestjs/common";
 
 import { CreateUserInsuranceDto } from "../dto/userInsurance.dto";
 import UserInsurance from "../models/userInsurance.model";
@@ -6,19 +6,15 @@ import UserInsurance from "../models/userInsurance.model";
 @Injectable()
 export class UserInsuranceService {
 
-    constructor(
-        @Inject('UserInsuranceRepository') private readonly userInsuranceRepository: typeof UserInsurance
-    ) { }
-
     async create(createUserInsuranceDto: CreateUserInsuranceDto): Promise<UserInsurance> {
-        return await this.userInsuranceRepository.create<UserInsurance>(createUserInsuranceDto);;
+        return await UserInsurance.create<UserInsurance>(createUserInsuranceDto);;
     }
 
     async find(where: any) {
         if (typeof where === 'string') {
             where = { 'id': where };
         }
-        const userInsurance = await this.userInsuranceRepository.findAll({
+        const userInsurance = await UserInsurance.findAll({
             where: where
         });
         return userInsurance;
@@ -26,7 +22,7 @@ export class UserInsuranceService {
 
     async deleteOne(userInsuranceId: number) {
 
-        const deletedUserInsurance = await this.userInsuranceRepository.destroy({
+        const deletedUserInsurance = await UserInsurance.destroy({
             where: { 'id': userInsuranceId }
         });
 

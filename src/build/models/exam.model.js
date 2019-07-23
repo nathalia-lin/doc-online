@@ -85,7 +85,7 @@ __decorate([
     __metadata("design:type", Number)
 ], Exam.prototype, "requestingId", void 0);
 __decorate([
-    sequelize_typescript_1.BelongsTo(() => doctor_model_1.default),
+    sequelize_typescript_1.BelongsTo(() => doctor_model_1.default, 'requestingId'),
     __metadata("design:type", doctor_model_1.default)
 ], Exam.prototype, "requestingDoctor", void 0);
 __decorate([
@@ -94,7 +94,7 @@ __decorate([
     __metadata("design:type", Number)
 ], Exam.prototype, "consultingId", void 0);
 __decorate([
-    sequelize_typescript_1.BelongsTo(() => doctor_model_1.default),
+    sequelize_typescript_1.BelongsTo(() => doctor_model_1.default, 'consultingId'),
     __metadata("design:type", doctor_model_1.default)
 ], Exam.prototype, "consultingDoctor", void 0);
 __decorate([

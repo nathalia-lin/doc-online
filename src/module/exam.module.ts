@@ -3,7 +3,6 @@ import { Module } from "@nestjs/common";
 import { DatabaseModule } from "../database/database.module";
 import { ExamController } from "../controller/exam.controller";
 import { ExamService } from "../service/exam.service";
-import { ExamProvider } from "../provider/exam.provider";
 
 import { SiteModule } from "./site.module";
 import { SiteRuleModule } from "./siteRule.module";
@@ -39,7 +38,7 @@ import { PlanModule } from "./plan.module";
         PlanModule
     ],
     controllers: [ExamController],
-    providers: [ExamService, ...ExamProvider]
+    providers: [ExamService]
 })
 
 export class ExamModule { }

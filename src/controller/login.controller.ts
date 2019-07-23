@@ -12,7 +12,7 @@ export class LoginController {
         return await this.loginService.create(createLoginDto);
     }
 
-    @Get('auth')
+    @Post('auth')
     public async authenticate(
         @Body() body,
         @Res() res,

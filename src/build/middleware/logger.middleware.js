@@ -7,17 +7,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
-const database_module_1 = require("../database/database.module");
-const siteRule_controller_1 = require("../controller/siteRule.controller");
-const siteRule_service_1 = require("../service/siteRule.service");
-let SiteRuleModule = class SiteRuleModule {
+let LoggerMiddleware = class LoggerMiddleware {
+    use(req, res, next) {
+        console.log("STATUS CODE " + res.statusCode);
+        console.log("REQUEST");
+        console.log(req.headers);
+        next();
+    }
 };
-SiteRuleModule = __decorate([
-    common_1.Module({
-        imports: [database_module_1.DatabaseModule],
-        controllers: [siteRule_controller_1.SiteRuleController],
-        providers: [siteRule_service_1.SiteRuleService],
-        exports: [siteRule_service_1.SiteRuleService]
-    })
-], SiteRuleModule);
-exports.SiteRuleModule = SiteRuleModule;
+LoggerMiddleware = __decorate([
+    common_1.Injectable()
+], LoggerMiddleware);
+exports.LoggerMiddleware = LoggerMiddleware;

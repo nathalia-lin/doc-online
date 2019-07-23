@@ -10,10 +10,10 @@ export const databaseProviders = [
         password: 'postgres',
         dialect: 'postgres',
         modelPaths: [__dirname + '/../models'],
-        logging: true
+        logging: false
       });
       
-      await sequelize.sync({});
+      await sequelize.sync({force:true});
       return sequelize;
     },
   },

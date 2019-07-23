@@ -58,7 +58,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], LoginController.prototype, "create", null);
 __decorate([
-    common_1.Get('auth'),
+    common_1.Post('auth'),
     __param(0, common_1.Body()),
     __param(1, common_1.Res()),
     __metadata("design:type", Function),

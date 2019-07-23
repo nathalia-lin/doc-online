@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 
 import { CreateSiteRuleDto } from '../dto/siteRule.dto';
 import SiteRule from '../models/siteRule.model';
@@ -6,19 +6,16 @@ import Site from '../models/site.model';
 
 @Injectable()
 export class SiteRuleService {
-  constructor(
-    @Inject('SiteRuleRepository') private readonly siteRuleRepository: typeof SiteRule
-  ) { }
 
   async create(createSiteRuleDto: CreateSiteRuleDto): Promise<SiteRule> {
-    return await this.siteRuleRepository.create<SiteRule>(createSiteRuleDto);;
+    return await SiteRule.create<SiteRule>(createSiteRuleDto);;
   }
 
   async find(where: any) {
     if (typeof where === 'string') {
       where = { 'id': where };
     }
-    const siteRule = await this.siteRuleRepository.findAll({
+    const siteRule = await SiteRule.findAll({
       where: where, include: [Site]
     });
     return siteRule;
@@ -26,7 +23,7 @@ export class SiteRuleService {
 
   async deleteOne(siteRuleId: number) {
 
-    const deletedSiteRule = await this.siteRuleRepository.destroy({
+    const deletedSiteRule = await SiteRule.destroy({
       where: { 'id': siteRuleId }
     });
 

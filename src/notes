@@ -15,3 +15,42 @@ Authorization: {token}
 -> Passar no body filtros para aplicar na listagem;
 
 *************************
+
+SITE
+{
+      "id": "1f0560e8-8fa3-489f-a63e-76fcc21d9bb8",
+      "parentId": "68b8addb-fed2-433e-a887-9fb448edf3e2",
+      "logo": "123",
+      "networkId": "MODELO1",
+      "cnpj": "123",
+      "name": "SITE1",
+      "addressId": "68b8addb-fed2-433e-a887-9fb448edf3e2"
+    }
+
+EXAM
+{
+	"networkID": "MODELO1",
+	"studyInstanceUID": "2.16.124.113543.6022.1.172136271271756.96126641649",
+	"studyDate": "2016/01/01 10:26:21",
+	"accessionNumber": "T9211546",
+	"modality": "US",
+	"studyStatus": "COMPLETED",
+	"reqProcDescription": "ULTRASSOM - OBSTÉTRICO",
+	"insuranceID": "78dea039-32ae-43be-bc99-da85157a4ada",
+	"insuranceName": "AMIL",
+	"planName": "AMIL - PLUS",
+	"planID": "a20c0184-0819-482f-9db9-eab520d8e5b3",
+	"patientID": "26df93bc-aa40-4811-a1dd-0292cd32e459",
+	"patientName": "MARTHA DE JESUS",
+	"patientSocialName": "MARTHA",
+	"patientBirthDate": "1978/11/12",
+	"patientSex": "F",
+	"refPhysicianType": "CRM",
+	"refPhysicianCRM (depreciado) | refPhysicianNum": "115599",
+    "refPhysicianUF": "SP",
+	"refPhysicianName": "WILSON LOPES VEGAS",
+	"protocolID": "T65965945",
+	"protocolPwd": "12111978",
+    "readingPhysician": "SP4321",
+    "reqPhysicianName": "ROGERIO CENI"
+}

@@ -19,9 +19,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const exam_service_1 = require("../service/exam.service");
+const user_model_1 = __importDefault(require("../models/user.model"));
+const patient_model_1 = __importDefault(require("../models/patient.model"));
 let ExamController = class ExamController {
     constructor(examService) {
         this.examService = examService;
@@ -31,8 +36,11 @@ let ExamController = class ExamController {
             return yield this.examService.create(networkID, studyInstanceUID, studyDate, accessionNumber, modality, studyStatus, reqProcDescription, insuranceID, insuranceName, planID, planName, patientID, patientName, patientSocialName, patientBirthDate, patientSex, refPhysicianType, refPhysicianCRM, refPhysicianUF, refPhysicianName, protocolID, protocolPwd, readingPhysician, reqPhysicianName);
         });
     }
-    search() {
+    search(body, req) {
         return __awaiter(this, void 0, void 0, function* () {
+            const user = yield user_model_1.default.findByPk(req.userId);
+            const patient = yield patient_model_1.default.findOne({ where: { profileId: user.profileId } });
+            return yield this.examService.search(patient.id);
         });
     }
     show(where) {
@@ -78,8 +86,9 @@ __decorate([
 ], ExamController.prototype, "create", null);
 __decorate([
     common_1.Post('search'),
+    __param(0, common_1.Body()), __param(1, common_1.Req()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
+    __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], ExamController.prototype, "search", null);
 __decorate([

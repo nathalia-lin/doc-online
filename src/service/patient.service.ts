@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 
 import { CreatePatientDto } from '../dto/patient.dto';
 import Patient from '../models/patient.model';
@@ -7,19 +7,16 @@ import Exam from '../models/exam.model';
 
 @Injectable()
 export class PatientService {
-    constructor(
-        @Inject('PatientRepository') private readonly patientRepository: typeof Patient
-    ) { }
 
     async create(createPatientDto: CreatePatientDto): Promise<Patient> {
-        return await this.patientRepository.create<Patient>(createPatientDto);;
+        return await Patient.create<Patient>(createPatientDto);;
     }
 
     async find(where: any) {
         if (typeof where === 'string') {
             where = { 'id': where };
         }
-        const patient = await this.patientRepository.findAll({
+        const patient = await Patient.findAll({
             where: where, include: [Profile, Exam]
         });
         return patient;
@@ -27,7 +24,7 @@ export class PatientService {
 
     async deleteOne(patientId: number) {
 
-        const deletedPatient = await this.patientRepository.destroy({
+        const deletedPatient = await Patient.destroy({
             where: { 'id': patientId }
         });
 

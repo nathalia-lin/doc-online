@@ -10,14 +10,13 @@ const common_1 = require("@nestjs/common");
 const database_module_1 = require("../database/database.module");
 const logExam_controller_1 = require("../controller/logExam.controller");
 const logExam_service_1 = require("../service/logExam.service");
-const logExam_provider_1 = require("../provider/logExam.provider");
 let LogExamModule = class LogExamModule {
 };
 LogExamModule = __decorate([
     common_1.Module({
         imports: [database_module_1.DatabaseModule],
         controllers: [logExam_controller_1.LogExamController],
-        providers: [logExam_service_1.LogExamService, ...logExam_provider_1.LogExamProvider],
+        providers: [logExam_service_1.LogExamService],
         exports: [logExam_service_1.LogExamService]
     })
 ], LogExamModule);

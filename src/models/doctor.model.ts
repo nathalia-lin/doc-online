@@ -29,6 +29,8 @@ export default class Doctor extends Model<Doctor> {
     public docNum?: string;
 
     @HasMany(() => Exam)
-    public exams?: Exam[];
+    public requestedExams?: Exam[];
 
+    @HasMany(() => Exam)
+    public consultedExams?: Exam[];
 }

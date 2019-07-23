@@ -34,8 +34,6 @@ import { CreatePlanDto } from '../dto/plan.dto';
 export class ExamService {
 
     constructor(
-        @Inject('ExamRepository') private readonly examRepository: typeof Exam,
-
         @Inject('SiteService') private siteService: SiteService,
         @Inject('ProfileService') private profileService: ProfileService,
         @Inject('PatientService') private patientService: PatientService,
@@ -90,19 +88,24 @@ export class ExamService {
         // PATIENT
         let patientProfile, patientUser, patientUserSite;
         let patient = await this.patientService.find(patientId)[0];
-        if (!patient) {
+        if (!patient || patient === undefined) {
             patientProfile = await this.createProfile(name, socialName, sex, birthDate, null, null);
             patient = await this.createPatient(patientId, patientProfile, null);
             patientUser = await this.createUser(patientProfile, null, null, null, null, null, null, null, null);
             patientUserSite = await this.createUserSite(patientUser, siteId, null, null);
         }
         await this.createLogin(patientUser, null, loginPassword, loginUsername);
+        console.log('PATIENT');
 
-        let insurance = await this.insuranceService.find(insuranceId)[0];
-        if (!insurance) {await this.createInsurance(insuranceId, siteId, insuranceName, patientUser.id)}
+        let insurance = await this.insuranceService.find(insuranceId);
+        if (!insurance[0]) {
+            await this.createInsurance(insuranceId, siteId, insuranceName, patientUser.id)
+        }
+        console.log('INSURANCE');
 
-        let plan = await this.planService.find({ 'insuranceId': insuranceId })[0];
-        if (!plan) {await this.createPlan(planId, insuranceId, planName)}
+        let plan = await this.planService.find({ 'insuranceId': insuranceId });
+        if (!plan[0]) { await this.createPlan(planId, insuranceId, planName) }
+        console.log('PLANO');
 
         // REQUESTING DOCTOR
         let reqDoctorProfile, reqDoctorUser, reqDoctorUserSite;
@@ -120,6 +123,7 @@ export class ExamService {
             reqDoctorUserSite = await this.createUserSite(reqDoctorUser, siteId, null, null);
         }
         await this.createLogin(reqDoctorUser, reqDoctor);
+        console.log('REQUESTING');
 
         // CONSULTING DOCTOR
         let consDoctorProfile, consDoctorUser, consDoctorUserSite;
@@ -133,6 +137,7 @@ export class ExamService {
         }
         let consDoctorId = await this.getConsDoctorId(consDoctorName, consDoctor);
         await this.createLogin(consDoctorUser, consDoctor);
+        console.log('CONSULTING');
 
         // Once you have all the information, create an exam
         let exam = {
@@ -155,7 +160,19 @@ export class ExamService {
             'lastImageView': null,
         } as CreateExamDto;
         await this.createExam(exam);
+        console.log('EXAM');
+
     }
+
+    // ========================================================================================================
+
+    public async search(patientId: number) {
+        const exams = this.find({ 'patientId': patientId });
+        console.log(exams);
+        return exams;
+    }
+
+    // ========================================================================================================
 
     // Check if site exists
     async siteExists(networkId: string) {
@@ -276,21 +293,22 @@ export class ExamService {
     }
 
     async createExam(createExamDto: CreateExamDto): Promise<Exam> {
-        return await this.examRepository.create<Exam>(createExamDto);
+        return await Exam.create<Exam>(createExamDto);
     }
 
     async find(where: any) {
         if (typeof where === 'string') {
             where = { 'id': where };
         }
-        const exam = await this.examRepository.find({
-            where: where, include: [Site, Patient, Doctor, Insurance, Views]
+        const exam = await Exam.findAll({
+            where: where,
+            include: [Site, Patient, Insurance, Views, { model: Doctor, as: 'requestingDoctor' }, { model: Doctor, as: 'consultingDoctor' }]
         });
         return exam;
     }
 
     async deleteOne(examId: number) {
-        const deletedExam = await this.examRepository.destroy({
+        const deletedExam = await Exam.destroy({
             where: { 'id': examId }
         });
         return await deletedExam;

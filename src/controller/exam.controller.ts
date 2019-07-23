@@ -1,7 +1,11 @@
-import { Controller, Get, Post, Body, Put, Delete, Param } from '@nestjs/common';
+import { Controller, Get, Post, Body, Put, Delete, Param, Req } from '@nestjs/common';
+import * as jwt from 'jsonwebtoken';
 
 import { CreateExamDto } from '../dto/exam.dto';
 import { ExamService } from '../service/exam.service';
+import User from '../models/user.model';
+import Profile from '../models/profile.model';
+import Patient from '../models/patient.model';
 
 @Controller('exam')
 export class ExamController {
@@ -81,10 +85,11 @@ export class ExamController {
     }
 
     @Post('search')
-    public async search (){
-        // req.header('authorization')
-        // const success = jwt.verify(str...)
-        // next()
+    public async search (@Body() body, @Req() req){  
+
+        const user = await User.findByPk(req.userId)
+        const patient = await Patient.findOne({where: {profileId: user.profileId}})
+        return await this.examService.search(patient.id);
     }
 
     @Get(':id')

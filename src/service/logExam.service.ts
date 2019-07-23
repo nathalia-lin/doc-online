@@ -1,23 +1,20 @@
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 
 import { CreateLogExamDto } from '../dto/logExam.dto';
 import LogExam from '../models/logExam.model';
 
 @Injectable()
 export class LogExamService {
-    constructor(
-        @Inject('LogExamRepository') private readonly logExamRepository: typeof LogExam
-    ) { }
 
     async create(createLogExamDto: CreateLogExamDto): Promise<LogExam> {
-        return await this.logExamRepository.create<LogExam>(createLogExamDto);;
+        return await LogExam.create<LogExam>(createLogExamDto);;
     }
 
     async find(where: any) {
         if (typeof where === 'string') {
             where = { 'id': where };
         }
-        const logExam = await this.logExamRepository.findAll({
+        const logExam = await LogExam.findAll({
             where: where
         });
         return logExam;
@@ -25,7 +22,7 @@ export class LogExamService {
 
     async deleteOne(logExamId: number) {
 
-        const deletedLogExam = await this.logExamRepository.destroy({
+        const deletedLogExam = await LogExam.destroy({
             where: { 'id': logExamId }
         });
 

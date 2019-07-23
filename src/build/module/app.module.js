@@ -8,7 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const exam_module_1 = require("./exam.module");
+const logger_middleware_1 = require("../middleware/logger.middleware");
 let AppModule = class AppModule {
+    configure(consumer) {
+        consumer
+            .apply(logger_middleware_1.LoggerMiddleware)
+            .forRoutes({ path: '/', method: common_1.RequestMethod.ALL });
+    }
 };
 AppModule = __decorate([
     common_1.Module({

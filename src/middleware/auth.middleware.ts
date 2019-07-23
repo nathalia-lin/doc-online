@@ -20,6 +20,7 @@ export class AuthMiddleware implements NestMiddleware {
                 'id': decoded.id,
                 'username': decoded.username,
             });
+            req.userId = decoded.id
             if (!user) throw new Error('User not found');
             next();
         } else {

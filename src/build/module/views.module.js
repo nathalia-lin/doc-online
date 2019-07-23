@@ -10,14 +10,13 @@ const common_1 = require("@nestjs/common");
 const database_module_1 = require("../database/database.module");
 const views_service_1 = require("../service/views.service");
 const views_controller_1 = require("../controller/views.controller");
-const views_provider_1 = require("../provider/views.provider");
 let ViewsModule = class ViewsModule {
 };
 ViewsModule = __decorate([
     common_1.Module({
         imports: [database_module_1.DatabaseModule],
         controllers: [views_controller_1.ViewsController],
-        providers: [views_service_1.ViewsService, ...views_provider_1.ViewsProvider],
+        providers: [views_service_1.ViewsService],
         exports: [views_service_1.ViewsService]
     })
 ], ViewsModule);

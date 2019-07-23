@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 
 import { CreateProfileDto } from '../dto/profile.dto';
 import Profile from '../models/profile.model';
@@ -8,19 +8,16 @@ import Doctor from '../models/doctor.model';
 
 @Injectable()
 export class ProfileService {
-  constructor(
-    @Inject('ProfileRepository') private readonly profileRepository: typeof Profile
-  ) { }
 
   async create(createProfileDto: CreateProfileDto): Promise<Profile> {
-    return await this.profileRepository.create<Profile>(createProfileDto);;
+    return await Profile.create<Profile>(createProfileDto);;
   }
 
   async find(where: any) {
     if (typeof where === 'string') {
       where = { 'id': where };
     }
-    const profile = await this.profileRepository.findAll({
+    const profile = await Profile.findAll({
       where: where, include: [User, Patient, Doctor]
     });
     return profile;
@@ -28,7 +25,7 @@ export class ProfileService {
 
   async deleteOne(profileId: number) {
 
-    const deletedProfile = await this.profileRepository.destroy({
+    const deletedProfile = await Profile.destroy({
       where: { 'id': profileId }
     });
 
