@@ -5,7 +5,7 @@ import LogExam from '../models/logExam.model';
 
 @Injectable()
 export class LogExamService {
-    
+
     constructor(
         @Inject('LogExamRepository') private readonly logExamRepository: typeof LogExam
     ) { }
@@ -15,10 +15,17 @@ export class LogExamService {
     }
 
     async find(where: any) {
-        if (typeof where === 'string') {
-            where = { 'id': where };
-        }
         const logExam = await this.logExamRepository.findAll({
+            where: where
+        });
+        return logExam;
+    }
+
+    async findOne(where: any) {
+        if (typeof where === 'string') {
+            where = { 'id': where }
+        }
+        const logExam = await this.logExamRepository.findOne({
             where: where
         });
         return logExam;

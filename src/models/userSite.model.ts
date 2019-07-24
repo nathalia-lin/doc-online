@@ -20,7 +20,7 @@ export default class UserSite extends Model<UserSite> {
   @Column(DataType.UUID)
   public siteId?: number;
 
-  @Column(DataType.STRING(25))
+  @Column(DataType.STRING(100))
   public createdBy?: string;
 
   @CreatedAt

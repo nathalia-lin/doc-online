@@ -36,10 +36,18 @@ let SiteNotificationService = class SiteNotificationService {
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
+            const siteNotifications = yield this.siteNotificationRepository.findAll({
+                where: where, include: [site_model_1.default]
+            });
+            return siteNotifications;
+        });
+    }
+    findOne(where) {
+        return __awaiter(this, void 0, void 0, function* () {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const siteNotification = yield this.siteNotificationRepository.findAll({
+            const siteNotification = yield this.siteNotificationRepository.findOne({
                 where: where, include: [site_model_1.default]
             });
             return siteNotification;

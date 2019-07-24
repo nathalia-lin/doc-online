@@ -1,11 +1,6 @@
 import { Controller, Get, Post, Body, Put, Delete, Param, Req } from '@nestjs/common';
-import * as jwt from 'jsonwebtoken';
 
-import { CreateExamDto } from '../dto/exam.dto';
 import { ExamService } from '../service/exam.service';
-import User from '../models/user.model';
-import Profile from '../models/profile.model';
-import Patient from '../models/patient.model';
 
 @Controller('exam')
 export class ExamController {
@@ -13,6 +8,7 @@ export class ExamController {
 
     @Post()
     public async create(
+        @Req() req,
         @Body('networkID') networkID: string,
         @Body('studyInstanceUID') studyInstanceUID: string,
         @Body('studyDate') studyDate: Date,
@@ -33,67 +29,73 @@ export class ExamController {
         @Body('patientSocialName') patientSocialName: string,
         @Body('patientBirthDate') patientBirthDate: Date,
         @Body('patientSex') patientSex: string,
-        @Body('refPhysicianType') refPhysicianType: string,
-        @Body('refPhysicianCRM (depreciado) | refPhysicianNum') refPhysicianCRM: string,
-        @Body('refPhysicianUF') refPhysicianUF: string,
-        @Body('refPhysicianName') refPhysicianName: string,
+        @Body('patientPhone') patientPhone: string,
+        @Body('patientEmail') patientEmail: string,
+        @Body('patientPID') patientPID: string,
         @Body('protocolID') protocolID: string,
         @Body('protocolPwd') protocolPwd: string,
         // @Body('reportextension') reportextension: string,
         // @Body('report') report: string,
         // @Body('reportDate') reportDate: Date,
-        @Body('readingPhysician') readingPhysician: string,
+        @Body('reqPhysicianType') reqPhysicianType: string,
+        @Body('reqPhysicianNum') reqPhysicianNum: string,
+        @Body('reqPhysicianUF') reqPhysicianUF: string,
         @Body('reqPhysicianName') reqPhysicianName: string,
+
+        @Body('refPhysicianType') refPhysicianType: string,
+        @Body('refPhysicianNum') refPhysicianNum: string,
+        @Body('refPhysicianUF') refPhysicianUF: string,
+        @Body('refPhysicianName') refPhysicianName: string,
         // @Body('reviewedBy') reviewedBy: string,
         // @Body('echo') echo: boolean
 
     ) {
-        return await this.examService.create(
-            networkID,
-            studyInstanceUID,
-            studyDate,
-            accessionNumber,
-            // admissionId,
-            // orderID,
-            modality,
-            studyStatus,
-            // reqProcID,
-            // reqProcDate,
-            reqProcDescription,
-            insuranceID,
-            insuranceName,
-            planID,
-            planName,
-            patientID,
-            patientName,
-            patientSocialName,
-            patientBirthDate,
-            patientSex,
-            refPhysicianType,
-            refPhysicianCRM,
-            refPhysicianUF,
-            refPhysicianName,
-            protocolID,
-            protocolPwd,
-            // reportextension,
-            // report,
-            // reportDate,
-            readingPhysician,
-            reqPhysicianName,
-            // reviewedBy
-        );
+        try {
+            return await this.examService.create(
+                req.userId,
+                networkID,
+                studyInstanceUID,
+                studyDate,
+                accessionNumber,
+                modality,
+                studyStatus,
+                reqProcDescription,
+                insuranceID,
+                insuranceName,
+                planID,
+                planName,
+                patientID,
+                patientName,
+                patientSocialName,
+                patientBirthDate,
+                patientSex,
+                patientPhone,
+                patientEmail,
+                patientPID,
+                protocolID,
+                protocolPwd,
+                reqPhysicianType,
+                reqPhysicianNum,
+                reqPhysicianUF,
+                reqPhysicianName,
+                refPhysicianType,
+                refPhysicianNum,
+                refPhysicianUF,
+                refPhysicianName,
+            );
+        }
+        catch (err) {
+            console.log(err)
+        }
     }
 
     @Post('search')
-    public async search (@Body() body, @Req() req){  
-
-        const user = await User.findByPk(req.userId)
-        const patient = await Patient.findOne({where: {profileId: user.profileId}})
-        return await this.examService.search(patient.id);
+    public async search(@Body() body, @Req() req) {
+        return await this.examService.search(req.userId, body);
     }
 
     @Get(':id')
-    public async show(@Param('id')  where: any) {
+    public async show(@Param('id') where: any) {
         return await this.examService.find(where);
     }
 

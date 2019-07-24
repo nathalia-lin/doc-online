@@ -39,10 +39,18 @@ let InsuranceService = class InsuranceService {
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
+            const insurances = yield this.insuranceRepository.findAll({
+                where: where, include: [site_model_1.default, user_model_1.default, exam_model_1.default]
+            });
+            return insurances;
+        });
+    }
+    findOne(where) {
+        return __awaiter(this, void 0, void 0, function* () {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const insurance = yield this.insuranceRepository.findAll({
+            const insurance = yield this.insuranceRepository.findOne({
                 where: where, include: [site_model_1.default, user_model_1.default, exam_model_1.default]
             });
             return insurance;

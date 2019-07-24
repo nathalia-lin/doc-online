@@ -6,14 +6,13 @@ import Exam from './exam.model';
 export default class LogExam extends Model<LogExam> {
 
     @PrimaryKey
-    @Column(DataType.UUID)
-    public id: number;
-
-    @ForeignKey(() => Exam)
     @Column({
         defaultValue: DataType.UUIDV4,
         type: DataType.UUID
-    }) public examId?: number;
+    }) public id: number;
+
+    @ForeignKey(() => Exam)
+    public examId?: number;
 
     @BelongsTo(() => Exam)
     public exam?: Exam;

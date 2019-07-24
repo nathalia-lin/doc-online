@@ -6,7 +6,7 @@ import Insurance from '../models/insurance.model';
 
 @Injectable()
 export class PlanService {
-    
+
     constructor(
         @Inject('PlanRepository') private readonly planRepository: typeof Plan
     ) { }
@@ -16,10 +16,17 @@ export class PlanService {
     }
 
     async find(where: any) {
+        const plans = await this.planRepository.findAll({
+            where: where, include: [Insurance]
+        });
+        return plans;
+    }
+
+    async findOne(where: any) {
         if (typeof where === 'string') {
-            where = { 'id': where };
+            where = { 'id': where }
         }
-        const plan = await this.planRepository.findAll({
+        const plan = await this.planRepository.findOne({
             where: where, include: [Insurance]
         });
         return plan;

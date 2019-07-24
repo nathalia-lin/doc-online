@@ -15,10 +15,17 @@ export class UserSiteService {
     }
 
     async find(where: any) {
+        const userSites = await this.userSiteRepository.findAll({
+            where: where
+        });
+        return userSites;
+    }
+
+    async findOne(where: any) {
         if (typeof where === 'string') {
-            where = { 'id': where };
+            where = { 'id': where }
         }
-        const userSite = await this.userSiteRepository.findAll({
+        const userSite = await this.userSiteRepository.findOne({
             where: where
         });
         return userSite;

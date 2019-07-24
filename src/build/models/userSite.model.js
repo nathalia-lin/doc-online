@@ -36,7 +36,7 @@ __decorate([
     __metadata("design:type", Number)
 ], UserSite.prototype, "siteId", void 0);
 __decorate([
-    sequelize_typescript_1.Column(sequelize_typescript_1.DataType.STRING(25)),
+    sequelize_typescript_1.Column(sequelize_typescript_1.DataType.STRING(100)),
     __metadata("design:type", String)
 ], UserSite.prototype, "createdBy", void 0);
 __decorate([

@@ -8,7 +8,7 @@ import Doctor from '../models/doctor.model';
 
 @Injectable()
 export class ProfileService {
-  
+
   constructor(
     @Inject('ProfileRepository') private readonly profileRepository: typeof Profile
   ) { }
@@ -18,10 +18,17 @@ export class ProfileService {
   }
 
   async find(where: any) {
+    const profiles = await this.profileRepository.findAll({
+      where: where, include: [User, Patient, Doctor]
+    });
+    return profiles;
+  }
+
+  async findOne(where: any) {
     if (typeof where === 'string') {
-      where = { 'id': where };
+      where = { 'id': where }
     }
-    const profile = await this.profileRepository.findAll({
+    const profile = await this.profileRepository.findOne({
       where: where, include: [User, Patient, Doctor]
     });
     return profile;

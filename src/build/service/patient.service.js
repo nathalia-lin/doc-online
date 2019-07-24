@@ -38,10 +38,18 @@ let PatientService = class PatientService {
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
+            const patients = yield this.patientRepository.findAll({
+                where: where, include: [profile_model_1.default, exam_model_1.default]
+            });
+            return patients;
+        });
+    }
+    findOne(where) {
+        return __awaiter(this, void 0, void 0, function* () {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const patient = yield this.patientRepository.findAll({
+            const patient = yield this.patientRepository.findOne({
                 where: where, include: [profile_model_1.default, exam_model_1.default]
             });
             return patient;

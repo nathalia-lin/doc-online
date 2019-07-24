@@ -33,10 +33,18 @@ let UserSiteService = class UserSiteService {
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
+            const userSites = yield this.userSiteRepository.findAll({
+                where: where
+            });
+            return userSites;
+        });
+    }
+    findOne(where) {
+        return __awaiter(this, void 0, void 0, function* () {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const userSite = yield this.userSiteRepository.findAll({
+            const userSite = yield this.userSiteRepository.findOne({
                 where: where
             });
             return userSite;

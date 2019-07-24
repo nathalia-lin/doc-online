@@ -37,10 +37,18 @@ let PlanService = class PlanService {
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
+            const plans = yield this.planRepository.findAll({
+                where: where, include: [insurance_model_1.default]
+            });
+            return plans;
+        });
+    }
+    findOne(where) {
+        return __awaiter(this, void 0, void 0, function* () {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const plan = yield this.planRepository.findAll({
+            const plan = yield this.planRepository.findOne({
                 where: where, include: [insurance_model_1.default]
             });
             return plan;

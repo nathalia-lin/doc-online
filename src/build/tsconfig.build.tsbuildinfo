@@ -1725,14 +1725,6 @@
         "version": "afaa19bcd5dc79f96683b07c84f5f691e455509089f2e2aa2fc5cb7e97f01af1",
         "signature": "012ca69dacdbff2b4621a9a43ccfba38fabd3511b3a084afb4b12446140989d3"
       },
-      "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts": {
-        "version": "daef0ff8d0878f91f68abfdb51e82a5df5b5bc9fc665202e0bd45ddefe640fa2",
-        "signature": "daef0ff8d0878f91f68abfdb51e82a5df5b5bc9fc665202e0bd45ddefe640fa2"
-      },
-      "c:/wtt-/doconline/src/dto/exam.dto.ts": {
-        "version": "3de52a7ab9d49d791e9fa4ec7a8ff397ffac0f1370bd7a34367f8cb9d256690b",
-        "signature": "a44196ce14fa4e53a649d32cb4bb6d10605cf2da8148489a544a0c6a83012a8d"
-      },
       "c:/wtt-/doconline/src/dto/site.dto.ts": {
         "version": "33047196138b4e890421f64806e3661e3c41894991088d11b781c27940af4b01",
         "signature": "797f9728a0d080187da213c3cd794a53ede4dd66c8bcdde288c5dd51e68270a7"
@@ -1762,7 +1754,7 @@
         "signature": "0671782340e3ab23519f00d38518df7cb56e2c32be0e303c3eb164dda1e2d891"
       },
       "c:/wtt-/doconline/src/models/logexam.model.ts": {
-        "version": "27f2788f76ade2150efd4c2f968d53a82a2ab0977c705163b3ae1c200966eceb",
+        "version": "95ceb3bb7347ae56fc5cb19cb7f6dde730ece32fd5afa4822728c5ffd54fd9cf",
         "signature": "72dbb1bc8e32039bdd56676081b712748dee0bd6d09d3b24fa6867a54c58612e"
       },
       "c:/wtt-/doconline/src/models/views.model.ts": {
@@ -1786,7 +1778,7 @@
         "signature": "00de51f28cf39317ff83536d53b668f0f87e073a2ff709125c13fe6ce5efc16f"
       },
       "c:/wtt-/doconline/src/models/usersite.model.ts": {
-        "version": "2138c1bb76b1ae10964da4b2ece6cd619a541a9341f4eb84508d1fd9dd645594",
+        "version": "039896b94c5dfeb312f2c07b505d15923bbbf56b8711c4d0bef41d3f36d75461",
         "signature": "1d32cd7d5af261e5333efe09613e9f2b0a0fba7cc0bd52ed55d701cc5198be73"
       },
       "c:/wtt-/doconline/src/models/user.model.ts": {
@@ -1798,88 +1790,100 @@
         "signature": "ebf1d11d0a673fdb54696cc6005cd7daa1dee83b3ef8557853e320c1c0a8d0e7"
       },
       "c:/wtt-/doconline/src/service/site.service.ts": {
-        "version": "de7dd56151a26e34a2ccb364657ea0feadaab67616dd4395573f3ee4722ee7da",
-        "signature": "077adaafa14f2adff3f0c8d510b6fd783f846285e0af27ca5549720fe3eed84d"
+        "version": "3343a80c07edc65c58cc7677082619a4e64eebbdbbe00db1c46c4e628c756a6a",
+        "signature": "6c9e4dff8c639e30c0fc78e253e0c6e2401e51f52d62f9e3d3650782ca3e5f05"
       },
       "c:/wtt-/doconline/src/dto/profile.dto.ts": {
         "version": "141580c38603506d1fca4cc6f18418f85b960aa2613ebc53abe2144569724608",
         "signature": "6ecc914d709c25e6a461ee33ccd39d96966c669061b7f5671df38b816159d6a4"
       },
       "c:/wtt-/doconline/src/service/profile.service.ts": {
-        "version": "eed71f3fc5d9629277ff4c372b424d8f3af928b1eb25f5060ab10177d7d9a6bd",
-        "signature": "af09e2385bb60a74965231ee7f6aacfb104057b2538fa64f28df62f558d1f493"
+        "version": "0fbd7f765aa4acef73207dfc7d802c7184bd5a7319955efe931321846b75aac9",
+        "signature": "1b29c5f42ae1e8bc9b693f4f2b4a6a10257e4b77ec9d3f096ff20da5b3e2c773"
       },
       "c:/wtt-/doconline/src/dto/patient.dto.ts": {
         "version": "b27a24a20ea01d5e26177eab5794b1d89cefb9455f1ba1ff8ef53b3c418baa89",
         "signature": "24dc370b0ab613dacf794c619d8bbcc0a035551badd366abe88717d554a65300"
       },
       "c:/wtt-/doconline/src/service/patient.service.ts": {
-        "version": "11638fc54fdcf3f8767310d6d89f5dace8033113560c48f81a8bd75372175433",
-        "signature": "ebf342b0dc7e52fa98a717e37354d820890bb8b037968419a00108576bf179a0"
+        "version": "a7909f439f25af34dccd3296b708d616f037fd21a198234eec6741aeb3205a8a",
+        "signature": "c185eb8d928548c52a65cb5ee30873b727e7f561be3bfbf1b48cff22ddb04f65"
       },
       "c:/wtt-/doconline/src/dto/doctor.dto.ts": {
         "version": "af1151d01792ad396d9a126315df23a05d8ee51e805d721ae222250bab8291da",
         "signature": "ad4fd9888e64d888537c16b101bc02eacfc48244efad72ef143d942433a9aee5"
       },
       "c:/wtt-/doconline/src/service/doctor.service.ts": {
-        "version": "82daa81b191366bba6d279c36e805b2a3ed4ed137894d32776ef51b2cd54305c",
-        "signature": "e7e298b1ae360c09c9f4b9f99788714846889faa04f330ab6b07b9443146a7a5"
+        "version": "ac2820bb55dcaf34a15c8aa7e31e80cd23c0dc8a6eca7a40b878d15880408405",
+        "signature": "0a44b72be55309793b64a41d47d363b80de19dad104bf86ba7d88747a2f24f61"
       },
       "c:/wtt-/doconline/src/dto/user.dto.ts": {
         "version": "bc819fa4cb81c7c6170410780e155ee76763b3b3d2b7ef5ef3e5d1b550eb6cf5",
         "signature": "d513432f59ad88a728fe5fab281578333e88230f621bef64c354236cd02f3187"
       },
       "c:/wtt-/doconline/src/service/user.service.ts": {
-        "version": "0a650fc85ea61ffc70bb76889f14ba06bb6d0bdf87866cdca4ce7dd5589b468c",
-        "signature": "1e02947eec44a27ec2aea7f9c6e9ad4e262a8f7db677537714adc4499e201478"
+        "version": "3169bb161011574fe6c0f2c82a97693799c5dd1fecb437ae1eff3acf72295914",
+        "signature": "cf46e7806c14acba69f3a8a9ac70daa28cccd3e0715c91c467e05d7683722df2"
       },
       "c:/wtt-/doconline/src/dto/usersite.dto.ts": {
         "version": "140af5fee9ace30bd282f935c0e15019d009b59042ef876b886b33490bc1cb72",
         "signature": "e217261faf50739e8be2d096a7dec10a2d36ce0d41d05621018ba5c9cc20777d"
       },
       "c:/wtt-/doconline/src/service/usersite.service.ts": {
-        "version": "b810c99858cd0fa1799743222cee1e018b3a5c2669c59ecc304d243ccef0b293",
-        "signature": "3199c05b76a7d06e130a8bfd7be01e2c768b243a2d37e7e934a98cc8c5071a3a"
+        "version": "e66efa54e61801539aeff01db8dd7913f79690c7e72663055c65ea58edb149c7",
+        "signature": "416e6520a8fa2392df42e5d32876b05e3d336ec6e6be909ad297436ed26e40d6"
+      },
+      "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts": {
+        "version": "daef0ff8d0878f91f68abfdb51e82a5df5b5bc9fc665202e0bd45ddefe640fa2",
+        "signature": "daef0ff8d0878f91f68abfdb51e82a5df5b5bc9fc665202e0bd45ddefe640fa2"
       },
       "c:/wtt-/doconline/src/dto/login.dto.ts": {
         "version": "94d7fa882ffd3793856e50307a9a2f0bdb4e229feb8c8044e4c613b6ff7c1031",
         "signature": "0353ed99dc9502efd9260cb6b2a4a29a17037d3fccea115b010aaddd1d5124b7"
       },
       "c:/wtt-/doconline/src/service/login.service.ts": {
-        "version": "8b8c49239377fbc56a6018a1afb9924cbec01aedc929f2b800ce363488c1f2a4",
-        "signature": "5032fb31a22cdcc95501f25845f8b879e6c290c2938999d29b694cd92f4558e8"
+        "version": "be964afdf5effe7c9ca45350de22a0389f725bf44723699eac299440e4d7fa36",
+        "signature": "0f812782584aa65aae1f47e7701b585e97bae68112d06984cf67fd4bf871b920"
       },
       "c:/wtt-/doconline/src/dto/userinsurance.dto.ts": {
         "version": "1c364c0f168d405d5b75b2e4fe929cdcc41243865571b2a17a0062f8a46e7dae",
         "signature": "757f46559eea70beff9712fce8c67e3e2925e07c93476b8c30b5a38468092bdf"
       },
       "c:/wtt-/doconline/src/service/userinsurance.service.ts": {
-        "version": "d744de3b5b2a3c3b0555d196f877942eec7e288c30b0de44b2826cbedc04dd7e",
-        "signature": "a7962ef7ba3fa12dcf0633821cf659bc0a64f3b3763c19caf1b8391960763fd8"
+        "version": "abaaed6620f57af05d0c0dfbcc5fd6365dbd34b5050b1d72abd61b77d53444ff",
+        "signature": "45aef368866a25090a28f4461139a56eeaf831fce56b814564aada997dd5c54b"
       },
       "c:/wtt-/doconline/src/dto/insurance.dto.ts": {
         "version": "7965f7717e7fa919206bdf2d9c20c84bf16759722e1e8d09232105d83e3c934d",
         "signature": "814fe20c6ee9d13be61e617aaf04ea21f6117ab4e08f93c0ef743eb939c34c72"
       },
       "c:/wtt-/doconline/src/service/insurance.service.ts": {
-        "version": "297275be8089f49c8b68e63a65cc04a45e9aa2db1636f994310b3529184d1f52",
-        "signature": "86c6930ada8ff99e214edf63a42d73c7722748eb340643cecc58fae3f89d1996"
+        "version": "8b9e8e7c8f60586de507ce1aa423f9f65828830801e1e4cf6b5b4011806d5f24",
+        "signature": "07564d798bfcda69db2b3e2b0ba43055488eb193876cbfff03d4c88d3d703ca3"
       },
       "c:/wtt-/doconline/src/dto/plan.dto.ts": {
         "version": "1bea1673978c7dbf00825c2716e5bed91bc3a7fab646cd3a94c79289a45fae19",
         "signature": "738d72b6694439a2767b5257e8ca51ae4c40769621c2f704d0c4c985e559edb9"
       },
       "c:/wtt-/doconline/src/service/plan.service.ts": {
-        "version": "feb2ef005dc8abb13ac81a07030df4d61e00f81caef0dd3fc279d1a30fce4068",
-        "signature": "49e9e554a0c5c1537aa97a9ec7e1d8a8e78af95aa726fb9d5f8b7e6f79d8b710"
+        "version": "09404236e72dff17d8f152ccc2c893b03cbc0b360fc17da55ff42d09458efb89",
+        "signature": "d1bd0c6ec45ba108d1e7248833276068bbff4cba74651e74f20d84732b8467ad"
+      },
+      "c:/wtt-/doconline/src/dto/logexam.dto.ts": {
+        "version": "93b66be14ef98e1130483c2fc06c6587563efbad176dccd529ff22ce991d3790",
+        "signature": "d67dd210bd5e16f19bd5f466b718dfaee281dcf9d6d91c2b39f1390e79d1807d"
+      },
+      "c:/wtt-/doconline/src/service/logexam.service.ts": {
+        "version": "92049757c8e5d3b20de5a8f28dd9bc0f048d8c4aef5b88caff31d9b8d00cad19",
+        "signature": "784fe1438b8b494ebf662577a1981afaadc24dd8cecfe25e6ee21b3f5a111506"
       },
       "c:/wtt-/doconline/src/service/exam.service.ts": {
-        "version": "a3d22645d2b47695ceac635666dfee2943f9a34575ee37bc2c0d2a418accb786",
-        "signature": "e99bf005eb592dc600661cf1283cc5b5c7c2077ea5d392e6591b880ee8b3308f"
+        "version": "cd43a4a8a69f2aac58bb5049220f7d942c7f8a553a7f29951157cc2b8e4efe51",
+        "signature": "74671cd8669a10fe1838df39616e657e4e8bcbf7b6db7045b7fa729b47b57a62"
       },
       "c:/wtt-/doconline/src/controller/exam.controller.ts": {
-        "version": "326f89d2d59eba675e8d98ea5a20bb2de6ae5383a8a1645acaaaf77d26e809b4",
-        "signature": "07d350f185b9dfb6ba2da3ea2a1c0708b99cb86b8182e7573b81ea94595a4194"
+        "version": "0c71ce72500c9e02713bc0961b5dc2faa051a2f26fd76687151dbc67f1b3a929",
+        "signature": "e8625a16656f9604fb6a305a28cc1435dcf10cbd80c4ac40de5c804fc8d1c2d9"
       },
       "c:/wtt-/doconline/src/provider/exam.provider.ts": {
         "version": "ed191ebc806e9ecb8b8a1a9f549a861914b3932452b2b0e58ff2e21841b5edb7",
@@ -1902,8 +1906,8 @@
         "signature": "107303d25f958e57574f54a5210ea2b062fab6f256347051f4560e3edf06e5ec"
       },
       "c:/wtt-/doconline/src/service/siterule.service.ts": {
-        "version": "918f247e7fbb39b18b29fa2c34d69f0dd78bf1e3fdb7c212edbd972173e18b18",
-        "signature": "8001ca866d4963edf2f8bfa1c9e210078cf11176e08ad9af925c249c379ec9d4"
+        "version": "5c0541a8cc9231e9f3f102481e7f03a8af58ecbff25ec09a470c2882c220c14d",
+        "signature": "c39053e4c470d7b06ee95c89ca397470188c564d09a2ac1cb9cc871f6fc9ff89"
       },
       "c:/wtt-/doconline/src/controller/siterule.controller.ts": {
         "version": "e7d64815a48610410c537c5c2b2d5968a55b0c6164ddc23500f53fb28a2ed4c5",
@@ -1922,8 +1926,8 @@
         "signature": "79a9427964778139b6c79346d319b0068e6d34e164dfbe3d828f16d1e466ee06"
       },
       "c:/wtt-/doconline/src/service/sitenotification.service.ts": {
-        "version": "3d863bd7a3597e87350363ebef22d71a65b32137e755cf353b904a74819fac79",
-        "signature": "355b722ed424437e7f136439073c391fc4d748e67af59e5b59d4e03540a05f56"
+        "version": "4dfd20fccf0aa11fdf3442fbc040e4dfb2319302ce4f486465c6ac25ecf4da9d",
+        "signature": "fdd02a68fe1c9d75b991b7bec13638dc6a67c5836c338f6f0cfd922e792a75d7"
       },
       "c:/wtt-/doconline/src/controller/sitenotification.controller.ts": {
         "version": "b1ec030820057a8b6e9207b3f1af530426faadec6655f8501fff26a802b86630",
@@ -1962,8 +1966,8 @@
         "signature": "9e36626cb39f17790cf2403e2e54d8a74542da63e2a49aba7061133a1af26dcd"
       },
       "c:/wtt-/doconline/src/controller/login.controller.ts": {
-        "version": "6c159db803a0b3bb46b4924d6ea6b3e0c97495c1b6e29066be9db9810ce05b04",
-        "signature": "03ed54dbbbf48e2487b604a1f4b27ab056ddf67773eddd56da7ba2c6d280eacf"
+        "version": "aa0f34d51756852a6f3e55600075b8a8cdf0a42ce3628336487833e1ae64483d",
+        "signature": "c73cc063e4c5d4d2aaaad32a90105a314f9a101d37b9f127a04117240e9da5cc"
       },
       "c:/wtt-/doconline/src/provider/login.provider.ts": {
         "version": "aee649da1b361d3227c1a527812ba89bb4d58373cbc882154b369046be6e92e9",
@@ -1974,7 +1978,7 @@
         "signature": "67726122c2706f5b658c90a373330eea04eec006d4012962666dd4c20de80e58"
       },
       "c:/wtt-/doconline/src/module/login.module.ts": {
-        "version": "6227092e84ed23a8f2081923282af29b0fabb7c7c28ec50b9184fe0c8269cd7a",
+        "version": "5f3980d00085a226c4fb58bc8eddda2f587ed003a7ee553dab31f5f9af5393fa",
         "signature": "2af82d050b6d042dd860e7e6391b0512ea5eef51d8297d9b99ba0487f204ce98"
       },
       "c:/wtt-/doconline/src/controller/patient.controller.ts": {
@@ -1990,8 +1994,8 @@
         "signature": "399f0bc4cd54778f9f07555e2894c81c1c1953e823bd2310fd3930c9dbfde8be"
       },
       "c:/wtt-/doconline/src/controller/doctor.controller.ts": {
-        "version": "76739390b5b34f27105448b19bec911461408035543b154681c2c5ac0a63d36f",
-        "signature": "7db5be19a835054f8c4890ce63a99743fc4907b6dc060f84320478058489ce10"
+        "version": "df97d85fc4b6ef8e13429f710c028657a42f2069c703d88d2cc3ac065db6a465",
+        "signature": "9da55ec01f37c7fd40bed5d62f7bbf60ebe03281e3a5572efc22afa7d7c513ff"
       },
       "c:/wtt-/doconline/src/provider/doctor.provider.ts": {
         "version": "329003c259b43314f4638038bf9548252390b909f7400138b5174e59f2b4c0ac",
@@ -2018,8 +2022,8 @@
         "signature": "6ec1a4f8f741b41e92b29d5401e37ccf53b8dc25807cc8503bc7eaac80be4c52"
       },
       "c:/wtt-/doconline/src/service/views.service.ts": {
-        "version": "990a83882aec26917a5933950d42d0a9ffb051a37ec00d8921caa7e3e4ce5ae7",
-        "signature": "6e08a903f4ba9330e6b0b73b1b909d65f55ae146d00ff8b3ece667da4d8f6f36"
+        "version": "eae0deeaf6e20c87a2b8bf33ca8cb231ecbf291a98a5c70a29b05bf9310be20d",
+        "signature": "b56690a3fe3db72a7c0f6b1881f9d65cff6f0a6f44e79fc0c6bf79749f404be1"
       },
       "c:/wtt-/doconline/src/controller/views.controller.ts": {
         "version": "a057e5115f4174bb19fdf988adc57abd0290114ffe52aa471a6a762a5323b857",
@@ -2032,14 +2036,6 @@
       "c:/wtt-/doconline/src/module/views.module.ts": {
         "version": "ed88ea2331f6311f02b5d6181cf37857e6b02c9e097f40091a18fb140664797b",
         "signature": "fff8a04d70833548725e04f9eee014ff77d0534594d656c156eb10333e266bd3"
-      },
-      "c:/wtt-/doconline/src/dto/logexam.dto.ts": {
-        "version": "3a7e723eacef52fae9229afe67ac6897952aef3118a5f1481ae024b63b06bd15",
-        "signature": "c8765b7742d1d0df42edacb6ec650d182da1b54ae04a2250dc455264761d9954"
-      },
-      "c:/wtt-/doconline/src/service/logexam.service.ts": {
-        "version": "1a7e099de69c34a78abb579213411ab6e8b6a60102f94bcb7c284e155b6644f5",
-        "signature": "7cbbde58117800e9557c40b4b66b8994ed65976009fa18cc5cdc1ff469385cec"
       },
       "c:/wtt-/doconline/src/controller/logexam.controller.ts": {
         "version": "3bbc0ea881f451b059e7cecebbe144ba4982dc5df72dbd5b0db25e269b1424fd",
@@ -2122,7 +2118,7 @@
         "signature": "a6742e25ac12860727c22a379707e050a126c48c4dd98ddd795a3a33dd0a63c7"
       },
       "c:/wtt-/doconline/src/middleware/logger.middleware.ts": {
-        "version": "6c2077f686ad69be9347146ac3ad353c506becf86593597227d243e2b3ee57f9",
+        "version": "892410783edf77bf5d33f69cd2b20e3f137774cea463cb74d44f541be2b84be7",
         "signature": "0da9335a61bf49ecc11c0d21a4d91031f254507a60bd922f19de97959a4bd208"
       },
       "c:/wtt-/doconline/src/module/app.module.ts": {
@@ -2132,6 +2128,10 @@
       "c:/wtt-/doconline/src/main.ts": {
         "version": "461268529c25771d864caeb96464f6878fe08f6824fcf31a6b25444c8237be5f",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/wtt-/doconline/src/dto/filtering.dto.ts": {
+        "version": "d46da0ac3694ed9907e75abd51ed95033c780ed301bd1a10f750308b412ccbaa",
+        "signature": "2687f21bf3ecb84b00c3782e4f80b0869dd7b51f3bbd0b57dfc3aa554cc3b28c"
       },
       "c:/wtt-/doconline/node_modules/@types/cookiejar/index.d.ts": {
         "version": "16b7fb094ffaa5d270f934e7406e8baee2f8245cfabf6dcc20f693389f005f56",
@@ -4936,15 +4936,6 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts": [
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/dto/exam.dto.ts": [
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "c:/wtt-/doconline/src/dto/site.dto.ts": [
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
@@ -5146,6 +5137,11 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "c:/wtt-/doconline/src/dto/login.dto.ts": [
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
@@ -5197,6 +5193,17 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "c:/wtt-/doconline/src/dto/logexam.dto.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/logexam.service.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/logexam.dto.ts",
+        "c:/wtt-/doconline/src/models/logexam.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "c:/wtt-/doconline/src/service/exam.service.ts": [
         "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
         "c:/wtt-/doconline/src/service/site.service.ts",
@@ -5209,6 +5216,7 @@
         "c:/wtt-/doconline/src/service/userinsurance.service.ts",
         "c:/wtt-/doconline/src/service/insurance.service.ts",
         "c:/wtt-/doconline/src/service/plan.service.ts",
+        "c:/wtt-/doconline/src/service/logexam.service.ts",
         "c:/wtt-/doconline/src/models/user.model.ts",
         "c:/wtt-/doconline/src/models/site.model.ts",
         "c:/wtt-/doconline/src/models/patient.model.ts",
@@ -5216,7 +5224,6 @@
         "c:/wtt-/doconline/src/models/insurance.model.ts",
         "c:/wtt-/doconline/src/models/views.model.ts",
         "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/src/dto/exam.dto.ts",
         "c:/wtt-/doconline/src/dto/profile.dto.ts",
         "c:/wtt-/doconline/src/dto/patient.dto.ts",
         "c:/wtt-/doconline/src/dto/doctor.dto.ts",
@@ -5226,17 +5233,13 @@
         "c:/wtt-/doconline/src/dto/insurance.dto.ts",
         "c:/wtt-/doconline/src/dto/userinsurance.dto.ts",
         "c:/wtt-/doconline/src/dto/plan.dto.ts",
+        "c:/wtt-/doconline/src/dto/logexam.dto.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/src/controller/exam.controller.ts": [
         "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts",
-        "c:/wtt-/doconline/src/dto/exam.dto.ts",
         "c:/wtt-/doconline/src/service/exam.service.ts",
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/src/models/profile.model.ts",
-        "c:/wtt-/doconline/src/models/patient.model.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5501,17 +5504,6 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "c:/wtt-/doconline/src/dto/logexam.dto.ts": [
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/logexam.service.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/logexam.dto.ts",
-        "c:/wtt-/doconline/src/models/logexam.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "c:/wtt-/doconline/src/controller/logexam.controller.ts": [
         "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
         "c:/wtt-/doconline/src/dto/logexam.dto.ts",
@@ -5678,6 +5670,10 @@
         "c:/wtt-/doconline/node_modules/@nestjs/core/index.d.ts",
         "c:/wtt-/doconline/src/module/app.module.ts",
         "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/dto/filtering.dto.ts": [
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -8475,11 +8471,6 @@
       "c:/wtt-/doconline/src/database/database.provider.ts": [
         "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
       ],
-      "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts": [
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "c:/wtt-/doconline/src/models/siterule.model.ts": [
         "c:/wtt-/doconline/src/models/site.model.ts",
         "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
@@ -8583,6 +8574,11 @@
         "c:/wtt-/doconline/src/models/usersite.model.ts",
         "c:/wtt-/doconline/src/dto/usersite.dto.ts"
       ],
+      "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "c:/wtt-/doconline/src/service/login.service.ts": [
         "c:/wtt-/doconline/src/models/login.model.ts",
         "c:/wtt-/doconline/src/dto/login.dto.ts"
@@ -8599,6 +8595,10 @@
         "c:/wtt-/doconline/src/models/plan.model.ts",
         "c:/wtt-/doconline/src/dto/plan.dto.ts"
       ],
+      "c:/wtt-/doconline/src/service/logexam.service.ts": [
+        "c:/wtt-/doconline/src/models/logexam.model.ts",
+        "c:/wtt-/doconline/src/dto/logexam.dto.ts"
+      ],
       "c:/wtt-/doconline/src/service/exam.service.ts": [
         "c:/wtt-/doconline/src/models/profile.model.ts",
         "c:/wtt-/doconline/src/models/usersite.model.ts",
@@ -8613,6 +8613,7 @@
         "c:/wtt-/doconline/src/service/insurance.service.ts",
         "c:/wtt-/doconline/src/service/userinsurance.service.ts",
         "c:/wtt-/doconline/src/service/plan.service.ts",
+        "c:/wtt-/doconline/src/service/logexam.service.ts",
         "c:/wtt-/doconline/src/models/patient.model.ts",
         "c:/wtt-/doconline/src/models/doctor.model.ts",
         "c:/wtt-/doconline/src/models/user.model.ts",
@@ -8723,10 +8724,6 @@
       ],
       "c:/wtt-/doconline/src/provider/views.provider.ts": [
         "c:/wtt-/doconline/src/models/views.model.ts"
-      ],
-      "c:/wtt-/doconline/src/service/logexam.service.ts": [
-        "c:/wtt-/doconline/src/models/logexam.model.ts",
-        "c:/wtt-/doconline/src/dto/logexam.dto.ts"
       ],
       "c:/wtt-/doconline/src/controller/logexam.controller.ts": [
         "c:/wtt-/doconline/src/models/logexam.model.ts",
@@ -9291,8 +9288,6 @@
       "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
       "c:/wtt-/doconline/src/database/database.provider.ts",
       "c:/wtt-/doconline/src/database/database.module.ts",
-      "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts",
-      "c:/wtt-/doconline/src/dto/exam.dto.ts",
       "c:/wtt-/doconline/src/dto/site.dto.ts",
       "c:/wtt-/doconline/src/models/siterule.model.ts",
       "c:/wtt-/doconline/src/models/sitenotification.model.ts",
@@ -9320,6 +9315,7 @@
       "c:/wtt-/doconline/src/service/user.service.ts",
       "c:/wtt-/doconline/src/dto/usersite.dto.ts",
       "c:/wtt-/doconline/src/service/usersite.service.ts",
+      "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts",
       "c:/wtt-/doconline/src/dto/login.dto.ts",
       "c:/wtt-/doconline/src/service/login.service.ts",
       "c:/wtt-/doconline/src/dto/userinsurance.dto.ts",
@@ -9328,7 +9324,8 @@
       "c:/wtt-/doconline/src/service/insurance.service.ts",
       "c:/wtt-/doconline/src/dto/plan.dto.ts",
       "c:/wtt-/doconline/src/service/plan.service.ts",
-      "c:/wtt-/doconline/src/service/exam.service.ts",
+      "c:/wtt-/doconline/src/dto/logexam.dto.ts",
+      "c:/wtt-/doconline/src/service/logexam.service.ts",
       "c:/wtt-/doconline/src/controller/exam.controller.ts",
       "c:/wtt-/doconline/src/provider/exam.provider.ts",
       "c:/wtt-/doconline/src/controller/site.controller.ts",
@@ -9368,8 +9365,6 @@
       "c:/wtt-/doconline/src/controller/views.controller.ts",
       "c:/wtt-/doconline/src/provider/views.provider.ts",
       "c:/wtt-/doconline/src/module/views.module.ts",
-      "c:/wtt-/doconline/src/dto/logexam.dto.ts",
-      "c:/wtt-/doconline/src/service/logexam.service.ts",
       "c:/wtt-/doconline/src/controller/logexam.controller.ts",
       "c:/wtt-/doconline/src/provider/logexam.provider.ts",
       "c:/wtt-/doconline/src/module/logexam.module.ts",
@@ -9393,6 +9388,7 @@
       "c:/wtt-/doconline/src/middleware/logger.middleware.ts",
       "c:/wtt-/doconline/src/module/app.module.ts",
       "c:/wtt-/doconline/src/main.ts",
+      "c:/wtt-/doconline/src/dto/filtering.dto.ts",
       "c:/wtt-/doconline/node_modules/@types/cookiejar/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/jest/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/json5/index.d.ts",
@@ -9401,7 +9397,20 @@
       "c:/wtt-/doconline/node_modules/@types/superagent/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/supertest/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/uuid/interfaces.d.ts",
-      "c:/wtt-/doconline/node_modules/@types/uuid/index.d.ts"
+      "c:/wtt-/doconline/node_modules/@types/uuid/index.d.ts",
+      [
+        "c:/wtt-/doconline/src/service/exam.service.ts",
+        [
+          {
+            "file": "c:/wtt-/doconline/src/service/exam.service.ts",
+            "start": 983,
+            "length": 17,
+            "messageText": "Cannot find module '../dto/exam.dto'.",
+            "category": 1,
+            "code": 2307
+          }
+        ]
+      ]
     ]
   },
   "version": "3.4.3"

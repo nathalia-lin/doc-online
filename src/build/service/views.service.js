@@ -38,10 +38,18 @@ let ViewsService = class ViewsService {
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
+            const views = yield this.viewsRepository.findAll({
+                where: where, include: [user_model_1.default, exam_model_1.default]
+            });
+            return views;
+        });
+    }
+    findOne(where) {
+        return __awaiter(this, void 0, void 0, function* () {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const view = yield this.viewsRepository.findAll({
+            const view = yield this.viewsRepository.findOne({
                 where: where, include: [user_model_1.default, exam_model_1.default]
             });
             return view;

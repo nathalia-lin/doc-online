@@ -41,10 +41,18 @@ let SiteService = class SiteService {
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
+            const sites = yield this.siteRepository.findAll({
+                where: where, include: [siteRule_model_1.default, siteNotification_model_1.default, user_model_1.default, insurance_model_1.default, exam_model_1.default]
+            });
+            return sites;
+        });
+    }
+    findOne(where) {
+        return __awaiter(this, void 0, void 0, function* () {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const site = yield this.siteRepository.findAll({
+            const site = yield this.siteRepository.findOne({
                 where: where, include: [siteRule_model_1.default, siteNotification_model_1.default, user_model_1.default, insurance_model_1.default, exam_model_1.default]
             });
             return site;

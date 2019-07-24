@@ -45,12 +45,18 @@ EXAM
 	"patientSocialName": "MARTHA",
 	"patientBirthDate": "1978/11/12",
 	"patientSex": "F",
-	"refPhysicianType": "CRM",
-	"refPhysicianCRM (depreciado) | refPhysicianNum": "115599",
-    "refPhysicianUF": "SP",
-	"refPhysicianName": "WILSON LOPES VEGAS",
 	"protocolID": "T65965945",
 	"protocolPwd": "12111978",
-    "readingPhysician": "SP4321",
-    "reqPhysicianName": "ROGERIO CENI"
+	"reqPhysicianType": "CRM",
+    "reqPhysicianNum": "SP4321",
+	"reqPhysicianUF": "SP",
+    "reqPhysicianName": "ROGERIO CENI",
+	"refPhysicianType": "CRM",
+	"refPhysicianNum": "115599",
+    "refPhysicianUF": "SP",
+	"refPhysicianName": "WILSON LOPES VEGAS"
 }
+
+THINGS TO WATCH OUT FOR (CAUSES ERRORS):
+1. Can't have undefined input
+2. Can't search for input that are not defined beforehand

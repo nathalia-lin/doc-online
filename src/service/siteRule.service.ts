@@ -16,10 +16,17 @@ export class SiteRuleService {
   }
 
   async find(where: any) {
+    const siteRules = await this.siteRuleRepository.findAll({
+      where: where, include: [Site]
+    });
+    return siteRules;
+  }
+
+  async findOne(where: any) {
     if (typeof where === 'string') {
-      where = { 'id': where };
+      where = { 'id': where }
     }
-    const siteRule = await this.siteRuleRepository.findAll({
+    const siteRule = await this.siteRuleRepository.findOne({
       where: where, include: [Site]
     });
     return siteRule;

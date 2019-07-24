@@ -27,8 +27,4 @@ export class LoginController {
         return await this.loginService.find(where);
     }
 
-    @Delete(':id')
-    public async deleteOne(@Param('id') loginId: number) {
-        return await this.loginService.deleteOne(loginId);
-    }
 }

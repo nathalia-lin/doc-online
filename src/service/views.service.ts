@@ -17,10 +17,17 @@ export class ViewsService {
     }
 
     async find(where: any) {
+        const views = await this.viewsRepository.findAll({
+            where: where, include: [User, Exam]
+        });
+        return views;
+    }
+
+    async findOne(where: any) {
         if (typeof where === 'string') {
-            where = { 'id': where };
+            where = { 'id': where }
         }
-        const view = await this.viewsRepository.findAll({
+        const view = await this.viewsRepository.findOne({
             where: where, include: [User, Exam]
         });
         return view;

@@ -18,10 +18,12 @@ export class LoginModule implements NestModule {
         consumer
             .apply(AuthMiddleware)
             .exclude(
-                { path: '/login', method: RequestMethod.ALL }
+                { path: '/login', method: RequestMethod.ALL },
+                { path: '/site', method: RequestMethod.ALL }
             )
             .forRoutes(
-                { path: '/*/*', method: RequestMethod.GET }
+                { path: '/exam', method: RequestMethod.ALL },
+                { path: '/exam/search', method: RequestMethod.ALL }
             )
     }
 }

@@ -16,10 +16,17 @@ export class SiteNotificationService {
   }
 
   async find(where: any) {
+    const siteNotifications = await this.siteNotificationRepository.findAll({
+      where: where, include: [Site]
+    });
+    return siteNotifications;
+  }
+
+  async findOne(where: any) {
     if (typeof where === 'string') {
-      where = { 'id': where };
+      where = { 'id': where }
     }
-    const siteNotification = await this.siteNotificationRepository.findAll({
+    const siteNotification = await this.siteNotificationRepository.findOne({
       where: where, include: [Site]
     });
     return siteNotification;

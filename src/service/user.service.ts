@@ -19,11 +19,18 @@ export class UserService {
         return await this.userRepository.create<User>(createUserDto);
     }
 
-    async find(where: any) {
-        if (typeof where === 'string') {
-            where = { 'id': where };
-        }
+    async find(where: object) {
         const user = await this.userRepository.findAll({
+            where: where, include: [Profile, Login, Site, Views, Insurance]
+        });
+        return user;
+    }
+
+    async findOne(where: any) {
+        if (typeof where === 'string') {
+            where = { 'id': where }
+        }
+        const user = await this.userRepository.findOne({
             where: where, include: [Profile, Login, Site, Views, Insurance]
         });
         return user;

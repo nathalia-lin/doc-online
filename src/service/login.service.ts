@@ -8,7 +8,7 @@ import Login from '../models/login.model';
 
 @Injectable()
 export class LoginService {
-    
+
     constructor(
         @Inject('LoginRepository') private readonly loginRepository: typeof Login
     ) { }
@@ -44,22 +44,21 @@ export class LoginService {
         return await jwt.sign(payload, 'secret', options);
     }
 
-    async find(where: any) {
+    async find(where: object) {
+        const logins = await this.loginRepository.findAll({
+            where: where, include: [User]
+        });
+        return logins;
+    }
+
+    async findOne(where: any) {
         if (typeof where === 'string') {
-            where = { 'id': where };
+            where = { 'id': where }
         }
-        const login = await this.loginRepository.findAll({
+        const login = await this.loginRepository.findOne({
             where: where, include: [User]
         });
         return login;
     }
 
-    async deleteOne(logId: number) {
-
-        const deletedLog = await this.loginRepository.destroy({
-            where: { 'id': logId }
-        });
-
-        return await deletedLog;
-    }
 }

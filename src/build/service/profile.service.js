@@ -39,10 +39,18 @@ let ProfileService = class ProfileService {
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
+            const profiles = yield this.profileRepository.findAll({
+                where: where, include: [user_model_1.default, patient_model_1.default, doctor_model_1.default]
+            });
+            return profiles;
+        });
+    }
+    findOne(where) {
+        return __awaiter(this, void 0, void 0, function* () {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const profile = yield this.profileRepository.findAll({
+            const profile = yield this.profileRepository.findOne({
                 where: where, include: [user_model_1.default, patient_model_1.default, doctor_model_1.default]
             });
             return profile;

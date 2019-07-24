@@ -18,11 +18,6 @@ export class DoctorController {
         return await this.doctorService.find(where);
     }
 
-    @Get()
-    public async showAll() {
-        return await Doctor.findAll();
-    }
-
     @Delete(':id')
     public async deleteOne(@Param('id') doctorId: number) {
         return await this.doctorService.deleteOne(doctorId);

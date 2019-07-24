@@ -10,7 +10,7 @@ import Exam from '../models/exam.model';
 
 @Injectable()
 export class SiteService {
-  
+
   constructor(
     @Inject('SiteRepository') private readonly siteRepository: typeof Site
   ) { }
@@ -20,10 +20,17 @@ export class SiteService {
   }
 
   async find(where: any) {
+    const sites = await this.siteRepository.findAll({
+      where: where, include: [SiteRule, SiteNotification, User, Insurance, Exam]
+    });
+    return sites;
+  }
+
+  async findOne(where: any) {
     if (typeof where === 'string') {
-      where = { 'id': where };
+      where = { 'id': where }
     }
-    const site = await this.siteRepository.findAll({
+    const site = await this.siteRepository.findOne({
       where: where, include: [SiteRule, SiteNotification, User, Insurance, Exam]
     });
     return site;

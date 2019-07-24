@@ -16,8 +16,8 @@ let LoginModule = class LoginModule {
     configure(consumer) {
         consumer
             .apply(auth_middleware_1.AuthMiddleware)
-            .exclude({ path: '/login', method: common_1.RequestMethod.ALL })
-            .forRoutes({ path: '/*/*', method: common_1.RequestMethod.GET });
+            .exclude({ path: '/login', method: common_1.RequestMethod.ALL }, { path: '/site', method: common_1.RequestMethod.ALL })
+            .forRoutes({ path: '/exam', method: common_1.RequestMethod.ALL }, { path: '/exam/search', method: common_1.RequestMethod.ALL });
     }
 };
 LoginModule = __decorate([

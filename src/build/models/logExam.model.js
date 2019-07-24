@@ -18,15 +18,14 @@ let LogExam = class LogExam extends sequelize_typescript_1.Model {
 };
 __decorate([
     sequelize_typescript_1.PrimaryKey,
-    sequelize_typescript_1.Column(sequelize_typescript_1.DataType.UUID),
-    __metadata("design:type", Number)
-], LogExam.prototype, "id", void 0);
-__decorate([
-    sequelize_typescript_1.ForeignKey(() => exam_model_1.default),
     sequelize_typescript_1.Column({
         defaultValue: sequelize_typescript_1.DataType.UUIDV4,
         type: sequelize_typescript_1.DataType.UUID
     }),
+    __metadata("design:type", Number)
+], LogExam.prototype, "id", void 0);
+__decorate([
+    sequelize_typescript_1.ForeignKey(() => exam_model_1.default),
     __metadata("design:type", Number)
 ], LogExam.prototype, "examId", void 0);
 __decorate([

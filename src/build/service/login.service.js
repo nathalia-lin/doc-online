@@ -74,21 +74,21 @@ let LoginService = class LoginService {
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
+            const logins = yield this.loginRepository.findAll({
+                where: where, include: [user_model_1.default]
+            });
+            return logins;
+        });
+    }
+    findOne(where) {
+        return __awaiter(this, void 0, void 0, function* () {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const login = yield this.loginRepository.findAll({
+            const login = yield this.loginRepository.findOne({
                 where: where, include: [user_model_1.default]
             });
             return login;
-        });
-    }
-    deleteOne(logId) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const deletedLog = yield this.loginRepository.destroy({
-                where: { 'id': logId }
-            });
-            return yield deletedLog;
         });
     }
 };

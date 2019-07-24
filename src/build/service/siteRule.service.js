@@ -37,10 +37,18 @@ let SiteRuleService = class SiteRuleService {
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
+            const siteRules = yield this.siteRuleRepository.findAll({
+                where: where, include: [site_model_1.default]
+            });
+            return siteRules;
+        });
+    }
+    findOne(where) {
+        return __awaiter(this, void 0, void 0, function* () {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const siteRule = yield this.siteRuleRepository.findAll({
+            const siteRule = yield this.siteRuleRepository.findOne({
                 where: where, include: [site_model_1.default]
             });
             return siteRule;

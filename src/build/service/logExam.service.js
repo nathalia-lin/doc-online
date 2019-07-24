@@ -33,10 +33,18 @@ let LogExamService = class LogExamService {
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
+            const logExam = yield this.logExamRepository.findAll({
+                where: where
+            });
+            return logExam;
+        });
+    }
+    findOne(where) {
+        return __awaiter(this, void 0, void 0, function* () {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const logExam = yield this.logExamRepository.findAll({
+            const logExam = yield this.logExamRepository.findOne({
                 where: where
             });
             return logExam;

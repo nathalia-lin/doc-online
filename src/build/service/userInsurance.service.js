@@ -33,10 +33,18 @@ let UserInsuranceService = class UserInsuranceService {
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
+            const userInsurances = yield this.userInsuranceRepository.findAll({
+                where: where
+            });
+            return userInsurances;
+        });
+    }
+    findOne(where) {
+        return __awaiter(this, void 0, void 0, function* () {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const userInsurance = yield this.userInsuranceRepository.findAll({
+            const userInsurance = yield this.userInsuranceRepository.findOne({
                 where: where
             });
             return userInsurance;

@@ -11,7 +11,7 @@ let LoggerMiddleware = class LoggerMiddleware {
     use(req, res, next) {
         console.log("STATUS CODE " + res.statusCode);
         console.log("REQUEST");
-        console.log(req.headers);
+        console.log(req.headers["content-type"]);
         next();
     }
 };

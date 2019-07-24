@@ -15,10 +15,17 @@ export class UserInsuranceService {
     }
 
     async find(where: any) {
+        const userInsurances = await this.userInsuranceRepository.findAll({
+            where: where
+        });
+        return userInsurances;
+    }
+
+    async findOne(where: any) {
         if (typeof where === 'string') {
-            where = { 'id': where };
+            where = { 'id': where }
         }
-        const userInsurance = await this.userInsuranceRepository.findAll({
+        const userInsurance = await this.userInsuranceRepository.findOne({
             where: where
         });
         return userInsurance;
