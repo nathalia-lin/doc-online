@@ -275,7 +275,7 @@ let ExamService = class ExamService {
                 console.log(key);
                 where[key] = body[key];
             });
-            const exams = this.find(Object.assign({ patientId: patient.id }, where));
+            const exams = this.find(Object.assign({}, where));
             return exams;
         });
     }

@@ -1718,16 +1718,84 @@
         "signature": "a7957fe2cdc477e90694a4deeb05cf5204e22a11a696e86fb098239629bc4755"
       },
       "c:/wtt-/doconline/src/database/database.provider.ts": {
-        "version": "64945781f48d5707904b305f022f577b33480f89a954109aeba4934de2d34f19",
+        "version": "8adc11355d036675639c8d5826d0212f08130a034ef5102174c73e0e7649deee",
         "signature": "0b160b2e7cb302c54838dbfc5c453caab3457e19c4a66cd289cfdbeebf080455"
       },
       "c:/wtt-/doconline/src/database/database.module.ts": {
         "version": "afaa19bcd5dc79f96683b07c84f5f691e455509089f2e2aa2fc5cb7e97f01af1",
         "signature": "012ca69dacdbff2b4621a9a43ccfba38fabd3511b3a084afb4b12446140989d3"
       },
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validationerror.d.ts": {
+        "version": "cf03a9730c9f35f0427dceb1e5441d60cc416cc945dcf72f89bc1280eec1f798",
+        "signature": "cf03a9730c9f35f0427dceb1e5441d60cc416cc945dcf72f89bc1280eec1f798"
+      },
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validatoroptions.d.ts": {
+        "version": "d1dc7c886726854cd1f81dbe1bd43d9bcad40c17f4ee42b16fa87a424f256ebb",
+        "signature": "d1dc7c886726854cd1f81dbe1bd43d9bcad40c17f4ee42b16fa87a424f256ebb"
+      },
+      "c:/wtt-/doconline/node_modules/class-validator/validation-schema/validationschema.d.ts": {
+        "version": "e3ade48fecbde1ee782614ec777e32bf4edb78f9496ee92788b0ffbcbc0057f8",
+        "signature": "e3ade48fecbde1ee782614ec777e32bf4edb78f9496ee92788b0ffbcbc0057f8"
+      },
+      "c:/wtt-/doconline/node_modules/class-validator/container.d.ts": {
+        "version": "4743865534f105387e316eb554450fda0af43e768d473b106dacc8d1d00df4bc",
+        "signature": "4743865534f105387e316eb554450fda0af43e768d473b106dacc8d1d00df4bc"
+      },
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validationtypeoptions.d.ts": {
+        "version": "b6347018deca7486dfe4f8b7cb7f82b5f635871ce4a92113a0adeb8db6dfd67b",
+        "signature": "b6347018deca7486dfe4f8b7cb7f82b5f635871ce4a92113a0adeb8db6dfd67b"
+      },
+      "c:/wtt-/doconline/node_modules/class-validator/decorator/validationoptions.d.ts": {
+        "version": "2ce7e5cfb4ab1fcf287a3d412677cd6ca9d2c557fcf973f2d001b02b95749942",
+        "signature": "2ce7e5cfb4ab1fcf287a3d412677cd6ca9d2c557fcf973f2d001b02b95749942"
+      },
+      "c:/wtt-/doconline/node_modules/class-validator/decorator/decorators.d.ts": {
+        "version": "e840f6eb66691c7ff0a3bb0a28c9a129689f550a8d102150818552b471af753b",
+        "signature": "e840f6eb66691c7ff0a3bb0a28c9a129689f550a8d102150818552b471af753b"
+      },
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validationarguments.d.ts": {
+        "version": "0bcdd320d6bc69951aa1fc09eb13e71eefa8dd5037d7b54f9af0b7dabbd8e0ff",
+        "signature": "0bcdd320d6bc69951aa1fc09eb13e71eefa8dd5037d7b54f9af0b7dabbd8e0ff"
+      },
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validatorconstraintinterface.d.ts": {
+        "version": "f8816939737b73305a2aad092f808e0d5d9443a13356407ce8af204d4ee53d82",
+        "signature": "f8816939737b73305a2aad092f808e0d5d9443a13356407ce8af204d4ee53d82"
+      },
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validationtypes.d.ts": {
+        "version": "7ba4b3c2e5a96270c20c95f3914a293f91e3adb0496738b2e450767eb90b8acd",
+        "signature": "7ba4b3c2e5a96270c20c95f3914a293f91e3adb0496738b2e450767eb90b8acd"
+      },
+      "c:/wtt-/doconline/node_modules/class-validator/metadata/validationmetadataargs.d.ts": {
+        "version": "216bb574654351469b377871dbeef2149f46049444a4caad46e19e2129902c42",
+        "signature": "216bb574654351469b377871dbeef2149f46049444a4caad46e19e2129902c42"
+      },
+      "c:/wtt-/doconline/node_modules/class-validator/metadata/validationmetadata.d.ts": {
+        "version": "09a65eda4c358b2ba9cd2a1ce761dd4b9e88b2f3c52bdd9308dbdc9078efcdc5",
+        "signature": "09a65eda4c358b2ba9cd2a1ce761dd4b9e88b2f3c52bdd9308dbdc9078efcdc5"
+      },
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validator.d.ts": {
+        "version": "d0496f533a93aca10dcd7b05918e278d0c2043ae7102629f6ae090ff4708d5a7",
+        "signature": "d0496f533a93aca10dcd7b05918e278d0c2043ae7102629f6ae090ff4708d5a7"
+      },
+      "c:/wtt-/doconline/node_modules/class-validator/register-decorator.d.ts": {
+        "version": "212e9b2b29ecc7c705d7d8c4381d997a2cc0bea51bf6120be664fdf8dc9bd963",
+        "signature": "212e9b2b29ecc7c705d7d8c4381d997a2cc0bea51bf6120be664fdf8dc9bd963"
+      },
+      "c:/wtt-/doconline/node_modules/class-validator/metadata/constraintmetadata.d.ts": {
+        "version": "055afe90588632398154f1f14ba6d7679ce486e9348beca5b0380f31693c4c47",
+        "signature": "055afe90588632398154f1f14ba6d7679ce486e9348beca5b0380f31693c4c47"
+      },
+      "c:/wtt-/doconline/node_modules/class-validator/metadata/metadatastorage.d.ts": {
+        "version": "d3a34f5ed777854e0f878171feac096920fb02fafe468d1f58df03a26d232da2",
+        "signature": "d3a34f5ed777854e0f878171feac096920fb02fafe468d1f58df03a26d232da2"
+      },
+      "c:/wtt-/doconline/node_modules/class-validator/index.d.ts": {
+        "version": "9ab4ca668d02db34965308fd7052820741ef0c260bdf9ac15c3c841dcbe47de6",
+        "signature": "9ab4ca668d02db34965308fd7052820741ef0c260bdf9ac15c3c841dcbe47de6"
+      },
       "c:/wtt-/doconline/src/dto/site.dto.ts": {
-        "version": "33047196138b4e890421f64806e3661e3c41894991088d11b781c27940af4b01",
-        "signature": "797f9728a0d080187da213c3cd794a53ede4dd66c8bcdde288c5dd51e68270a7"
+        "version": "a29b22d03ca7e24d689e3c18b86f563097a47c8d3fed3ad0505107ae64c70cf5",
+        "signature": "5c9b825c4d00457016fdee10c510d4f33c11bf397c5735a474971256e3859a10"
       },
       "c:/wtt-/doconline/src/models/siterule.model.ts": {
         "version": "dfbdaff4207f700e9a95a7bc47667847405eb52c5473bd86f8f13ea0ba0d4262",
@@ -1794,40 +1862,40 @@
         "signature": "6c9e4dff8c639e30c0fc78e253e0c6e2401e51f52d62f9e3d3650782ca3e5f05"
       },
       "c:/wtt-/doconline/src/dto/profile.dto.ts": {
-        "version": "141580c38603506d1fca4cc6f18418f85b960aa2613ebc53abe2144569724608",
-        "signature": "6ecc914d709c25e6a461ee33ccd39d96966c669061b7f5671df38b816159d6a4"
+        "version": "2c42b2217755e742c6cbd0889064126107bd23710c1f81a8af6a761d67075ea8",
+        "signature": "1467aa48da2e890740d699c8dd602c92c346b3e4920ee104d5d94a7c5df17e1b"
       },
       "c:/wtt-/doconline/src/service/profile.service.ts": {
         "version": "0fbd7f765aa4acef73207dfc7d802c7184bd5a7319955efe931321846b75aac9",
         "signature": "1b29c5f42ae1e8bc9b693f4f2b4a6a10257e4b77ec9d3f096ff20da5b3e2c773"
       },
       "c:/wtt-/doconline/src/dto/patient.dto.ts": {
-        "version": "b27a24a20ea01d5e26177eab5794b1d89cefb9455f1ba1ff8ef53b3c418baa89",
-        "signature": "24dc370b0ab613dacf794c619d8bbcc0a035551badd366abe88717d554a65300"
+        "version": "d71e018425e7d1c92debc60c596d50b13318f2a6e70686f37f2aff5060dd5bb8",
+        "signature": "8fb4baa228e9af4323e4c2b0f19d667bdb8dd70390f91826e076f03ca4067343"
       },
       "c:/wtt-/doconline/src/service/patient.service.ts": {
         "version": "a7909f439f25af34dccd3296b708d616f037fd21a198234eec6741aeb3205a8a",
         "signature": "c185eb8d928548c52a65cb5ee30873b727e7f561be3bfbf1b48cff22ddb04f65"
       },
       "c:/wtt-/doconline/src/dto/doctor.dto.ts": {
-        "version": "af1151d01792ad396d9a126315df23a05d8ee51e805d721ae222250bab8291da",
-        "signature": "ad4fd9888e64d888537c16b101bc02eacfc48244efad72ef143d942433a9aee5"
+        "version": "f6d5d8e96d0ab8ee1be7f092de11dfae51e7228f451beb4d37679457fbaae54a",
+        "signature": "a558065fac263565eb0d4c9c21dd1c1e5d6163ad78f71f32dcca7931df36be97"
       },
       "c:/wtt-/doconline/src/service/doctor.service.ts": {
         "version": "ac2820bb55dcaf34a15c8aa7e31e80cd23c0dc8a6eca7a40b878d15880408405",
         "signature": "0a44b72be55309793b64a41d47d363b80de19dad104bf86ba7d88747a2f24f61"
       },
       "c:/wtt-/doconline/src/dto/user.dto.ts": {
-        "version": "bc819fa4cb81c7c6170410780e155ee76763b3b3d2b7ef5ef3e5d1b550eb6cf5",
-        "signature": "d513432f59ad88a728fe5fab281578333e88230f621bef64c354236cd02f3187"
+        "version": "5d4c597884e905c1cbbc2536158ee03ad3426b097c5374dd12e5e7f2b133335b",
+        "signature": "264dc5aa054577a6160a26ed81e0d8b1e742c71c7581ffba88676d966a76a3c4"
       },
       "c:/wtt-/doconline/src/service/user.service.ts": {
         "version": "3169bb161011574fe6c0f2c82a97693799c5dd1fecb437ae1eff3acf72295914",
         "signature": "cf46e7806c14acba69f3a8a9ac70daa28cccd3e0715c91c467e05d7683722df2"
       },
       "c:/wtt-/doconline/src/dto/usersite.dto.ts": {
-        "version": "140af5fee9ace30bd282f935c0e15019d009b59042ef876b886b33490bc1cb72",
-        "signature": "e217261faf50739e8be2d096a7dec10a2d36ce0d41d05621018ba5c9cc20777d"
+        "version": "0fe6125ce642b1fcdf4d9e66e268c14f2beee8981e3a37f050bbaf2e03a749c0",
+        "signature": "6e88c6ba7e04f8337f0bbb17df28ec67d4a688d087f4b2755980020c3db33273"
       },
       "c:/wtt-/doconline/src/service/usersite.service.ts": {
         "version": "e66efa54e61801539aeff01db8dd7913f79690c7e72663055c65ea58edb149c7",
@@ -1838,48 +1906,56 @@
         "signature": "daef0ff8d0878f91f68abfdb51e82a5df5b5bc9fc665202e0bd45ddefe640fa2"
       },
       "c:/wtt-/doconline/src/dto/login.dto.ts": {
-        "version": "94d7fa882ffd3793856e50307a9a2f0bdb4e229feb8c8044e4c613b6ff7c1031",
-        "signature": "0353ed99dc9502efd9260cb6b2a4a29a17037d3fccea115b010aaddd1d5124b7"
+        "version": "284a2091048484cb44760c48d323f0d539f8522e1340de42a8dd75362f6bfd5c",
+        "signature": "d9ed68bcbab212493ba2bbb5255eaed665d65d976b2b2763b34c8b28724901ee"
       },
       "c:/wtt-/doconline/src/service/login.service.ts": {
         "version": "be964afdf5effe7c9ca45350de22a0389f725bf44723699eac299440e4d7fa36",
         "signature": "0f812782584aa65aae1f47e7701b585e97bae68112d06984cf67fd4bf871b920"
       },
       "c:/wtt-/doconline/src/dto/userinsurance.dto.ts": {
-        "version": "1c364c0f168d405d5b75b2e4fe929cdcc41243865571b2a17a0062f8a46e7dae",
-        "signature": "757f46559eea70beff9712fce8c67e3e2925e07c93476b8c30b5a38468092bdf"
+        "version": "b338d096ae7a7df48038e11506c56da7e18079028774eb377f28bee2332bceef",
+        "signature": "0309072c64cfff5ab73045d01ef8c623dddd5c1642b95c03ce754e6078f43719"
       },
       "c:/wtt-/doconline/src/service/userinsurance.service.ts": {
         "version": "abaaed6620f57af05d0c0dfbcc5fd6365dbd34b5050b1d72abd61b77d53444ff",
         "signature": "45aef368866a25090a28f4461139a56eeaf831fce56b814564aada997dd5c54b"
       },
       "c:/wtt-/doconline/src/dto/insurance.dto.ts": {
-        "version": "7965f7717e7fa919206bdf2d9c20c84bf16759722e1e8d09232105d83e3c934d",
-        "signature": "814fe20c6ee9d13be61e617aaf04ea21f6117ab4e08f93c0ef743eb939c34c72"
+        "version": "967a80b4d8a946ea34899645468d053883a75129bf92fa198cff44845c9dafcb",
+        "signature": "858e5ac695ab614b7769cdf487c1d871519aae4fff9054a805881b5ece28b4b2"
       },
       "c:/wtt-/doconline/src/service/insurance.service.ts": {
         "version": "8b9e8e7c8f60586de507ce1aa423f9f65828830801e1e4cf6b5b4011806d5f24",
         "signature": "07564d798bfcda69db2b3e2b0ba43055488eb193876cbfff03d4c88d3d703ca3"
       },
       "c:/wtt-/doconline/src/dto/plan.dto.ts": {
-        "version": "1bea1673978c7dbf00825c2716e5bed91bc3a7fab646cd3a94c79289a45fae19",
-        "signature": "738d72b6694439a2767b5257e8ca51ae4c40769621c2f704d0c4c985e559edb9"
+        "version": "ea2548691d4b70b8510c9e52025a32bc66e401353a460a5fa9221cbd00ec89fc",
+        "signature": "307cb17696e4689cacb54dec5ecafd81807210cf2feffbda9e8b10d8d2c4b8f4"
       },
       "c:/wtt-/doconline/src/service/plan.service.ts": {
         "version": "09404236e72dff17d8f152ccc2c893b03cbc0b360fc17da55ff42d09458efb89",
         "signature": "d1bd0c6ec45ba108d1e7248833276068bbff4cba74651e74f20d84732b8467ad"
       },
       "c:/wtt-/doconline/src/dto/logexam.dto.ts": {
-        "version": "93b66be14ef98e1130483c2fc06c6587563efbad176dccd529ff22ce991d3790",
-        "signature": "d67dd210bd5e16f19bd5f466b718dfaee281dcf9d6d91c2b39f1390e79d1807d"
+        "version": "7fc78a6734d6ff128988b92580361c04d90c9fc30924f3d0d7d21399a301e774",
+        "signature": "d26aecfbe92b4fce488d3e6a7b1624a705c39c813acaf4d51e41686d490bfb39"
       },
       "c:/wtt-/doconline/src/service/logexam.service.ts": {
         "version": "92049757c8e5d3b20de5a8f28dd9bc0f048d8c4aef5b88caff31d9b8d00cad19",
         "signature": "784fe1438b8b494ebf662577a1981afaadc24dd8cecfe25e6ee21b3f5a111506"
       },
+      "c:/wtt-/doconline/src/dto/exam.dto.ts": {
+        "version": "d5f82fd335842cb9835b26ac853d9b7426b3b88b8a2eb874885588bf1c3cf4d2",
+        "signature": "56407427e16c960255a05b91e85304896dddd6811f88bc8e0e7030073f1fe122"
+      },
+      "c:/wtt-/doconline/src/dto/filter.dto.ts": {
+        "version": "3f474f36a365c2ae8b6fa33aa938b1c1f31e5535a83830637e65e92aabab7829",
+        "signature": "a0e6c1eedd342c4fd91bbda4b57242b8a5280d94df87eb2bc99b780d7ecec433"
+      },
       "c:/wtt-/doconline/src/service/exam.service.ts": {
-        "version": "cd43a4a8a69f2aac58bb5049220f7d942c7f8a553a7f29951157cc2b8e4efe51",
-        "signature": "74671cd8669a10fe1838df39616e657e4e8bcbf7b6db7045b7fa729b47b57a62"
+        "version": "4f74791a8a005b76ae8cf4ad0386a265234d77e6e2ab382e0192b76c2f603768",
+        "signature": "c53a4ad8f448c6211ef4da585c98fa05f20861cf05287ba2a14e4745703d1330"
       },
       "c:/wtt-/doconline/src/controller/exam.controller.ts": {
         "version": "0c71ce72500c9e02713bc0961b5dc2faa051a2f26fd76687151dbc67f1b3a929",
@@ -1902,8 +1978,8 @@
         "signature": "0b01b9891bcfcdf818f1fae2d1b55a38198111a69abd8846f9ab0621fc860a37"
       },
       "c:/wtt-/doconline/src/dto/siterule.dto.ts": {
-        "version": "2dd0d530411b06dd1f0f6261e3e18dec4ea4d1e2b7e30ad96618d6e21d7c477e",
-        "signature": "107303d25f958e57574f54a5210ea2b062fab6f256347051f4560e3edf06e5ec"
+        "version": "8adf7e97920dc04a45db6b8e7c5d1002bf9faf6d47b7b32d2aa8f287495e24a6",
+        "signature": "77ae88ee685edd2c13af9c51290772d39420dfac8ee645553521361a5d178ca0"
       },
       "c:/wtt-/doconline/src/service/siterule.service.ts": {
         "version": "5c0541a8cc9231e9f3f102481e7f03a8af58ecbff25ec09a470c2882c220c14d",
@@ -1922,8 +1998,8 @@
         "signature": "60e299edcd609cb7aa94c5f9caedf7d69a2aed4c833a9970a5b42d2f9318ec30"
       },
       "c:/wtt-/doconline/src/dto/sitenotification.dto.ts": {
-        "version": "40867f93a0021adb031ac571430c8c7d82bcb2636e1e2b745a7157ab094b4d95",
-        "signature": "79a9427964778139b6c79346d319b0068e6d34e164dfbe3d828f16d1e466ee06"
+        "version": "3d41e1e355043572729213874ba4a1a5994c99fbff96de2e662a105fb648fddd",
+        "signature": "1a747a3268873d91e893730a41af93103866fcdd39afd29c2a971cd60942ce7b"
       },
       "c:/wtt-/doconline/src/service/sitenotification.service.ts": {
         "version": "4dfd20fccf0aa11fdf3442fbc040e4dfb2319302ce4f486465c6ac25ecf4da9d",
@@ -2018,8 +2094,8 @@
         "signature": "151e344b4be09204a80f4b4b308ee0ccafb8a0d556081eae5d7e46c1b9fa955e"
       },
       "c:/wtt-/doconline/src/dto/views.dto.ts": {
-        "version": "70863cfd5754f9530168be08c1adbf593fb8afb6f5e46eab861157c160d31a6b",
-        "signature": "6ec1a4f8f741b41e92b29d5401e37ccf53b8dc25807cc8503bc7eaac80be4c52"
+        "version": "4e47ea5cc78308fdc017b7c0ee2eadca94c8228e3028e900d07e6578f7388bd2",
+        "signature": "b82302d7568038abaa70bf30bb399fdd83f08923b31e62318eb0ae3874910b1d"
       },
       "c:/wtt-/doconline/src/service/views.service.ts": {
         "version": "eae0deeaf6e20c87a2b8bf33ca8cb231ecbf291a98a5c70a29b05bf9310be20d",
@@ -2126,12 +2202,8 @@
         "signature": "843f051400e86a3e4de923e5b7271bfa660bd889abf5fee0dce89d6ded83b42c"
       },
       "c:/wtt-/doconline/src/main.ts": {
-        "version": "461268529c25771d864caeb96464f6878fe08f6824fcf31a6b25444c8237be5f",
+        "version": "2b38d5478aed5ed8b5df8365e4a8c0deb8867868906f3c43beadca0a5f4cc867",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
-      },
-      "c:/wtt-/doconline/src/dto/filtering.dto.ts": {
-        "version": "d46da0ac3694ed9907e75abd51ed95033c780ed301bd1a10f750308b412ccbaa",
-        "signature": "2687f21bf3ecb84b00c3782e4f80b0869dd7b51f3bbd0b57dfc3aa554cc3b28c"
       },
       "c:/wtt-/doconline/node_modules/@types/cookiejar/index.d.ts": {
         "version": "16b7fb094ffaa5d270f934e7406e8baee2f8245cfabf6dcc20f693389f005f56",
@@ -2144,10 +2216,6 @@
       "c:/wtt-/doconline/node_modules/@types/json5/index.d.ts": {
         "version": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538",
         "signature": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538"
-      },
-      "c:/wtt-/doconline/node_modules/@types/morgan/index.d.ts": {
-        "version": "d331c83227ae5b3090f0d46fc6738d96b6959b2365571fa56d052acec81a5a1a",
-        "signature": "d331c83227ae5b3090f0d46fc6738d96b6959b2365571fa56d052acec81a5a1a"
       },
       "c:/wtt-/doconline/node_modules/@types/sequelize/index.d.ts": {
         "version": "fce30cc33f1540cd5b97ab025df410f73e9deb66fc898a5df6084f3d5d771ea7",
@@ -4936,7 +5004,106 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validationerror.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validatoroptions.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/validation-schema/validationschema.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/container.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validationtypeoptions.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/decorator/validationoptions.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/decorator/decorators.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/decorator/validationoptions.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validationarguments.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validatorconstraintinterface.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationarguments.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validationtypes.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationarguments.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/metadata/validationmetadataargs.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/decorator/validationoptions.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/metadata/validationmetadata.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/metadata/validationmetadataargs.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationarguments.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validator.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/metadata/validationmetadata.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationerror.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validatoroptions.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/register-decorator.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validatoroptions.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/metadata/constraintmetadata.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/metadata/metadatastorage.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/metadata/validationmetadata.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/metadata/constraintmetadata.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation-schema/validationschema.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationerror.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validatoroptions.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation-schema/validationschema.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/container.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/decorator/decorators.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/decorator/validationoptions.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationarguments.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationtypes.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validator.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/register-decorator.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/metadata/metadatastorage.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "c:/wtt-/doconline/src/dto/site.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5071,6 +5238,7 @@
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/src/dto/profile.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5085,6 +5253,7 @@
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/src/dto/patient.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5098,6 +5267,7 @@
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/src/dto/doctor.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5111,6 +5281,7 @@
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/src/dto/user.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5127,6 +5298,7 @@
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/src/dto/usersite.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5143,6 +5315,7 @@
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/src/dto/login.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5157,6 +5330,7 @@
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/src/dto/userinsurance.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5168,6 +5342,7 @@
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/src/dto/insurance.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5182,6 +5357,7 @@
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/src/dto/plan.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5194,6 +5370,7 @@
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/src/dto/logexam.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5201,6 +5378,15 @@
         "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
         "c:/wtt-/doconline/src/dto/logexam.dto.ts",
         "c:/wtt-/doconline/src/models/logexam.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/dto/exam.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/dto/filter.dto.ts": [
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5224,6 +5410,7 @@
         "c:/wtt-/doconline/src/models/insurance.model.ts",
         "c:/wtt-/doconline/src/models/views.model.ts",
         "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/src/dto/exam.dto.ts",
         "c:/wtt-/doconline/src/dto/profile.dto.ts",
         "c:/wtt-/doconline/src/dto/patient.dto.ts",
         "c:/wtt-/doconline/src/dto/doctor.dto.ts",
@@ -5234,6 +5421,7 @@
         "c:/wtt-/doconline/src/dto/userinsurance.dto.ts",
         "c:/wtt-/doconline/src/dto/plan.dto.ts",
         "c:/wtt-/doconline/src/dto/logexam.dto.ts",
+        "c:/wtt-/doconline/src/dto/filter.dto.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5270,6 +5458,7 @@
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/src/dto/siterule.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5303,6 +5492,7 @@
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/src/dto/sitenotification.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5471,6 +5661,7 @@
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/src/dto/views.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5673,10 +5864,6 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "c:/wtt-/doconline/src/dto/filtering.dto.ts": [
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "c:/wtt-/doconline/node_modules/@types/cookiejar/index.d.ts": [
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
@@ -5686,11 +5873,6 @@
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/node_modules/@types/json5/index.d.ts": [
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/node_modules/@types/morgan/index.d.ts": [
-        "c:/wtt-/doconline/node_modules/@types/express/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -8471,6 +8653,104 @@
       "c:/wtt-/doconline/src/database/database.provider.ts": [
         "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
       ],
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validationerror.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validatoroptions.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/validation-schema/validationschema.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/container.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validationtypeoptions.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/decorator/validationoptions.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/decorator/decorators.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/decorator/validationoptions.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validationarguments.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validatorconstraintinterface.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationarguments.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validationtypes.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationarguments.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/metadata/validationmetadataargs.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/decorator/validationoptions.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/metadata/validationmetadata.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/metadata/validationmetadataargs.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationarguments.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validator.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/metadata/validationmetadata.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationerror.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validatoroptions.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/register-decorator.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validatoroptions.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/metadata/constraintmetadata.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/metadata/metadatastorage.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/metadata/validationmetadata.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/metadata/constraintmetadata.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation-schema/validationschema.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/class-validator/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationerror.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validatoroptions.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation-schema/validationschema.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/container.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/decorator/decorators.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/decorator/validationoptions.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationarguments.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validationtypes.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/validation/validator.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/register-decorator.d.ts",
+        "c:/wtt-/doconline/node_modules/class-validator/metadata/metadatastorage.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "c:/wtt-/doconline/src/models/siterule.model.ts": [
         "c:/wtt-/doconline/src/models/site.model.ts",
         "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
@@ -8617,6 +8897,7 @@
         "c:/wtt-/doconline/src/models/patient.model.ts",
         "c:/wtt-/doconline/src/models/doctor.model.ts",
         "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/dto/filter.dto.ts",
         "c:/wtt-/doconline/src/dto/exam.dto.ts"
       ],
       "c:/wtt-/doconline/src/controller/exam.controller.ts": [
@@ -8815,11 +9096,6 @@
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/node_modules/@types/json5/index.d.ts": [
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/node_modules/@types/morgan/index.d.ts": [
-        "c:/wtt-/doconline/node_modules/@types/express/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -9288,6 +9564,23 @@
       "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
       "c:/wtt-/doconline/src/database/database.provider.ts",
       "c:/wtt-/doconline/src/database/database.module.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validationerror.d.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validatoroptions.d.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/validation-schema/validationschema.d.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/container.d.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validationtypeoptions.d.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/decorator/validationoptions.d.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/decorator/decorators.d.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validationarguments.d.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validationtypes.d.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/metadata/validationmetadataargs.d.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/metadata/validationmetadata.d.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/validation/validator.d.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/register-decorator.d.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/metadata/constraintmetadata.d.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/metadata/metadatastorage.d.ts",
+      "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
       "c:/wtt-/doconline/src/dto/site.dto.ts",
       "c:/wtt-/doconline/src/models/siterule.model.ts",
       "c:/wtt-/doconline/src/models/sitenotification.model.ts",
@@ -9326,6 +9619,8 @@
       "c:/wtt-/doconline/src/service/plan.service.ts",
       "c:/wtt-/doconline/src/dto/logexam.dto.ts",
       "c:/wtt-/doconline/src/service/logexam.service.ts",
+      "c:/wtt-/doconline/src/dto/filter.dto.ts",
+      "c:/wtt-/doconline/src/service/exam.service.ts",
       "c:/wtt-/doconline/src/controller/exam.controller.ts",
       "c:/wtt-/doconline/src/provider/exam.provider.ts",
       "c:/wtt-/doconline/src/controller/site.controller.ts",
@@ -9388,29 +9683,15 @@
       "c:/wtt-/doconline/src/middleware/logger.middleware.ts",
       "c:/wtt-/doconline/src/module/app.module.ts",
       "c:/wtt-/doconline/src/main.ts",
-      "c:/wtt-/doconline/src/dto/filtering.dto.ts",
       "c:/wtt-/doconline/node_modules/@types/cookiejar/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/jest/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/json5/index.d.ts",
-      "c:/wtt-/doconline/node_modules/@types/morgan/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/sequelize/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/superagent/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/supertest/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/uuid/interfaces.d.ts",
       "c:/wtt-/doconline/node_modules/@types/uuid/index.d.ts",
-      [
-        "c:/wtt-/doconline/src/service/exam.service.ts",
-        [
-          {
-            "file": "c:/wtt-/doconline/src/service/exam.service.ts",
-            "start": 983,
-            "length": 17,
-            "messageText": "Cannot find module '../dto/exam.dto'.",
-            "category": 1,
-            "code": 2307
-          }
-        ]
-      ]
+      "c:/wtt-/doconline/src/dto/exam.dto.ts"
     ]
   },
   "version": "3.4.3"

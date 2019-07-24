@@ -31,6 +31,7 @@ import { CreateInsuranceDto } from '../dto/insurance.dto';
 import { CreateUserInsuranceDto } from '../dto/userInsurance.dto';
 import { CreatePlanDto } from '../dto/plan.dto';
 import { CreateLogExamDto } from '../dto/logExam.dto';
+import { CreateFilterDto } from 'src/dto/filter.dto';
 
 @Injectable()
 export class ExamService {
@@ -92,6 +93,7 @@ export class ExamService {
         let patientProfile, patientUser, patientUserSite;
         let patient = await this.patientService.findOne(patientId);
         if (!patient) {
+            // é possível ter um profile sem ser um paciente? Precisa find profile primeiro antes de criar?
             patientProfile = await this.createProfile(name, socialName, sex, birthDate, phone, email);
             patient = await this.createPatient(patientId, patientProfile, pid);
             patientUser = await this.createUser(patientProfile, null, 'patient', null, null, null, null);
@@ -290,7 +292,7 @@ export class ExamService {
 
     // ========================================================================================================
 
-    public async search(loginId: number, body: any) {
+    public async search(loginId: number, body: CreateFilterDto) {
         const login = await this.loginService.findOne(loginId);
         const user = await this.userService.findOne(login.userId);
         const patient = await this.patientService.findOne({ profileId: user.profileId });
@@ -300,8 +302,10 @@ export class ExamService {
             console.log(key);
             where[key] = body[key]
         })
-
-        const exams = this.find({ patientId: patient.id, ...where });
+        // if (body.date_range) {
+        //     where[date_range.field] = {between: [body.date_range.start, body.date_range.end]}
+        // }
+        const exams = this.find({ ...where });
         return exams;
     }
 

@@ -21,7 +21,7 @@ exports.databaseProviders = [
                 modelPaths: [__dirname + '/../models'],
                 logging: false
             });
-            yield sequelize.sync({ force: true });
+            yield sequelize.sync({});
             return sequelize;
         }),
     },
