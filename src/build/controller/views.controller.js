@@ -32,9 +32,19 @@ let ViewsController = class ViewsController {
             return yield this.viewsService.create(createViewsDto);
         });
     }
-    showOne(where) {
+    show() {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.viewsService.find(where);
+            return yield this.viewsService.find({});
+        });
+    }
+    showOne(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.viewsService.findOne(id);
+        });
+    }
+    update(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.viewsService.updateOne(id, body);
         });
     }
     deleteOne(viewId) {
@@ -51,12 +61,25 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], ViewsController.prototype, "create", null);
 __decorate([
+    common_1.Get(),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], ViewsController.prototype, "show", null);
+__decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], ViewsController.prototype, "showOne", null);
+__decorate([
+    common_1.Patch(':id'),
+    __param(0, common_1.Param('id')), __param(1, common_1.Body()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", Promise)
+], ViewsController.prototype, "update", null);
 __decorate([
     common_1.Delete(':id'),
     __param(0, common_1.Param('id')),

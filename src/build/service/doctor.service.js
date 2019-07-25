@@ -55,6 +55,11 @@ let DoctorService = class DoctorService {
             return doctor;
         });
     }
+    updateOne(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.doctorRepository.update(body, { where: { 'id': id } });
+        });
+    }
     deleteOne(doctorId) {
         return __awaiter(this, void 0, void 0, function* () {
             const deletedDoctor = yield this.doctorRepository.destroy({

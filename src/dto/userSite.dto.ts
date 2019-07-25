@@ -10,10 +10,8 @@ export class CreateUserSiteDto {
     @IsUUID()
     readonly siteId: number;
 
+    @IsNotEmpty()
     @IsDate()
     readonly createdBy: string;
-    
-    @IsDate()
-    readonly createdAt: Date;
     
 }

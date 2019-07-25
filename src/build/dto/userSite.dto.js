@@ -23,11 +23,8 @@ __decorate([
     __metadata("design:type", Number)
 ], CreateUserSiteDto.prototype, "siteId", void 0);
 __decorate([
+    class_validator_1.IsNotEmpty(),
     class_validator_1.IsDate(),
     __metadata("design:type", String)
 ], CreateUserSiteDto.prototype, "createdBy", void 0);
-__decorate([
-    class_validator_1.IsDate(),
-    __metadata("design:type", Date)
-], CreateUserSiteDto.prototype, "createdAt", void 0);
 exports.CreateUserSiteDto = CreateUserSiteDto;

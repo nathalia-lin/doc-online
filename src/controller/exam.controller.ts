@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Put, Delete, Param, Req } from '@nestjs/common';
+import { Controller, Get, Post, Body, Delete, Param, Req, Patch } from '@nestjs/common';
 
 import { ExamService } from '../service/exam.service';
 
@@ -94,9 +94,19 @@ export class ExamController {
         return await this.examService.search(req.userId, body);
     }
 
+    @Get()
+    public async show() {
+        return await this.examService.find({});
+    }
+
     @Get(':id')
-    public async show(@Param('id') where: any) {
-        return await this.examService.find(where);
+    public async showOne(@Param('id') id) {
+        return await this.examService.findOne(id);
+    }
+
+    @Patch(':id')
+    public async update(@Param('id') id, @Body() body) {
+        return await this.examService.updateOne(id, body)
     }
 
     @Delete(':id')

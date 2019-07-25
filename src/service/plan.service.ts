@@ -32,6 +32,10 @@ export class PlanService {
         return plan;
     }
 
+    async updateOne(id: number, body: any) {
+        return await this.planRepository.update(body, { where: { 'id': id } });
+    }
+
     async deleteOne(planId: number) {
 
         const deletedPlan = await this.planRepository.destroy({

@@ -56,6 +56,11 @@ let InsuranceService = class InsuranceService {
             return insurance;
         });
     }
+    updateOne(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.insuranceRepository.update(body, { where: { 'id': id } });
+        });
+    }
     deleteOne(insuranceId) {
         return __awaiter(this, void 0, void 0, function* () {
             const deletedInsurance = yield this.insuranceRepository.destroy({

@@ -32,9 +32,19 @@ let SiteNotificationController = class SiteNotificationController {
             return yield this.siteNotificationService.create(createSiteNotificationDto);
         });
     }
-    showOne(where) {
+    show() {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.siteNotificationService.find(where);
+            return yield this.siteNotificationService.find({});
+        });
+    }
+    showOne(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.siteNotificationService.findOne(id);
+        });
+    }
+    update(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.siteNotificationService.updateOne(id, body);
         });
     }
     deleteOne(siteNotificationId) {
@@ -51,12 +61,25 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], SiteNotificationController.prototype, "create", null);
 __decorate([
+    common_1.Get(),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], SiteNotificationController.prototype, "show", null);
+__decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], SiteNotificationController.prototype, "showOne", null);
+__decorate([
+    common_1.Patch(':id'),
+    __param(0, common_1.Param('id')), __param(1, common_1.Body()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", Promise)
+], SiteNotificationController.prototype, "update", null);
 __decorate([
     common_1.Delete(':id'),
     __param(0, common_1.Param('id')),

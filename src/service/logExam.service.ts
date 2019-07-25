@@ -31,6 +31,10 @@ export class LogExamService {
         return logExam;
     }
 
+    async updateOne(id: number, body: any) {
+        return await this.logExamRepository.update(body, { where: { 'id': id } });
+    }
+
     async deleteOne(logExamId: number) {
 
         const deletedLogExam = await this.logExamRepository.destroy({

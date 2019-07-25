@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Put, Delete, Param } from '@nestjs/common';
+import { Controller, Get, Post, Body, Delete, Param, Patch } from '@nestjs/common';
 
 import { CreateInsuranceDto } from '../dto/insurance.dto';
 import { InsuranceService } from '../service/insurance.service';
@@ -12,9 +12,19 @@ export class InsuranceController {
         return await this.insuranceService.create(createInsuranceDto);
     }
 
+    @Get()
+    public async show() {
+        return await this.insuranceService.find({});
+    }
+
     @Get(':id')
-    public async show(@Param('id') where: any) {
-        return await this.insuranceService.find(where);
+    public async showOne(@Param('id') id) {
+        return await this.insuranceService.findOne(id);
+    }
+
+    @Patch(':id')
+    public async update(@Param('id') id, @Body() body) {
+        return await this.insuranceService.updateOne(id, body)
     }
 
     @Delete(':id')

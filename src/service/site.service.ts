@@ -36,6 +36,10 @@ export class SiteService {
     return site;
   }
 
+  async updateOne(id: number, body: any) {
+    return await this.siteRepository.update(body, { where: { 'id': id } });
+  }
+
   async deleteOne(siteId: number) {
 
     const deletedSite = await this.siteRepository.destroy({

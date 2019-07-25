@@ -50,6 +50,11 @@ let LogExamService = class LogExamService {
             return logExam;
         });
     }
+    updateOne(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.logExamRepository.update(body, { where: { 'id': id } });
+        });
+    }
     deleteOne(logExamId) {
         return __awaiter(this, void 0, void 0, function* () {
             const deletedLogExam = yield this.logExamRepository.destroy({

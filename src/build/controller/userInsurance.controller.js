@@ -32,9 +32,19 @@ let UserInsuranceController = class UserInsuranceController {
             return yield this.userInsuranceService.create(createUserInsuranceDto);
         });
     }
-    showOne(where) {
+    show() {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.userInsuranceService.find(where);
+            return yield this.userInsuranceService.find({});
+        });
+    }
+    showOne(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.userInsuranceService.findOne(id);
+        });
+    }
+    update(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.userInsuranceService.updateOne(id, body);
         });
     }
     deleteOne(userInsuranceId) {
@@ -51,12 +61,25 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], UserInsuranceController.prototype, "create", null);
 __decorate([
+    common_1.Get(),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], UserInsuranceController.prototype, "show", null);
+__decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], UserInsuranceController.prototype, "showOne", null);
+__decorate([
+    common_1.Patch(':id'),
+    __param(0, common_1.Param('id')), __param(1, common_1.Body()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", Promise)
+], UserInsuranceController.prototype, "update", null);
 __decorate([
     common_1.Delete(':id'),
     __param(0, common_1.Param('id')),

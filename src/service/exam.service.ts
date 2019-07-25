@@ -102,7 +102,7 @@ export class ExamService {
         await this.createLogin(patientUser, null, loginPassword, loginUsername);
 
         let insurance = await this.insuranceService.findOne(insuranceId);
-        if (!insurance) {await this.createInsurance(insuranceId, siteId, insuranceName, patientUser.id)}
+        if (!insurance) { await this.createInsurance(insuranceId, siteId, insuranceName, patientUser.id) }
 
         let plan = await this.planService.findOne({ 'insuranceId': insuranceId });
         if (!plan) { await this.createPlan(planId, insuranceId, planName) }
@@ -123,7 +123,7 @@ export class ExamService {
             reqDoctorUserSite = await this.createUserSite(reqDoctorUser, siteId, createdBy);
         }
         await this.createLogin(reqDoctorUser, reqDoctor);
-       
+
         // CONSULTING DOCTOR
         let consDoctorProfile, consDoctorUser, consDoctorUserSite;
         let consDoctor = await this.doctorService.findOne({ 'docNum': consDoctorDocNum });
@@ -282,7 +282,7 @@ export class ExamService {
         return null;
     }
 
-    async createLogExam(examId){
+    async createLogExam(examId) {
         let logExam = {
             'examId': examId,
             'postedData': null
@@ -332,6 +332,10 @@ export class ExamService {
             include: [Site, Patient, Insurance, Views, { model: Doctor, as: 'requestingDoctor' }, { model: Doctor, as: 'consultingDoctor' }]
         });
         return exam;
+    }
+
+    async updateOne(id: number, body: any) {
+        return await this.examRepository.update(body, { where: { 'id': id } });
     }
 
     async deleteOne(examId: number) {

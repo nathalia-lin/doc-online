@@ -32,6 +32,10 @@ export class SiteRuleService {
     return siteRule;
   }
 
+  async updateOne(id: number, body: any) {
+    return await this.siteRuleRepository.update(body, { where: { 'id': id } });
+  }
+
   async deleteOne(siteRuleId: number) {
 
     const deletedSiteRule = await this.siteRuleRepository.destroy({

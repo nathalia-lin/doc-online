@@ -36,6 +36,10 @@ export class UserService {
         return user;
     }
 
+    async updateOne(id: number, body: any) {
+        return await this.userRepository.update(body, { where: { 'id': id } });
+    }
+
     async deleteOne(userId: number) {
 
         const deletedUser = await this.userRepository.destroy({

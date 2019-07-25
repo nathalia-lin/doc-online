@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Put, Delete, Param } from '@nestjs/common';
+import { Controller, Get, Post, Body, Delete, Param, Patch } from '@nestjs/common';
 
 import { CreateLogExamDto } from '../dto/logExam.dto';
 import { LogExamService } from '../service/logExam.service';
@@ -12,9 +12,19 @@ export class LogExamController {
         return await this.logExamService.create(createLogExamDto);
     }
 
+    @Get()
+    public async show() {
+        return await this.logExamService.find({});
+    }
+
     @Get(':id')
-    public async show(@Param('id') where: any) {
-        return await this.logExamService.find(where);
+    public async showOne(@Param('id') id) {
+        return await this.logExamService.findOne(id);
+    }
+
+    @Patch(':id')
+    public async update(@Param('id') id, @Body() body) {
+        return await this.logExamService.updateOne(id, body)
     }
 
     @Delete(':id')

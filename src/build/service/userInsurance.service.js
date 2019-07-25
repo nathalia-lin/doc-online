@@ -50,6 +50,11 @@ let UserInsuranceService = class UserInsuranceService {
             return userInsurance;
         });
     }
+    updateOne(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.userInsuranceRepository.update(body, { where: { 'id': id } });
+        });
+    }
     deleteOne(userInsuranceId) {
         return __awaiter(this, void 0, void 0, function* () {
             const deletedUserInsurance = yield this.userInsuranceRepository.destroy({

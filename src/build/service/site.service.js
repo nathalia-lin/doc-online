@@ -58,6 +58,11 @@ let SiteService = class SiteService {
             return site;
         });
     }
+    updateOne(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.siteRepository.update(body, { where: { 'id': id } });
+        });
+    }
     deleteOne(siteId) {
         return __awaiter(this, void 0, void 0, function* () {
             const deletedSite = yield this.siteRepository.destroy({

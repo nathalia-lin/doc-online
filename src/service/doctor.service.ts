@@ -33,6 +33,10 @@ export class DoctorService {
         return doctor;
     }
 
+    async updateOne(id: number, body: any) {
+        return await this.doctorRepository.update(body, { where: { 'id': id } });
+    }
+
     async deleteOne(doctorId: number) {
 
         const deletedDoctor = await this.doctorRepository.destroy({

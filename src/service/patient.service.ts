@@ -33,6 +33,10 @@ export class PatientService {
         return patient;
     }
 
+    async updateOne(id: number, body: any) {
+        return await this.patientRepository.update(body, { where: { 'id': id } });
+    }
+
     async deleteOne(patientId: number) {
 
         const deletedPatient = await this.patientRepository.destroy({

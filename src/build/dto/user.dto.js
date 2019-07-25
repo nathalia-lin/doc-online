@@ -18,14 +18,7 @@ __decorate([
     __metadata("design:type", Number)
 ], CreateUserDto.prototype, "profileId", void 0);
 __decorate([
-    class_validator_1.IsDate(),
-    __metadata("design:type", Date)
-], CreateUserDto.prototype, "createdAt", void 0);
-__decorate([
-    class_validator_1.IsDate(),
-    __metadata("design:type", Date)
-], CreateUserDto.prototype, "updatedAt", void 0);
-__decorate([
+    class_validator_1.IsOptional(),
     class_validator_1.IsDate(),
     __metadata("design:type", Date)
 ], CreateUserDto.prototype, "lastAccess", void 0);
@@ -40,15 +33,17 @@ __decorate([
     __metadata("design:type", Boolean)
 ], CreateUserDto.prototype, "active", void 0);
 __decorate([
-    class_validator_1.IsNotEmpty(),
+    class_validator_1.IsOptional(),
     class_validator_1.IsString(),
     __metadata("design:type", String)
 ], CreateUserDto.prototype, "recoveryKey", void 0);
 __decorate([
+    class_validator_1.IsOptional(),
     class_validator_1.IsDate(),
     __metadata("design:type", Date)
 ], CreateUserDto.prototype, "lastRecovery", void 0);
 __decorate([
+    class_validator_1.IsOptional(),
     class_validator_1.IsDate(),
     __metadata("design:type", Date)
 ], CreateUserDto.prototype, "termApproved", void 0);

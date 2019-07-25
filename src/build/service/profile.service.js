@@ -56,6 +56,11 @@ let ProfileService = class ProfileService {
             return profile;
         });
     }
+    updateOne(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.profileRepository.update(body, { where: { 'id': id } });
+        });
+    }
     deleteOne(profileId) {
         return __awaiter(this, void 0, void 0, function* () {
             const deletedProfile = yield this.profileRepository.destroy({

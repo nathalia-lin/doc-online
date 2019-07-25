@@ -6,12 +6,6 @@ export class CreateSiteDto {
     @IsUUID()
     readonly parentId: number;
 
-    @IsDate()
-    readonly createdAt: Date;
-
-    @IsDate()
-    readonly updatedAt: Date;
-
     @IsOptional()
     @IsString()
     readonly logo: string;

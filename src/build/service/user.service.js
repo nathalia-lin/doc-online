@@ -57,6 +57,11 @@ let UserService = class UserService {
             return user;
         });
     }
+    updateOne(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.userRepository.update(body, { where: { 'id': id } });
+        });
+    }
     deleteOne(userId) {
         return __awaiter(this, void 0, void 0, function* () {
             const deletedUser = yield this.userRepository.destroy({

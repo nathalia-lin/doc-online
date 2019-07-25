@@ -32,9 +32,19 @@ let UserSiteController = class UserSiteController {
             return yield this.userSiteService.create(createUserSiteDto);
         });
     }
-    showOne(where) {
+    show() {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.userSiteService.find(where);
+            return yield this.userSiteService.find({});
+        });
+    }
+    showOne(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.userSiteService.findOne(id);
+        });
+    }
+    update(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.userSiteService.updateOne(id, body);
         });
     }
     deleteOne(userSiteId) {
@@ -51,12 +61,25 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], UserSiteController.prototype, "create", null);
 __decorate([
+    common_1.Get(),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], UserSiteController.prototype, "show", null);
+__decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], UserSiteController.prototype, "showOne", null);
+__decorate([
+    common_1.Patch(':id'),
+    __param(0, common_1.Param('id')), __param(1, common_1.Body()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", Promise)
+], UserSiteController.prototype, "update", null);
 __decorate([
     common_1.Delete(':id'),
     __param(0, common_1.Param('id')),

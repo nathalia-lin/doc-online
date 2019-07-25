@@ -31,6 +31,10 @@ export class UserSiteService {
         return userSite;
     }
 
+    async updateOne(id: number, body: any) {
+        return await this.userSiteRepository.update(body, { where: { 'id': id } });
+    }
+
     async deleteOne(userSiteId: number) {
 
         const deletedUserSite = await this.userSiteRepository.destroy({

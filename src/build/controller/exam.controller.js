@@ -41,9 +41,19 @@ let ExamController = class ExamController {
             return yield this.examService.search(req.userId, body);
         });
     }
-    show(where) {
+    show() {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.examService.find(where);
+            return yield this.examService.find({});
+        });
+    }
+    showOne(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.examService.findOne(id);
+        });
+    }
+    update(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.examService.updateOne(id, body);
         });
     }
     deleteOne(examId) {
@@ -96,12 +106,25 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], ExamController.prototype, "search", null);
 __decorate([
+    common_1.Get(),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], ExamController.prototype, "show", null);
+__decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
-], ExamController.prototype, "show", null);
+], ExamController.prototype, "showOne", null);
+__decorate([
+    common_1.Patch(':id'),
+    __param(0, common_1.Param('id')), __param(1, common_1.Body()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", Promise)
+], ExamController.prototype, "update", null);
 __decorate([
     common_1.Delete(':id'),
     __param(0, common_1.Param('id')),

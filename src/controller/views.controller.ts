@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Put, Delete, Param } from '@nestjs/common';
+import { Controller, Get, Post, Body, Put, Delete, Param, Patch } from '@nestjs/common';
 
 import { CreateViewsDto } from '../dto/views.dto';
 import { ViewsService } from '../service/views.service';
@@ -12,9 +12,19 @@ export class ViewsController {
         return await this.viewsService.create(createViewsDto);
     }
 
+    @Get()
+    public async show() {
+        return await this.viewsService.find({});
+    }
+
     @Get(':id')
-    public async showOne(@Param('id') where: any) {
-        return await this.viewsService.find(where);
+    public async showOne(@Param('id') id) {
+        return await this.viewsService.findOne(id);
+    }
+
+    @Patch(':id')
+    public async update(@Param('id') id, @Body() body) {
+        return await this.viewsService.updateOne(id, body)
     }
 
     @Delete(':id')

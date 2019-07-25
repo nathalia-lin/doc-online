@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Put, Delete, Param } from '@nestjs/common';
+import { Controller, Get, Post, Body, Delete, Param, Patch } from '@nestjs/common';
 
 import { CreateDoctorDto } from '../dto/doctor.dto';
 import { DoctorService } from '../service/doctor.service';
@@ -13,9 +13,19 @@ export class DoctorController {
         return await this.doctorService.create(createDoctorDto);
     }
 
+    @Get()
+    public async show() {
+        return await this.doctorService.find({});
+    }
+
     @Get(':id')
-    public async show(@Param('id') where: any) {
-        return await this.doctorService.find(where);
+    public async showOne(@Param('id') id) {
+        return await this.doctorService.findOne(id);
+    }
+
+    @Patch(':id')
+    public async update(@Param('id') id, @Body() body) {
+        return await this.doctorService.updateOne(id, body)
     }
 
     @Delete(':id')

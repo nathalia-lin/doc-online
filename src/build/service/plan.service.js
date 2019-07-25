@@ -54,6 +54,11 @@ let PlanService = class PlanService {
             return plan;
         });
     }
+    updateOne(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.planRepository.update(body, { where: { 'id': id } });
+        });
+    }
     deleteOne(planId) {
         return __awaiter(this, void 0, void 0, function* () {
             const deletedPlan = yield this.planRepository.destroy({

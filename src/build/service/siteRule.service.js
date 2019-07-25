@@ -54,6 +54,11 @@ let SiteRuleService = class SiteRuleService {
             return siteRule;
         });
     }
+    updateOne(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.siteRuleRepository.update(body, { where: { 'id': id } });
+        });
+    }
     deleteOne(siteRuleId) {
         return __awaiter(this, void 0, void 0, function* () {
             const deletedSiteRule = yield this.siteRuleRepository.destroy({

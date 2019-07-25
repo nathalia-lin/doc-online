@@ -50,6 +50,11 @@ let UserSiteService = class UserSiteService {
             return userSite;
         });
     }
+    updateOne(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.userSiteRepository.update(body, { where: { 'id': id } });
+        });
+    }
     deleteOne(userSiteId) {
         return __awaiter(this, void 0, void 0, function* () {
             const deletedUserSite = yield this.userSiteRepository.destroy({

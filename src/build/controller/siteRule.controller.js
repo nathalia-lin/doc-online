@@ -32,9 +32,19 @@ let SiteRuleController = class SiteRuleController {
             return yield this.siteRuleService.create(createSiteRuleDto);
         });
     }
-    showOne(where) {
+    show() {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.siteRuleService.find(where);
+            return yield this.siteRuleService.find({});
+        });
+    }
+    showOne(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.siteRuleService.findOne(id);
+        });
+    }
+    update(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.siteRuleService.updateOne(id, body);
         });
     }
     deleteOne(siteRuleId) {
@@ -51,12 +61,25 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], SiteRuleController.prototype, "create", null);
 __decorate([
+    common_1.Get(),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], SiteRuleController.prototype, "show", null);
+__decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], SiteRuleController.prototype, "showOne", null);
+__decorate([
+    common_1.Patch(':id'),
+    __param(0, common_1.Param('id')), __param(1, common_1.Body()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", Promise)
+], SiteRuleController.prototype, "update", null);
 __decorate([
     common_1.Delete(':id'),
     __param(0, common_1.Param('id')),

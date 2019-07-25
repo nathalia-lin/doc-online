@@ -34,6 +34,10 @@ export class ProfileService {
     return profile;
   }
 
+  async updateOne(id: number, body: any) {
+    return await this.profileRepository.update(body, { where: { 'id': id } });
+  }
+
   async deleteOne(profileId: number) {
 
     const deletedProfile = await this.profileRepository.destroy({

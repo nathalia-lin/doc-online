@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Param, Delete, Patch } from '@nestjs/common';
 
 import { CreateProfileDto } from '../dto/profile.dto';
 import { ProfileService } from '../service/profile.service';
@@ -12,9 +12,19 @@ export class ProfileController {
         return await this.profileService.create(createProfileDot);
     }
 
+    @Get()
+    public async show() {
+        return await this.profileService.find({});
+    }
+
     @Get(':id')
-    public async showOne(@Param('id') where: any) {
-        return await this.profileService.find(where);
+    public async showOne(@Param('id') id) {
+        return await this.profileService.findOne(id);
+    }
+
+    @Patch(':id')
+    public async update(@Param('id') id, @Body() body) {
+        return await this.profileService.updateOne(id, body)
     }
 
     @Delete(':id')

@@ -6,12 +6,7 @@ export class CreateUserDto {
     @IsUUID()
     readonly profileId: number;
 
-    @IsDate()
-    readonly createdAt: Date;
-
-    @IsDate()
-    readonly updatedAt: Date;
-
+    @IsOptional()
     @IsDate()
     readonly lastAccess: Date;
 
@@ -23,13 +18,15 @@ export class CreateUserDto {
     @IsBoolean()
     readonly active: boolean;
 
-    @IsNotEmpty()
+    @IsOptional()
     @IsString()
     readonly recoveryKey: string;
 
+    @IsOptional()
     @IsDate()
     readonly lastRecovery: Date;
 
+    @IsOptional()
     @IsDate()
     readonly termApproved: Date;
 

@@ -31,6 +31,10 @@ export class UserInsuranceService {
         return userInsurance;
     }
 
+    async updateOne(id: number, body: any) {
+        return await this.userInsuranceRepository.update(body, { where: { 'id': id } });
+    }
+
     async deleteOne(userInsuranceId: number) {
 
         const deletedUserInsurance = await this.userInsuranceRepository.destroy({

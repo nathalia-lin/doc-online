@@ -18,14 +18,6 @@ __decorate([
     __metadata("design:type", Number)
 ], CreateExamDto.prototype, "id", void 0);
 __decorate([
-    class_validator_1.IsDate(),
-    __metadata("design:type", Date)
-], CreateExamDto.prototype, "createdAt", void 0);
-__decorate([
-    class_validator_1.IsDate(),
-    __metadata("design:type", Date)
-], CreateExamDto.prototype, "updatedAt", void 0);
-__decorate([
     class_validator_1.IsNotEmpty(),
     class_validator_1.IsString(),
     __metadata("design:type", String)
@@ -81,7 +73,7 @@ __decorate([
     __metadata("design:type", Number)
 ], CreateExamDto.prototype, "requestingId", void 0);
 __decorate([
-    class_validator_1.IsNotEmpty(),
+    class_validator_1.IsOptional(),
     class_validator_1.IsUUID(),
     __metadata("design:type", Number)
 ], CreateExamDto.prototype, "consultingId", void 0);

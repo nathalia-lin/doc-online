@@ -6,7 +6,7 @@ export class CreatePatientDto {
     @IsUUID()
     readonly profileId: number;
     
-    @IsOptional()
+    @IsNotEmpty()
     @IsString()
     readonly pid: string;
     

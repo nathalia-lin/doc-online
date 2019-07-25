@@ -18,10 +18,6 @@ __decorate([
     __metadata("design:type", Number)
 ], CreateLogExamDto.prototype, "examId", void 0);
 __decorate([
-    class_validator_1.IsDate(),
-    __metadata("design:type", Date)
-], CreateLogExamDto.prototype, "createdAt", void 0);
-__decorate([
     class_validator_1.IsOptional(),
     class_validator_1.IsString(),
     __metadata("design:type", String)

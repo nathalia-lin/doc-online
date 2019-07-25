@@ -39,9 +39,14 @@ let LoginController = class LoginController {
             return token;
         });
     }
-    showOne(where) {
+    show() {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.loginService.find(where);
+            return yield this.loginService.find({});
+        });
+    }
+    showOne(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.loginService.findOne(id);
         });
     }
 };
@@ -60,6 +65,12 @@ __decorate([
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], LoginController.prototype, "authenticate", null);
+__decorate([
+    common_1.Get(),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], LoginController.prototype, "show", null);
 __decorate([
     common_1.Get(':id'),
     __param(0, common_1.Param('id')),

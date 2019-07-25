@@ -53,6 +53,11 @@ let SiteNotificationService = class SiteNotificationService {
             return siteNotification;
         });
     }
+    updateOne(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.siteNotificationRepository.update(body, { where: { 'id': id } });
+        });
+    }
     deleteOne(siteNotificationId) {
         return __awaiter(this, void 0, void 0, function* () {
             const deletedSiteNotification = yield this.siteNotificationRepository.destroy({

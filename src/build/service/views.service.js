@@ -55,6 +55,11 @@ let ViewsService = class ViewsService {
             return view;
         });
     }
+    updateOne(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.viewsRepository.update(body, { where: { 'id': id } });
+        });
+    }
     deleteOne(viewId) {
         return __awaiter(this, void 0, void 0, function* () {
             const deletedView = yield this.viewsRepository.destroy({

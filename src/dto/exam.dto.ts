@@ -6,12 +6,6 @@ export class CreateExamDto {
     @IsUUID()
     readonly id: number;
 
-    @IsDate()
-    readonly createdAt: Date;
-
-    @IsDate()
-    readonly updatedAt: Date;
-
     @IsNotEmpty()
     @IsString()
     readonly pid: string;
@@ -56,7 +50,7 @@ export class CreateExamDto {
     @IsUUID()
     readonly requestingId: number;
 
-    @IsNotEmpty()
+    @IsOptional()
     @IsUUID()
     readonly consultingId: number;
 
@@ -71,4 +65,5 @@ export class CreateExamDto {
     @IsNotEmpty()
     @IsNumber()
     readonly lastImageView: number;
+
 }

@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Param, Delete, Patch } from '@nestjs/common';
 
 import { CreateSiteNotificationDto } from '../dto/siteNotification.dto';
 import { SiteNotificationService } from '../service/siteNotification.service';
@@ -12,9 +12,19 @@ export class SiteNotificationController {
         return await this.siteNotificationService.create(createSiteNotificationDto);
     }
 
+    @Get()
+    public async show() {
+        return await this.siteNotificationService.find({});
+    }
+
     @Get(':id')
-    public async showOne(@Param('id') where: any) {
-        return await this.siteNotificationService.find(where);
+    public async showOne(@Param('id') id) {
+        return await this.siteNotificationService.findOne(id);
+    }
+
+    @Patch(':id')
+    public async update(@Param('id') id, @Body() body) {
+        return await this.siteNotificationService.updateOne(id, body)
     }
 
     @Delete(':id')

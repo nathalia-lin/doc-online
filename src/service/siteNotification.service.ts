@@ -32,6 +32,10 @@ export class SiteNotificationService {
     return siteNotification;
   }
 
+  async updateOne(id: number, body: any) {
+    return await this.siteNotificationRepository.update(body, { where: { 'id': id } });
+  }
+
   async deleteOne(siteNotificationId: number) {
 
     const deletedSiteNotification = await this.siteNotificationRepository.destroy({

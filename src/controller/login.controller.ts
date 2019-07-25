@@ -22,9 +22,13 @@ export class LoginController {
         return token;
     }
 
-    @Get(':id')
-    public async showOne(@Param('id') where: any) {
-        return await this.loginService.find(where);
+    @Get()
+    public async show() {
+        return await this.loginService.find({});
     }
 
+    @Get(':id')
+    public async showOne(@Param('id') id) {
+        return await this.loginService.findOne(id);
+    }
 }

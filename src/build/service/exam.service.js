@@ -305,6 +305,11 @@ let ExamService = class ExamService {
             return exam;
         });
     }
+    updateOne(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.examRepository.update(body, { where: { 'id': id } });
+        });
+    }
     deleteOne(examId) {
         return __awaiter(this, void 0, void 0, function* () {
             const deletedExam = yield this.examRepository.destroy({

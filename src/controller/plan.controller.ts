@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Put, Delete, Param } from '@nestjs/common';
+import { Controller, Get, Post, Body, Delete, Param, Patch } from '@nestjs/common';
 
 import { CreatePlanDto } from '../dto/plan.dto';
 import { PlanService } from '../service/plan.service';
@@ -12,9 +12,19 @@ export class PlanController {
         return await this.planService.create(createPlanDto);
     }
 
+    @Get()
+    public async show() {
+        return await this.planService.find({});
+    }
+
     @Get(':id')
-    public async showOne(@Param('id') where: any) {
-        return await this.planService.find(where);
+    public async showOne(@Param('id') id) {
+        return await this.planService.findOne(id);
+    }
+
+    @Patch(':id')
+    public async update(@Param('id') id, @Body() body) {
+        return await this.planService.updateOne(id, body)
     }
 
     @Delete(':id')

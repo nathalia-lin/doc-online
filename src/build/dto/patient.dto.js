@@ -18,7 +18,7 @@ __decorate([
     __metadata("design:type", Number)
 ], CreatePatientDto.prototype, "profileId", void 0);
 __decorate([
-    class_validator_1.IsOptional(),
+    class_validator_1.IsNotEmpty(),
     class_validator_1.IsString(),
     __metadata("design:type", String)
 ], CreatePatientDto.prototype, "pid", void 0);

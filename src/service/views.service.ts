@@ -33,6 +33,10 @@ export class ViewsService {
         return view;
     }
 
+    async updateOne(id: number, body: any) {
+        return await this.viewsRepository.update(body, { where: { 'id': id } });
+    }
+
     async deleteOne(viewId: number) {
 
         const deletedView = await this.viewsRepository.destroy({

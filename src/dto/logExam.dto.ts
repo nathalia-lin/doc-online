@@ -5,11 +5,9 @@ export class CreateLogExamDto {
     @IsNotEmpty()
     @IsUUID()
     readonly examId: number;
-    
-    @IsDate()
-    readonly createdAt: Date;
 
     @IsOptional()
     @IsString()
     readonly postedData: string;
+
 }
