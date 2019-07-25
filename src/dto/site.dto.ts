@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsString, IsOptional, IsDate, IsUUID } from 'class-validator';
+import { IsNotEmpty, IsString, IsOptional, IsUUID } from 'class-validator';
 
 export class CreateSiteDto {
 

@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsString, IsOptional, IsDate, IsUUID, IsNumber, IsBoolean } from 'class-validator';
+import { IsNotEmpty, IsString, IsOptional, IsDate, IsUUID, IsBoolean } from 'class-validator';
 
 export class CreateUserDto {
 

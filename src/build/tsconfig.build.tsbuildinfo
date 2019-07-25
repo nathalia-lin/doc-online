@@ -1794,7 +1794,7 @@
         "signature": "9ab4ca668d02db34965308fd7052820741ef0c260bdf9ac15c3c841dcbe47de6"
       },
       "c:/wtt-/doconline/src/dto/site.dto.ts": {
-        "version": "8b1673e07700712fa7f27e6b1be240715b510fd82b8f35d7e6a991bb48dff9c7",
+        "version": "836df39b55b04d6882cef8069d4e532bbceef7640bb185d1bdb1d90e2e4d7e8f",
         "signature": "e2c7e94c770c608d7341cc1e94081479200c94f552a9472098693a375d88f07d"
       },
       "c:/wtt-/doconline/src/models/siterule.model.ts": {
@@ -1886,7 +1886,7 @@
         "signature": "ae3f063faf7910b1a7a6b0398af753a9ff05b66a308b745a95fa7e4b76656181"
       },
       "c:/wtt-/doconline/src/dto/user.dto.ts": {
-        "version": "974188b4de65470461a32dba82f388429bdf1c5ab4617424548cdce5f998724f",
+        "version": "a521b533118ab981f99d4d198a24ac0409ba7703fa9e7f92ecf2df5cca0f6fe1",
         "signature": "f8727c26c1afe98a4214dea87579e1ab15b3fd67863521669431bd3525cfd3cb"
       },
       "c:/wtt-/doconline/src/service/user.service.ts": {
@@ -1894,7 +1894,7 @@
         "signature": "6bc6bf490df85b2b294e39426d3984d4dca77b342cac1c96d4af1760b0cf1c06"
       },
       "c:/wtt-/doconline/src/dto/usersite.dto.ts": {
-        "version": "6052673112d7ecc7725fe8de7dec8955e483270fcdb11e71c22613190f30c75a",
+        "version": "e7d8e03ac13cbec5485f25ba7ce26f18c39ffd8e2393746ce64db5f52d1e10ae",
         "signature": "c39d9be81d4e5e5528e90e0d5729e076cfade6264ceeb7ca5ef39646b6fe4e74"
       },
       "c:/wtt-/doconline/src/service/usersite.service.ts": {
@@ -1914,7 +1914,7 @@
         "signature": "0f812782584aa65aae1f47e7701b585e97bae68112d06984cf67fd4bf871b920"
       },
       "c:/wtt-/doconline/src/dto/userinsurance.dto.ts": {
-        "version": "4f188ec12b8213ff704412b275bfb1ef7de84c3da8fcb71ab7d1c7ba4e2b21e0",
+        "version": "0b72498cb69d509a268e19a592ea676392830b2a0f044ced37d01909c4e108d2",
         "signature": "0309072c64cfff5ab73045d01ef8c623dddd5c1642b95c03ce754e6078f43719"
       },
       "c:/wtt-/doconline/src/service/userinsurance.service.ts": {
@@ -1938,7 +1938,7 @@
         "signature": "53c0a4a73215e6fde07133ae6f38ecf739340e9405e5743bf96baa6caa5b63de"
       },
       "c:/wtt-/doconline/src/dto/logexam.dto.ts": {
-        "version": "cfae6c4ac9ca0ba0b7c8bb5025ab809e88af959f0ad9353e695ed8aa117a6023",
+        "version": "03e7328f4b524b85e24c76e5addab82e5c27f0f9076f2f4539f791b17c7f610b",
         "signature": "c1cb0a4b1df53df15f982a34eaccd17a1c4dfb2f46fa906ac4892790be3ef2e8"
       },
       "c:/wtt-/doconline/src/service/logexam.service.ts": {
@@ -1946,7 +1946,7 @@
         "signature": "8816acba2e5e43330fff6dc4cd7c3e25d878c7f1bf462beec109c71f25b53c6f"
       },
       "c:/wtt-/doconline/src/dto/exam.dto.ts": {
-        "version": "160e54e9a5b16898d715f476e183f78332f82dfa50c007e0f314e2ef6826827b",
+        "version": "16ca4503abc1d2e3f4f325a50d16617070fa8f27f06d35946211cb57ab1556ba",
         "signature": "fbf63b896f0fa6f01d42226ede89cd2d83deb2da42d4ab3f809bf7c2d52123bb"
       },
       "c:/wtt-/doconline/src/dto/filter.dto.ts": {
@@ -1978,7 +1978,7 @@
         "signature": "0b01b9891bcfcdf818f1fae2d1b55a38198111a69abd8846f9ab0621fc860a37"
       },
       "c:/wtt-/doconline/src/dto/siterule.dto.ts": {
-        "version": "8adf7e97920dc04a45db6b8e7c5d1002bf9faf6d47b7b32d2aa8f287495e24a6",
+        "version": "68a6201f037e42114db18257f947a141955f1f6c87dc4328131520e6e7c76751",
         "signature": "77ae88ee685edd2c13af9c51290772d39420dfac8ee645553521361a5d178ca0"
       },
       "c:/wtt-/doconline/src/service/siterule.service.ts": {
@@ -1998,7 +1998,7 @@
         "signature": "60e299edcd609cb7aa94c5f9caedf7d69a2aed4c833a9970a5b42d2f9318ec30"
       },
       "c:/wtt-/doconline/src/dto/sitenotification.dto.ts": {
-        "version": "3d41e1e355043572729213874ba4a1a5994c99fbff96de2e662a105fb648fddd",
+        "version": "c928c7044d2c46e4972768e05b77479691a388e437e8cbac0a94f12dff23d4b9",
         "signature": "1a747a3268873d91e893730a41af93103866fcdd39afd29c2a971cd60942ce7b"
       },
       "c:/wtt-/doconline/src/service/sitenotification.service.ts": {
@@ -2094,7 +2094,7 @@
         "signature": "151e344b4be09204a80f4b4b308ee0ccafb8a0d556081eae5d7e46c1b9fa955e"
       },
       "c:/wtt-/doconline/src/dto/views.dto.ts": {
-        "version": "4e47ea5cc78308fdc017b7c0ee2eadca94c8228e3028e900d07e6578f7388bd2",
+        "version": "cb4787f5a866beda2e682282fde066370dcbf170c3b5d9d4bc4885bad50aaee0",
         "signature": "b82302d7568038abaa70bf30bb399fdd83f08923b31e62318eb0ae3874910b1d"
       },
       "c:/wtt-/doconline/src/service/views.service.ts": {
@@ -9656,7 +9656,7 @@
       "c:/wtt-/doconline/src/controller/usersite.controller.ts",
       "c:/wtt-/doconline/src/provider/usersite.provider.ts",
       "c:/wtt-/doconline/src/module/usersite.module.ts",
-      "c:/wtt-/doconline/src/dto/views.dto.ts",
+      "c:/wtt-/doconline/src/service/views.service.ts",
       "c:/wtt-/doconline/src/controller/views.controller.ts",
       "c:/wtt-/doconline/src/provider/views.provider.ts",
       "c:/wtt-/doconline/src/module/views.module.ts",
@@ -9691,7 +9691,7 @@
       "c:/wtt-/doconline/node_modules/@types/supertest/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/uuid/interfaces.d.ts",
       "c:/wtt-/doconline/node_modules/@types/uuid/index.d.ts",
-      "c:/wtt-/doconline/src/service/views.service.ts"
+      "c:/wtt-/doconline/src/dto/views.dto.ts"
     ]
   },
   "version": "3.4.3"
