@@ -29,7 +29,7 @@ let ExamController = class ExamController {
     create(req, networkID, studyInstanceUID, studyDate, accessionNumber, modality, studyStatus, reqProcDescription, insuranceID, insuranceName, planID, planName, patientID, patientName, patientSocialName, patientBirthDate, patientSex, patientPhone, patientEmail, patientPID, protocolID, protocolPwd, reqPhysicianType, reqPhysicianNum, reqPhysicianUF, reqPhysicianName, refPhysicianType, refPhysicianNum, refPhysicianUF, refPhysicianName) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                return yield this.examService.create(req.userId, networkID, studyInstanceUID, studyDate, accessionNumber, modality, studyStatus, reqProcDescription, insuranceID, insuranceName, planID, planName, patientID, patientName, patientSocialName, patientBirthDate, patientSex, patientPhone, patientEmail, patientPID, protocolID, protocolPwd, reqPhysicianType, reqPhysicianNum, reqPhysicianUF, reqPhysicianName, refPhysicianType, refPhysicianNum, refPhysicianUF, refPhysicianName);
+                return yield this.examService.create(req.token, networkID, studyInstanceUID, studyDate, accessionNumber, modality, studyStatus, reqProcDescription, insuranceID, insuranceName, planID, planName, patientID, patientName, patientSocialName, patientBirthDate, patientSex, patientPhone, patientEmail, patientPID, protocolID, protocolPwd, reqPhysicianType, reqPhysicianNum, reqPhysicianUF, reqPhysicianName, refPhysicianType, refPhysicianNum, refPhysicianUF, refPhysicianName);
             }
             catch (err) {
                 console.log(err);
@@ -38,7 +38,7 @@ let ExamController = class ExamController {
     }
     search(body, req) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.examService.search(req.userId, body);
+            return yield this.examService.search(body, req.token);
         });
     }
     show() {

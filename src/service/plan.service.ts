@@ -37,11 +37,9 @@ export class PlanService {
     }
 
     async deleteOne(planId: number) {
-
         const deletedPlan = await this.planRepository.destroy({
             where: { 'id': planId }
         });
-
         return await deletedPlan;
     }
 }

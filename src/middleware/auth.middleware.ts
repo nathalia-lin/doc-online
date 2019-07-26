@@ -10,18 +10,14 @@ export class AuthMiddleware implements NestMiddleware {
     ) {}
 
     public async use(req, res, next) {
-
         console.log('IN MIDDLEWARE');
-        const authHeaders = req.headers.authorization;
-        if (authHeaders && (authHeaders as string).split(' ')[0] === 'Bearer') {
-            const token = (authHeaders as string).split(' ')[1];
+        const authHeaders = req.headers.authorization || '';
+        let authorizationPatials = authHeaders.split(' ');
+        if (authorizationPatials[0].trim() === 'Bearer') {
+            const token = authorizationPatials[1].trim();
             const decoded: any = jwt.verify(token, 'secret');
-            const user = await this.loginService.find({
-                'id': decoded.id,
-                'username': decoded.username,
-            });
-            req.userId = decoded.id
-            if (!user) throw new Error('User not found');
+            if (!decoded) throw new Error('User not found');
+            req.token = decoded;
             next();
         } else {
             throw new Error('Unauthorized user');

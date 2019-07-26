@@ -1,18 +1,16 @@
-- add views to exam
-- dataype.enum => allowReportStatus, viewType
+- work on testing filters and tokens
+- validacao no post /exams
 
-PACIENTE:
+*************************
 
-1) POST: /api/login
-<- Token
+FILTER
+Object.keys(body.filters).forEach(key => {
+    where[key] = body[key]
+})
 
-2) Criar middleware para validar authorization
-
-3) POST: /api/exams/search
-Authorization: {token}
-
--> Retornar lista de exames do paciente logado;
--> Passar no body filtros para aplicar na listagem;
+if (body.date_range) {
+    where[date_range.field] = {between: [body.date_range.start, body.date_range.end]}
+}
 
 *************************
 

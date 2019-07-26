@@ -36,11 +36,9 @@ export class UserSiteService {
     }
 
     async deleteOne(userSiteId: number) {
-
         const deletedUserSite = await this.userSiteRepository.destroy({
             where: { 'id': userSiteId }
         });
-
         return await deletedUserSite;
     }
 }

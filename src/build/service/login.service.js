@@ -34,9 +34,13 @@ const common_1 = require("@nestjs/common");
 const jwt = __importStar(require("jsonwebtoken"));
 const crypto_1 = __importDefault(require("crypto"));
 const user_model_1 = __importDefault(require("../models/user.model"));
+const user_service_1 = require("./user.service");
+const profile_service_1 = require("./profile.service");
 let LoginService = class LoginService {
-    constructor(loginRepository) {
+    constructor(loginRepository, userService, profileService) {
         this.loginRepository = loginRepository;
+        this.userService = userService;
+        this.profileService = profileService;
     }
     create(createLoginDto) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -55,10 +59,25 @@ let LoginService = class LoginService {
             if (!login) {
                 throw new Error('Login not Found');
             }
-            return this.getToken(authLogin);
+            return this.sendToken(authLogin);
         });
     }
-    getToken(login) {
+    sendToken(login) {
+        return __awaiter(this, void 0, void 0, function* () {
+            login = yield this.findOne(login.id);
+            const user = yield this.userService.findOne(login.userId);
+            const profile = yield this.profileService.findOne(user.profileId);
+            const token = yield this.createToken(login);
+            const obj = {
+                "username": login.username,
+                "name": profile.name,
+                "profile": user.profiles,
+                "token": token
+            };
+            return obj;
+        });
+    }
+    createToken(login) {
         return __awaiter(this, void 0, void 0, function* () {
             const options = {
                 algorithm: 'HS256',
@@ -95,6 +114,9 @@ let LoginService = class LoginService {
 LoginService = __decorate([
     common_1.Injectable(),
     __param(0, common_1.Inject('LoginRepository')),
-    __metadata("design:paramtypes", [Object])
+    __param(1, common_1.Inject('UserService')),
+    __param(2, common_1.Inject('ProfileService')),
+    __metadata("design:paramtypes", [Object, user_service_1.UserService,
+        profile_service_1.ProfileService])
 ], LoginService);
 exports.LoginService = LoginService;

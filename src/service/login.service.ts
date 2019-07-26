@@ -2,15 +2,20 @@ import { Injectable, Inject } from '@nestjs/common';
 import * as jwt from 'jsonwebtoken';
 import crypto from 'crypto';
 
-import { CreateLoginDto } from '../dto/login.dto';
 import User from '../models/user.model';
 import Login from '../models/login.model';
+
+import { CreateLoginDto } from '../dto/login.dto';
+import { UserService } from './user.service';
+import { ProfileService } from './profile.service';
 
 @Injectable()
 export class LoginService {
 
     constructor(
-        @Inject('LoginRepository') private readonly loginRepository: typeof Login
+        @Inject('LoginRepository') private readonly loginRepository: typeof Login,
+        @Inject('UserService') private userService: UserService,
+        @Inject('ProfileService') private profileService: ProfileService
     ) { }
 
     async create(createLoginDto: CreateLoginDto): Promise<Login> {
@@ -24,14 +29,28 @@ export class LoginService {
                 'password': crypto.createHmac('sha256', login.password).digest('hex')
             }
         })
-
         if (!login) {
             throw new Error('Login not Found');
         }
-        return this.getToken(authLogin);
+        return this.sendToken(authLogin);
     }
 
-    async getToken(login: Login) {
+    async sendToken(login: Login) {
+        login = await this.findOne(login.id);
+        const user = await this.userService.findOne(login.userId);
+        const profile = await this.profileService.findOne(user.profileId);
+        const token = await this.createToken(login);
+
+        const obj = {
+            "username": login.username,
+            "name": profile.name,
+            "profile": user.profiles,
+            "token": token
+        }
+        return obj;
+    }
+
+    async createToken(login: Login) {
         const options = {
             algorithm: 'HS256',
             expiresIn: '30 days',

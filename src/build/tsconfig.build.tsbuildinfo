@@ -1858,7 +1858,7 @@
         "signature": "ebf1d11d0a673fdb54696cc6005cd7daa1dee83b3ef8557853e320c1c0a8d0e7"
       },
       "c:/wtt-/doconline/src/service/site.service.ts": {
-        "version": "c074cca86643b694bfabef7461d0278af359b9a42fafff70068620913ff44ff7",
+        "version": "b20b598af109a64fa0e6002382f52741d4b5e8f598b288a16ab6aeed8440200f",
         "signature": "ac5f32beec58b258a4afa03e6e142f0a5a40146a239f329bf532a02b9d2b0b21"
       },
       "c:/wtt-/doconline/src/dto/profile.dto.ts": {
@@ -1866,7 +1866,7 @@
         "signature": "1467aa48da2e890740d699c8dd602c92c346b3e4920ee104d5d94a7c5df17e1b"
       },
       "c:/wtt-/doconline/src/service/profile.service.ts": {
-        "version": "32992301903e12a6eda50dfffb32b351e6d3a59bcdc75ac0b3523c5e92d5485e",
+        "version": "7d179ddb67775f78a4c9fba22ac0cc8d80ac3acf21f56c8aa77a65db6b88a986",
         "signature": "1bf396d8ee7ecfcd6c1489c3a552b842439f1013f2184c1a5f9082969ca4cf53"
       },
       "c:/wtt-/doconline/src/dto/patient.dto.ts": {
@@ -1874,7 +1874,7 @@
         "signature": "8fb4baa228e9af4323e4c2b0f19d667bdb8dd70390f91826e076f03ca4067343"
       },
       "c:/wtt-/doconline/src/service/patient.service.ts": {
-        "version": "91c6d419eff6de1901b2eb0f1741de80871b3945ac841cb13f9486e3e048b898",
+        "version": "5c7a71422e4b8a0976449a26bb290f6135d7816b5e1680fd8053da3a50509704",
         "signature": "b528172dea44a8bfaa8cb56bb23df583e1274d31874965a45dbfa848fbba6dc0"
       },
       "c:/wtt-/doconline/src/dto/doctor.dto.ts": {
@@ -1882,7 +1882,7 @@
         "signature": "a558065fac263565eb0d4c9c21dd1c1e5d6163ad78f71f32dcca7931df36be97"
       },
       "c:/wtt-/doconline/src/service/doctor.service.ts": {
-        "version": "6e9a883120946cd260a54c7e69d54aaed8022fca8c732fb1caa59bec5a7c6009",
+        "version": "2aa11fff30a995f9f81c0420e66f701a33b8cb16bc3e860b17997fbf226a36fb",
         "signature": "ae3f063faf7910b1a7a6b0398af753a9ff05b66a308b745a95fa7e4b76656181"
       },
       "c:/wtt-/doconline/src/dto/user.dto.ts": {
@@ -1890,7 +1890,7 @@
         "signature": "f8727c26c1afe98a4214dea87579e1ab15b3fd67863521669431bd3525cfd3cb"
       },
       "c:/wtt-/doconline/src/service/user.service.ts": {
-        "version": "1e288860005a08b54717271b40b6a3c4f804ff7fed924b654e1783f927dfb683",
+        "version": "4c4e2b349823e87d2a4437635e2b1b3df4d1fa9c1296eed9606e0bb6e11d52a7",
         "signature": "6bc6bf490df85b2b294e39426d3984d4dca77b342cac1c96d4af1760b0cf1c06"
       },
       "c:/wtt-/doconline/src/dto/usersite.dto.ts": {
@@ -1898,7 +1898,7 @@
         "signature": "c39d9be81d4e5e5528e90e0d5729e076cfade6264ceeb7ca5ef39646b6fe4e74"
       },
       "c:/wtt-/doconline/src/service/usersite.service.ts": {
-        "version": "f8f89d221c50eecbfd87ae88e6339a15199b2c528c90c9ec5c425ffec42e3d61",
+        "version": "a46e0a9a4b5c788b9a063534d35e5496d148b936e8fff2ec487a8850c5204504",
         "signature": "8824ac110a1a7226d908abc4107cf5159b0d5e2e55617a2174e50a3253b2ccd3"
       },
       "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts": {
@@ -1910,15 +1910,15 @@
         "signature": "d9ed68bcbab212493ba2bbb5255eaed665d65d976b2b2763b34c8b28724901ee"
       },
       "c:/wtt-/doconline/src/service/login.service.ts": {
-        "version": "be964afdf5effe7c9ca45350de22a0389f725bf44723699eac299440e4d7fa36",
-        "signature": "0f812782584aa65aae1f47e7701b585e97bae68112d06984cf67fd4bf871b920"
+        "version": "fb4708612681b14ea99b6aabcd62d65cdd271c0b1dc37daa9691ac475472a31a",
+        "signature": "cb2dd22f4bf00bb387ba340aedca22e14c65c0c00a30e13b7ec564d93a06605f"
       },
       "c:/wtt-/doconline/src/dto/userinsurance.dto.ts": {
         "version": "0b72498cb69d509a268e19a592ea676392830b2a0f044ced37d01909c4e108d2",
         "signature": "0309072c64cfff5ab73045d01ef8c623dddd5c1642b95c03ce754e6078f43719"
       },
       "c:/wtt-/doconline/src/service/userinsurance.service.ts": {
-        "version": "6e1363a5e41eb3b9d88d14d93ed144e2269f12e38539ffc745b7321e1a6cfc09",
+        "version": "dfddc18b48e5f666679e1f41b2027d0c8b50e03e94447360621c13b8a07fed3d",
         "signature": "12a6d8e9dd64d780ddf0ae7f70cea01085097a8ad83ea7a8edd963ef752c43b1"
       },
       "c:/wtt-/doconline/src/dto/insurance.dto.ts": {
@@ -1926,7 +1926,7 @@
         "signature": "858e5ac695ab614b7769cdf487c1d871519aae4fff9054a805881b5ece28b4b2"
       },
       "c:/wtt-/doconline/src/service/insurance.service.ts": {
-        "version": "f2e84ab198569c661834ed9f0d39ab58b4660b3daf56737ac32389dcdae49a84",
+        "version": "6e49c4afa3631f379b6b74289754902b8fd545ec513f5a20550f24e63554cfc7",
         "signature": "ca696fe5ee0bdbce28170212d09be39e3486cdae88c127d73202bbffef4fe9d6"
       },
       "c:/wtt-/doconline/src/dto/plan.dto.ts": {
@@ -1934,7 +1934,7 @@
         "signature": "307cb17696e4689cacb54dec5ecafd81807210cf2feffbda9e8b10d8d2c4b8f4"
       },
       "c:/wtt-/doconline/src/service/plan.service.ts": {
-        "version": "0f7d14e61c832e9ce42db2ba5d490723dfeee27aaae1eada2bbd0e4d881be1e6",
+        "version": "405100ef05e073b3991f4f08fae8f8e1233584f10e540626e3822e69aa57256f",
         "signature": "53c0a4a73215e6fde07133ae6f38ecf739340e9405e5743bf96baa6caa5b63de"
       },
       "c:/wtt-/doconline/src/dto/logexam.dto.ts": {
@@ -1942,7 +1942,7 @@
         "signature": "c1cb0a4b1df53df15f982a34eaccd17a1c4dfb2f46fa906ac4892790be3ef2e8"
       },
       "c:/wtt-/doconline/src/service/logexam.service.ts": {
-        "version": "8cf17db86da2517d8384a9c0471fce55e365f656cf6d75b8a7c9989ffe520e67",
+        "version": "61cb86afa1e16a88b8a71634a72f3dec8ca62cf9ecb42034c08cd58aaf323159",
         "signature": "8816acba2e5e43330fff6dc4cd7c3e25d878c7f1bf462beec109c71f25b53c6f"
       },
       "c:/wtt-/doconline/src/dto/exam.dto.ts": {
@@ -1950,15 +1950,115 @@
         "signature": "fbf63b896f0fa6f01d42226ede89cd2d83deb2da42d4ab3f809bf7c2d52123bb"
       },
       "c:/wtt-/doconline/src/dto/filter.dto.ts": {
-        "version": "3f474f36a365c2ae8b6fa33aa938b1c1f31e5535a83830637e65e92aabab7829",
+        "version": "3279da96ab6618bfdcb0a77f61d082ddc08af0e95f2d5ad8d8509235144a2340",
         "signature": "a0e6c1eedd342c4fd91bbda4b57242b8a5280d94df87eb2bc99b780d7ecec433"
       },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts": {
+        "version": "aa903cae52a9687b2fe32c82f0dd3972c726838f389a2bed0795d5e0cd26a87e",
+        "signature": "aa903cae52a9687b2fe32c82f0dd3972c726838f389a2bed0795d5e0cd26a87e"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/deferrable.d.ts": {
+        "version": "c0f575e9f7005738c3470854fa23817120457d870b1a58eadb3b3212d38aaa80",
+        "signature": "c0f575e9f7005738c3470854fa23817120457d870b1a58eadb3b3212d38aaa80"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/operators.d.ts": {
+        "version": "a7818a1e2dd61f3679bbdd0d7eaf2a27293f982f4d6f63ea5494bc8af307f80e",
+        "signature": "a7818a1e2dd61f3679bbdd0d7eaf2a27293f982f4d6f63ea5494bc8af307f80e"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-types.d.ts": {
+        "version": "0c098f6d249616469e6d9e2c584145c8e9299297b472d77ca348d293fe3ffd80",
+        "signature": "0c098f6d249616469e6d9e2c584145c8e9299297b472d77ca348d293fe3ffd80"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/table-hints.d.ts": {
+        "version": "fd7d0017b5f33a8a58e07d0c15a93387250ae1d627170ecec68f0a93960cc02b",
+        "signature": "fd7d0017b5f33a8a58e07d0c15a93387250ae1d627170ecec68f0a93960cc02b"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/index-hints.d.ts": {
+        "version": "334236475f89849f4373639c9053809ec3ee48f20f859f96e3cd3f0eff770921",
+        "signature": "334236475f89849f4373639c9053809ec3ee48f20f859f96e3cd3f0eff770921"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/base.d.ts": {
+        "version": "0172ff182c1f2ae6ee5860ddfd78604dbf614479ee956fc2c2a36afa3b5cdf0e",
+        "signature": "0172ff182c1f2ae6ee5860ddfd78604dbf614479ee956fc2c2a36afa3b5cdf0e"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts": {
+        "version": "862aa0da286f46c1086c70219041443734b736a95354f6093c8de69ff11ece0d",
+        "signature": "862aa0da286f46c1086c70219041443734b736a95354f6093c8de69ff11ece0d"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/belongs-to.d.ts": {
+        "version": "d422d6621fa7193e20e1d2e7174674010ed77f598f7029914dc1c610c9645bef",
+        "signature": "d422d6621fa7193e20e1d2e7174674010ed77f598f7029914dc1c610c9645bef"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/has-one.d.ts": {
+        "version": "a75a6854d85dfc494e68c74db2751eb20ff91775a7785d1300bb7d0559596000",
+        "signature": "a75a6854d85dfc494e68c74db2751eb20ff91775a7785d1300bb7d0559596000"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/has-many.d.ts": {
+        "version": "fc541fa6eeb2ad965e35a13e2a1ce7903dd0efe152b7758ec2538329c6232f6c",
+        "signature": "fc541fa6eeb2ad965e35a13e2a1ce7903dd0efe152b7758ec2538329c6232f6c"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/instance-validator.d.ts": {
+        "version": "60acbc6cb20f43833c5fe4eb204bfe9ea5dcc4eff54c3cffbb9c8850a5c0b7cf",
+        "signature": "60acbc6cb20f43833c5fe4eb204bfe9ea5dcc4eff54c3cffbb9c8850a5c0b7cf"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/hooks.d.ts": {
+        "version": "1d5de882d78a0cb5aaa1da6b94936ea449cf5924fa47d6cded9221edba80069c",
+        "signature": "1d5de882d78a0cb5aaa1da6b94936ea449cf5924fa47d6cded9221edba80069c"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/model-manager.d.ts": {
+        "version": "6b41e2c79936d58d2cc9749264df7e9f5e93866d450a89cb5d880ca4c9ff9e5e",
+        "signature": "6b41e2c79936d58d2cc9749264df7e9f5e93866d450a89cb5d880ca4c9ff9e5e"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-interface.d.ts": {
+        "version": "224b0a36c1f02a0a37ba98aabeca608ef212aba78abbc3d14e0cb7ec51585569",
+        "signature": "224b0a36c1f02a0a37ba98aabeca608ef212aba78abbc3d14e0cb7ec51585569"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils/validator-extras.d.ts": {
+        "version": "3b9e650cf228a1d63f90e018be93b4e77e2250c563006559a77a617a3d5bae2e",
+        "signature": "3b9e650cf228a1d63f90e018be93b4e77e2250c563006559a77a617a3d5bae2e"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/connection-manager.d.ts": {
+        "version": "a945a2e45ea5ea22941d21aa7b92dc7b587cec6a7588fd04480c9db11c964c2f",
+        "signature": "a945a2e45ea5ea22941d21aa7b92dc7b587cec6a7588fd04480c9db11c964c2f"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/sequelize.d.ts": {
+        "version": "5070031951c27b9654ecd23278e7d44353b4e6ea8b9a18907d8ebb6220700656",
+        "signature": "5070031951c27b9654ecd23278e7d44353b4e6ea8b9a18907d8ebb6220700656"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/transaction.d.ts": {
+        "version": "b4d5e6a16f526390bafd1a59393ff9998ada5a379664e8ab60a4f90e31d70a3c",
+        "signature": "b4d5e6a16f526390bafd1a59393ff9998ada5a379664e8ab60a4f90e31d70a3c"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/belongs-to-many.d.ts": {
+        "version": "f391577ba4d6098152ae26a0511ea4288c3515a4bb409550b31c743207b759b6",
+        "signature": "f391577ba4d6098152ae26a0511ea4288c3515a4bb409550b31c743207b759b6"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/index.d.ts": {
+        "version": "47d01ed73d26a694589ea1e020f8edf31cb0640d82096203672bb603d82e7166",
+        "signature": "47d01ed73d26a694589ea1e020f8edf31cb0640d82096203672bb603d82e7166"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts": {
+        "version": "9c95c9e68d6477fda97b30da7b03188f57cd644bdd4ac3073488543004830fb0",
+        "signature": "9c95c9e68d6477fda97b30da7b03188f57cd644bdd4ac3073488543004830fb0"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils.d.ts": {
+        "version": "70219c091b0f30dea9d812db26d249a949385cd6027a8daf237415835ebdac35",
+        "signature": "70219c091b0f30dea9d812db26d249a949385cd6027a8daf237415835ebdac35"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/errors.d.ts": {
+        "version": "b7054e4b1292a6edfc445b85a180cba40a2ebd0c5ea09a0247456abe7e0cfb67",
+        "signature": "b7054e4b1292a6edfc445b85a180cba40a2ebd0c5ea09a0247456abe7e0cfb67"
+      },
+      "c:/wtt-/doconline/node_modules/sequelize/types/index.d.ts": {
+        "version": "3fc2a338f78db7f9a154421ff69b0ddc374141625e5fedc5f5ea8048648b0a36",
+        "signature": "3fc2a338f78db7f9a154421ff69b0ddc374141625e5fedc5f5ea8048648b0a36"
+      },
       "c:/wtt-/doconline/src/service/exam.service.ts": {
-        "version": "51eb6bbd84b202fccb7a9ee6cf0937c49eaca5143e63b3137d6eebfc221ee871",
-        "signature": "ef8412d2bb7a75f9c14d180acfce218a760371435a42dfa6a9d407c920876833"
+        "version": "a0745b441fbfe7ad75e5648fe934810220ddba45e476dabbeccf8d27a8bc0c46",
+        "signature": "586c6c35b0b4cfd42b7df42aa4df87ec1fc3d1706d1221e5043573c6d9bcbf9c"
       },
       "c:/wtt-/doconline/src/controller/exam.controller.ts": {
-        "version": "86310d6596127673222339f199f31f2b13337f58a00844feef04bf8d33076a57",
+        "version": "de2162634149f08f0db5eafc868721feb901f74b71cdda39881d63672ebcd659",
         "signature": "21efee0ffa9a2aefd0cfb349c9cb9ab7ef442b883997691f76a04d9754c21ca1"
       },
       "c:/wtt-/doconline/src/provider/exam.provider.ts": {
@@ -1982,7 +2082,7 @@
         "signature": "77ae88ee685edd2c13af9c51290772d39420dfac8ee645553521361a5d178ca0"
       },
       "c:/wtt-/doconline/src/service/siterule.service.ts": {
-        "version": "81701970280d30a5c7954a39a4816740c46ffd1902eddd23264d1e7f116e7438",
+        "version": "615ede1a99728577e3c3c2a3197ded1cca6eff331daac18bcaa25f4d77c9b5ac",
         "signature": "8f587b735d1537af05fdf2c068cddd63c1cd7ec47106734f6810bd19b70c78e0"
       },
       "c:/wtt-/doconline/src/controller/siterule.controller.ts": {
@@ -2002,7 +2102,7 @@
         "signature": "1a747a3268873d91e893730a41af93103866fcdd39afd29c2a971cd60942ce7b"
       },
       "c:/wtt-/doconline/src/service/sitenotification.service.ts": {
-        "version": "6f28cb1c1f8ddc425e7bd1fde9abbf7560c302e2042272345ab6c08b6e49d565",
+        "version": "600d9a88693656ea11a144aa87bae14411278a62a0612ff64fffae689b3790da",
         "signature": "5a75b01dee37d319738805f75b7eeb7e8eb9834a4a1353acd956bd7a4b959921"
       },
       "c:/wtt-/doconline/src/controller/sitenotification.controller.ts": {
@@ -2043,18 +2143,18 @@
       },
       "c:/wtt-/doconline/src/controller/login.controller.ts": {
         "version": "61b3205c3b3e4898cafd656f507bb8ad072fd46389eed7ccd9a009d9756c14e3",
-        "signature": "f4d2e00d84a2c9b2996da7f50c794a11ccb8167cba105f0dd3a3e6c450b78097"
+        "signature": "272b6601efbc04911fba0b2c005dd0d87733016263f0c8383c8655ba6d30a49a"
       },
       "c:/wtt-/doconline/src/provider/login.provider.ts": {
         "version": "aee649da1b361d3227c1a527812ba89bb4d58373cbc882154b369046be6e92e9",
         "signature": "1b3bddba603d8e43f0f8dfd0e47eff8978b36073f9920a8e3b10d792d7c48eaa"
       },
       "c:/wtt-/doconline/src/middleware/auth.middleware.ts": {
-        "version": "1ef1144f65c16a67577952e5cf4bacc7d82ebb6ffe16a570e7de4f0b21350f60",
+        "version": "11734802d983286d568badb95b021bfb305c17fff2d0faa6449c679eb956e6fa",
         "signature": "67726122c2706f5b658c90a373330eea04eec006d4012962666dd4c20de80e58"
       },
       "c:/wtt-/doconline/src/module/login.module.ts": {
-        "version": "5f3980d00085a226c4fb58bc8eddda2f587ed003a7ee553dab31f5f9af5393fa",
+        "version": "edffee37189d269d20344b94844ab8c5bb45267999afa883318cb498e7cc8275",
         "signature": "2af82d050b6d042dd860e7e6391b0512ea5eef51d8297d9b99ba0487f204ce98"
       },
       "c:/wtt-/doconline/src/controller/patient.controller.ts": {
@@ -2098,7 +2198,7 @@
         "signature": "b82302d7568038abaa70bf30bb399fdd83f08923b31e62318eb0ae3874910b1d"
       },
       "c:/wtt-/doconline/src/service/views.service.ts": {
-        "version": "c333aac010c15408c294fb3186dc599e39a50d986d0268950c5e97ff6f21df64",
+        "version": "6ab94756750ef3236f2809f14a5e5183c421cd080259c97abfee17a6fb4a2bde",
         "signature": "4634a8a5e1f2b2e8e7efac1aaf4c66592f38811f62e561fd366783ebfd35bdef"
       },
       "c:/wtt-/doconline/src/controller/views.controller.ts": {
@@ -5323,9 +5423,11 @@
         "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/crypto.d.ts",
-        "c:/wtt-/doconline/src/dto/login.dto.ts",
         "c:/wtt-/doconline/src/models/user.model.ts",
         "c:/wtt-/doconline/src/models/login.model.ts",
+        "c:/wtt-/doconline/src/dto/login.dto.ts",
+        "c:/wtt-/doconline/src/service/user.service.ts",
+        "c:/wtt-/doconline/src/service/profile.service.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5387,6 +5489,192 @@
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/src/dto/filter.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/deferrable.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/operators.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-types.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/table-hints.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/index-hints.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/base.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/bluebird/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/belongs-to.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/base.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/has-one.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/base.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/has-many.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/base.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/instance-validator.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/hooks.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/instance-validator.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/sequelize.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/model-manager.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/sequelize.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-interface.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/sequelize.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/transaction.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils/validator-extras.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/connection-manager.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/sequelize.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/deferrable.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/hooks.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/instance-validator.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model-manager.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/operators.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-interface.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/transaction.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils/validator-extras.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/connection-manager.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/transaction.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/deferrable.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/sequelize.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/belongs-to-many.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/transaction.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/base.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/base.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/belongs-to.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/has-one.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/has-many.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/belongs-to-many.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/index.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/deferrable.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/hooks.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/instance-validator.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model-manager.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/operators.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-interface.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/sequelize.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/transaction.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/errors.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/deferrable.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/operators.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/table-hints.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/index-hints.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/sequelize.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-interface.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/transaction.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/index.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/errors.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils/validator-extras.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5422,6 +5710,7 @@
         "c:/wtt-/doconline/src/dto/plan.dto.ts",
         "c:/wtt-/doconline/src/dto/logexam.dto.ts",
         "c:/wtt-/doconline/src/dto/filter.dto.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5589,6 +5878,8 @@
       "c:/wtt-/doconline/src/module/login.module.ts": [
         "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
         "c:/wtt-/doconline/src/database/database.module.ts",
+        "c:/wtt-/doconline/src/module/profile.module.ts",
+        "c:/wtt-/doconline/src/module/user.module.ts",
         "c:/wtt-/doconline/src/controller/login.controller.ts",
         "c:/wtt-/doconline/src/service/login.service.ts",
         "c:/wtt-/doconline/src/provider/login.provider.ts",
@@ -8861,6 +9152,8 @@
       ],
       "c:/wtt-/doconline/src/service/login.service.ts": [
         "c:/wtt-/doconline/src/models/login.model.ts",
+        "c:/wtt-/doconline/src/service/user.service.ts",
+        "c:/wtt-/doconline/src/service/profile.service.ts",
         "c:/wtt-/doconline/src/dto/login.dto.ts"
       ],
       "c:/wtt-/doconline/src/service/userinsurance.service.ts": [
@@ -8878,6 +9171,191 @@
       "c:/wtt-/doconline/src/service/logexam.service.ts": [
         "c:/wtt-/doconline/src/models/logexam.model.ts",
         "c:/wtt-/doconline/src/dto/logexam.dto.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/deferrable.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/operators.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-types.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/table-hints.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/index-hints.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/base.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/bluebird/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/belongs-to.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/base.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/has-one.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/base.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/has-many.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/base.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/instance-validator.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/hooks.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/instance-validator.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/sequelize.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/model-manager.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/sequelize.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-interface.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/sequelize.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/transaction.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils/validator-extras.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/connection-manager.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/sequelize.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/deferrable.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/hooks.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/instance-validator.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model-manager.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/operators.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-interface.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/transaction.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils/validator-extras.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/connection-manager.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/transaction.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/deferrable.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/sequelize.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/belongs-to-many.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/transaction.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/base.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/base.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/belongs-to.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/has-one.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/has-many.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/belongs-to-many.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/index.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/deferrable.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/hooks.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/instance-validator.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model-manager.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/operators.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-interface.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/sequelize.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/transaction.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/errors.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/sequelize/types/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/deferrable.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/operators.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-types.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/table-hints.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/index-hints.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/sequelize.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-interface.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/transaction.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/index.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/errors.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+        "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils/validator-extras.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/wtt-/doconline/src/service/exam.service.ts": [
         "c:/wtt-/doconline/src/models/profile.model.ts",
@@ -9621,7 +10099,31 @@
       "c:/wtt-/doconline/src/service/logexam.service.ts",
       "c:/wtt-/doconline/src/dto/exam.dto.ts",
       "c:/wtt-/doconline/src/dto/filter.dto.ts",
-      "c:/wtt-/doconline/src/service/exam.service.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/data-types.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/deferrable.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/operators.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-types.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/table-hints.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/index-hints.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/base.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/promise.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/belongs-to.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/has-one.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/has-many.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/instance-validator.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/hooks.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/model-manager.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/query-interface.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils/validator-extras.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/connection-manager.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/sequelize.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/transaction.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/belongs-to-many.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/associations/index.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/model.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/lib/errors.d.ts",
+      "c:/wtt-/doconline/node_modules/sequelize/types/index.d.ts",
       "c:/wtt-/doconline/src/controller/exam.controller.ts",
       "c:/wtt-/doconline/src/provider/exam.provider.ts",
       "c:/wtt-/doconline/src/controller/site.controller.ts",
@@ -9656,6 +10158,7 @@
       "c:/wtt-/doconline/src/controller/usersite.controller.ts",
       "c:/wtt-/doconline/src/provider/usersite.provider.ts",
       "c:/wtt-/doconline/src/module/usersite.module.ts",
+      "c:/wtt-/doconline/src/dto/views.dto.ts",
       "c:/wtt-/doconline/src/service/views.service.ts",
       "c:/wtt-/doconline/src/controller/views.controller.ts",
       "c:/wtt-/doconline/src/provider/views.provider.ts",
@@ -9691,7 +10194,7 @@
       "c:/wtt-/doconline/node_modules/@types/supertest/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/uuid/interfaces.d.ts",
       "c:/wtt-/doconline/node_modules/@types/uuid/index.d.ts",
-      "c:/wtt-/doconline/src/dto/views.dto.ts"
+      "c:/wtt-/doconline/src/service/exam.service.ts"
     ]
   },
   "version": "3.4.3"

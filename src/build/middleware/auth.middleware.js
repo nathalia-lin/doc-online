@@ -34,17 +34,14 @@ let AuthMiddleware = class AuthMiddleware {
     use(req, res, next) {
         return __awaiter(this, void 0, void 0, function* () {
             console.log('IN MIDDLEWARE');
-            const authHeaders = req.headers.authorization;
-            if (authHeaders && authHeaders.split(' ')[0] === 'Bearer') {
-                const token = authHeaders.split(' ')[1];
+            const authHeaders = req.headers.authorization || '';
+            let authorizationPatials = authHeaders.split(' ');
+            if (authorizationPatials[0].trim() === 'Bearer') {
+                const token = authorizationPatials[1].trim();
                 const decoded = jwt.verify(token, 'secret');
-                const user = yield this.loginService.find({
-                    'id': decoded.id,
-                    'username': decoded.username,
-                });
-                req.userId = decoded.id;
-                if (!user)
+                if (!decoded)
                     throw new Error('User not found');
+                req.token = decoded;
                 next();
             }
             else {

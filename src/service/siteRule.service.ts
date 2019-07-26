@@ -37,11 +37,9 @@ export class SiteRuleService {
   }
 
   async deleteOne(siteRuleId: number) {
-
     const deletedSiteRule = await this.siteRuleRepository.destroy({
       where: { 'id': siteRuleId }
     });
-
     return await deletedSiteRule;
   }
 }
