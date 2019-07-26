@@ -31,14 +31,19 @@ let ExamController = class ExamController {
             try {
                 return yield this.examService.create(req.token, networkID, studyInstanceUID, studyDate, accessionNumber, modality, studyStatus, reqProcDescription, insuranceID, insuranceName, planID, planName, patientID, patientName, patientSocialName, patientBirthDate, patientSex, patientPhone, patientEmail, patientPID, protocolID, protocolPwd, reqPhysicianType, reqPhysicianNum, reqPhysicianUF, reqPhysicianName, refPhysicianType, refPhysicianNum, refPhysicianUF, refPhysicianName);
             }
-            catch (err) {
-                console.log(err);
+            catch (SequelizeDatabaseError) {
+                throw new common_1.BadRequestException(SequelizeDatabaseError);
             }
         });
     }
     search(body, req) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.examService.search(body, req.token);
+            try {
+                return yield this.examService.search(body, req.token);
+            }
+            catch (SequelizeDatabaseError) {
+                throw new common_1.BadRequestException(SequelizeDatabaseError);
+            }
         });
     }
     show() {

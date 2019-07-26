@@ -1802,7 +1802,7 @@
         "signature": "bf52295e38e2712c63f38a9b87e61e3dce4d9dd3ca3db24764b2c7e3098964a3"
       },
       "c:/wtt-/doconline/src/models/sitenotification.model.ts": {
-        "version": "16765b4d88bb3004579da6e98135d1d2932a067525497718512ab5d53c978011",
+        "version": "75f98b4b4bceed98568b36e706dc4b67381d79db87c00128aed342edd273c6c7",
         "signature": "36f0d49f696572bb21aa48972b343472a126a511e5e966fd1d2da8d86ada730e"
       },
       "c:/wtt-/doconline/src/models/doctor.model.ts": {
@@ -2054,11 +2054,11 @@
         "signature": "3fc2a338f78db7f9a154421ff69b0ddc374141625e5fedc5f5ea8048648b0a36"
       },
       "c:/wtt-/doconline/src/service/exam.service.ts": {
-        "version": "a0745b441fbfe7ad75e5648fe934810220ddba45e476dabbeccf8d27a8bc0c46",
-        "signature": "586c6c35b0b4cfd42b7df42aa4df87ec1fc3d1706d1221e5043573c6d9bcbf9c"
+        "version": "e7ff65022b1f4d6f1e0edb0c77620fed5338731728327a47c7e67dad924150cc",
+        "signature": "6371e09c40d95e7dbe427bbb5b81880ada0f598582fb2f481725579aa40808a7"
       },
       "c:/wtt-/doconline/src/controller/exam.controller.ts": {
-        "version": "de2162634149f08f0db5eafc868721feb901f74b71cdda39881d63672ebcd659",
+        "version": "bd47781f3bded503fc2f74442e53f430425dd3ede1406018942c987ec8a5cc52",
         "signature": "21efee0ffa9a2aefd0cfb349c9cb9ab7ef442b883997691f76a04d9754c21ca1"
       },
       "c:/wtt-/doconline/src/provider/exam.provider.ts": {
@@ -2142,19 +2142,19 @@
         "signature": "9e36626cb39f17790cf2403e2e54d8a74542da63e2a49aba7061133a1af26dcd"
       },
       "c:/wtt-/doconline/src/controller/login.controller.ts": {
-        "version": "61b3205c3b3e4898cafd656f507bb8ad072fd46389eed7ccd9a009d9756c14e3",
+        "version": "ebbb0f60d2ab53d77cede7575a3923199f4be25e549a9827c115d6dd423289e5",
         "signature": "272b6601efbc04911fba0b2c005dd0d87733016263f0c8383c8655ba6d30a49a"
       },
       "c:/wtt-/doconline/src/provider/login.provider.ts": {
         "version": "aee649da1b361d3227c1a527812ba89bb4d58373cbc882154b369046be6e92e9",
         "signature": "1b3bddba603d8e43f0f8dfd0e47eff8978b36073f9920a8e3b10d792d7c48eaa"
       },
-      "c:/wtt-/doconline/src/middleware/auth.middleware.ts": {
-        "version": "11734802d983286d568badb95b021bfb305c17fff2d0faa6449c679eb956e6fa",
-        "signature": "67726122c2706f5b658c90a373330eea04eec006d4012962666dd4c20de80e58"
+      "c:/wtt-/doconline/src/shared/auth.middleware.ts": {
+        "version": "4febbfe8d1e084bf0966c77247444252367dc026e066a28b82ec99ebc2735912",
+        "signature": "5aa194ed6a29ecdff3b2d55e9148dc085485b8a9ed76f5fe564dde474a0e6d04"
       },
       "c:/wtt-/doconline/src/module/login.module.ts": {
-        "version": "edffee37189d269d20344b94844ab8c5bb45267999afa883318cb498e7cc8275",
+        "version": "38bfdb0a56430140a022142af5d2e37a119fc1c6333d10e597de4f4c62ddf4fc",
         "signature": "2af82d050b6d042dd860e7e6391b0512ea5eef51d8297d9b99ba0487f204ce98"
       },
       "c:/wtt-/doconline/src/controller/patient.controller.ts": {
@@ -2170,8 +2170,8 @@
         "signature": "399f0bc4cd54778f9f07555e2894c81c1c1953e823bd2310fd3930c9dbfde8be"
       },
       "c:/wtt-/doconline/src/controller/doctor.controller.ts": {
-        "version": "4474da4e0092a8268ce4557fe78a533365fc61435b9beaa2db974222c944b1d7",
-        "signature": "6bd5dc4c162cb0b8fc8a708053e5e23a77dbd3cd141258ed1e91cbe03d1b5a52"
+        "version": "6f027385324875b9d041a914a160fa147c1069100a79153ea522ed04ee237429",
+        "signature": "eb4fa6dd6a030614bf32ca77135c5aae1dd163594633a756aa03bf2beacbb3ff"
       },
       "c:/wtt-/doconline/src/provider/doctor.provider.ts": {
         "version": "329003c259b43314f4638038bf9548252390b909f7400138b5174e59f2b4c0ac",
@@ -2182,7 +2182,7 @@
         "signature": "7612bea581089b803db9fe53fcefe26f5638af9754c4af75fd5a9ea56ad348c9"
       },
       "c:/wtt-/doconline/src/controller/usersite.controller.ts": {
-        "version": "5e8e0f66673c185be0fba8b0ebaece73103f2df9bf7fe69bca18f821d10fdd20",
+        "version": "cd64821735184d4c7db946eada735b0c41c2ec10dae65f1479f724d23bde097c",
         "signature": "2b38307516250aaf523ed03cd14e82755547c729951b0fcec1ebc44222749d74"
       },
       "c:/wtt-/doconline/src/provider/usersite.provider.ts": {
@@ -2202,7 +2202,7 @@
         "signature": "4634a8a5e1f2b2e8e7efac1aaf4c66592f38811f62e561fd366783ebfd35bdef"
       },
       "c:/wtt-/doconline/src/controller/views.controller.ts": {
-        "version": "c38d7f35d61db8ff7f9c57d37323bf9e8ed03c0ab887425457396eb955df0f80",
+        "version": "16ec61d6f26906ba8f18c536886c480d420e0f0516ea6819aef4657a97daf793",
         "signature": "7c0d6d3e5ad7412d0400bc85be64a3bdc82cb44d4df0549c31c547e7464404df"
       },
       "c:/wtt-/doconline/src/provider/views.provider.ts": {
@@ -2265,6 +2265,446 @@
         "version": "381660749d70464d86080ef0ff4f72adaf0309af5bf1bc52d8407774ea71da68",
         "signature": "7aa86b96ab9d417f0f12b6f2972f00eb55a9739b2acdca599ab00602bafe8aa5"
       },
+      "c:/wtt-/doconline/src/shared/http-exception.filter.ts": {
+        "version": "e499b815cd42ec0c52f2fba0c02002a9bdbe01c8a0cd5bd5945703b8bbaf3d38",
+        "signature": "3aafd6f942095a65f916a020071fe3e81ecb7ba8479f7d574ce8394126eb6059"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/audit.d.ts": {
+        "version": "fe936a68d281ccc2060f8c3de69a0682a807c8fd1b8abccc0a91b83195ca0f94",
+        "signature": "fe936a68d281ccc2060f8c3de69a0682a807c8fd1b8abccc0a91b83195ca0f94"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/audittime.d.ts": {
+        "version": "2b04ef3fd9be3b468a301f72c196442b86cd3b40ddf275d2b228fe2beb599c9a",
+        "signature": "2b04ef3fd9be3b468a301f72c196442b86cd3b40ddf275d2b228fe2beb599c9a"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffer.d.ts": {
+        "version": "5492cc814d8a58be870ecaf61ca95795c274e805d7350339dc95846efc59723d",
+        "signature": "5492cc814d8a58be870ecaf61ca95795c274e805d7350339dc95846efc59723d"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffercount.d.ts": {
+        "version": "94b7ea249855720c710a695109c586fcb728bcedb26b4ceb402cc8c70868eeba",
+        "signature": "94b7ea249855720c710a695109c586fcb728bcedb26b4ceb402cc8c70868eeba"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffertime.d.ts": {
+        "version": "e59d36b7b6e8ba2dd36d032a5f5c279d2460968c8b4e691ca384f118fb09b52a",
+        "signature": "e59d36b7b6e8ba2dd36d032a5f5c279d2460968c8b4e691ca384f118fb09b52a"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffertoggle.d.ts": {
+        "version": "4c6534725143687517f291840189289f76a718d0962e3fab076d61fd428174c9",
+        "signature": "4c6534725143687517f291840189289f76a718d0962e3fab076d61fd428174c9"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/bufferwhen.d.ts": {
+        "version": "fb941c28064e71ad9f5d552cc30eee727867522ca7e3138bc0c769366cf12058",
+        "signature": "fb941c28064e71ad9f5d552cc30eee727867522ca7e3138bc0c769366cf12058"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/catcherror.d.ts": {
+        "version": "89e061244da3fc21b7330f4bd32f47c1813dd4d7f1dc3d0883d88943f035b993",
+        "signature": "89e061244da3fc21b7330f4bd32f47c1813dd4d7f1dc3d0883d88943f035b993"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/combineall.d.ts": {
+        "version": "07bd2baf95d48b7dbc6cb5b24e13b83b5ec9657ceb0e122f9665057d2af03361",
+        "signature": "07bd2baf95d48b7dbc6cb5b24e13b83b5ec9657ceb0e122f9665057d2af03361"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/combinelatest.d.ts": {
+        "version": "b63ce995a548932a991700c7e677099d6ed85a7999b879372739d51dfbdee1fc",
+        "signature": "b63ce995a548932a991700c7e677099d6ed85a7999b879372739d51dfbdee1fc"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concat.d.ts": {
+        "version": "81a46bb692ee40afbac3d5fdc2c834c402fc5a1102ee3d25918191f39d65935a",
+        "signature": "81a46bb692ee40afbac3d5fdc2c834c402fc5a1102ee3d25918191f39d65935a"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatall.d.ts": {
+        "version": "14a7e2a08ee486a88fd9746dfd988cf473a122ae518a24e2503a15dcd10bdf10",
+        "signature": "14a7e2a08ee486a88fd9746dfd988cf473a122ae518a24e2503a15dcd10bdf10"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatmap.d.ts": {
+        "version": "3480def9cb4acd4fc8878d9d3a5fd5a585b358eb25ae31b5ecbd14085b43fc5a",
+        "signature": "3480def9cb4acd4fc8878d9d3a5fd5a585b358eb25ae31b5ecbd14085b43fc5a"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatmapto.d.ts": {
+        "version": "ee317ef4a4ff674d77d6db14ed12236e1ae879184f7d50ff801609dc22530015",
+        "signature": "ee317ef4a4ff674d77d6db14ed12236e1ae879184f7d50ff801609dc22530015"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/count.d.ts": {
+        "version": "7ecd499836bd10605f54fb8d4c88a8fcd996c35be9b0bb5eaea9e1e66af8b8f2",
+        "signature": "7ecd499836bd10605f54fb8d4c88a8fcd996c35be9b0bb5eaea9e1e66af8b8f2"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/debounce.d.ts": {
+        "version": "338f6a3a5bf7ba0239c4f4e2aeac04d217c8b84d78e502745898fdac1aca4f61",
+        "signature": "338f6a3a5bf7ba0239c4f4e2aeac04d217c8b84d78e502745898fdac1aca4f61"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/debouncetime.d.ts": {
+        "version": "a38464c132d7a81bae689269621d9384668226f175b1f460d2bd3faf38bd103a",
+        "signature": "a38464c132d7a81bae689269621d9384668226f175b1f460d2bd3faf38bd103a"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/defaultifempty.d.ts": {
+        "version": "94d0255f8835da5b6e58b2c43c461ef1dcba345a44ad7a2d688c64b90a94ab9e",
+        "signature": "94d0255f8835da5b6e58b2c43c461ef1dcba345a44ad7a2d688c64b90a94ab9e"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/delay.d.ts": {
+        "version": "c1ee41df353b471e09c7b8b077d3f457dcbbb020a3970ac4b7eecefb15c92b29",
+        "signature": "c1ee41df353b471e09c7b8b077d3f457dcbbb020a3970ac4b7eecefb15c92b29"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/delaywhen.d.ts": {
+        "version": "4b58f42e8c058f8326405bfdea74bd1e38f1ee1782b2280248ac653df972ffab",
+        "signature": "4b58f42e8c058f8326405bfdea74bd1e38f1ee1782b2280248ac653df972ffab"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/dematerialize.d.ts": {
+        "version": "2f73eb263689362609bd9a2beb20e128f5237933553fa6d6d212ce83c2a7057d",
+        "signature": "2f73eb263689362609bd9a2beb20e128f5237933553fa6d6d212ce83c2a7057d"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinct.d.ts": {
+        "version": "d4ad82cc457647deb0dc9bdd70d75ccae811b919a70ef39d06d986cbb34f0993",
+        "signature": "d4ad82cc457647deb0dc9bdd70d75ccae811b919a70ef39d06d986cbb34f0993"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinctuntilchanged.d.ts": {
+        "version": "f773f743fa62974b10eff98ee4856135d055e437abafa9ececb9f702348faa5f",
+        "signature": "f773f743fa62974b10eff98ee4856135d055e437abafa9ececb9f702348faa5f"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinctuntilkeychanged.d.ts": {
+        "version": "6cf42a4f3cfec648545925d43afaa8bb364ac10a839ffed88249da109361b275",
+        "signature": "6cf42a4f3cfec648545925d43afaa8bb364ac10a839ffed88249da109361b275"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/elementat.d.ts": {
+        "version": "bc773c63d03bee4607b8cc0d195930e8e008ab832aec16594b283302646312e4",
+        "signature": "bc773c63d03bee4607b8cc0d195930e8e008ab832aec16594b283302646312e4"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/endwith.d.ts": {
+        "version": "4fa52e41c21594ef92e1773395bcc775b7f935506c6cea20dbca2c8a4b62a78a",
+        "signature": "4fa52e41c21594ef92e1773395bcc775b7f935506c6cea20dbca2c8a4b62a78a"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/every.d.ts": {
+        "version": "a3f29291dcfc8eac21bb961bd3e28a65a3696d83f02d6690c03404d08347aadd",
+        "signature": "a3f29291dcfc8eac21bb961bd3e28a65a3696d83f02d6690c03404d08347aadd"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/exhaust.d.ts": {
+        "version": "7e196a2d147a025189a0dbfd5b2884144442d9306aade72ac756c6d15ce44f01",
+        "signature": "7e196a2d147a025189a0dbfd5b2884144442d9306aade72ac756c6d15ce44f01"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/exhaustmap.d.ts": {
+        "version": "c4c368b0b139240b0efc44b98afb9bad864aaeb23b5b05ed54c3b8fcfa7788b9",
+        "signature": "c4c368b0b139240b0efc44b98afb9bad864aaeb23b5b05ed54c3b8fcfa7788b9"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/expand.d.ts": {
+        "version": "0eb23672720e25b1c36a52e364a9b5065bcd5e0f4a61500d4b5f552f416281ac",
+        "signature": "0eb23672720e25b1c36a52e364a9b5065bcd5e0f4a61500d4b5f552f416281ac"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/filter.d.ts": {
+        "version": "1c25b51b3d26010962b85c2020de84d4b16da0b18ea6b9e46f731066becf2fde",
+        "signature": "1c25b51b3d26010962b85c2020de84d4b16da0b18ea6b9e46f731066becf2fde"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/finalize.d.ts": {
+        "version": "22d35aa24b765208ea8cb637ac1ae52b1a8251fcd6902609ff9f8da8d5ba39ec",
+        "signature": "22d35aa24b765208ea8cb637ac1ae52b1a8251fcd6902609ff9f8da8d5ba39ec"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/find.d.ts": {
+        "version": "ec6f1b6ea4dea29f45484e99831f471da38c175febff3d3e0703320e84fab4bd",
+        "signature": "ec6f1b6ea4dea29f45484e99831f471da38c175febff3d3e0703320e84fab4bd"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/findindex.d.ts": {
+        "version": "571f401c7e7762c8af696b7fc3039138c465475a5bdff2455d19f6f20d21a04d",
+        "signature": "571f401c7e7762c8af696b7fc3039138c465475a5bdff2455d19f6f20d21a04d"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/first.d.ts": {
+        "version": "8d7e34101de761176a8af96b0dd3e8a4e38946c05160c8b61865faec0542fd0f",
+        "signature": "8d7e34101de761176a8af96b0dd3e8a4e38946c05160c8b61865faec0542fd0f"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/ignoreelements.d.ts": {
+        "version": "6afb806b7b32ee290623e5e28fef6331e7b257fc629ac4298c75a259d6a0d12b",
+        "signature": "6afb806b7b32ee290623e5e28fef6331e7b257fc629ac4298c75a259d6a0d12b"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/isempty.d.ts": {
+        "version": "5ba43139c886c3d57f2c7a31b7a5fa2f0dd1f9da836b1b7e6cfbacdcd510ff77",
+        "signature": "5ba43139c886c3d57f2c7a31b7a5fa2f0dd1f9da836b1b7e6cfbacdcd510ff77"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/last.d.ts": {
+        "version": "f3a9bdcf6d80e938918f8da065456ced3d06c6feaf0a7d238facf56c34ab63a7",
+        "signature": "f3a9bdcf6d80e938918f8da065456ced3d06c6feaf0a7d238facf56c34ab63a7"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/map.d.ts": {
+        "version": "18cb04ba74ce655a2d4987c4c13af903e8769b18a62f027c42ffff966ab7ec28",
+        "signature": "18cb04ba74ce655a2d4987c4c13af903e8769b18a62f027c42ffff966ab7ec28"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mapto.d.ts": {
+        "version": "b2936d46b233beb8dcfb6197a7affd62a15c4fb537bc9078691d526672b6100e",
+        "signature": "b2936d46b233beb8dcfb6197a7affd62a15c4fb537bc9078691d526672b6100e"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/materialize.d.ts": {
+        "version": "1bf42e9bb6118d86c788e73a5557bbefe8ade252d73acfb5c3334830844c853e",
+        "signature": "1bf42e9bb6118d86c788e73a5557bbefe8ade252d73acfb5c3334830844c853e"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/max.d.ts": {
+        "version": "e6ec451de20b5fb79e370b6349ccbbcb14b956795039f2fb2d8b41de788660e8",
+        "signature": "e6ec451de20b5fb79e370b6349ccbbcb14b956795039f2fb2d8b41de788660e8"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/merge.d.ts": {
+        "version": "3c27a0638843e7d52bf65c15f4ab2cf14bf59283f33d42e5a1c3ade9c8797113",
+        "signature": "3c27a0638843e7d52bf65c15f4ab2cf14bf59283f33d42e5a1c3ade9c8797113"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergeall.d.ts": {
+        "version": "a83bba4791fa72490989525be6a09612579e52372af3986894313dd95f02440c",
+        "signature": "a83bba4791fa72490989525be6a09612579e52372af3986894313dd95f02440c"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergemap.d.ts": {
+        "version": "a5a446524fc0ed93b7f74dc99631af47c8280ef0e6d19cd83ce327a8cf5094ad",
+        "signature": "a5a446524fc0ed93b7f74dc99631af47c8280ef0e6d19cd83ce327a8cf5094ad"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergemapto.d.ts": {
+        "version": "75383d8bc4c00102ed03ffb72b4e7032cdaa5d7d19304cfcde9d30c2c4e4b6a1",
+        "signature": "75383d8bc4c00102ed03ffb72b4e7032cdaa5d7d19304cfcde9d30c2c4e4b6a1"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergescan.d.ts": {
+        "version": "99b6387bcfd234190601085878eedf72bb251a2a287703e21edc7b27f33f1b41",
+        "signature": "99b6387bcfd234190601085878eedf72bb251a2a287703e21edc7b27f33f1b41"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/min.d.ts": {
+        "version": "d0d225f3d20e063e76f22e9ff41751393f52d532b0e2c090202c148f620ca8a5",
+        "signature": "d0d225f3d20e063e76f22e9ff41751393f52d532b0e2c090202c148f620ca8a5"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/multicast.d.ts": {
+        "version": "70918fb79668cba2152739092fd9b8d6aa526f7ab16742d255a75d3dc5f552a1",
+        "signature": "70918fb79668cba2152739092fd9b8d6aa526f7ab16742d255a75d3dc5f552a1"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/observeon.d.ts": {
+        "version": "3ef3a13529463ae5a9f71e32508d3038273dac88de79da10c69ca4d39de7fe34",
+        "signature": "3ef3a13529463ae5a9f71e32508d3038273dac88de79da10c69ca4d39de7fe34"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/onerrorresumenext.d.ts": {
+        "version": "c84bc8b7d93a6f87b53f0913dffd692b013e2ec29c1025a63c16f2a28ca6c949",
+        "signature": "c84bc8b7d93a6f87b53f0913dffd692b013e2ec29c1025a63c16f2a28ca6c949"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/pairwise.d.ts": {
+        "version": "9bab019bed0382a5499940ac3cd414bbee242d14e3fc0f2cfa1149a10547fd2c",
+        "signature": "9bab019bed0382a5499940ac3cd414bbee242d14e3fc0f2cfa1149a10547fd2c"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/partition.d.ts": {
+        "version": "17931f53d7912e474d14bbd74781d0081294cf87c272be111610269c7c41d2b2",
+        "signature": "17931f53d7912e474d14bbd74781d0081294cf87c272be111610269c7c41d2b2"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/pluck.d.ts": {
+        "version": "13e1a28078841ebc6275499cb1314bedd425998b719949ea6ca6f4072a9421cf",
+        "signature": "13e1a28078841ebc6275499cb1314bedd425998b719949ea6ca6f4072a9421cf"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publish.d.ts": {
+        "version": "d6c4a53f7630b1c489db74d29d97248bd64dd85175eb07a43027baefccac0502",
+        "signature": "d6c4a53f7630b1c489db74d29d97248bd64dd85175eb07a43027baefccac0502"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishbehavior.d.ts": {
+        "version": "251e3cde428b2d3eb8d515b1fae236469f76921e4b84bc7971fcd7f7a0ba97d2",
+        "signature": "251e3cde428b2d3eb8d515b1fae236469f76921e4b84bc7971fcd7f7a0ba97d2"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishlast.d.ts": {
+        "version": "0e5beb987094cdd78231e73b88da51f4305751e9d3831642b945adbb0ba35641",
+        "signature": "0e5beb987094cdd78231e73b88da51f4305751e9d3831642b945adbb0ba35641"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishreplay.d.ts": {
+        "version": "3d2135ac5b8b5832264990bf9c4f9bf065ac790d1fdcd8a201d182fefd067578",
+        "signature": "3d2135ac5b8b5832264990bf9c4f9bf065ac790d1fdcd8a201d182fefd067578"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/race.d.ts": {
+        "version": "7d29ec8698e7da1c7021455e7e19290c4029a039f214ddea1501ce3a31420e4e",
+        "signature": "7d29ec8698e7da1c7021455e7e19290c4029a039f214ddea1501ce3a31420e4e"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/reduce.d.ts": {
+        "version": "293e398e8b8308a6ab09d45aea6390df7782f64ed9fa410cecd507c212cd5e2c",
+        "signature": "293e398e8b8308a6ab09d45aea6390df7782f64ed9fa410cecd507c212cd5e2c"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/repeat.d.ts": {
+        "version": "c157032b7f1c1027d8adb59e54c51776c874740e89922578ea451f92e07884cc",
+        "signature": "c157032b7f1c1027d8adb59e54c51776c874740e89922578ea451f92e07884cc"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/repeatwhen.d.ts": {
+        "version": "f0d5e8f2fd30950ec0c446fcdab0caad38d93c2a224418ded899845e1249bdbb",
+        "signature": "f0d5e8f2fd30950ec0c446fcdab0caad38d93c2a224418ded899845e1249bdbb"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/retry.d.ts": {
+        "version": "2c924e8de0b69940602e43e572bfbdae86e0df44b13056ee1f74cdbc97b1527f",
+        "signature": "2c924e8de0b69940602e43e572bfbdae86e0df44b13056ee1f74cdbc97b1527f"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/retrywhen.d.ts": {
+        "version": "17864c2191f968c889ec449fe28848b0acd95b421d60a6266e68b9cc20c8b600",
+        "signature": "17864c2191f968c889ec449fe28848b0acd95b421d60a6266e68b9cc20c8b600"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/refcount.d.ts": {
+        "version": "46da5f627dba39e128c8b18e63788db5363fc56f9b8ab3bae2c834e7182af94c",
+        "signature": "46da5f627dba39e128c8b18e63788db5363fc56f9b8ab3bae2c834e7182af94c"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sample.d.ts": {
+        "version": "524333ed3cac525c792bf3bf1bbbae3fadaf4a02d6346561e8e2291b49b2739d",
+        "signature": "524333ed3cac525c792bf3bf1bbbae3fadaf4a02d6346561e8e2291b49b2739d"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sampletime.d.ts": {
+        "version": "c6dc775defa58432465c88c7cfcab52974b93f8fc344ac2a848a6baa8667f5de",
+        "signature": "c6dc775defa58432465c88c7cfcab52974b93f8fc344ac2a848a6baa8667f5de"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/scan.d.ts": {
+        "version": "04d98d047371661ca38e70ccdcdaef3487f27c65e243972ed43ee2fb30cf4677",
+        "signature": "04d98d047371661ca38e70ccdcdaef3487f27c65e243972ed43ee2fb30cf4677"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sequenceequal.d.ts": {
+        "version": "057210af817106d0c11637613feb80efe81597e80c09826e3d586d887ef9c7ce",
+        "signature": "057210af817106d0c11637613feb80efe81597e80c09826e3d586d887ef9c7ce"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/share.d.ts": {
+        "version": "34445fc37bcf4157e3db40ccbd7e585ea5cd78575e57ca40de40c7bcc250b242",
+        "signature": "34445fc37bcf4157e3db40ccbd7e585ea5cd78575e57ca40de40c7bcc250b242"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sharereplay.d.ts": {
+        "version": "7e0801db65552d2ba7902b6966c11a8e42a4b25cffc07944f9d21df7ffa5236e",
+        "signature": "7e0801db65552d2ba7902b6966c11a8e42a4b25cffc07944f9d21df7ffa5236e"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/single.d.ts": {
+        "version": "ebc84be7fec5d9282a698fb77d74e5e5e8d4ad61c43c6e27d1f9b1313a193419",
+        "signature": "ebc84be7fec5d9282a698fb77d74e5e5e8d4ad61c43c6e27d1f9b1313a193419"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skip.d.ts": {
+        "version": "7777fee0b73dbf1604afc30bbdad7f3372f91f56c80980e65e6954a8bfdd6369",
+        "signature": "7777fee0b73dbf1604afc30bbdad7f3372f91f56c80980e65e6954a8bfdd6369"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skiplast.d.ts": {
+        "version": "2e0d41d964fb93d4d79789958f11cb3d46cdca3fdf192ec79ae1bdb1b3b63961",
+        "signature": "2e0d41d964fb93d4d79789958f11cb3d46cdca3fdf192ec79ae1bdb1b3b63961"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skipuntil.d.ts": {
+        "version": "4db7173a18a6af913b07b7b11e94de88d11ac4271ab9dc85d96492461cbd734a",
+        "signature": "4db7173a18a6af913b07b7b11e94de88d11ac4271ab9dc85d96492461cbd734a"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skipwhile.d.ts": {
+        "version": "0e899f1046bbab07cbda4a714fc45b9aa1356cedfc301e92eafccfddec029a84",
+        "signature": "0e899f1046bbab07cbda4a714fc45b9aa1356cedfc301e92eafccfddec029a84"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/startwith.d.ts": {
+        "version": "99398c11de737c08ca12e46f825433719c2583f5c5ad79d07d85a50703fab993",
+        "signature": "99398c11de737c08ca12e46f825433719c2583f5c5ad79d07d85a50703fab993"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/subscribeon.d.ts": {
+        "version": "68eac6e1e2458dbf974d4448f4799fc996f79c8a1d730ef70770a10d2ac58ebd",
+        "signature": "68eac6e1e2458dbf974d4448f4799fc996f79c8a1d730ef70770a10d2ac58ebd"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchall.d.ts": {
+        "version": "29b76811be6e0ce8cceb0a286f3e41a996ebd89fafe327d59660e4ad4add61dd",
+        "signature": "29b76811be6e0ce8cceb0a286f3e41a996ebd89fafe327d59660e4ad4add61dd"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchmap.d.ts": {
+        "version": "3cc189d1560724be6c605a35aa970560b09725878fcb3db88b6efe633e57d42b",
+        "signature": "3cc189d1560724be6c605a35aa970560b09725878fcb3db88b6efe633e57d42b"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchmapto.d.ts": {
+        "version": "9501a95be053049b70d600fe071d2693b9854e45c6244e82bd5000f2187994a7",
+        "signature": "9501a95be053049b70d600fe071d2693b9854e45c6244e82bd5000f2187994a7"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/take.d.ts": {
+        "version": "a19853c5844ad6aa07cfafe35e9d06d293e095778f0bc3056b7ae4d9c18c683e",
+        "signature": "a19853c5844ad6aa07cfafe35e9d06d293e095778f0bc3056b7ae4d9c18c683e"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takelast.d.ts": {
+        "version": "1b2c1ed7f1ab48de8e6dad638911a303468c33f8fb348ca2eacae20695669145",
+        "signature": "1b2c1ed7f1ab48de8e6dad638911a303468c33f8fb348ca2eacae20695669145"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takeuntil.d.ts": {
+        "version": "fd6f2017a1f72092e88f4497f0ea034918fcfcbd33d03d1e8a44ac19adb8fd8d",
+        "signature": "fd6f2017a1f72092e88f4497f0ea034918fcfcbd33d03d1e8a44ac19adb8fd8d"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takewhile.d.ts": {
+        "version": "214248208c27427623fc6462fceabd241a1dd19d8aa5bb75c2f0e5767e91f5e3",
+        "signature": "214248208c27427623fc6462fceabd241a1dd19d8aa5bb75c2f0e5767e91f5e3"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/tap.d.ts": {
+        "version": "ea36efec9fe424831dc9c42efd820d3db5c2d28c00ff8608ec9d25f55795c9de",
+        "signature": "ea36efec9fe424831dc9c42efd820d3db5c2d28c00ff8608ec9d25f55795c9de"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throttle.d.ts": {
+        "version": "fd34e1c778435f973c182b7132782f3cf7a194b522f1ea09978c37d8fc0acd85",
+        "signature": "fd34e1c778435f973c182b7132782f3cf7a194b522f1ea09978c37d8fc0acd85"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throttletime.d.ts": {
+        "version": "14903c96a1e9fdc7057e6ac5887859e9e40c8f32a4bd96a79dab42ccea83c9bb",
+        "signature": "14903c96a1e9fdc7057e6ac5887859e9e40c8f32a4bd96a79dab42ccea83c9bb"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throwifempty.d.ts": {
+        "version": "0be995fa132ab206c7082feb314fe980b0810a20a8ce9f4c62097774357d5084",
+        "signature": "0be995fa132ab206c7082feb314fe980b0810a20a8ce9f4c62097774357d5084"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeinterval.d.ts": {
+        "version": "d5f30723cf2d87add57db5d6105b223b6a762dd927a5456d619f37823af13847",
+        "signature": "d5f30723cf2d87add57db5d6105b223b6a762dd927a5456d619f37823af13847"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeout.d.ts": {
+        "version": "a7f2d46aefbf412cddf56887687b907d8f978467215a0c03947f674187161530",
+        "signature": "a7f2d46aefbf412cddf56887687b907d8f978467215a0c03947f674187161530"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeoutwith.d.ts": {
+        "version": "312d803e3a4a8fcaf50557feacbc99b27d3893940ced758979a17eeb8374ca06",
+        "signature": "312d803e3a4a8fcaf50557feacbc99b27d3893940ced758979a17eeb8374ca06"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timestamp.d.ts": {
+        "version": "5f2e3c41a86298505ded2ad2d598247b789167031d67a8d178601d3165518537",
+        "signature": "5f2e3c41a86298505ded2ad2d598247b789167031d67a8d178601d3165518537"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/toarray.d.ts": {
+        "version": "9909eea20d44f59c3e67ccdac356c87b7b976e444803f26d037b17d7c4f5e0a5",
+        "signature": "9909eea20d44f59c3e67ccdac356c87b7b976e444803f26d037b17d7c4f5e0a5"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/window.d.ts": {
+        "version": "25e3471bd16a78541a0a4ef9bb8b77abeab3cfc47334e012b0ccdb427bda4542",
+        "signature": "25e3471bd16a78541a0a4ef9bb8b77abeab3cfc47334e012b0ccdb427bda4542"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowcount.d.ts": {
+        "version": "020fe4b9d25a541f8887a672b77a9d58352ac4027c29e96898254c6b299ccbc7",
+        "signature": "020fe4b9d25a541f8887a672b77a9d58352ac4027c29e96898254c6b299ccbc7"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowtime.d.ts": {
+        "version": "0b0a7c93406a9ee05723a5db12ad2c6d78c9fe5e88254607b26ea6402d404ab0",
+        "signature": "0b0a7c93406a9ee05723a5db12ad2c6d78c9fe5e88254607b26ea6402d404ab0"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowtoggle.d.ts": {
+        "version": "377b7609a77de383f3d145303e002833eba77804962a6468a7bc53adeac0f89a",
+        "signature": "377b7609a77de383f3d145303e002833eba77804962a6468a7bc53adeac0f89a"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowwhen.d.ts": {
+        "version": "5b36ea6c3c58a987980aefad618a6673f61d2008f66e10b8d15f3ebafd969009",
+        "signature": "5b36ea6c3c58a987980aefad618a6673f61d2008f66e10b8d15f3ebafd969009"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/withlatestfrom.d.ts": {
+        "version": "28d01090136fcfd6db13d00e014ce2254cce0665c3da239295e2d7e336742c07",
+        "signature": "28d01090136fcfd6db13d00e014ce2254cce0665c3da239295e2d7e336742c07"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/zip.d.ts": {
+        "version": "aec08a458ce9ea11c13f74badae0aeaf8c292d5737b56cd06c199ce8fbe805f7",
+        "signature": "aec08a458ce9ea11c13f74badae0aeaf8c292d5737b56cd06c199ce8fbe805f7"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/zipall.d.ts": {
+        "version": "452fcf2c69908d1946d2f02cc975f450b2f70585eddab63dcf70e050e37b30ac",
+        "signature": "452fcf2c69908d1946d2f02cc975f450b2f70585eddab63dcf70e050e37b30ac"
+      },
+      "c:/wtt-/doconline/node_modules/rxjs/operators/index.d.ts": {
+        "version": "8548a1a83c1091e8c7a355b7edf031854b007d10a7fa24e180a95d608c87704e",
+        "signature": "8548a1a83c1091e8c7a355b7edf031854b007d10a7fa24e180a95d608c87704e"
+      },
+      "c:/wtt-/doconline/src/shared/logger.interceptor.ts": {
+        "version": "2e4ffbe27ed9b9c60190d39f34c254bde57e110cf892fcc42cd02fc97e01ade6",
+        "signature": "100bdccc85a1266367c202fd62aa5aefc4b46fb4d638255ad8cde96dd24b8c1c"
+      },
+      "c:/wtt-/doconline/src/module/app.module.ts": {
+        "version": "7594a6eedd22d117c21a5939537a5ea1bc1e6750d8c68ca6088ed11702c79eb8",
+        "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88"
+      },
+      "c:/wtt-/doconline/src/main.ts": {
+        "version": "461268529c25771d864caeb96464f6878fe08f6824fcf31a6b25444c8237be5f",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/wtt-/doconline/node_modules/@types/connect/index.d.ts": {
+        "version": "c3be42b83b5f57ae2f65280fa395f6d31f61304ac1a29b7b406b6a0e71da8c82",
+        "signature": "c3be42b83b5f57ae2f65280fa395f6d31f61304ac1a29b7b406b6a0e71da8c82"
+      },
+      "c:/wtt-/doconline/node_modules/@types/body-parser/index.d.ts": {
+        "version": "1b7919dbb6b43ff272f38f6f6522fb9f4e9e854356b2932a36aa4674f4a2fcf2",
+        "signature": "1b7919dbb6b43ff272f38f6f6522fb9f4e9e854356b2932a36aa4674f4a2fcf2"
+      },
+      "c:/wtt-/doconline/node_modules/@types/cookiejar/index.d.ts": {
+        "version": "16b7fb094ffaa5d270f934e7406e8baee2f8245cfabf6dcc20f693389f005f56",
+        "signature": "16b7fb094ffaa5d270f934e7406e8baee2f8245cfabf6dcc20f693389f005f56"
+      },
       "c:/wtt-/doconline/node_modules/@types/range-parser/index.d.ts": {
         "version": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
         "signature": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b"
@@ -2281,33 +2721,9 @@
         "version": "b27dd918d8c3f10270cadea529c69e3a9b37ce59db0852945a39068cc5c10fff",
         "signature": "b27dd918d8c3f10270cadea529c69e3a9b37ce59db0852945a39068cc5c10fff"
       },
-      "c:/wtt-/doconline/node_modules/@types/connect/index.d.ts": {
-        "version": "c3be42b83b5f57ae2f65280fa395f6d31f61304ac1a29b7b406b6a0e71da8c82",
-        "signature": "c3be42b83b5f57ae2f65280fa395f6d31f61304ac1a29b7b406b6a0e71da8c82"
-      },
-      "c:/wtt-/doconline/node_modules/@types/body-parser/index.d.ts": {
-        "version": "1b7919dbb6b43ff272f38f6f6522fb9f4e9e854356b2932a36aa4674f4a2fcf2",
-        "signature": "1b7919dbb6b43ff272f38f6f6522fb9f4e9e854356b2932a36aa4674f4a2fcf2"
-      },
       "c:/wtt-/doconline/node_modules/@types/express/index.d.ts": {
         "version": "a6742e25ac12860727c22a379707e050a126c48c4dd98ddd795a3a33dd0a63c7",
         "signature": "a6742e25ac12860727c22a379707e050a126c48c4dd98ddd795a3a33dd0a63c7"
-      },
-      "c:/wtt-/doconline/src/middleware/logger.middleware.ts": {
-        "version": "892410783edf77bf5d33f69cd2b20e3f137774cea463cb74d44f541be2b84be7",
-        "signature": "0da9335a61bf49ecc11c0d21a4d91031f254507a60bd922f19de97959a4bd208"
-      },
-      "c:/wtt-/doconline/src/module/app.module.ts": {
-        "version": "6ffae881a02b1f023d138562014e03707613a9e4c20578a3c4bf4211d32770cb",
-        "signature": "843f051400e86a3e4de923e5b7271bfa660bd889abf5fee0dce89d6ded83b42c"
-      },
-      "c:/wtt-/doconline/src/main.ts": {
-        "version": "2b38d5478aed5ed8b5df8365e4a8c0deb8867868906f3c43beadca0a5f4cc867",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
-      },
-      "c:/wtt-/doconline/node_modules/@types/cookiejar/index.d.ts": {
-        "version": "16b7fb094ffaa5d270f934e7406e8baee2f8245cfabf6dcc20f693389f005f56",
-        "signature": "16b7fb094ffaa5d270f934e7406e8baee2f8245cfabf6dcc20f693389f005f56"
       },
       "c:/wtt-/doconline/node_modules/@types/jest/index.d.ts": {
         "version": "37dbdee3bb13bc254e9d75bbb75569e807369868e5cbd89ce72aa77fb22fcb75",
@@ -5868,10 +6284,9 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "c:/wtt-/doconline/src/middleware/auth.middleware.ts": [
+      "c:/wtt-/doconline/src/shared/auth.middleware.ts": [
         "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts",
-        "c:/wtt-/doconline/src/service/login.service.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5883,7 +6298,7 @@
         "c:/wtt-/doconline/src/controller/login.controller.ts",
         "c:/wtt-/doconline/src/service/login.service.ts",
         "c:/wtt-/doconline/src/provider/login.provider.ts",
-        "c:/wtt-/doconline/src/middleware/auth.middleware.ts",
+        "c:/wtt-/doconline/src/shared/auth.middleware.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5912,7 +6327,6 @@
         "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
         "c:/wtt-/doconline/src/dto/doctor.dto.ts",
         "c:/wtt-/doconline/src/service/doctor.service.ts",
-        "c:/wtt-/doconline/src/models/doctor.model.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -6093,6 +6507,736 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "c:/wtt-/doconline/src/shared/http-exception.filter.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/audit.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/audittime.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffer.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffercount.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffertime.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffertoggle.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/bufferwhen.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/catcherror.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/combineall.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/combinelatest.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concat.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatall.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatmap.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatmapto.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/count.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/debounce.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/debouncetime.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/defaultifempty.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/delay.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/delaywhen.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/dematerialize.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/notification.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinct.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/outersubscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/innersubscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinctuntilchanged.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinctuntilkeychanged.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/elementat.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/endwith.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/every.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/exhaust.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/exhaustmap.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/expand.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operator.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscription.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/outersubscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/innersubscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/filter.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/finalize.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/find.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operator.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/findindex.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/first.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/ignoreelements.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/isempty.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/last.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/map.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operator.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mapto.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/materialize.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/notification.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/max.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/merge.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergeall.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergemap.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operator.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscription.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/outersubscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/innersubscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergemapto.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergescan.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operator.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscription.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/outersubscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/innersubscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/min.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/multicast.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subject.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operator.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable/connectableobservable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/observeon.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operator.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/notification.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/onerrorresumenext.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/pairwise.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/partition.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/pluck.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publish.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable/connectableobservable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishbehavior.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable/connectableobservable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishlast.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable/connectableobservable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishreplay.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/race.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/reduce.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/repeat.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/repeatwhen.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/retry.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/retrywhen.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/refcount.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sample.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sampletime.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/scan.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sequenceequal.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operator.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/share.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sharereplay.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/single.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skip.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skiplast.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skipuntil.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skipwhile.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/startwith.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/subscribeon.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchall.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchmap.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchmapto.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/take.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takelast.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takeuntil.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takewhile.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/tap.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throttle.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throttletime.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throttle.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throwifempty.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeinterval.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeout.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeoutwith.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timestamp.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/toarray.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/window.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowcount.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowtime.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowtoggle.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowwhen.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/withlatestfrom.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/zip.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/zipall.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/operators/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/audit.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/audittime.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffer.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffercount.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffertime.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffertoggle.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/bufferwhen.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/catcherror.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/combineall.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/combinelatest.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concat.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatall.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatmap.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatmapto.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/count.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/debounce.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/debouncetime.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/defaultifempty.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/delay.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/delaywhen.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/dematerialize.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinct.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinctuntilchanged.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinctuntilkeychanged.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/elementat.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/endwith.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/every.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/exhaust.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/exhaustmap.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/expand.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/filter.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/finalize.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/find.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/findindex.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/first.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/groupby.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/ignoreelements.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/isempty.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/last.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/map.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mapto.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/materialize.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/max.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/merge.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergeall.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergemap.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergemapto.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergescan.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/min.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/multicast.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/observeon.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/onerrorresumenext.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/pairwise.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/partition.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/pluck.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publish.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishbehavior.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishlast.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishreplay.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/race.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/reduce.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/repeat.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/repeatwhen.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/retry.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/retrywhen.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/refcount.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sample.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sampletime.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/scan.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sequenceequal.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/share.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sharereplay.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/single.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skip.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skiplast.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skipuntil.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skipwhile.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/startwith.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/subscribeon.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchall.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchmap.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchmapto.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/take.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takelast.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takeuntil.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takewhile.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/tap.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throttle.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throttletime.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throwifempty.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeinterval.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeout.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeoutwith.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timestamp.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/toarray.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/window.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowcount.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowtime.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowtoggle.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowwhen.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/withlatestfrom.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/zip.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/zipall.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/shared/logger.interceptor.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/index.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/operators/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/module/app.module.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@nestjs/core/index.d.ts",
+        "c:/wtt-/doconline/src/module/exam.module.ts",
+        "c:/wtt-/doconline/src/shared/http-exception.filter.ts",
+        "c:/wtt-/doconline/src/shared/logger.interceptor.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/main.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/core/index.d.ts",
+        "c:/wtt-/doconline/src/module/app.module.ts",
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/@types/connect/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/http.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/@types/body-parser/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/connect/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/http.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/@types/cookiejar/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "c:/wtt-/doconline/node_modules/@types/range-parser/index.d.ts": [
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
@@ -6115,47 +7259,10 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "c:/wtt-/doconline/node_modules/@types/connect/index.d.ts": [
-        "c:/wtt-/doconline/node_modules/@types/node/http.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/node_modules/@types/body-parser/index.d.ts": [
-        "c:/wtt-/doconline/node_modules/@types/connect/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/http.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "c:/wtt-/doconline/node_modules/@types/express/index.d.ts": [
         "c:/wtt-/doconline/node_modules/@types/body-parser/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/serve-static/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/express-serve-static-core/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/middleware/logger.middleware.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/express/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/app.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/module/exam.module.ts",
-        "c:/wtt-/doconline/src/middleware/logger.middleware.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/main.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/core/index.d.ts",
-        "c:/wtt-/doconline/src/module/app.module.ts",
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/node_modules/@types/cookiejar/index.d.ts": [
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -9441,8 +10548,7 @@
       "c:/wtt-/doconline/src/provider/login.provider.ts": [
         "c:/wtt-/doconline/src/models/login.model.ts"
       ],
-      "c:/wtt-/doconline/src/middleware/auth.middleware.ts": [
-        "c:/wtt-/doconline/src/service/login.service.ts",
+      "c:/wtt-/doconline/src/shared/auth.middleware.ts": [
         "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts"
       ],
       "c:/wtt-/doconline/src/module/login.module.ts": [
@@ -9457,9 +10563,9 @@
         "c:/wtt-/doconline/src/models/patient.model.ts"
       ],
       "c:/wtt-/doconline/src/controller/doctor.controller.ts": [
+        "c:/wtt-/doconline/src/models/doctor.model.ts",
         "c:/wtt-/doconline/src/service/doctor.service.ts",
-        "c:/wtt-/doconline/src/dto/doctor.dto.ts",
-        "c:/wtt-/doconline/src/models/doctor.model.ts"
+        "c:/wtt-/doconline/src/dto/doctor.dto.ts"
       ],
       "c:/wtt-/doconline/src/provider/doctor.provider.ts": [
         "c:/wtt-/doconline/src/models/doctor.model.ts"
@@ -9516,6 +10622,715 @@
       "c:/wtt-/doconline/src/provider/plan.provider.ts": [
         "c:/wtt-/doconline/src/models/plan.model.ts"
       ],
+      "c:/wtt-/doconline/src/shared/http-exception.filter.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/audit.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/audittime.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffer.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffercount.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffertime.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffertoggle.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/bufferwhen.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/catcherror.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/combineall.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/combinelatest.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concat.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatall.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatmap.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatmapto.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/count.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/debounce.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/debouncetime.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/defaultifempty.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/delay.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/delaywhen.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/dematerialize.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/notification.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinct.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/outersubscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/innersubscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinctuntilchanged.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinctuntilkeychanged.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/elementat.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/endwith.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/every.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/exhaust.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/exhaustmap.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/expand.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operator.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscription.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/outersubscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/innersubscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/filter.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/finalize.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/find.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operator.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/findindex.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/first.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/ignoreelements.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/isempty.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/last.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/map.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operator.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mapto.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/materialize.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/notification.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/max.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/merge.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergeall.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergemap.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operator.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscription.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/outersubscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/innersubscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergemapto.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergescan.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operator.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscription.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/outersubscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/innersubscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/min.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/multicast.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subject.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operator.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable/connectableobservable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/observeon.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operator.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/notification.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/onerrorresumenext.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/pairwise.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/partition.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/pluck.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publish.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable/connectableobservable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishbehavior.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable/connectableobservable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishlast.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable/connectableobservable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishreplay.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/race.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/reduce.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/repeat.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/repeatwhen.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/retry.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/retrywhen.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/refcount.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sample.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sampletime.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/scan.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sequenceequal.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operator.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/subscriber.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/share.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sharereplay.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/single.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skip.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skiplast.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skipuntil.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skipwhile.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/startwith.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/subscribeon.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchall.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchmap.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchmapto.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/take.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takelast.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takeuntil.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takewhile.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/tap.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throttle.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throttletime.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throttle.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throwifempty.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeinterval.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeout.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeoutwith.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timestamp.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/toarray.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/window.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowcount.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowtime.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowtoggle.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowwhen.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/observable.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/withlatestfrom.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/zip.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/zipall.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/types.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/rxjs/operators/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/audit.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/audittime.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffer.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffercount.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffertime.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffertoggle.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/bufferwhen.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/catcherror.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/combineall.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/combinelatest.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concat.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatall.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatmap.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatmapto.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/count.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/debounce.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/debouncetime.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/defaultifempty.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/delay.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/delaywhen.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/dematerialize.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinct.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinctuntilchanged.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinctuntilkeychanged.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/elementat.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/endwith.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/every.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/exhaust.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/exhaustmap.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/expand.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/filter.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/finalize.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/find.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/findindex.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/first.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/groupby.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/ignoreelements.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/isempty.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/last.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/map.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mapto.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/materialize.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/max.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/merge.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergeall.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergemap.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergemapto.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergescan.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/min.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/multicast.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/observeon.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/onerrorresumenext.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/pairwise.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/partition.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/pluck.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publish.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishbehavior.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishlast.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishreplay.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/race.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/reduce.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/repeat.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/repeatwhen.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/retry.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/retrywhen.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/refcount.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sample.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sampletime.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/scan.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sequenceequal.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/share.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sharereplay.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/single.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skip.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skiplast.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skipuntil.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skipwhile.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/startwith.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/subscribeon.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchall.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchmap.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchmapto.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/take.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takelast.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takeuntil.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takewhile.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/tap.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throttle.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throttletime.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throwifempty.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeinterval.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeout.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeoutwith.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timestamp.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/toarray.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/window.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowcount.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowtime.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowtoggle.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowwhen.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/withlatestfrom.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/zip.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/internal/operators/zipall.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/shared/logger.interceptor.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/node_modules/rxjs/index.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/@types/connect/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/http.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/@types/body-parser/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/connect/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/http.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/@types/cookiejar/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "c:/wtt-/doconline/node_modules/@types/range-parser/index.d.ts": [
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
@@ -9538,34 +11353,10 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "c:/wtt-/doconline/node_modules/@types/connect/index.d.ts": [
-        "c:/wtt-/doconline/node_modules/@types/node/http.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/node_modules/@types/body-parser/index.d.ts": [
-        "c:/wtt-/doconline/node_modules/@types/connect/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/http.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "c:/wtt-/doconline/node_modules/@types/express/index.d.ts": [
         "c:/wtt-/doconline/node_modules/@types/body-parser/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/serve-static/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/express-serve-static-core/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/middleware/logger.middleware.ts": [
-        "c:/wtt-/doconline/node_modules/@types/express/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/app.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts"
-      ],
-      "c:/wtt-/doconline/node_modules/@types/cookiejar/index.d.ts": [
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -10124,6 +11915,7 @@
       "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils.d.ts",
       "c:/wtt-/doconline/node_modules/sequelize/types/lib/errors.d.ts",
       "c:/wtt-/doconline/node_modules/sequelize/types/index.d.ts",
+      "c:/wtt-/doconline/src/service/exam.service.ts",
       "c:/wtt-/doconline/src/controller/exam.controller.ts",
       "c:/wtt-/doconline/src/provider/exam.provider.ts",
       "c:/wtt-/doconline/src/controller/site.controller.ts",
@@ -10147,7 +11939,7 @@
       "c:/wtt-/doconline/src/module/user.module.ts",
       "c:/wtt-/doconline/src/controller/login.controller.ts",
       "c:/wtt-/doconline/src/provider/login.provider.ts",
-      "c:/wtt-/doconline/src/middleware/auth.middleware.ts",
+      "c:/wtt-/doconline/src/shared/auth.middleware.ts",
       "c:/wtt-/doconline/src/module/login.module.ts",
       "c:/wtt-/doconline/src/controller/patient.controller.ts",
       "c:/wtt-/doconline/src/provider/patient.provider.ts",
@@ -10176,25 +11968,128 @@
       "c:/wtt-/doconline/src/provider/plan.provider.ts",
       "c:/wtt-/doconline/src/module/plan.module.ts",
       "c:/wtt-/doconline/src/module/exam.module.ts",
+      "c:/wtt-/doconline/src/shared/http-exception.filter.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/audit.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/audittime.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffer.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffercount.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffertime.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/buffertoggle.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/bufferwhen.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/catcherror.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/combineall.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/combinelatest.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concat.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatall.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatmap.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/concatmapto.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/count.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/debounce.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/debouncetime.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/defaultifempty.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/delay.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/delaywhen.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/dematerialize.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinct.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinctuntilchanged.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/distinctuntilkeychanged.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/elementat.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/endwith.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/every.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/exhaust.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/exhaustmap.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/expand.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/filter.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/finalize.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/find.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/findindex.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/first.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/ignoreelements.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/isempty.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/last.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/map.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mapto.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/materialize.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/max.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/merge.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergeall.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergemap.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergemapto.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/mergescan.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/min.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/multicast.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/observeon.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/onerrorresumenext.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/pairwise.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/partition.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/pluck.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publish.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishbehavior.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishlast.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/publishreplay.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/race.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/reduce.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/repeat.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/repeatwhen.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/retry.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/retrywhen.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/refcount.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sample.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sampletime.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/scan.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sequenceequal.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/share.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/sharereplay.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/single.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skip.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skiplast.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skipuntil.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/skipwhile.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/startwith.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/subscribeon.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchall.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchmap.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/switchmapto.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/take.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takelast.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takeuntil.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/takewhile.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/tap.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throttle.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throttletime.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/throwifempty.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeinterval.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeout.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timeoutwith.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/timestamp.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/toarray.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/window.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowcount.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowtime.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowtoggle.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/windowwhen.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/withlatestfrom.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/zip.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/internal/operators/zipall.d.ts",
+      "c:/wtt-/doconline/node_modules/rxjs/operators/index.d.ts",
+      "c:/wtt-/doconline/src/shared/logger.interceptor.ts",
+      "c:/wtt-/doconline/src/module/app.module.ts",
+      "c:/wtt-/doconline/src/main.ts",
+      "c:/wtt-/doconline/node_modules/@types/connect/index.d.ts",
+      "c:/wtt-/doconline/node_modules/@types/body-parser/index.d.ts",
+      "c:/wtt-/doconline/node_modules/@types/cookiejar/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/range-parser/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/express-serve-static-core/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/mime/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/serve-static/index.d.ts",
-      "c:/wtt-/doconline/node_modules/@types/connect/index.d.ts",
-      "c:/wtt-/doconline/node_modules/@types/body-parser/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/express/index.d.ts",
-      "c:/wtt-/doconline/src/middleware/logger.middleware.ts",
-      "c:/wtt-/doconline/src/module/app.module.ts",
-      "c:/wtt-/doconline/src/main.ts",
-      "c:/wtt-/doconline/node_modules/@types/cookiejar/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/jest/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/json5/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/sequelize/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/superagent/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/supertest/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/uuid/interfaces.d.ts",
-      "c:/wtt-/doconline/node_modules/@types/uuid/index.d.ts",
-      "c:/wtt-/doconline/src/service/exam.service.ts"
+      "c:/wtt-/doconline/node_modules/@types/uuid/index.d.ts"
     ]
   },
   "version": "3.4.3"

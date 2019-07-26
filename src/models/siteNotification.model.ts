@@ -6,14 +6,13 @@ import Site from './site.model';
 export default class SiteNotification extends Model<SiteNotification> {
 
   @PrimaryKey
-  @Column(DataType.UUID)
-  public id: number;
-
-  @ForeignKey(() => Site)
   @Column({
     defaultValue: DataType.UUIDV4,
     type: DataType.UUID
-  }) public siteId?: number;
+  }) public id: number;
+
+  @ForeignKey(() => Site)
+  public siteId?: number;
 
   @BelongsTo(() => Site)
   public site: Site;

@@ -2,7 +2,6 @@ import { Controller, Get, Post, Body, Delete, Param, Patch } from '@nestjs/commo
 
 import { CreateDoctorDto } from '../dto/doctor.dto';
 import { DoctorService } from '../service/doctor.service';
-import Doctor from '../models/doctor.model';
 
 @Controller('doctor')
 export class DoctorController {

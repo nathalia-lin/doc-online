@@ -7,20 +7,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
+const core_1 = require("@nestjs/core");
 const exam_module_1 = require("./exam.module");
-const logger_middleware_1 = require("../middleware/logger.middleware");
+const http_exception_filter_1 = require("../shared/http-exception.filter");
+const logger_interceptor_1 = require("../shared/logger.interceptor");
 let AppModule = class AppModule {
-    configure(consumer) {
-        consumer
-            .apply(logger_middleware_1.LoggerMiddleware)
-            .forRoutes({ path: '/', method: common_1.RequestMethod.ALL });
-    }
 };
 AppModule = __decorate([
     common_1.Module({
         imports: [
             exam_module_1.ExamModule
         ],
+        providers: [
+            {
+                provide: core_1.APP_PIPE,
+                useClass: common_1.ValidationPipe,
+            },
+            {
+                provide: core_1.APP_FILTER,
+                useClass: http_exception_filter_1.HttpErrorFilter,
+            },
+            {
+                provide: core_1.APP_INTERCEPTOR,
+                useClass: logger_interceptor_1.LoggerInterceptor,
+            }
+        ]
     })
 ], AppModule);
 exports.AppModule = AppModule;

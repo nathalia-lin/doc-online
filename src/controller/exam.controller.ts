@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Delete, Param, Req, Patch } from '@nestjs/common';
+import { Controller, Get, Post, Body, Delete, Param, Req, Patch, BadRequestException } from '@nestjs/common';
 
 import { ExamService } from '../service/exam.service';
 
@@ -41,7 +41,6 @@ export class ExamController {
         @Body('reqPhysicianNum') reqPhysicianNum: string,
         @Body('reqPhysicianUF') reqPhysicianUF: string,
         @Body('reqPhysicianName') reqPhysicianName: string,
-
         @Body('refPhysicianType') refPhysicianType: string,
         @Body('refPhysicianNum') refPhysicianNum: string,
         @Body('refPhysicianUF') refPhysicianUF: string,
@@ -84,14 +83,19 @@ export class ExamController {
                 refPhysicianName,
             );
         }
-        catch (err) {
-            console.log(err)
+        catch (SequelizeDatabaseError) {
+            throw new BadRequestException(SequelizeDatabaseError);
         }
     }
 
     @Post('search')
     public async search(@Body() body, @Req() req) {
-        return await this.examService.search(body, req.token);
+        try {
+            return await this.examService.search(body, req.token);
+        } 
+        catch (SequelizeDatabaseError) {
+            throw new BadRequestException(SequelizeDatabaseError);
+        }
     }
 
     @Get()

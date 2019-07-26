@@ -278,26 +278,20 @@ let ExamService = class ExamService {
             const login = yield this.loginService.findOne(token.id);
             const user = yield this.userService.findOne(login.userId);
             if (exams.length > 0) {
-                exams = yield this.filterByProfiles(exams, user);
+                const profiles = user.profiles.trim();
+                const profileId = user.profileId;
+                if (profiles === 'patient') {
+                    const patient = yield this.patientService.findOne({ profileId });
+                    exams = yield this.find({ 'patientId': patient.id });
+                }
+                else if (profiles === 'doctor') {
+                    const doctor = yield this.doctorService.findOne({ profileId });
+                    exams = yield this.find({ [sequelize_1.Op.or]: [{ 'requestingId': doctor.id }, { 'consultingId': doctor.id }] });
+                }
+                else if (profiles === 'admin') {
+                }
             }
-            return exams;
-        });
-    }
-    filterByProfiles(exams, user) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const profiles = user.profiles.trim();
-            const profileId = user.profileId;
-            if (profiles === 'patient') {
-                console.log('patient');
-                const patient = yield this.patientService.findOne({ profileId });
-                exams = yield this.find({ 'patientId': patient.id });
-            }
-            else if (profiles === 'doctor') {
-                const doctor = yield this.doctorService.findOne({ profileId });
-                exams = yield this.find({ [sequelize_1.Op.or]: [{ 'requestingId': doctor.id }, { 'consultingId': doctor.id }] });
-            }
-            else if (profiles === 'admin') {
-            }
+            console.log(where);
             return exams;
         });
     }

@@ -298,33 +298,33 @@ export class ExamService {
     public async search(body: CreateFilterDto, token) {
         const where = {};
         body.filters.forEach(field => {
+            // what if you filter through same key, but different values?
             where[field['key']] = field['value']
         })
         let exams = await this.find({ ...where });
 
         const login = await this.loginService.findOne(token.id);
         const user = await this.userService.findOne(login.userId);
+
         if (exams.length > 0) {
-            exams = await this.filterByProfiles(exams, user);
+            const profiles = user.profiles.trim();
+            const profileId = user.profileId;
+            if (profiles === 'patient') {
+                const patient = await this.patientService.findOne({ profileId });
+                exams = await this.find({ 'patientId': patient.id })
+            } else if (profiles === 'doctor') {
+                const doctor = await this.doctorService.findOne({ profileId });
+                exams = await this.find({ [Op.or]: [{ 'requestingId': doctor.id }, { 'consultingId': doctor.id }] });
+            } else if (profiles === 'admin') {
+                // show all by site(?)
+            }
         }
+
+        console.log(where);
+
         return exams;
     }
 
-    public async filterByProfiles(exams, user: User) {
-        const profiles = user.profiles.trim();
-        const profileId = user.profileId;
-        if (profiles === 'patient') {
-            console.log('patient')
-            const patient = await this.patientService.findOne({ profileId });
-            exams = await this.find({ 'patientId': patient.id })
-        } else if (profiles === 'doctor') {
-            const doctor = await this.doctorService.findOne({ profileId });
-            exams = await this.find({ [Op.or]: [{ 'requestingId': doctor.id }, { 'consultingId': doctor.id }] });
-        } else if (profiles === 'admin') {
-            // show all by site(?)
-        }
-        return exams
-    }
 
     // ========================================================================================================
 

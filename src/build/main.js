@@ -23,7 +23,6 @@ const main = new class Main {
     server() {
         return __awaiter(this, void 0, void 0, function* () {
             const app = yield core_1.NestFactory.create(app_module_1.AppModule);
-            app.useGlobalPipes(new common_1.ValidationPipe());
             yield app.listen(this.port);
             common_1.Logger.log(`Server running on http://localhost:${this.port}`, 'Server');
         });

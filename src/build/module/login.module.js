@@ -13,7 +13,7 @@ const user_module_1 = require("./user.module");
 const login_controller_1 = require("../controller/login.controller");
 const login_service_1 = require("../service/login.service");
 const login_provider_1 = require("../provider/login.provider");
-const auth_middleware_1 = require("../middleware/auth.middleware");
+const auth_middleware_1 = require("../shared/auth.middleware");
 let LoginModule = class LoginModule {
     configure(consumer) {
         consumer
