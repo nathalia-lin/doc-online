@@ -32,6 +32,7 @@ import { CreateUserInsuranceDto } from '../dto/userInsurance.dto';
 import { CreatePlanDto } from '../dto/plan.dto';
 import { CreateLogExamDto } from '../dto/logExam.dto';
 import { CreateFilterDto } from 'src/dto/filter.dto';
+import { Op } from 'sequelize';
 
 @Injectable()
 export class ExamService {
@@ -52,7 +53,7 @@ export class ExamService {
     ) { }
 
     async create(
-        userId: number,
+        token: any,
         networkId: string,
         studyInstanceUID: string,
         studyDate: Date,
@@ -85,7 +86,7 @@ export class ExamService {
     ) {
 
         // Check if user exists
-        let createdBy = await this.createdBy(userId);
+        let createdBy = await this.createdBy(token.id);
         // Check if the site exists
         let siteId = await this.siteExists(networkId);
 
@@ -96,7 +97,7 @@ export class ExamService {
             // é possível ter um profile sem ser um paciente? Precisa find profile primeiro antes de criar?
             patientProfile = await this.createProfile(name, socialName, sex, birthDate, phone, email);
             patient = await this.createPatient(patientId, patientProfile, pid);
-            patientUser = await this.createUser(patientProfile, null, 'patient', null, null, null, null);
+            patientUser = await this.createUser(patientProfile, null, 'PATIENT', null, null, null, null);
             patientUserSite = await this.createUserSite(patientUser, siteId, createdBy);
         }
         await this.createLogin(patientUser, null, loginPassword, loginUsername);
@@ -119,7 +120,7 @@ export class ExamService {
             const reqDoctorSocialName = reqDoctorName.split(" ")[0];
             reqDoctorProfile = await this.createProfile(reqDoctorName, reqDoctorSocialName, null, null, null, null);
             reqDoctor = await this.createDoctor(reqDoctorProfile, reqDoctorDocType, reqDoctorDocIssuer, reqDoctorDocNum);
-            reqDoctorUser = await this.createUser(reqDoctorProfile, null, 'doctor', null, null, null, null);
+            reqDoctorUser = await this.createUser(reqDoctorProfile, null, 'DOCTOR', null, null, null, null);
             reqDoctorUserSite = await this.createUserSite(reqDoctorUser, siteId, createdBy);
         }
         await this.createLogin(reqDoctorUser, reqDoctor);
@@ -131,7 +132,7 @@ export class ExamService {
             const consDoctorSocialName = consDoctorName.split(" ")[0];
             consDoctorProfile = await this.createProfile(consDoctorName, consDoctorSocialName, null, null, null, null);
             consDoctor = await this.createDoctor(consDoctorProfile, consDoctorDocType, consDoctorDocIssuer, consDoctorDocNum);
-            consDoctorUser = await this.createUser(consDoctorProfile, null, 'doctor', null, null, null, null);
+            consDoctorUser = await this.createUser(consDoctorProfile, null, 'DOCTOR', null, null, null, null);
             consDoctorUserSite = await this.createUserSite(consDoctorUser, siteId, createdBy);
         }
         let consDoctorId = await this.getConsDoctorId(consDoctorName, consDoctor);
@@ -161,9 +162,11 @@ export class ExamService {
     }
 
     // Check if user exists
-    async createdBy(userId: number) {
-        if (userId) {
-            return userId;
+    async createdBy(loginId: number) {
+        if (loginId) {
+            let login = await this.loginService.findOne(loginId);
+            let user = await this.userService.findOne(login.userId);
+            return user.id;
         } else {
             throw new Error('User does not exist');
         }
@@ -292,21 +295,35 @@ export class ExamService {
 
     // ========================================================================================================
 
-    public async search(loginId: number, body: CreateFilterDto) {
-        const login = await this.loginService.findOne(loginId);
-        const user = await this.userService.findOne(login.userId);
-        const patient = await this.patientService.findOne({ profileId: user.profileId });
-
+    public async search(body: CreateFilterDto, token) {
         const where = {};
-        Object.keys(body).forEach(key => {
-            console.log(key);
-            where[key] = body[key]
+        body.filters.forEach(field => {
+            where[field['key']] = field['value']
         })
-        // if (body.date_range) {
-        //     where[date_range.field] = {between: [body.date_range.start, body.date_range.end]}
-        // }
-        const exams = this.find({ ...where });
+        let exams = await this.find({ ...where });
+
+        const login = await this.loginService.findOne(token.id);
+        const user = await this.userService.findOne(login.userId);
+        if (exams.length > 0) {
+            exams = await this.filterByProfiles(exams, user);
+        }
         return exams;
+    }
+
+    public async filterByProfiles(exams, user: User) {
+        const profiles = user.profiles.trim();
+        const profileId = user.profileId;
+        if (profiles === 'patient') {
+            console.log('patient')
+            const patient = await this.patientService.findOne({ profileId });
+            exams = await this.find({ 'patientId': patient.id })
+        } else if (profiles === 'doctor') {
+            const doctor = await this.doctorService.findOne({ profileId });
+            exams = await this.find({ [Op.or]: [{ 'requestingId': doctor.id }, { 'consultingId': doctor.id }] });
+        } else if (profiles === 'admin') {
+            // show all by site(?)
+        }
+        return exams
     }
 
     // ========================================================================================================

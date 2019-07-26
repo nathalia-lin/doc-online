@@ -1,13 +1,15 @@
 import { Module, NestModule, MiddlewareConsumer, RequestMethod } from "@nestjs/common";
 
 import { DatabaseModule } from "../database/database.module";
+import { ProfileModule } from "./profile.module";
+import { UserModule } from "./user.module";
 import { LoginController } from "../controller/login.controller";
 import { LoginService } from "../service/login.service";
 import { LoginProvider } from "../provider/login.provider";
 import { AuthMiddleware } from "../middleware/auth.middleware";
 
 @Module({
-    imports: [DatabaseModule],
+    imports: [DatabaseModule, ProfileModule, UserModule],
     controllers: [LoginController],
     providers: [LoginService, ...LoginProvider],
     exports: [LoginService]

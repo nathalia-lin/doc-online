@@ -38,11 +38,9 @@ export class ViewsService {
     }
 
     async deleteOne(viewId: number) {
-
         const deletedView = await this.viewsRepository.destroy({
             where: { 'id': viewId }
         });
-
         return await deletedView;
     }
 }

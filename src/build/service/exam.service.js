@@ -40,6 +40,7 @@ const patient_model_1 = __importDefault(require("../models/patient.model"));
 const doctor_model_1 = __importDefault(require("../models/doctor.model"));
 const insurance_model_1 = __importDefault(require("../models/insurance.model"));
 const views_model_1 = __importDefault(require("../models/views.model"));
+const sequelize_1 = require("sequelize");
 let ExamService = class ExamService {
     constructor(examRepository, siteService, profileService, patientService, doctorService, userService, userSiteService, loginService, insuranceService, userInsuranceService, planService, logExamService) {
         this.examRepository = examRepository;
@@ -55,16 +56,16 @@ let ExamService = class ExamService {
         this.planService = planService;
         this.logExamService = logExamService;
     }
-    create(userId, networkId, studyInstanceUID, studyDate, accessionNum, modality, statusType, reqProcDescription, insuranceId, insuranceName, planId, planName, patientId, name, socialName, birthDate, sex, phone, email, pid, loginUsername, loginPassword, reqDoctorDocType, reqDoctorDocNum, reqDoctorDocIssuer, reqDoctorName, consDoctorDocType, consDoctorDocNum, consDoctorDocIssuer, consDoctorName) {
+    create(token, networkId, studyInstanceUID, studyDate, accessionNum, modality, statusType, reqProcDescription, insuranceId, insuranceName, planId, planName, patientId, name, socialName, birthDate, sex, phone, email, pid, loginUsername, loginPassword, reqDoctorDocType, reqDoctorDocNum, reqDoctorDocIssuer, reqDoctorName, consDoctorDocType, consDoctorDocNum, consDoctorDocIssuer, consDoctorName) {
         return __awaiter(this, void 0, void 0, function* () {
-            let createdBy = yield this.createdBy(userId);
+            let createdBy = yield this.createdBy(token.id);
             let siteId = yield this.siteExists(networkId);
             let patientProfile, patientUser, patientUserSite;
             let patient = yield this.patientService.findOne(patientId);
             if (!patient) {
                 patientProfile = yield this.createProfile(name, socialName, sex, birthDate, phone, email);
                 patient = yield this.createPatient(patientId, patientProfile, pid);
-                patientUser = yield this.createUser(patientProfile, null, 'patient', null, null, null, null);
+                patientUser = yield this.createUser(patientProfile, null, 'PATIENT', null, null, null, null);
                 patientUserSite = yield this.createUserSite(patientUser, siteId, createdBy);
             }
             yield this.createLogin(patientUser, null, loginPassword, loginUsername);
@@ -86,7 +87,7 @@ let ExamService = class ExamService {
                 const reqDoctorSocialName = reqDoctorName.split(" ")[0];
                 reqDoctorProfile = yield this.createProfile(reqDoctorName, reqDoctorSocialName, null, null, null, null);
                 reqDoctor = yield this.createDoctor(reqDoctorProfile, reqDoctorDocType, reqDoctorDocIssuer, reqDoctorDocNum);
-                reqDoctorUser = yield this.createUser(reqDoctorProfile, null, 'doctor', null, null, null, null);
+                reqDoctorUser = yield this.createUser(reqDoctorProfile, null, 'DOCTOR', null, null, null, null);
                 reqDoctorUserSite = yield this.createUserSite(reqDoctorUser, siteId, createdBy);
             }
             yield this.createLogin(reqDoctorUser, reqDoctor);
@@ -96,7 +97,7 @@ let ExamService = class ExamService {
                 const consDoctorSocialName = consDoctorName.split(" ")[0];
                 consDoctorProfile = yield this.createProfile(consDoctorName, consDoctorSocialName, null, null, null, null);
                 consDoctor = yield this.createDoctor(consDoctorProfile, consDoctorDocType, consDoctorDocIssuer, consDoctorDocNum);
-                consDoctorUser = yield this.createUser(consDoctorProfile, null, 'doctor', null, null, null, null);
+                consDoctorUser = yield this.createUser(consDoctorProfile, null, 'DOCTOR', null, null, null, null);
                 consDoctorUserSite = yield this.createUserSite(consDoctorUser, siteId, createdBy);
             }
             let consDoctorId = yield this.getConsDoctorId(consDoctorName, consDoctor);
@@ -122,10 +123,12 @@ let ExamService = class ExamService {
             yield this.createLogExam(exam.id);
         });
     }
-    createdBy(userId) {
+    createdBy(loginId) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (userId) {
-                return userId;
+            if (loginId) {
+                let login = yield this.loginService.findOne(loginId);
+                let user = yield this.userService.findOne(login.userId);
+                return user.id;
             }
             else {
                 throw new Error('User does not exist');
@@ -265,17 +268,36 @@ let ExamService = class ExamService {
             yield this.logExamService.create(logExam);
         });
     }
-    search(loginId, body) {
+    search(body, token) {
         return __awaiter(this, void 0, void 0, function* () {
-            const login = yield this.loginService.findOne(loginId);
-            const user = yield this.userService.findOne(login.userId);
-            const patient = yield this.patientService.findOne({ profileId: user.profileId });
             const where = {};
-            Object.keys(body).forEach(key => {
-                console.log(key);
-                where[key] = body[key];
+            body.filters.forEach(field => {
+                where[field['key']] = field['value'];
             });
-            const exams = this.find(Object.assign({}, where));
+            let exams = yield this.find(Object.assign({}, where));
+            const login = yield this.loginService.findOne(token.id);
+            const user = yield this.userService.findOne(login.userId);
+            if (exams.length > 0) {
+                exams = yield this.filterByProfiles(exams, user);
+            }
+            return exams;
+        });
+    }
+    filterByProfiles(exams, user) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const profiles = user.profiles.trim();
+            const profileId = user.profileId;
+            if (profiles === 'patient') {
+                console.log('patient');
+                const patient = yield this.patientService.findOne({ profileId });
+                exams = yield this.find({ 'patientId': patient.id });
+            }
+            else if (profiles === 'doctor') {
+                const doctor = yield this.doctorService.findOne({ profileId });
+                exams = yield this.find({ [sequelize_1.Op.or]: [{ 'requestingId': doctor.id }, { 'consultingId': doctor.id }] });
+            }
+            else if (profiles === 'admin') {
+            }
             return exams;
         });
     }

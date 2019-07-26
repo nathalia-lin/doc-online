@@ -41,11 +41,9 @@ export class UserService {
     }
 
     async deleteOne(userId: number) {
-
         const deletedUser = await this.userRepository.destroy({
             where: { 'id': userId }
         });
-
         return await deletedUser;
     }
 }

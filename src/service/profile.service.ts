@@ -39,11 +39,9 @@ export class ProfileService {
   }
 
   async deleteOne(profileId: number) {
-
     const deletedProfile = await this.profileRepository.destroy({
       where: { 'id': profileId }
     });
-
     return await deletedProfile;
   }
 }

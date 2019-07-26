@@ -36,11 +36,9 @@ export class LogExamService {
     }
 
     async deleteOne(logExamId: number) {
-
         const deletedLogExam = await this.logExamRepository.destroy({
             where: { 'id': logExamId }
         });
-
         return await deletedLogExam;
     }
 

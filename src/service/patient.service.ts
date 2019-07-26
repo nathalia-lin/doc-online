@@ -38,11 +38,9 @@ export class PatientService {
     }
 
     async deleteOne(patientId: number) {
-
         const deletedPatient = await this.patientRepository.destroy({
             where: { 'id': patientId }
         });
-
         return await deletedPatient;
     }
 }

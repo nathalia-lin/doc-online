@@ -52,7 +52,7 @@ export class ExamController {
     ) {
         try {
             return await this.examService.create(
-                req.userId,
+                req.token,
                 networkID,
                 studyInstanceUID,
                 studyDate,
@@ -91,7 +91,7 @@ export class ExamController {
 
     @Post('search')
     public async search(@Body() body, @Req() req) {
-        return await this.examService.search(req.userId, body);
+        return await this.examService.search(body, req.token);
     }
 
     @Get()

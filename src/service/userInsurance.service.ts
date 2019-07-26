@@ -36,11 +36,9 @@ export class UserInsuranceService {
     }
 
     async deleteOne(userInsuranceId: number) {
-
         const deletedUserInsurance = await this.userInsuranceRepository.destroy({
             where: { 'id': userInsuranceId }
         });
-
         return await deletedUserInsurance;
     }
 }

@@ -37,11 +37,9 @@ export class SiteNotificationService {
   }
 
   async deleteOne(siteNotificationId: number) {
-
     const deletedSiteNotification = await this.siteNotificationRepository.destroy({
       where: { 'id': siteNotificationId }
     });
-
     return await deletedSiteNotification;
   }
 }
