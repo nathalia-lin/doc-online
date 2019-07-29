@@ -35,6 +35,16 @@ let PlanService = class PlanService {
             ;
         });
     }
+    createPlan(planId, insuranceId, planName) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let plan = {
+                'id': planId,
+                'insuranceId': insuranceId,
+                'name': planName
+            };
+            yield this.planRepository.create(plan);
+        });
+    }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
             const plans = yield this.planRepository.findAll({

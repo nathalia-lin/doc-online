@@ -31,6 +31,15 @@ let UserInsuranceService = class UserInsuranceService {
             ;
         });
     }
+    createUserInsurance(insuranceId, userId) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let userInsurance = {
+                'insuranceId': insuranceId,
+                'userId': userId,
+            };
+            yield this.userInsuranceRepository.create(userInsurance);
+        });
+    }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
             const userInsurances = yield this.userInsuranceRepository.findAll({

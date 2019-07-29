@@ -37,6 +37,19 @@ let ProfileService = class ProfileService {
             ;
         });
     }
+    createProfile(socialName, name, sex, birthdate, phone, email) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let newProfile = {
+                'name': name,
+                'socialName': socialName,
+                'sex': sex,
+                'birthdate': birthdate,
+                'phone': phone,
+                'email': email
+            };
+            return yield this.profileRepository.create(newProfile);
+        });
+    }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
             const profiles = yield this.profileRepository.findAll({

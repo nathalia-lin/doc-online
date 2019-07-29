@@ -15,6 +15,15 @@ export class PlanService {
         return await this.planRepository.create<Plan>(createPlanDto);;
     }
 
+    async createPlan(planId, insuranceId, planName) {
+        let plan = {
+            'id': planId,
+            'insuranceId': insuranceId,
+            'name': planName
+        } as CreatePlanDto;
+        await this.planRepository.create(plan);
+    }
+
     async find(where: any) {
         const plans = await this.planRepository.findAll({
             where: where, include: [Insurance]

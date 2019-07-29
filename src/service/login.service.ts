@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable, Inject, forwardRef } from '@nestjs/common';
 import * as jwt from 'jsonwebtoken';
 import crypto from 'crypto';
 
@@ -20,6 +20,15 @@ export class LoginService {
 
     async create(createLoginDto: CreateLoginDto): Promise<Login> {
         return await this.loginRepository.create<Login>(createLoginDto);;
+    }
+
+    async createLogin(userId, username, password) {
+        let login = {
+            'userId': userId,
+            'username': username,
+            'password': password
+        } as CreateLoginDto;
+        await this.loginRepository.create(login);
     }
 
     async authenticate(login: Login) {

@@ -16,6 +16,15 @@ export class PatientService {
         return await this.patientRepository.create<Patient>(createPatientDto);;
     }
 
+    async createPatient(id: number, profileId: number, pid: string) {
+        let newPatient = {
+            'id': id,
+            'profileId': profileId,
+            'pid': pid,
+        } as CreatePatientDto;
+        return await this.patientRepository.create(newPatient);
+    }
+
     async find(where: any) {
         const patients = await this.patientRepository.findAll({
             where: where, include: [Profile, Exam]

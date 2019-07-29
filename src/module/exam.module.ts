@@ -19,6 +19,7 @@ import { LogExamModule } from "./logExam.module";
 import { InsuranceModule } from "./insurance.module";
 import { UserInsuranceModule } from "./userInsurance.module";
 import { PlanModule } from "./plan.module";
+import { SiteProvider } from "../provider/site.provider";
 
 @Module({
     imports: [
@@ -39,7 +40,7 @@ import { PlanModule } from "./plan.module";
         PlanModule
     ],
     controllers: [ExamController],
-    providers: [ExamService, ...ExamProvider]
+    providers: [ExamService, ...ExamProvider, ...SiteProvider]
 })
 
 export class ExamModule { }

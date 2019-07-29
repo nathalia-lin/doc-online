@@ -36,6 +36,17 @@ let DoctorService = class DoctorService {
             ;
         });
     }
+    createDoctor(profileId, docType, docIssuer, docNum) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let newDoctor = {
+                'profileId': profileId.id,
+                'docType': docType,
+                'docIssuer': docIssuer,
+                'docNum': docNum,
+            };
+            return yield this.doctorRepository.create(newDoctor);
+        });
+    }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
             const doctors = yield this.doctorRepository.findAll({

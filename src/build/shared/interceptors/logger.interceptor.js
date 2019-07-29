@@ -7,20 +7,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
-const database_module_1 = require("../database/database.module");
-const user_controller_1 = require("../controller/user.controller");
-const user_service_1 = require("../service/user.service");
-const user_provider_1 = require("../provider/user.provider");
-let UserModule = class UserModule {
+const operators_1 = require("rxjs/operators");
+let LoggerInterceptor = class LoggerInterceptor {
+    intercept(context, next) {
+        const req = context.switchToHttp().getRequest();
+        const method = req.method;
+        const url = req.url;
+        const now = Date.now();
+        return next
+            .handle()
+            .pipe(operators_1.tap(() => common_1.Logger.log(`${method} ${url} ${Date.now() - now}ms`, context.getClass().name)));
+    }
 };
-UserModule = __decorate([
-    common_1.Module({
-        imports: [
-            database_module_1.DatabaseModule
-        ],
-        controllers: [user_controller_1.UserController],
-        providers: [user_service_1.UserService, ...user_provider_1.UserProvider],
-        exports: [user_service_1.UserService]
-    })
-], UserModule);
-exports.UserModule = UserModule;
+LoggerInterceptor = __decorate([
+    common_1.Injectable()
+], LoggerInterceptor);
+exports.LoggerInterceptor = LoggerInterceptor;

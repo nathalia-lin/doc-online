@@ -9,8 +9,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const core_1 = require("@nestjs/core");
 const exam_module_1 = require("./exam.module");
-const http_exception_filter_1 = require("../shared/http-exception.filter");
-const logger_interceptor_1 = require("../shared/logger.interceptor");
+const http_exception_filter_1 = require("../shared/filters/http-exception.filter");
+const logger_interceptor_1 = require("../shared/interceptors/logger.interceptor");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([

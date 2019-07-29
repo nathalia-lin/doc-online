@@ -17,6 +17,15 @@ export class InsuranceService {
         return await this.insuranceRepository.create(createInsuranceDto);;
     }
 
+    async createInsurance(insuranceId, siteId, insuranceName) {
+        let insurance = {
+            'id': insuranceId,
+            'siteId': siteId,
+            'name': insuranceName
+        } as CreateInsuranceDto;
+        await this.insuranceRepository.create(insurance);
+    }
+
     async find(where: any) {
         const insurances = await this.insuranceRepository.findAll({
             where: where, include: [Site, User, Exam]

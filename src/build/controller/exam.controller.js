@@ -26,10 +26,10 @@ let ExamController = class ExamController {
     constructor(examService) {
         this.examService = examService;
     }
-    create(req, networkID, studyInstanceUID, studyDate, accessionNumber, modality, studyStatus, reqProcDescription, insuranceID, insuranceName, planID, planName, patientID, patientName, patientSocialName, patientBirthDate, patientSex, patientPhone, patientEmail, patientPID, protocolID, protocolPwd, reqPhysicianType, reqPhysicianNum, reqPhysicianUF, reqPhysicianName, refPhysicianType, refPhysicianNum, refPhysicianUF, refPhysicianName) {
+    create(req, body) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                return yield this.examService.create(req.token, networkID, studyInstanceUID, studyDate, accessionNumber, modality, studyStatus, reqProcDescription, insuranceID, insuranceName, planID, planName, patientID, patientName, patientSocialName, patientBirthDate, patientSex, patientPhone, patientEmail, patientPID, protocolID, protocolPwd, reqPhysicianType, reqPhysicianNum, reqPhysicianUF, reqPhysicianName, refPhysicianType, refPhysicianNum, refPhysicianUF, refPhysicianName);
+                return yield this.examService.create(req.token, body.networkID, body.studyInstanceUID, body.studyDate, body.accessionNumber, body.modality, body.studyStatus, body.reqProcDescription, body.insuranceID, body.insuranceName, body.planID, body.planName, body.patientID, body.patientName, body.patientSocialName, body.patientBirthDate, body.patientSex, body.patientPhone, body.patientEmail, body.patientPID, body.protocolID, body.protocolPwd, body.reqPhysicianType, body.reqPhysicianNum, body.reqPhysicianUF, body.reqPhysicianName, body.refPhysicianType, body.refPhysicianNum, body.refPhysicianUF, body.refPhysicianName);
             }
             catch (SequelizeDatabaseError) {
                 throw new common_1.BadRequestException(SequelizeDatabaseError);
@@ -70,37 +70,9 @@ let ExamController = class ExamController {
 __decorate([
     common_1.Post(),
     __param(0, common_1.Req()),
-    __param(1, common_1.Body('networkID')),
-    __param(2, common_1.Body('studyInstanceUID')),
-    __param(3, common_1.Body('studyDate')),
-    __param(4, common_1.Body('accessionNumber')),
-    __param(5, common_1.Body('modality')),
-    __param(6, common_1.Body('studyStatus')),
-    __param(7, common_1.Body('reqProcDescription')),
-    __param(8, common_1.Body('insuranceID')),
-    __param(9, common_1.Body('insuranceName')),
-    __param(10, common_1.Body('planID')),
-    __param(11, common_1.Body('planName')),
-    __param(12, common_1.Body('patientID')),
-    __param(13, common_1.Body('patientName')),
-    __param(14, common_1.Body('patientSocialName')),
-    __param(15, common_1.Body('patientBirthDate')),
-    __param(16, common_1.Body('patientSex')),
-    __param(17, common_1.Body('patientPhone')),
-    __param(18, common_1.Body('patientEmail')),
-    __param(19, common_1.Body('patientPID')),
-    __param(20, common_1.Body('protocolID')),
-    __param(21, common_1.Body('protocolPwd')),
-    __param(22, common_1.Body('reqPhysicianType')),
-    __param(23, common_1.Body('reqPhysicianNum')),
-    __param(24, common_1.Body('reqPhysicianUF')),
-    __param(25, common_1.Body('reqPhysicianName')),
-    __param(26, common_1.Body('refPhysicianType')),
-    __param(27, common_1.Body('refPhysicianNum')),
-    __param(28, common_1.Body('refPhysicianUF')),
-    __param(29, common_1.Body('refPhysicianName')),
+    __param(1, common_1.Body()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, String, String, Date, String, String, String, String, Number, String, Number, String, Number, String, String, Date, String, String, String, String, String, String, String, String, String, String, String, String, String, String]),
+    __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], ExamController.prototype, "create", null);
 __decorate([

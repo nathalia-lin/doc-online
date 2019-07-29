@@ -48,6 +48,16 @@ let LoginService = class LoginService {
             ;
         });
     }
+    createLogin(userId, username, password) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let login = {
+                'userId': userId,
+                'username': username,
+                'password': password
+            };
+            yield this.loginRepository.create(login);
+        });
+    }
     authenticate(login) {
         return __awaiter(this, void 0, void 0, function* () {
             const authLogin = yield this.loginRepository.findOne({

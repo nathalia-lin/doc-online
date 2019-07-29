@@ -31,6 +31,17 @@ let UserSiteService = class UserSiteService {
             ;
         });
     }
+    createUserSite(userId, siteId, createdBy) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let newUserSite = {
+                'userId': userId,
+                'siteId': siteId,
+                'createdBy': createdBy,
+            };
+            return yield this.userSiteRepository.create(newUserSite);
+        });
+    }
+    ;
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
             const userSites = yield this.userSiteRepository.findAll({

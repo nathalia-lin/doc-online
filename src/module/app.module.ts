@@ -2,8 +2,8 @@ import { Module, ValidationPipe } from '@nestjs/common';
 import { APP_FILTER, APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core';
 
 import { ExamModule } from './exam.module';
-import { HttpErrorFilter } from '../shared/http-exception.filter';
-import { LoggerInterceptor } from '../shared/logger.interceptor';
+import { HttpErrorFilter } from '../shared/filters/http-exception.filter';
+import { LoggerInterceptor } from '../shared/interceptors/logger.interceptor';
 
 @Module({
   imports: [

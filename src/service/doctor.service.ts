@@ -16,6 +16,16 @@ export class DoctorService {
         return await this.doctorRepository.create<Doctor>(createDoctorDto);;
     }
 
+    async createDoctor(profileId, docType, docIssuer, docNum) {
+        let newDoctor = {
+            'profileId': profileId.id,
+            'docType': docType,
+            'docIssuer': docIssuer,
+            'docNum': docNum,
+        } as CreateDoctorDto;
+        return await this.doctorRepository.create(newDoctor);
+    }
+
     async find(where: object) {
         const doctors = await this.doctorRepository.findAll({
             where: where, include: [Profile, { model: Exam, as: 'requestedExams' }, { model: Exam, as: 'consultedExams' }]

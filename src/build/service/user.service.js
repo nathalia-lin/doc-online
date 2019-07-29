@@ -33,9 +33,18 @@ let UserService = class UserService {
     constructor(userRepository) {
         this.userRepository = userRepository;
     }
-    create(createUserDto) {
+    createUser(profileId, lastAccess, profiles, active, recoveryKey, lastRecovery, termApproved) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.userRepository.create(createUserDto);
+            let newUser = {
+                'profileId': profileId,
+                'lastAccess': lastAccess,
+                'profiles': profiles,
+                'active': active,
+                'recoveryKey': recoveryKey,
+                'lastRecovery': lastRecovery,
+                'termApproved': termApproved
+            };
+            return yield this.userRepository.create(newUser);
         });
     }
     find(where) {

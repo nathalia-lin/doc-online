@@ -25,6 +25,7 @@ const logExam_module_1 = require("./logExam.module");
 const insurance_module_1 = require("./insurance.module");
 const userInsurance_module_1 = require("./userInsurance.module");
 const plan_module_1 = require("./plan.module");
+const site_provider_1 = require("../provider/site.provider");
 let ExamModule = class ExamModule {
 };
 ExamModule = __decorate([
@@ -47,7 +48,7 @@ ExamModule = __decorate([
             plan_module_1.PlanModule
         ],
         controllers: [exam_controller_1.ExamController],
-        providers: [exam_service_1.ExamService, ...exam_provider_1.ExamProvider]
+        providers: [exam_service_1.ExamService, ...exam_provider_1.ExamProvider, ...site_provider_1.SiteProvider]
     })
 ], ExamModule);
 exports.ExamModule = ExamModule;

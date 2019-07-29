@@ -31,6 +31,15 @@ let LogExamService = class LogExamService {
             ;
         });
     }
+    createLogExam(examId) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let logExam = {
+                'examId': examId,
+                'postedData': null
+            };
+            yield this.logExamRepository.create(logExam);
+        });
+    }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
             const logExam = yield this.logExamRepository.findAll({

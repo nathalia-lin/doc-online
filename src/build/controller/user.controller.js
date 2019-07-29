@@ -21,15 +21,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
-const user_dto_1 = require("../dto/user.dto");
 const user_service_1 = require("../service/user.service");
 let UserController = class UserController {
     constructor(userService) {
         this.userService = userService;
     }
-    create(createUserDto) {
+    create(body, req) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.userService.create(createUserDto);
         });
     }
     show() {
@@ -55,9 +53,9 @@ let UserController = class UserController {
 };
 __decorate([
     common_1.Post(),
-    __param(0, common_1.Body()),
+    __param(0, common_1.Body()), __param(1, common_1.Req()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [user_dto_1.CreateUserDto]),
+    __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "create", null);
 __decorate([

@@ -36,6 +36,16 @@ let PatientService = class PatientService {
             ;
         });
     }
+    createPatient(id, profileId, pid) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let newPatient = {
+                'id': id,
+                'profileId': profileId,
+                'pid': pid,
+            };
+            return yield this.patientRepository.create(newPatient);
+        });
+    }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
             const patients = yield this.patientRepository.findAll({

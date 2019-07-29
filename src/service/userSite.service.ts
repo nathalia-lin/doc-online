@@ -14,6 +14,15 @@ export class UserSiteService {
         return await this.userSiteRepository.create<UserSite>(createUserSiteDto);;
     }
 
+    async createUserSite(userId, siteId, createdBy) {
+        let newUserSite = {
+            'userId': userId,
+            'siteId': siteId,
+            'createdBy': createdBy,
+        } as CreateUserSiteDto;
+        return await this.userSiteRepository.create(newUserSite)
+    };
+
     async find(where: any) {
         const userSites = await this.userSiteRepository.findAll({
             where: where

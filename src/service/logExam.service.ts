@@ -14,6 +14,14 @@ export class LogExamService {
         return await this.logExamRepository.create<LogExam>(createLogExamDto);;
     }
 
+    async createLogExam(examId) {
+        let logExam = {
+            'examId': examId,
+            'postedData': null
+        } as CreateLogExamDto;
+        await this.logExamRepository.create(logExam);
+    }
+
     async find(where: any) {
         const logExam = await this.logExamRepository.findAll({
             where: where

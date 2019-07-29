@@ -6,7 +6,7 @@ import { UserModule } from "./user.module";
 import { LoginController } from "../controller/login.controller";
 import { LoginService } from "../service/login.service";
 import { LoginProvider } from "../provider/login.provider";
-import { AuthMiddleware } from "../shared/auth.middleware";
+import { AuthMiddleware } from "../shared/middlewares/auth.middleware";
 
 @Module({
     imports: [DatabaseModule, ProfileModule, UserModule],

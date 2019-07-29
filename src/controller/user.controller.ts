@@ -1,6 +1,5 @@
-import { Controller, Get, Post, Body, Delete, Param, Patch } from '@nestjs/common';
+import { Controller, Get, Post, Body, Delete, Param, Patch, Req } from '@nestjs/common';
 
-import { CreateUserDto } from '../dto/user.dto';
 import { UserService } from '../service/user.service';
 
 @Controller('user')
@@ -8,8 +7,25 @@ export class UserController {
     constructor(private readonly userService: UserService) { }
 
     @Post()
-    public async create(@Body() createUserDto: CreateUserDto) {
-        return await this.userService.create(createUserDto);
+    public async create(@Body() body, @Req() req) {
+        // return await this.userService.createAdmin(
+        //     req.token,
+        //     body.networkId,
+        //     body.socialName,
+        //     body.name,
+        //     body.sex,
+        //     body.birthdate,
+        //     body.phone,
+        //     body.email,
+        //     body.lastAccess,
+        //     body.profiles,
+        //     body.active,
+        //     body.recoveryKey,
+        //     body.lastRecovery,
+        //     body.termApproved,
+        //     body.username,
+        //     body.password,
+        // );
     }
 
     @Get()

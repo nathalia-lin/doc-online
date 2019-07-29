@@ -17,6 +17,18 @@ export class ProfileService {
     return await this.profileRepository.create<Profile>(createProfileDto);;
   }
 
+  async createProfile(socialName: string, name: string, sex: string, birthdate: Date, phone: string, email: string) {
+    let newProfile = {
+      'name': name,
+      'socialName': socialName,
+      'sex': sex,
+      'birthdate': birthdate,
+      'phone': phone,
+      'email': email
+    } as CreateProfileDto;
+    return await this.profileRepository.create(newProfile);
+  }
+
   async find(where: any) {
     const profiles = await this.profileRepository.findAll({
       where: where, include: [User, Patient, Doctor]

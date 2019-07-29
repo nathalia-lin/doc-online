@@ -37,6 +37,16 @@ let InsuranceService = class InsuranceService {
             ;
         });
     }
+    createInsurance(insuranceId, siteId, insuranceName) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let insurance = {
+                'id': insuranceId,
+                'siteId': siteId,
+                'name': insuranceName
+            };
+            yield this.insuranceRepository.create(insurance);
+        });
+    }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
             const insurances = yield this.insuranceRepository.findAll({

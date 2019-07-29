@@ -14,6 +14,14 @@ export class UserInsuranceService {
         return await this.userInsuranceRepository.create<UserInsurance>(createUserInsuranceDto);;
     }
 
+    async createUserInsurance(insuranceId, userId) {
+        let userInsurance = {
+            'insuranceId': insuranceId,
+            'userId': userId,
+        } as CreateUserInsuranceDto;
+        await this.userInsuranceRepository.create(userInsurance);
+    }
+
     async find(where: any) {
         const userInsurances = await this.userInsuranceRepository.findAll({
             where: where
