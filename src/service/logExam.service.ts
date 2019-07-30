@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 
 import { CreateLogExamDto } from '../dto/logExam.dto';
 import LogExam from '../models/logExam.model';
@@ -6,24 +6,12 @@ import LogExam from '../models/logExam.model';
 @Injectable()
 export class LogExamService {
 
-    constructor(
-        @Inject('LogExamRepository') private readonly logExamRepository: typeof LogExam
-    ) { }
-
     async create(createLogExamDto: CreateLogExamDto): Promise<LogExam> {
-        return await this.logExamRepository.create<LogExam>(createLogExamDto);;
-    }
-
-    async createLogExam(examId) {
-        let logExam = {
-            'examId': examId,
-            'postedData': null
-        } as CreateLogExamDto;
-        await this.logExamRepository.create(logExam);
+        return await LogExam.create<LogExam>(createLogExamDto);;
     }
 
     async find(where: any) {
-        const logExam = await this.logExamRepository.findAll({
+        const logExam = await LogExam.findAll({
             where: where
         });
         return logExam;
@@ -33,18 +21,18 @@ export class LogExamService {
         if (typeof where === 'string') {
             where = { 'id': where }
         }
-        const logExam = await this.logExamRepository.findOne({
+        const logExam = await LogExam.findOne({
             where: where
         });
         return logExam;
     }
 
     async updateOne(id: number, body: any) {
-        return await this.logExamRepository.update(body, { where: { 'id': id } });
+        return await LogExam.update(body, { where: { 'id': id } });
     }
 
     async deleteOne(logExamId: number) {
-        const deletedLogExam = await this.logExamRepository.destroy({
+        const deletedLogExam = await LogExam.destroy({
             where: { 'id': logExamId }
         });
         return await deletedLogExam;

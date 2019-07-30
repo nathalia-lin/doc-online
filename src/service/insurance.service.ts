@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 
 import { CreateInsuranceDto } from '../dto/insurance.dto';
 import Insurance from '../models/insurance.model';
@@ -9,25 +9,12 @@ import Exam from '../models/exam.model';
 @Injectable()
 export class InsuranceService {
 
-    constructor(
-        @Inject('InsuranceRepository') private readonly insuranceRepository: typeof Insurance
-    ) { }
-
     async create(createInsuranceDto: CreateInsuranceDto): Promise<Insurance> {
-        return await this.insuranceRepository.create(createInsuranceDto);;
-    }
-
-    async createInsurance(insuranceId, siteId, insuranceName) {
-        let insurance = {
-            'id': insuranceId,
-            'siteId': siteId,
-            'name': insuranceName
-        } as CreateInsuranceDto;
-        await this.insuranceRepository.create(insurance);
+        return await Insurance.create(createInsuranceDto);;
     }
 
     async find(where: any) {
-        const insurances = await this.insuranceRepository.findAll({
+        const insurances = await Insurance.findAll({
             where: where, include: [Site, User, Exam]
         });
         return insurances;
@@ -37,18 +24,18 @@ export class InsuranceService {
         if (typeof where === 'string') {
             where = { 'id': where }
         }
-        const insurance = await this.insuranceRepository.findOne({
+        const insurance = await Insurance.findOne({
             where: where, include: [Site, User, Exam]
         });
         return insurance;
     }
 
     async updateOne(id: number, body: any) {
-        return await this.insuranceRepository.update(body, { where: { 'id': id } });
+        return await Insurance.update(body, { where: { 'id': id } });
     }
 
     async deleteOne(insuranceId: number) {
-        const deletedInsurance = await this.insuranceRepository.destroy({
+        const deletedInsurance = await Insurance.destroy({
             where: { 'id': insuranceId }
         });
         return await deletedInsurance;

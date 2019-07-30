@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 
 import { CreateProfileDto } from '../dto/profile.dto';
 import Profile from '../models/profile.model';
@@ -9,28 +9,12 @@ import Doctor from '../models/doctor.model';
 @Injectable()
 export class ProfileService {
 
-  constructor(
-    @Inject('ProfileRepository') private readonly profileRepository: typeof Profile
-  ) { }
-
   async create(createProfileDto: CreateProfileDto): Promise<Profile> {
-    return await this.profileRepository.create<Profile>(createProfileDto);;
-  }
-
-  async createProfile(socialName: string, name: string, sex: string, birthdate: Date, phone: string, email: string) {
-    let newProfile = {
-      'name': name,
-      'socialName': socialName,
-      'sex': sex,
-      'birthdate': birthdate,
-      'phone': phone,
-      'email': email
-    } as CreateProfileDto;
-    return await this.profileRepository.create(newProfile);
+    return await Profile.create<Profile>(createProfileDto);;
   }
 
   async find(where: any) {
-    const profiles = await this.profileRepository.findAll({
+    const profiles = await Profile.findAll({
       where: where, include: [User, Patient, Doctor]
     });
     return profiles;
@@ -40,18 +24,18 @@ export class ProfileService {
     if (typeof where === 'string') {
       where = { 'id': where }
     }
-    const profile = await this.profileRepository.findOne({
+    const profile = await Profile.findOne({
       where: where, include: [User, Patient, Doctor]
     });
     return profile;
   }
 
   async updateOne(id: number, body: any) {
-    return await this.profileRepository.update(body, { where: { 'id': id } });
+    return await Profile.update(body, { where: { 'id': id } });
   }
 
   async deleteOne(profileId: number) {
-    const deletedProfile = await this.profileRepository.destroy({
+    const deletedProfile = await Profile.destroy({
       where: { 'id': profileId }
     });
     return await deletedProfile;

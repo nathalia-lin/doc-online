@@ -49,6 +49,16 @@ let LoginController = class LoginController {
             return yield this.loginService.findOne(id);
         });
     }
+    update(id, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.loginService.updateOne(id, body);
+        });
+    }
+    deleteOne(patientId) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.loginService.deleteOne(patientId);
+        });
+    }
 };
 __decorate([
     common_1.Post(),
@@ -78,6 +88,20 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], LoginController.prototype, "showOne", null);
+__decorate([
+    common_1.Patch(':id'),
+    __param(0, common_1.Param('id')), __param(1, common_1.Body()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", Promise)
+], LoginController.prototype, "update", null);
+__decorate([
+    common_1.Delete(':id'),
+    __param(0, common_1.Param('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Number]),
+    __metadata("design:returntype", Promise)
+], LoginController.prototype, "deleteOne", null);
 LoginController = __decorate([
     common_1.Controller('login'),
     __metadata("design:paramtypes", [login_service_1.LoginService])

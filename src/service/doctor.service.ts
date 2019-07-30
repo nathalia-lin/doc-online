@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 
 import { CreateDoctorDto } from '../dto/doctor.dto';
 import Doctor from '../models/doctor.model';
@@ -8,26 +8,12 @@ import Exam from '../models/exam.model';
 @Injectable()
 export class DoctorService {
 
-    constructor(
-        @Inject('DoctorRepository') private readonly doctorRepository: typeof Doctor
-    ) { }
-
     async create(createDoctorDto: CreateDoctorDto): Promise<Doctor> {
-        return await this.doctorRepository.create<Doctor>(createDoctorDto);;
-    }
-
-    async createDoctor(profileId, docType, docIssuer, docNum) {
-        let newDoctor = {
-            'profileId': profileId.id,
-            'docType': docType,
-            'docIssuer': docIssuer,
-            'docNum': docNum,
-        } as CreateDoctorDto;
-        return await this.doctorRepository.create(newDoctor);
+        return await Doctor.create<Doctor>(createDoctorDto);;
     }
 
     async find(where: object) {
-        const doctors = await this.doctorRepository.findAll({
+        const doctors = await Doctor.findAll({
             where: where, include: [Profile, { model: Exam, as: 'requestedExams' }, { model: Exam, as: 'consultedExams' }]
         });
         return doctors;
@@ -37,18 +23,18 @@ export class DoctorService {
         if (typeof where === 'string') {
             where = { 'id': where }
         }
-        const doctor = await this.doctorRepository.findOne({
+        const doctor = await Doctor.findOne({
             where: where, include: [Profile, { model: Exam, as: 'requestedExams' }, { model: Exam, as: 'consultedExams' }]
         });
         return doctor;
     }
 
     async updateOne(id: number, body: any) {
-        return await this.doctorRepository.update(body, { where: { 'id': id } });
+        return await Doctor.update(body, { where: { 'id': id } });
     }
 
     async deleteOne(doctorId: number) {
-        const deletedDoctor = await this.doctorRepository.destroy({
+        const deletedDoctor = await Doctor.destroy({
             where: { 'id': doctorId }
         });
         return await deletedDoctor;

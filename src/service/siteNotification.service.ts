@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 
 import { CreateSiteNotificationDto } from '../dto/siteNotification.dto';
 import Site from '../models/site.model';
@@ -7,16 +7,12 @@ import SiteNotification from '../models/siteNotification.model';
 @Injectable()
 export class SiteNotificationService {
 
-  constructor(
-    @Inject('SiteNotificationRepository') private readonly siteNotificationRepository: typeof SiteNotification
-  ) { }
-
   async create(createSiteNotificationDto: CreateSiteNotificationDto): Promise<SiteNotification> {
-    return await this.siteNotificationRepository.create<SiteNotification>(createSiteNotificationDto);
+    return await SiteNotification.create<SiteNotification>(createSiteNotificationDto);
   }
 
   async find(where: any) {
-    const siteNotifications = await this.siteNotificationRepository.findAll({
+    const siteNotifications = await SiteNotification.findAll({
       where: where, include: [Site]
     });
     return siteNotifications;
@@ -26,18 +22,18 @@ export class SiteNotificationService {
     if (typeof where === 'string') {
       where = { 'id': where }
     }
-    const siteNotification = await this.siteNotificationRepository.findOne({
+    const siteNotification = await SiteNotification.findOne({
       where: where, include: [Site]
     });
     return siteNotification;
   }
 
   async updateOne(id: number, body: any) {
-    return await this.siteNotificationRepository.update(body, { where: { 'id': id } });
+    return await SiteNotification.update(body, { where: { 'id': id } });
   }
 
   async deleteOne(siteNotificationId: number) {
-    const deletedSiteNotification = await this.siteNotificationRepository.destroy({
+    const deletedSiteNotification = await SiteNotification.destroy({
       where: { 'id': siteNotificationId }
     });
     return await deletedSiteNotification;

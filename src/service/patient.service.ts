@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 
 import { CreatePatientDto } from '../dto/patient.dto';
 import Patient from '../models/patient.model';
@@ -8,25 +8,12 @@ import Exam from '../models/exam.model';
 @Injectable()
 export class PatientService {
 
-    constructor(
-        @Inject('PatientRepository') private readonly patientRepository: typeof Patient
-    ) { }
-
     async create(createPatientDto: CreatePatientDto): Promise<Patient> {
-        return await this.patientRepository.create<Patient>(createPatientDto);;
-    }
-
-    async createPatient(id: number, profileId: number, pid: string) {
-        let newPatient = {
-            'id': id,
-            'profileId': profileId,
-            'pid': pid,
-        } as CreatePatientDto;
-        return await this.patientRepository.create(newPatient);
+        return await Patient.create<Patient>(createPatientDto);;
     }
 
     async find(where: any) {
-        const patients = await this.patientRepository.findAll({
+        const patients = await Patient.findAll({
             where: where, include: [Profile, Exam]
         });
         return patients;
@@ -36,18 +23,18 @@ export class PatientService {
         if (typeof where === 'string') {
             where = { 'id': where }
         }
-        const patient = await this.patientRepository.findOne({
+        const patient = await Patient.findOne({
             where: where, include: [Profile, Exam]
         });
         return patient;
     }
 
     async updateOne(id: number, body: any) {
-        return await this.patientRepository.update(body, { where: { 'id': id } });
+        return await Patient.update(body, { where: { 'id': id } });
     }
 
     async deleteOne(patientId: number) {
-        const deletedPatient = await this.patientRepository.destroy({
+        const deletedPatient = await Patient.destroy({
             where: { 'id': patientId }
         });
         return await deletedPatient;

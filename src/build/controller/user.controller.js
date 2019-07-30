@@ -28,6 +28,7 @@ let UserController = class UserController {
     }
     create(body, req) {
         return __awaiter(this, void 0, void 0, function* () {
+            return yield this.userService.createAdmin(req.token, body.networkId, body.socialName, body.name, body.sex, body.birthdate, body.phone, body.email, body.lastAccess, body.profiles, body.active, body.recoveryKey, body.lastRecovery, body.termApproved, body.username, body.password);
         });
     }
     show() {

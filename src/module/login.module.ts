@@ -1,17 +1,14 @@
 import { Module, NestModule, MiddlewareConsumer, RequestMethod } from "@nestjs/common";
 
 import { DatabaseModule } from "../database/database.module";
-import { ProfileModule } from "./profile.module";
-import { UserModule } from "./user.module";
 import { LoginController } from "../controller/login.controller";
 import { LoginService } from "../service/login.service";
-import { LoginProvider } from "../provider/login.provider";
 import { AuthMiddleware } from "../shared/middlewares/auth.middleware";
 
 @Module({
-    imports: [DatabaseModule, ProfileModule, UserModule],
+    imports: [DatabaseModule],
     controllers: [LoginController],
-    providers: [LoginService, ...LoginProvider],
+    providers: [LoginService],
     exports: [LoginService]
 })
 
@@ -25,7 +22,8 @@ export class LoginModule implements NestModule {
             )
             .forRoutes(
                 { path: '/exam', method: RequestMethod.ALL },
-                { path: '/exam/search', method: RequestMethod.ALL }
+                { path: '/exam/search', method: RequestMethod.ALL },
+                { path: '/user', method: RequestMethod.ALL },
             )
     }
 }

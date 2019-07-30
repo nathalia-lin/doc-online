@@ -7,16 +7,12 @@ import Site from '../models/site.model';
 @Injectable()
 export class SiteRuleService {
 
-  constructor(
-    @Inject('SiteRuleRepository') private readonly siteRuleRepository: typeof SiteRule
-  ) { }
-
   async create(createSiteRuleDto: CreateSiteRuleDto): Promise<SiteRule> {
-    return await this.siteRuleRepository.create<SiteRule>(createSiteRuleDto);;
+    return await SiteRule.create<SiteRule>(createSiteRuleDto);;
   }
 
   async find(where: any) {
-    const siteRules = await this.siteRuleRepository.findAll({
+    const siteRules = await SiteRule.findAll({
       where: where, include: [Site]
     });
     return siteRules;
@@ -26,18 +22,18 @@ export class SiteRuleService {
     if (typeof where === 'string') {
       where = { 'id': where }
     }
-    const siteRule = await this.siteRuleRepository.findOne({
+    const siteRule = await SiteRule.findOne({
       where: where, include: [Site]
     });
     return siteRule;
   }
 
   async updateOne(id: number, body: any) {
-    return await this.siteRuleRepository.update(body, { where: { 'id': id } });
+    return await SiteRule.update(body, { where: { 'id': id } });
   }
 
   async deleteOne(siteRuleId: number) {
-    const deletedSiteRule = await this.siteRuleRepository.destroy({
+    const deletedSiteRule = await SiteRule.destroy({
       where: { 'id': siteRuleId }
     });
     return await deletedSiteRule;

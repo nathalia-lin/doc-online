@@ -1825,6 +1825,66 @@
         "version": "3fc2a338f78db7f9a154421ff69b0ddc374141625e5fedc5f5ea8048648b0a36",
         "signature": "3fc2a338f78db7f9a154421ff69b0ddc374141625e5fedc5f5ea8048648b0a36"
       },
+      "c:/wtt-/doconline/src/models/siterule.model.ts": {
+        "version": "dfbdaff4207f700e9a95a7bc47667847405eb52c5473bd86f8f13ea0ba0d4262",
+        "signature": "bf52295e38e2712c63f38a9b87e61e3dce4d9dd3ca3db24764b2c7e3098964a3"
+      },
+      "c:/wtt-/doconline/src/models/sitenotification.model.ts": {
+        "version": "75f98b4b4bceed98568b36e706dc4b67381d79db87c00128aed342edd273c6c7",
+        "signature": "36f0d49f696572bb21aa48972b343472a126a511e5e966fd1d2da8d86ada730e"
+      },
+      "c:/wtt-/doconline/src/models/usersite.model.ts": {
+        "version": "039896b94c5dfeb312f2c07b505d15923bbbf56b8711c4d0bef41d3f36d75461",
+        "signature": "1d32cd7d5af261e5333efe09613e9f2b0a0fba7cc0bd52ed55d701cc5198be73"
+      },
+      "c:/wtt-/doconline/src/models/userinsurance.model.ts": {
+        "version": "db0a2007c4f5e220e674891a54d33d6b9cad02e22afd24ebed252eb73a29fbb6",
+        "signature": "5b387e6d0f9c7a54aa3034b4bb18ca6be99ec57f332f5473080bcdbc6de93d73"
+      },
+      "c:/wtt-/doconline/src/models/plan.model.ts": {
+        "version": "0d2d16db2bacb565b6770104c5c246f581f07ea43b0299b817324da14a461c18",
+        "signature": "dd467789d00e3c59d73c303765661c86eed98bb491c579a59586f20714f2bc9c"
+      },
+      "c:/wtt-/doconline/src/models/insurance.model.ts": {
+        "version": "4dab88bcdfff1d0eef390afc7ac8f72ecc4a622478ca14f60ce5320bb1cdc442",
+        "signature": "0671782340e3ab23519f00d38518df7cb56e2c32be0e303c3eb164dda1e2d891"
+      },
+      "c:/wtt-/doconline/src/models/site.model.ts": {
+        "version": "d79616b5c65d577f869b891d31f6deb308124f480071b3350b1c06173bba4a96",
+        "signature": "ebf1d11d0a673fdb54696cc6005cd7daa1dee83b3ef8557853e320c1c0a8d0e7"
+      },
+      "c:/wtt-/doconline/src/models/doctor.model.ts": {
+        "version": "5a1353b0ad5a7e21cfa4c22340f21244c53203ce9f2b0bcf66d2a05d414687cd",
+        "signature": "5d5ac9448bd789bba088cbc90690e9df8097da1dff19c7102b394b9c19c1135c"
+      },
+      "c:/wtt-/doconline/src/models/logexam.model.ts": {
+        "version": "95ceb3bb7347ae56fc5cb19cb7f6dde730ece32fd5afa4822728c5ffd54fd9cf",
+        "signature": "72dbb1bc8e32039bdd56676081b712748dee0bd6d09d3b24fa6867a54c58612e"
+      },
+      "c:/wtt-/doconline/src/models/views.model.ts": {
+        "version": "ee5baf101c79893d422a5376c7e0ad4d0ac82fb47336ad10ce8f0780e030d5eb",
+        "signature": "6556191172a26851717663de3b41af1f9c5145c27e8ec9d39bd7acc23e208cc9"
+      },
+      "c:/wtt-/doconline/src/models/exam.model.ts": {
+        "version": "5e35db246d7faaeed21e961792a26a9863e8b46b07046cbf41760327ef1c04fc",
+        "signature": "9191f0d243693063eb7a10d827e9dd114307a3ff2b598a22661c2ae8b385e524"
+      },
+      "c:/wtt-/doconline/src/models/patient.model.ts": {
+        "version": "b17e2bfb36591357bdfa68f6ad9fce357d226504e8a1af8e8931da167bf471e1",
+        "signature": "7b88dcb492f94248b35c8cfb802bb5c2e803ffe80b5cddd39d8161f0c699e954"
+      },
+      "c:/wtt-/doconline/src/models/profile.model.ts": {
+        "version": "54ebd7224ad5cb7ea1c05aa705bc9225024ce0071bcf50251378ec61c8131b84",
+        "signature": "1a8c573bbded3cfff8d928ce2470776df86f7cef9f131bef3d9562eeeb44b125"
+      },
+      "c:/wtt-/doconline/src/models/login.model.ts": {
+        "version": "1a7f175155a53bbe556877ce46c542ece7e0cdfb0cee3a6bbf93286b8aed5070",
+        "signature": "00de51f28cf39317ff83536d53b668f0f87e073a2ff709125c13fe6ce5efc16f"
+      },
+      "c:/wtt-/doconline/src/models/user.model.ts": {
+        "version": "f952ce5fffb092762765cb641999662514328e4627a6ee70a9718104cd9be385",
+        "signature": "fa84680c5317a2bdd6db8b63fbe781935d319f0137ee09745960e2cd5f2b986d"
+      },
       "c:/wtt-/doconline/node_modules/class-validator/validation/validationerror.d.ts": {
         "version": "cf03a9730c9f35f0427dceb1e5441d60cc416cc945dcf72f89bc1280eec1f798",
         "signature": "cf03a9730c9f35f0427dceb1e5441d60cc416cc945dcf72f89bc1280eec1f798"
@@ -1893,158 +1953,6 @@
         "version": "9ab4ca668d02db34965308fd7052820741ef0c260bdf9ac15c3c841dcbe47de6",
         "signature": "9ab4ca668d02db34965308fd7052820741ef0c260bdf9ac15c3c841dcbe47de6"
       },
-      "c:/wtt-/doconline/src/dto/site.dto.ts": {
-        "version": "836df39b55b04d6882cef8069d4e532bbceef7640bb185d1bdb1d90e2e4d7e8f",
-        "signature": "e2c7e94c770c608d7341cc1e94081479200c94f552a9472098693a375d88f07d"
-      },
-      "c:/wtt-/doconline/src/models/siterule.model.ts": {
-        "version": "dfbdaff4207f700e9a95a7bc47667847405eb52c5473bd86f8f13ea0ba0d4262",
-        "signature": "bf52295e38e2712c63f38a9b87e61e3dce4d9dd3ca3db24764b2c7e3098964a3"
-      },
-      "c:/wtt-/doconline/src/models/sitenotification.model.ts": {
-        "version": "75f98b4b4bceed98568b36e706dc4b67381d79db87c00128aed342edd273c6c7",
-        "signature": "36f0d49f696572bb21aa48972b343472a126a511e5e966fd1d2da8d86ada730e"
-      },
-      "c:/wtt-/doconline/src/models/doctor.model.ts": {
-        "version": "5a1353b0ad5a7e21cfa4c22340f21244c53203ce9f2b0bcf66d2a05d414687cd",
-        "signature": "5d5ac9448bd789bba088cbc90690e9df8097da1dff19c7102b394b9c19c1135c"
-      },
-      "c:/wtt-/doconline/src/models/userinsurance.model.ts": {
-        "version": "db0a2007c4f5e220e674891a54d33d6b9cad02e22afd24ebed252eb73a29fbb6",
-        "signature": "5b387e6d0f9c7a54aa3034b4bb18ca6be99ec57f332f5473080bcdbc6de93d73"
-      },
-      "c:/wtt-/doconline/src/models/plan.model.ts": {
-        "version": "0d2d16db2bacb565b6770104c5c246f581f07ea43b0299b817324da14a461c18",
-        "signature": "dd467789d00e3c59d73c303765661c86eed98bb491c579a59586f20714f2bc9c"
-      },
-      "c:/wtt-/doconline/src/models/insurance.model.ts": {
-        "version": "4dab88bcdfff1d0eef390afc7ac8f72ecc4a622478ca14f60ce5320bb1cdc442",
-        "signature": "0671782340e3ab23519f00d38518df7cb56e2c32be0e303c3eb164dda1e2d891"
-      },
-      "c:/wtt-/doconline/src/models/logexam.model.ts": {
-        "version": "95ceb3bb7347ae56fc5cb19cb7f6dde730ece32fd5afa4822728c5ffd54fd9cf",
-        "signature": "72dbb1bc8e32039bdd56676081b712748dee0bd6d09d3b24fa6867a54c58612e"
-      },
-      "c:/wtt-/doconline/src/models/views.model.ts": {
-        "version": "ee5baf101c79893d422a5376c7e0ad4d0ac82fb47336ad10ce8f0780e030d5eb",
-        "signature": "6556191172a26851717663de3b41af1f9c5145c27e8ec9d39bd7acc23e208cc9"
-      },
-      "c:/wtt-/doconline/src/models/exam.model.ts": {
-        "version": "5e35db246d7faaeed21e961792a26a9863e8b46b07046cbf41760327ef1c04fc",
-        "signature": "9191f0d243693063eb7a10d827e9dd114307a3ff2b598a22661c2ae8b385e524"
-      },
-      "c:/wtt-/doconline/src/models/patient.model.ts": {
-        "version": "b17e2bfb36591357bdfa68f6ad9fce357d226504e8a1af8e8931da167bf471e1",
-        "signature": "7b88dcb492f94248b35c8cfb802bb5c2e803ffe80b5cddd39d8161f0c699e954"
-      },
-      "c:/wtt-/doconline/src/models/profile.model.ts": {
-        "version": "54ebd7224ad5cb7ea1c05aa705bc9225024ce0071bcf50251378ec61c8131b84",
-        "signature": "1a8c573bbded3cfff8d928ce2470776df86f7cef9f131bef3d9562eeeb44b125"
-      },
-      "c:/wtt-/doconline/src/models/login.model.ts": {
-        "version": "1a7f175155a53bbe556877ce46c542ece7e0cdfb0cee3a6bbf93286b8aed5070",
-        "signature": "00de51f28cf39317ff83536d53b668f0f87e073a2ff709125c13fe6ce5efc16f"
-      },
-      "c:/wtt-/doconline/src/models/usersite.model.ts": {
-        "version": "039896b94c5dfeb312f2c07b505d15923bbbf56b8711c4d0bef41d3f36d75461",
-        "signature": "1d32cd7d5af261e5333efe09613e9f2b0a0fba7cc0bd52ed55d701cc5198be73"
-      },
-      "c:/wtt-/doconline/src/models/user.model.ts": {
-        "version": "f952ce5fffb092762765cb641999662514328e4627a6ee70a9718104cd9be385",
-        "signature": "fa84680c5317a2bdd6db8b63fbe781935d319f0137ee09745960e2cd5f2b986d"
-      },
-      "c:/wtt-/doconline/src/models/site.model.ts": {
-        "version": "d79616b5c65d577f869b891d31f6deb308124f480071b3350b1c06173bba4a96",
-        "signature": "ebf1d11d0a673fdb54696cc6005cd7daa1dee83b3ef8557853e320c1c0a8d0e7"
-      },
-      "c:/wtt-/doconline/src/service/site.service.ts": {
-        "version": "b20b598af109a64fa0e6002382f52741d4b5e8f598b288a16ab6aeed8440200f",
-        "signature": "ac5f32beec58b258a4afa03e6e142f0a5a40146a239f329bf532a02b9d2b0b21"
-      },
-      "c:/wtt-/doconline/src/dto/profile.dto.ts": {
-        "version": "2c42b2217755e742c6cbd0889064126107bd23710c1f81a8af6a761d67075ea8",
-        "signature": "1467aa48da2e890740d699c8dd602c92c346b3e4920ee104d5d94a7c5df17e1b"
-      },
-      "c:/wtt-/doconline/src/service/profile.service.ts": {
-        "version": "56f51128d09d4a59e0ee6d5646985987febdc7679a649d55a65c9da53dbec559",
-        "signature": "7e851b8973f938da2de7de5f707d806f681bedde1f3e6f07aba1f79dcb4d1e98"
-      },
-      "c:/wtt-/doconline/src/dto/patient.dto.ts": {
-        "version": "3546ba51fcc0c3ac29e14e559dc370e741c08dc518714cc2681681e7fc0d93b6",
-        "signature": "8fb4baa228e9af4323e4c2b0f19d667bdb8dd70390f91826e076f03ca4067343"
-      },
-      "c:/wtt-/doconline/src/service/patient.service.ts": {
-        "version": "34d7a9accf9fc8b40eede07e2d3c1dd1c912ea680230e352523b3c1db028389f",
-        "signature": "f5d209132d0ebf3e2750c98a9633253c104635401b77464bbad52c0eb9598ec8"
-      },
-      "c:/wtt-/doconline/src/dto/doctor.dto.ts": {
-        "version": "f6d5d8e96d0ab8ee1be7f092de11dfae51e7228f451beb4d37679457fbaae54a",
-        "signature": "a558065fac263565eb0d4c9c21dd1c1e5d6163ad78f71f32dcca7931df36be97"
-      },
-      "c:/wtt-/doconline/src/service/doctor.service.ts": {
-        "version": "a8a6164ce3f9e039f3dd0399b81fec5796d99dcf0de538910007bfc4203523e9",
-        "signature": "5875cb093a5802c75e4997cddc5028639811c0b6862dc0b5628340e3c90d0397"
-      },
-      "c:/wtt-/doconline/src/dto/user.dto.ts": {
-        "version": "a521b533118ab981f99d4d198a24ac0409ba7703fa9e7f92ecf2df5cca0f6fe1",
-        "signature": "f8727c26c1afe98a4214dea87579e1ab15b3fd67863521669431bd3525cfd3cb"
-      },
-      "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts": {
-        "version": "daef0ff8d0878f91f68abfdb51e82a5df5b5bc9fc665202e0bd45ddefe640fa2",
-        "signature": "daef0ff8d0878f91f68abfdb51e82a5df5b5bc9fc665202e0bd45ddefe640fa2"
-      },
-      "c:/wtt-/doconline/src/dto/login.dto.ts": {
-        "version": "284a2091048484cb44760c48d323f0d539f8522e1340de42a8dd75362f6bfd5c",
-        "signature": "d9ed68bcbab212493ba2bbb5255eaed665d65d976b2b2763b34c8b28724901ee"
-      },
-      "c:/wtt-/doconline/src/service/login.service.ts": {
-        "version": "63d97734acda79a6c7280c810fd2a76fa0d6dc8e31beff4d0f069b5a33232358",
-        "signature": "dcbe918f78c278d12900929530f62044f6918c7235fe094015a3518af1d0f39a"
-      },
-      "c:/wtt-/doconline/src/dto/usersite.dto.ts": {
-        "version": "e7d8e03ac13cbec5485f25ba7ce26f18c39ffd8e2393746ce64db5f52d1e10ae",
-        "signature": "c39d9be81d4e5e5528e90e0d5729e076cfade6264ceeb7ca5ef39646b6fe4e74"
-      },
-      "c:/wtt-/doconline/src/service/usersite.service.ts": {
-        "version": "0559a64b736280c58ab65ac8602f3761ae7ba696fd0dbd002267bacc2b3041d3",
-        "signature": "0bba26ba81b1550992c491f45dda7a40bf4f47d569bda1ff15a68d9631591b45"
-      },
-      "c:/wtt-/doconline/src/service/user.service.ts": {
-        "version": "377febd6768175d09efb4565c52446119195171a8dc646728893e2375bccd3ab",
-        "signature": "9fed7b93ba6726cb3a12e5d30a591c762c1ed7138050dfcc6baf146d8c9d718d"
-      },
-      "c:/wtt-/doconline/src/dto/userinsurance.dto.ts": {
-        "version": "0b72498cb69d509a268e19a592ea676392830b2a0f044ced37d01909c4e108d2",
-        "signature": "0309072c64cfff5ab73045d01ef8c623dddd5c1642b95c03ce754e6078f43719"
-      },
-      "c:/wtt-/doconline/src/service/userinsurance.service.ts": {
-        "version": "0f1fa1827e61699825e405343b5e6c4572607d7f81d38033eca9c9f4a3917ad4",
-        "signature": "a923864cfaa8f6ff2f419e31083afb80aa7397cf51fef152359b981c1122ab1b"
-      },
-      "c:/wtt-/doconline/src/dto/insurance.dto.ts": {
-        "version": "967a80b4d8a946ea34899645468d053883a75129bf92fa198cff44845c9dafcb",
-        "signature": "858e5ac695ab614b7769cdf487c1d871519aae4fff9054a805881b5ece28b4b2"
-      },
-      "c:/wtt-/doconline/src/service/insurance.service.ts": {
-        "version": "c36d538785add9a62b021c93a69a71e4ff57e9a584b4ea6d988e9ed22a890966",
-        "signature": "c0e1eedb99cc396a7bb44659277d00b24ea78c41384f59ca0c9ddf3d140e5c62"
-      },
-      "c:/wtt-/doconline/src/dto/plan.dto.ts": {
-        "version": "ea2548691d4b70b8510c9e52025a32bc66e401353a460a5fa9221cbd00ec89fc",
-        "signature": "307cb17696e4689cacb54dec5ecafd81807210cf2feffbda9e8b10d8d2c4b8f4"
-      },
-      "c:/wtt-/doconline/src/service/plan.service.ts": {
-        "version": "6aa879e8c1db936e7e08781c0e37d31019803bf90e6a14429689c9b8a7bbd581",
-        "signature": "8d78f4e59cc20e6e140b436697a03592197f9400ba5d6400daee74fa7cd7b6d6"
-      },
-      "c:/wtt-/doconline/src/dto/logexam.dto.ts": {
-        "version": "03e7328f4b524b85e24c76e5addab82e5c27f0f9076f2f4539f791b17c7f610b",
-        "signature": "c1cb0a4b1df53df15f982a34eaccd17a1c4dfb2f46fa906ac4892790be3ef2e8"
-      },
-      "c:/wtt-/doconline/src/service/logexam.service.ts": {
-        "version": "159c52d7e0c21135064a0cc93511974476759a566da219157c5124cfdc36888e",
-        "signature": "e7834c5bd3fdcdf9b62d45bcea3a7a2b23c24c3f1a290e7e46a10948d9a08319"
-      },
       "c:/wtt-/doconline/src/dto/exam.dto.ts": {
         "version": "16ca4503abc1d2e3f4f325a50d16617070fa8f27f06d35946211cb57ab1556ba",
         "signature": "fbf63b896f0fa6f01d42226ede89cd2d83deb2da42d4ab3f809bf7c2d52123bb"
@@ -2053,216 +1961,60 @@
         "version": "3279da96ab6618bfdcb0a77f61d082ddc08af0e95f2d5ad8d8509235144a2340",
         "signature": "a0e6c1eedd342c4fd91bbda4b57242b8a5280d94df87eb2bc99b780d7ecec433"
       },
+      "c:/wtt-/doconline/src/dto/doctor.dto.ts": {
+        "version": "f6d5d8e96d0ab8ee1be7f092de11dfae51e7228f451beb4d37679457fbaae54a",
+        "signature": "a558065fac263565eb0d4c9c21dd1c1e5d6163ad78f71f32dcca7931df36be97"
+      },
+      "c:/wtt-/doconline/src/dto/insurance.dto.ts": {
+        "version": "967a80b4d8a946ea34899645468d053883a75129bf92fa198cff44845c9dafcb",
+        "signature": "858e5ac695ab614b7769cdf487c1d871519aae4fff9054a805881b5ece28b4b2"
+      },
+      "c:/wtt-/doconline/src/dto/logexam.dto.ts": {
+        "version": "03e7328f4b524b85e24c76e5addab82e5c27f0f9076f2f4539f791b17c7f610b",
+        "signature": "c1cb0a4b1df53df15f982a34eaccd17a1c4dfb2f46fa906ac4892790be3ef2e8"
+      },
+      "c:/wtt-/doconline/src/dto/login.dto.ts": {
+        "version": "284a2091048484cb44760c48d323f0d539f8522e1340de42a8dd75362f6bfd5c",
+        "signature": "d9ed68bcbab212493ba2bbb5255eaed665d65d976b2b2763b34c8b28724901ee"
+      },
+      "c:/wtt-/doconline/src/dto/patient.dto.ts": {
+        "version": "3546ba51fcc0c3ac29e14e559dc370e741c08dc518714cc2681681e7fc0d93b6",
+        "signature": "8fb4baa228e9af4323e4c2b0f19d667bdb8dd70390f91826e076f03ca4067343"
+      },
+      "c:/wtt-/doconline/src/dto/plan.dto.ts": {
+        "version": "ea2548691d4b70b8510c9e52025a32bc66e401353a460a5fa9221cbd00ec89fc",
+        "signature": "307cb17696e4689cacb54dec5ecafd81807210cf2feffbda9e8b10d8d2c4b8f4"
+      },
+      "c:/wtt-/doconline/src/dto/profile.dto.ts": {
+        "version": "2c42b2217755e742c6cbd0889064126107bd23710c1f81a8af6a761d67075ea8",
+        "signature": "1467aa48da2e890740d699c8dd602c92c346b3e4920ee104d5d94a7c5df17e1b"
+      },
+      "c:/wtt-/doconline/src/dto/user.dto.ts": {
+        "version": "a521b533118ab981f99d4d198a24ac0409ba7703fa9e7f92ecf2df5cca0f6fe1",
+        "signature": "f8727c26c1afe98a4214dea87579e1ab15b3fd67863521669431bd3525cfd3cb"
+      },
+      "c:/wtt-/doconline/src/dto/userinsurance.dto.ts": {
+        "version": "0b72498cb69d509a268e19a592ea676392830b2a0f044ced37d01909c4e108d2",
+        "signature": "0309072c64cfff5ab73045d01ef8c623dddd5c1642b95c03ce754e6078f43719"
+      },
+      "c:/wtt-/doconline/src/dto/usersite.dto.ts": {
+        "version": "e7d8e03ac13cbec5485f25ba7ce26f18c39ffd8e2393746ce64db5f52d1e10ae",
+        "signature": "c39d9be81d4e5e5528e90e0d5729e076cfade6264ceeb7ca5ef39646b6fe4e74"
+      },
+      "c:/wtt-/doconline/src/service/create.service.ts": {
+        "version": "abf802f32b90c1c86ecf43d4e1add04a3c91117d4231380fa21740100c895620",
+        "signature": "f4b8d04d543452d29dc275fd916f877c1ff5837e553ded6988269c8b347ba712"
+      },
       "c:/wtt-/doconline/src/service/exam.service.ts": {
-        "version": "c33c2099e91c55d01a94884230c79f4a7851e23ebb6d78af8e609e9f3123ff58",
-        "signature": "3258f81d06dfbf20674b96cf70f607d7adfd015c3b2cd0c6d075d46e675b99ac"
+        "version": "1c281d3b3801faa475b34f34bae91af22e65de1ae85798c1258d794f0d5fa54c",
+        "signature": "bcd8c29ac604789e001de6dd8a7af3f592a2fe33ae10aa070015add86602650b"
       },
       "c:/wtt-/doconline/src/controller/exam.controller.ts": {
         "version": "c06906c14bd6ee4c77f441f40a1bbe4abea5994d172db3c8166ecf7770ed2663",
         "signature": "6adcd5a6465dab27138dcbaaebd7689b4beece10d786c85e8675613e710335c0"
       },
-      "c:/wtt-/doconline/src/provider/exam.provider.ts": {
-        "version": "ed191ebc806e9ecb8b8a1a9f549a861914b3932452b2b0e58ff2e21841b5edb7",
-        "signature": "cf72ed38621545ab32a897e444f5953b81cddf68892b1de56ecf621e43851237"
-      },
-      "c:/wtt-/doconline/src/controller/site.controller.ts": {
-        "version": "f2a778189fc234c8f13a34bc844896036c60e035c93a16cb7c92318cd7735749",
-        "signature": "deaac51d8acc62bf7008274ee5789bb1eca3ce6a93b1ba0f2b33e65447269b49"
-      },
-      "c:/wtt-/doconline/src/provider/site.provider.ts": {
-        "version": "cec4ac8162224ca48a1acc243186423b4feb3a6afa15f13759847c636699eb7f",
-        "signature": "ac0230823d8c634ab963767530765840a182fc9aa08c31e26266c657b0139133"
-      },
-      "c:/wtt-/doconline/src/module/site.module.ts": {
-        "version": "891b20aa9723addc67d0833d51138fbfbeacce8d151accdddba97edeaa6c5e89",
-        "signature": "0b01b9891bcfcdf818f1fae2d1b55a38198111a69abd8846f9ab0621fc860a37"
-      },
-      "c:/wtt-/doconline/src/dto/siterule.dto.ts": {
-        "version": "68a6201f037e42114db18257f947a141955f1f6c87dc4328131520e6e7c76751",
-        "signature": "77ae88ee685edd2c13af9c51290772d39420dfac8ee645553521361a5d178ca0"
-      },
-      "c:/wtt-/doconline/src/service/siterule.service.ts": {
-        "version": "615ede1a99728577e3c3c2a3197ded1cca6eff331daac18bcaa25f4d77c9b5ac",
-        "signature": "8f587b735d1537af05fdf2c068cddd63c1cd7ec47106734f6810bd19b70c78e0"
-      },
-      "c:/wtt-/doconline/src/controller/siterule.controller.ts": {
-        "version": "be5889e006903b550561ec1c9d27342132b2d7297c8de36a069aa352965ef825",
-        "signature": "113b3b167e8cd2a8c130105a56c19b81b531b8202c22d37c1b017405fb5666f9"
-      },
-      "c:/wtt-/doconline/src/provider/siterule.provider.ts": {
-        "version": "b68c55990d95d76d36392f6b41d77e3ea167152cdfd8b82621414dfb099a4903",
-        "signature": "e758902f01725d4096eb5de30c2fe16d5d30e89dced57c46bd7c7852db1607b4"
-      },
-      "c:/wtt-/doconline/src/module/siterule.module.ts": {
-        "version": "76cf9d13484035190d960097fb049281a4391212c9357c36253d688a7c02c009",
-        "signature": "60e299edcd609cb7aa94c5f9caedf7d69a2aed4c833a9970a5b42d2f9318ec30"
-      },
-      "c:/wtt-/doconline/src/dto/sitenotification.dto.ts": {
-        "version": "c928c7044d2c46e4972768e05b77479691a388e437e8cbac0a94f12dff23d4b9",
-        "signature": "1a747a3268873d91e893730a41af93103866fcdd39afd29c2a971cd60942ce7b"
-      },
-      "c:/wtt-/doconline/src/service/sitenotification.service.ts": {
-        "version": "600d9a88693656ea11a144aa87bae14411278a62a0612ff64fffae689b3790da",
-        "signature": "5a75b01dee37d319738805f75b7eeb7e8eb9834a4a1353acd956bd7a4b959921"
-      },
-      "c:/wtt-/doconline/src/controller/sitenotification.controller.ts": {
-        "version": "e4be40b1ce00b7973a933f5c35390520876c408d10a760d093a04b4b9615e5c7",
-        "signature": "e3791899aa8e49d8f77865f6536c4bea284aa384a440be206860e3f7edcfaf09"
-      },
-      "c:/wtt-/doconline/src/provider/sitenotification.provider.ts": {
-        "version": "306d577952ff023714e6e04599a68626de7333606d3fa0d5826eac3cb775a4cb",
-        "signature": "fc25273b011efbb79a4b48b3497bc7369c8c18783eb7b26f5c04fbfacd09613f"
-      },
-      "c:/wtt-/doconline/src/module/sitenotification.module.ts": {
-        "version": "cac4070d0e54ad48482b1725959497167910bc088e4a6cbc4186ddb1b987ead4",
-        "signature": "aa79b9a80d2100b855429a4307c23af5fcd3b91ac9fe7e10a7b5df8f0d285b00"
-      },
-      "c:/wtt-/doconline/src/controller/profile.controllers.ts": {
-        "version": "9fd627279e0865b0b693882d731e237908ba4cec561fce64ba6c8b984d40ab13",
-        "signature": "2be9f86b1cb20f89b3acbec8de0a4ed60fa079d2dfd1af693300498c44c23ff5"
-      },
-      "c:/wtt-/doconline/src/provider/profile.provider.ts": {
-        "version": "f43e336c53307d5927d7a09198ff1f50929402e32e8bed6b6450937037777f3f",
-        "signature": "5351594f6c87fcddec71d69d52ef8a816f5d8d41ee4816c855824c0ab9ecb201"
-      },
-      "c:/wtt-/doconline/src/module/profile.module.ts": {
-        "version": "9667e5e32c0df3d7d05a5005eccf5e413afa80963c8cb87e1cfedd6cf1dcfcf7",
-        "signature": "b1145de5eb088c161f02e1857c40c57fe9d72ea9bab34a7e439e204f10682527"
-      },
-      "c:/wtt-/doconline/src/controller/user.controller.ts": {
-        "version": "cc05e4b8f5abf2fa63a64985ec483e9745323b53ec364b12cc805b3fc0199ab7",
-        "signature": "9b97c5a4dd0991861871f17eafb69180db04fb81a99efa4e3eb30b557cb93df7"
-      },
-      "c:/wtt-/doconline/src/provider/user.provider.ts": {
-        "version": "391098981d46ec541b28fc98e8dae1c5fe161118649a64ff7591740a82dcf7fc",
-        "signature": "69fa9209736dbe8b4df03e1aa701e5d558b0f8b3f6b6a1ad0a5a602dc0bb077c"
-      },
-      "c:/wtt-/doconline/src/module/user.module.ts": {
-        "version": "85723dc0ffe5df2692aae2a4857b9a1f77bfef19772212e4335ddccf28d28bc6",
-        "signature": "9e36626cb39f17790cf2403e2e54d8a74542da63e2a49aba7061133a1af26dcd"
-      },
-      "c:/wtt-/doconline/src/controller/login.controller.ts": {
-        "version": "ebbb0f60d2ab53d77cede7575a3923199f4be25e549a9827c115d6dd423289e5",
-        "signature": "272b6601efbc04911fba0b2c005dd0d87733016263f0c8383c8655ba6d30a49a"
-      },
-      "c:/wtt-/doconline/src/provider/login.provider.ts": {
-        "version": "aee649da1b361d3227c1a527812ba89bb4d58373cbc882154b369046be6e92e9",
-        "signature": "1b3bddba603d8e43f0f8dfd0e47eff8978b36073f9920a8e3b10d792d7c48eaa"
-      },
-      "c:/wtt-/doconline/src/shared/middlewares/auth.middleware.ts": {
-        "version": "4febbfe8d1e084bf0966c77247444252367dc026e066a28b82ec99ebc2735912",
-        "signature": "5aa194ed6a29ecdff3b2d55e9148dc085485b8a9ed76f5fe564dde474a0e6d04"
-      },
-      "c:/wtt-/doconline/src/module/login.module.ts": {
-        "version": "5386f0b14115a4c0eac2833ecb31ca30a62afd5b342125b895939956c13ba892",
-        "signature": "2af82d050b6d042dd860e7e6391b0512ea5eef51d8297d9b99ba0487f204ce98"
-      },
-      "c:/wtt-/doconline/src/controller/patient.controller.ts": {
-        "version": "f81e261b0444bcaa9198a989b76aadb854a86949fb01295699aec1005f4ba306",
-        "signature": "7573e9e76f44b9f0551b111c47dee457b736963fe8a06314dcc9bd874c4c418e"
-      },
-      "c:/wtt-/doconline/src/provider/patient.provider.ts": {
-        "version": "ab6a29a2372ce96618409d5ed8013e8ba1df64200f4772db9755acb3f301b776",
-        "signature": "e7fda53f4daff132c5fb0d2bc0ec75591c23c48f564d9091c6d16902dca0fcbe"
-      },
-      "c:/wtt-/doconline/src/module/patient.module.ts": {
-        "version": "1563b31bea46310db5b8c7716fa21ab8ac2396703e69f9c2a33c71c0108c8549",
-        "signature": "399f0bc4cd54778f9f07555e2894c81c1c1953e823bd2310fd3930c9dbfde8be"
-      },
-      "c:/wtt-/doconline/src/controller/doctor.controller.ts": {
-        "version": "6f027385324875b9d041a914a160fa147c1069100a79153ea522ed04ee237429",
-        "signature": "eb4fa6dd6a030614bf32ca77135c5aae1dd163594633a756aa03bf2beacbb3ff"
-      },
-      "c:/wtt-/doconline/src/provider/doctor.provider.ts": {
-        "version": "329003c259b43314f4638038bf9548252390b909f7400138b5174e59f2b4c0ac",
-        "signature": "d7450135e7d4c1b8f2bd739b3f763ebb2705d1af1e46ddd34f3c670097fc47e2"
-      },
-      "c:/wtt-/doconline/src/module/doctor.module.ts": {
-        "version": "7c343a0202c6ef8c554429a286c29b39812a9a9786dd9b94cacd1769bc53f451",
-        "signature": "7612bea581089b803db9fe53fcefe26f5638af9754c4af75fd5a9ea56ad348c9"
-      },
-      "c:/wtt-/doconline/src/controller/usersite.controller.ts": {
-        "version": "cd64821735184d4c7db946eada735b0c41c2ec10dae65f1479f724d23bde097c",
-        "signature": "2b38307516250aaf523ed03cd14e82755547c729951b0fcec1ebc44222749d74"
-      },
-      "c:/wtt-/doconline/src/provider/usersite.provider.ts": {
-        "version": "3c93648520158996b353bf7062f13c6f5b224130716a0d711f2cd667a57694e0",
-        "signature": "444c81645f899c5359ba69cacb62505c0fbb83bd8df4a2553af3311584e78ed1"
-      },
-      "c:/wtt-/doconline/src/module/usersite.module.ts": {
-        "version": "f0858a6eb92e311f1c5a7cb84f243c31adbce983cf32b6adcc3c660859e3b427",
-        "signature": "151e344b4be09204a80f4b4b308ee0ccafb8a0d556081eae5d7e46c1b9fa955e"
-      },
-      "c:/wtt-/doconline/src/dto/views.dto.ts": {
-        "version": "cb4787f5a866beda2e682282fde066370dcbf170c3b5d9d4bc4885bad50aaee0",
-        "signature": "b82302d7568038abaa70bf30bb399fdd83f08923b31e62318eb0ae3874910b1d"
-      },
-      "c:/wtt-/doconline/src/service/views.service.ts": {
-        "version": "6ab94756750ef3236f2809f14a5e5183c421cd080259c97abfee17a6fb4a2bde",
-        "signature": "4634a8a5e1f2b2e8e7efac1aaf4c66592f38811f62e561fd366783ebfd35bdef"
-      },
-      "c:/wtt-/doconline/src/controller/views.controller.ts": {
-        "version": "16ec61d6f26906ba8f18c536886c480d420e0f0516ea6819aef4657a97daf793",
-        "signature": "7c0d6d3e5ad7412d0400bc85be64a3bdc82cb44d4df0549c31c547e7464404df"
-      },
-      "c:/wtt-/doconline/src/provider/views.provider.ts": {
-        "version": "50c782f6e0133689e46f3da9afdd72622337dce72b268017967df865ec9c985c",
-        "signature": "8a74f5f0a67fb8ab880e084f2f05f9a8bdf0fdfee82651ca454b9d663c531c33"
-      },
-      "c:/wtt-/doconline/src/module/views.module.ts": {
-        "version": "ed88ea2331f6311f02b5d6181cf37857e6b02c9e097f40091a18fb140664797b",
-        "signature": "fff8a04d70833548725e04f9eee014ff77d0534594d656c156eb10333e266bd3"
-      },
-      "c:/wtt-/doconline/src/controller/logexam.controller.ts": {
-        "version": "3cd05b4f38d030c1ea52218e0c53a901ea60938fa55fd2b4a7e2e7ba8a7a881d",
-        "signature": "cde1a3da840dec9334d773fbcbf7255eb14ac625585064f69b58ab587fdbf8ac"
-      },
-      "c:/wtt-/doconline/src/provider/logexam.provider.ts": {
-        "version": "89cfb51a03ecd52c1b8e1c11d89e79d98e3ff66a8b600cc681fb1219291c22a9",
-        "signature": "ff5a6621e384e70f1f697b4051b5d575a69c4719aab72b5a028639bbb8e8ccab"
-      },
-      "c:/wtt-/doconline/src/module/logexam.module.ts": {
-        "version": "4ba2320f369254192bd2daeab728f4972b28b994a1847d4def4be7682f0a4bd5",
-        "signature": "49e72bbf49cffe6bb9b4e0eaea85ffa5caec39208c379d9c3d20a36692a0446b"
-      },
-      "c:/wtt-/doconline/src/controller/insurance.controller.ts": {
-        "version": "e034f230c66a14b65955eafff984a479ecc64eba13c680d7327e92ffeb18e9c1",
-        "signature": "4832546bcecd28359d7e4400785b363d25a1e4bf862028bad9b8ced80ddc4108"
-      },
-      "c:/wtt-/doconline/src/provider/insurance.provider.ts": {
-        "version": "096f4be51a64564d39ff5b49d02b764d684f72b43d9053ab67ac494aeb6023c4",
-        "signature": "7c7ed86ef9c18869cdfc8479d1f1045c654165642dd959e913a667d796f799c4"
-      },
-      "c:/wtt-/doconline/src/module/insurance.module.ts": {
-        "version": "1859c6661623338129e5860002aa590d81872e8044fb831224fc194f476300b3",
-        "signature": "36cd1733f8d0de19d499327a67151d5b65f71b8fd0e890e29023261b9a2407fd"
-      },
-      "c:/wtt-/doconline/src/controller/userinsurance.controller.ts": {
-        "version": "8582a31823303552f6735269bd84601cb883c10bdff3c12b635612cdbaf8881d",
-        "signature": "7e4cef51f8fcf9c817deb7c9287689aca77f311fa89b243c20a41609842989a7"
-      },
-      "c:/wtt-/doconline/src/provider/userinsurance.provider.ts": {
-        "version": "86ff54d73fe2df467d80efda4112fffea66b4fb3bf160be0777c10ba93c5ca33",
-        "signature": "dc8ad9457b91a951a4cabe042b95eba849ec5fdf6bee071b52cc42cf4a337c20"
-      },
-      "c:/wtt-/doconline/src/module/userinsurance.module.ts": {
-        "version": "e306c4c61ab59b534794da90861d2cf4aabc1574a4160b3f47dc45295ff6b440",
-        "signature": "90117ae483a0cf09cea74e431378dee8db20a475741c400b444061059e2a0dbc"
-      },
-      "c:/wtt-/doconline/src/controller/plan.controller.ts": {
-        "version": "77ba1b1ad7cfbd1ef830cb8df74fe00c7a98648e999881eb44fab67c3f632708",
-        "signature": "a19fbb9f2dd2c65adc17f14f0579b19aba12026de61e57027dfb01693c614ec4"
-      },
-      "c:/wtt-/doconline/src/provider/plan.provider.ts": {
-        "version": "053d047c9a7206731d3db89ee2befc5c590d3ede2f1a40f23b1650ee7d7d7f07",
-        "signature": "5466c78053cac208bd51f1906c549ef866448727f9b6590330cb37e1b60c66bb"
-      },
-      "c:/wtt-/doconline/src/module/plan.module.ts": {
-        "version": "e781b154802373bd3d6c3d9093f7fe20ca88bb9078efac915736f54da4c4c49d",
-        "signature": "b0319c25af270e82ceaf4a69c4ab0c6013c61b23c80e054c66d17ca455b3e0a0"
-      },
       "c:/wtt-/doconline/src/module/exam.module.ts": {
-        "version": "817b1d1316109996851a22d42463ecce890c359683f8a28717a3e517e73657ee",
+        "version": "563865e24035a56669a5eea3f2be50355956defa6ef054055fd97174e56eee2b",
         "signature": "7aa86b96ab9d417f0f12b6f2972f00eb55a9739b2acdca599ab00602bafe8aa5"
       },
       "c:/wtt-/doconline/src/shared/filters/http-exception.filter.ts": {
@@ -2685,8 +2437,200 @@
         "version": "2e4ffbe27ed9b9c60190d39f34c254bde57e110cf892fcc42cd02fc97e01ade6",
         "signature": "100bdccc85a1266367c202fd62aa5aefc4b46fb4d638255ad8cde96dd24b8c1c"
       },
+      "c:/wtt-/doconline/src/dto/site.dto.ts": {
+        "version": "836df39b55b04d6882cef8069d4e532bbceef7640bb185d1bdb1d90e2e4d7e8f",
+        "signature": "e2c7e94c770c608d7341cc1e94081479200c94f552a9472098693a375d88f07d"
+      },
+      "c:/wtt-/doconline/src/service/site.service.ts": {
+        "version": "12ae8f843434ae9cd78e88dd57acba153609da31118ae9d590c6270eef7fa112",
+        "signature": "791afa8728685af5d6b11ae55f983582a769d08beaac8af82726ede0176e3e8c"
+      },
+      "c:/wtt-/doconline/src/controller/site.controller.ts": {
+        "version": "f2a778189fc234c8f13a34bc844896036c60e035c93a16cb7c92318cd7735749",
+        "signature": "deaac51d8acc62bf7008274ee5789bb1eca3ce6a93b1ba0f2b33e65447269b49"
+      },
+      "c:/wtt-/doconline/src/module/site.module.ts": {
+        "version": "1504f80416aa05bf8b0574ab1bd9428adc0a18de1c741331d8e900565589de80",
+        "signature": "0b01b9891bcfcdf818f1fae2d1b55a38198111a69abd8846f9ab0621fc860a37"
+      },
+      "c:/wtt-/doconline/src/dto/siterule.dto.ts": {
+        "version": "68a6201f037e42114db18257f947a141955f1f6c87dc4328131520e6e7c76751",
+        "signature": "77ae88ee685edd2c13af9c51290772d39420dfac8ee645553521361a5d178ca0"
+      },
+      "c:/wtt-/doconline/src/service/siterule.service.ts": {
+        "version": "0772af770f28608a9ecf5799df8afad829e3264d78a212b70af12f2dddcd14bf",
+        "signature": "5bb1696f6f84cb990d6ea9e325ac7d323b84d90d9d57542ff6a9f24cf84c763e"
+      },
+      "c:/wtt-/doconline/src/controller/siterule.controller.ts": {
+        "version": "be5889e006903b550561ec1c9d27342132b2d7297c8de36a069aa352965ef825",
+        "signature": "113b3b167e8cd2a8c130105a56c19b81b531b8202c22d37c1b017405fb5666f9"
+      },
+      "c:/wtt-/doconline/src/module/siterule.module.ts": {
+        "version": "b33ad24a5f3ce07c6b0b11a7134f7364d309106cef3a695cd827ee3bc1e755c3",
+        "signature": "60e299edcd609cb7aa94c5f9caedf7d69a2aed4c833a9970a5b42d2f9318ec30"
+      },
+      "c:/wtt-/doconline/src/dto/sitenotification.dto.ts": {
+        "version": "c928c7044d2c46e4972768e05b77479691a388e437e8cbac0a94f12dff23d4b9",
+        "signature": "1a747a3268873d91e893730a41af93103866fcdd39afd29c2a971cd60942ce7b"
+      },
+      "c:/wtt-/doconline/src/service/sitenotification.service.ts": {
+        "version": "388c40da81b9b1068a4eb76c25e5a0557bff02bece083e40585be9386aa8fcf9",
+        "signature": "464650fc96cb0c8d4eb8f060731e539f1c06460ef630abcc43d1aadaaa9bdc7d"
+      },
+      "c:/wtt-/doconline/src/controller/sitenotification.controller.ts": {
+        "version": "e4be40b1ce00b7973a933f5c35390520876c408d10a760d093a04b4b9615e5c7",
+        "signature": "e3791899aa8e49d8f77865f6536c4bea284aa384a440be206860e3f7edcfaf09"
+      },
+      "c:/wtt-/doconline/src/module/sitenotification.module.ts": {
+        "version": "a3f5cbd2301f6243853971b2a71d6c80a53c77abd131d3beb1b2b32dda2320a4",
+        "signature": "aa79b9a80d2100b855429a4307c23af5fcd3b91ac9fe7e10a7b5df8f0d285b00"
+      },
+      "c:/wtt-/doconline/src/service/profile.service.ts": {
+        "version": "75b73ff2037175c2f726572e32d07d75240079a37d004a6d94774832d71885af",
+        "signature": "69a47f8e4a1f96ba981749dcba6ee363848715ad26280796cb79ef047a6ebf44"
+      },
+      "c:/wtt-/doconline/src/controller/profile.controllers.ts": {
+        "version": "9fd627279e0865b0b693882d731e237908ba4cec561fce64ba6c8b984d40ab13",
+        "signature": "2be9f86b1cb20f89b3acbec8de0a4ed60fa079d2dfd1af693300498c44c23ff5"
+      },
+      "c:/wtt-/doconline/src/module/profile.module.ts": {
+        "version": "ba40ffa1083baf4c7278068dbe286167bf9ab36c9f798cea377fcb8e0ea595f0",
+        "signature": "b1145de5eb088c161f02e1857c40c57fe9d72ea9bab34a7e439e204f10682527"
+      },
+      "c:/wtt-/doconline/src/service/user.service.ts": {
+        "version": "b32005ffdd7b7d0a0164752560aa7c110bd7e1f25988f8bd726af91b60f0cbfc",
+        "signature": "273fe5cd4a1f720af4fa59bda3d147df2b3ca59327a6eafa6e6913eeb8ea87fb"
+      },
+      "c:/wtt-/doconline/src/controller/user.controller.ts": {
+        "version": "7ade6a0c71f71b1c22feaa3f9aff2fec80b4ccffb1ae1c5e15e805e9e984da1c",
+        "signature": "9b97c5a4dd0991861871f17eafb69180db04fb81a99efa4e3eb30b557cb93df7"
+      },
+      "c:/wtt-/doconline/src/module/user.module.ts": {
+        "version": "b1db28b306c6038ad790ce94469b32b1c937e84e164d479eae07ae69330c35de",
+        "signature": "9e36626cb39f17790cf2403e2e54d8a74542da63e2a49aba7061133a1af26dcd"
+      },
+      "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts": {
+        "version": "daef0ff8d0878f91f68abfdb51e82a5df5b5bc9fc665202e0bd45ddefe640fa2",
+        "signature": "daef0ff8d0878f91f68abfdb51e82a5df5b5bc9fc665202e0bd45ddefe640fa2"
+      },
+      "c:/wtt-/doconline/src/service/login.service.ts": {
+        "version": "759d93609666757027121d3772f707eef10c870fd95fb30f591d366a9f80d71c",
+        "signature": "53630e0c4d7716be7c902f2c23fe7a5a1cc34ff334afcdb0f38c6349c10fa591"
+      },
+      "c:/wtt-/doconline/src/controller/login.controller.ts": {
+        "version": "946ca12ffe842cfb2532dfd7a489a832006eba3c35543b8568e715fec6b98b4a",
+        "signature": "e7ea17c8b0dd07a60a1a116741afc1ce97c3c5e53c19fe9e8a41abe8d612ea07"
+      },
+      "c:/wtt-/doconline/src/shared/middlewares/auth.middleware.ts": {
+        "version": "4febbfe8d1e084bf0966c77247444252367dc026e066a28b82ec99ebc2735912",
+        "signature": "5aa194ed6a29ecdff3b2d55e9148dc085485b8a9ed76f5fe564dde474a0e6d04"
+      },
+      "c:/wtt-/doconline/src/module/login.module.ts": {
+        "version": "a29f261aa355933111f3ad608334ed5b111c3efb16d5ac342aae40d9ef7ec528",
+        "signature": "2af82d050b6d042dd860e7e6391b0512ea5eef51d8297d9b99ba0487f204ce98"
+      },
+      "c:/wtt-/doconline/src/service/patient.service.ts": {
+        "version": "2517e1094b0eb7d9fcab3d5181a1c505555d1bc022c57994adae0b28c7a71bf4",
+        "signature": "76f8cf7bb54a1b5921f3e1d8b1643584387c1974bfa77d9eefd14c65784275e6"
+      },
+      "c:/wtt-/doconline/src/controller/patient.controller.ts": {
+        "version": "f81e261b0444bcaa9198a989b76aadb854a86949fb01295699aec1005f4ba306",
+        "signature": "7573e9e76f44b9f0551b111c47dee457b736963fe8a06314dcc9bd874c4c418e"
+      },
+      "c:/wtt-/doconline/src/module/patient.module.ts": {
+        "version": "6844099b65ecd944b2e7154bbd15a813ecac9cb2f51fc6c9f645d265b8ec8417",
+        "signature": "399f0bc4cd54778f9f07555e2894c81c1c1953e823bd2310fd3930c9dbfde8be"
+      },
+      "c:/wtt-/doconline/src/service/doctor.service.ts": {
+        "version": "43284e4eefcb6dd4487753c6ecceef2960290a9deb4b74a5fc6774768ad9d1f6",
+        "signature": "988fdcb08f0af2d8ec114321e656d8d2f6de0c00c3a30455b6e25ca852a4d579"
+      },
+      "c:/wtt-/doconline/src/controller/doctor.controller.ts": {
+        "version": "6f027385324875b9d041a914a160fa147c1069100a79153ea522ed04ee237429",
+        "signature": "eb4fa6dd6a030614bf32ca77135c5aae1dd163594633a756aa03bf2beacbb3ff"
+      },
+      "c:/wtt-/doconline/src/module/doctor.module.ts": {
+        "version": "7d008c9aed05c884255cbe4609d1a8bf5db5395f93ca1678727fee466028b237",
+        "signature": "7612bea581089b803db9fe53fcefe26f5638af9754c4af75fd5a9ea56ad348c9"
+      },
+      "c:/wtt-/doconline/src/service/usersite.service.ts": {
+        "version": "92e2e70df88236d4dee1ef40f85f3c56ecf8d6405782dc883826514bf19db99e",
+        "signature": "6684340c0ca64ee4deb026e7c287174f35a537b6ae0d880777fbf6399ffc2097"
+      },
+      "c:/wtt-/doconline/src/controller/usersite.controller.ts": {
+        "version": "cd64821735184d4c7db946eada735b0c41c2ec10dae65f1479f724d23bde097c",
+        "signature": "2b38307516250aaf523ed03cd14e82755547c729951b0fcec1ebc44222749d74"
+      },
+      "c:/wtt-/doconline/src/module/usersite.module.ts": {
+        "version": "195c21eea8ce61fa5b72015d57e6b8578790958b9e6f7ce98ad2f3ddaec4b4b7",
+        "signature": "151e344b4be09204a80f4b4b308ee0ccafb8a0d556081eae5d7e46c1b9fa955e"
+      },
+      "c:/wtt-/doconline/src/dto/views.dto.ts": {
+        "version": "cb4787f5a866beda2e682282fde066370dcbf170c3b5d9d4bc4885bad50aaee0",
+        "signature": "b82302d7568038abaa70bf30bb399fdd83f08923b31e62318eb0ae3874910b1d"
+      },
+      "c:/wtt-/doconline/src/service/views.service.ts": {
+        "version": "fe956a8b5a361e1f6c3b637fe35ea5bc4c2b6345cfec0500c42e081b3b0e10e8",
+        "signature": "d47680229dc80ddbe7fef293f6ada8ec87ca5066a29b342e30e2cf5891dbd9e0"
+      },
+      "c:/wtt-/doconline/src/controller/views.controller.ts": {
+        "version": "16ec61d6f26906ba8f18c536886c480d420e0f0516ea6819aef4657a97daf793",
+        "signature": "7c0d6d3e5ad7412d0400bc85be64a3bdc82cb44d4df0549c31c547e7464404df"
+      },
+      "c:/wtt-/doconline/src/module/views.module.ts": {
+        "version": "2048e1669e6b6bd45bdc027b9e877150487e5d2ad36e852e6e00bc0312a87f81",
+        "signature": "fff8a04d70833548725e04f9eee014ff77d0534594d656c156eb10333e266bd3"
+      },
+      "c:/wtt-/doconline/src/service/logexam.service.ts": {
+        "version": "c25d56f795f61edf125a4f4880700d5df24c8abc0ccdd34a36c02dfb867ff4ad",
+        "signature": "e78e78f71b3b228ecefc33d122b4a8b855cb2b70810e9d422632ec133ff64ed3"
+      },
+      "c:/wtt-/doconline/src/controller/logexam.controller.ts": {
+        "version": "3cd05b4f38d030c1ea52218e0c53a901ea60938fa55fd2b4a7e2e7ba8a7a881d",
+        "signature": "cde1a3da840dec9334d773fbcbf7255eb14ac625585064f69b58ab587fdbf8ac"
+      },
+      "c:/wtt-/doconline/src/module/logexam.module.ts": {
+        "version": "5924d7518118c77008c1c110a85a9ee814d7c05829567ae0ba232e04b8a4090b",
+        "signature": "49e72bbf49cffe6bb9b4e0eaea85ffa5caec39208c379d9c3d20a36692a0446b"
+      },
+      "c:/wtt-/doconline/src/service/insurance.service.ts": {
+        "version": "670ec695d62e451bf8eab14935adda44be51725b4cf071406f02ba41f3355305",
+        "signature": "a4e731ae1588206ec25f74c46230ed9392a985054677f646ae9ff8c0dba12ad0"
+      },
+      "c:/wtt-/doconline/src/controller/insurance.controller.ts": {
+        "version": "e034f230c66a14b65955eafff984a479ecc64eba13c680d7327e92ffeb18e9c1",
+        "signature": "4832546bcecd28359d7e4400785b363d25a1e4bf862028bad9b8ced80ddc4108"
+      },
+      "c:/wtt-/doconline/src/module/insurance.module.ts": {
+        "version": "ddf65ab6709c220588bff0723aa9a092e528878324ab65cc5ee8feeb8925de72",
+        "signature": "36cd1733f8d0de19d499327a67151d5b65f71b8fd0e890e29023261b9a2407fd"
+      },
+      "c:/wtt-/doconline/src/service/userinsurance.service.ts": {
+        "version": "8bc6dc17aae844aad9338c6fadac5d730ed43713d5f063c41f7f758f74b3ff8d",
+        "signature": "03520218e58b56ec2440db7dd09e691ed74194682ba3c2ae362fe5b1e2975f74"
+      },
+      "c:/wtt-/doconline/src/controller/userinsurance.controller.ts": {
+        "version": "8582a31823303552f6735269bd84601cb883c10bdff3c12b635612cdbaf8881d",
+        "signature": "7e4cef51f8fcf9c817deb7c9287689aca77f311fa89b243c20a41609842989a7"
+      },
+      "c:/wtt-/doconline/src/module/userinsurance.module.ts": {
+        "version": "af0ab2fe1596343ed46a9ac08af990e5a086520a5e0ffe69bab0f924d9185108",
+        "signature": "90117ae483a0cf09cea74e431378dee8db20a475741c400b444061059e2a0dbc"
+      },
+      "c:/wtt-/doconline/src/service/plan.service.ts": {
+        "version": "45b1805aba4f5ed271f82ef3628734cde65fbce2d82c214a45e3e1ea92f75639",
+        "signature": "bac1ee4b95520d2579d5d96725765eee2134281e477d71ef3cdbfbfbe897d447"
+      },
+      "c:/wtt-/doconline/src/controller/plan.controller.ts": {
+        "version": "77ba1b1ad7cfbd1ef830cb8df74fe00c7a98648e999881eb44fab67c3f632708",
+        "signature": "a19fbb9f2dd2c65adc17f14f0579b19aba12026de61e57027dfb01693c614ec4"
+      },
+      "c:/wtt-/doconline/src/module/plan.module.ts": {
+        "version": "110935af37d878874a6299ae147abb17e60befd31ac3e8034dc851565dd35584",
+        "signature": "b0319c25af270e82ceaf4a69c4ab0c6013c61b23c80e054c66d17ca455b3e0a0"
+      },
       "c:/wtt-/doconline/src/module/app.module.ts": {
-        "version": "38f92e92c128ddb5dfb1947e7b0843bdabf5512766f15d03e10de29d35ef2691",
+        "version": "cdd0590a7c8505309b20a2081da1bd8282e2176654a0bfc6235fdf39d94f904a",
         "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88"
       },
       "c:/wtt-/doconline/src/main.ts": {
@@ -5705,6 +5649,124 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "c:/wtt-/doconline/src/models/siterule.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/sitenotification.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/usersite.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/userinsurance.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/models/insurance.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/plan.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
+        "c:/wtt-/doconline/src/models/insurance.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/insurance.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/models/userinsurance.model.ts",
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/src/models/plan.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/site.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
+        "c:/wtt-/doconline/src/models/siterule.model.ts",
+        "c:/wtt-/doconline/src/models/sitenotification.model.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/models/usersite.model.ts",
+        "c:/wtt-/doconline/src/models/insurance.model.ts",
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/doctor.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
+        "c:/wtt-/doconline/src/models/profile.model.ts",
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/logexam.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/views.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/exam.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/src/models/patient.model.ts",
+        "c:/wtt-/doconline/src/models/doctor.model.ts",
+        "c:/wtt-/doconline/src/models/insurance.model.ts",
+        "c:/wtt-/doconline/src/models/logexam.model.ts",
+        "c:/wtt-/doconline/src/models/views.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/patient.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
+        "c:/wtt-/doconline/src/models/profile.model.ts",
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/profile.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/models/patient.model.ts",
+        "c:/wtt-/doconline/src/models/doctor.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/login.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/crypto.d.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/user.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
+        "c:/wtt-/doconline/src/models/profile.model.ts",
+        "c:/wtt-/doconline/src/models/login.model.ts",
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/src/models/usersite.model.ts",
+        "c:/wtt-/doconline/src/models/views.model.ts",
+        "c:/wtt-/doconline/src/models/insurance.model.ts",
+        "c:/wtt-/doconline/src/models/userinsurance.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "c:/wtt-/doconline/node_modules/class-validator/validation/validationerror.d.ts": [
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
@@ -5803,291 +5865,6 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "c:/wtt-/doconline/src/dto/site.dto.ts": [
-        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/siterule.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/sitenotification.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/doctor.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
-        "c:/wtt-/doconline/src/models/profile.model.ts",
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/userinsurance.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/src/models/insurance.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/plan.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
-        "c:/wtt-/doconline/src/models/insurance.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/insurance.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/src/models/userinsurance.model.ts",
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/src/models/plan.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/logexam.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/views.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/exam.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/src/models/patient.model.ts",
-        "c:/wtt-/doconline/src/models/doctor.model.ts",
-        "c:/wtt-/doconline/src/models/insurance.model.ts",
-        "c:/wtt-/doconline/src/models/logexam.model.ts",
-        "c:/wtt-/doconline/src/models/views.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/patient.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
-        "c:/wtt-/doconline/src/models/profile.model.ts",
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/profile.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/src/models/patient.model.ts",
-        "c:/wtt-/doconline/src/models/doctor.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/login.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/crypto.d.ts",
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/usersite.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/user.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
-        "c:/wtt-/doconline/src/models/profile.model.ts",
-        "c:/wtt-/doconline/src/models/login.model.ts",
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/src/models/usersite.model.ts",
-        "c:/wtt-/doconline/src/models/views.model.ts",
-        "c:/wtt-/doconline/src/models/insurance.model.ts",
-        "c:/wtt-/doconline/src/models/userinsurance.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/site.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts",
-        "c:/wtt-/doconline/src/models/siterule.model.ts",
-        "c:/wtt-/doconline/src/models/sitenotification.model.ts",
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/src/models/usersite.model.ts",
-        "c:/wtt-/doconline/src/models/insurance.model.ts",
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/site.service.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/site.dto.ts",
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/src/models/siterule.model.ts",
-        "c:/wtt-/doconline/src/models/sitenotification.model.ts",
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/src/models/insurance.model.ts",
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/dto/profile.dto.ts": [
-        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/profile.service.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/profile.dto.ts",
-        "c:/wtt-/doconline/src/models/profile.model.ts",
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/src/models/patient.model.ts",
-        "c:/wtt-/doconline/src/models/doctor.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/dto/patient.dto.ts": [
-        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/patient.service.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/patient.dto.ts",
-        "c:/wtt-/doconline/src/models/patient.model.ts",
-        "c:/wtt-/doconline/src/models/profile.model.ts",
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/dto/doctor.dto.ts": [
-        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/doctor.service.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/doctor.dto.ts",
-        "c:/wtt-/doconline/src/models/doctor.model.ts",
-        "c:/wtt-/doconline/src/models/profile.model.ts",
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/dto/user.dto.ts": [
-        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts": [
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/dto/login.dto.ts": [
-        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/login.service.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/crypto.d.ts",
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/src/models/login.model.ts",
-        "c:/wtt-/doconline/src/dto/login.dto.ts",
-        "c:/wtt-/doconline/src/service/user.service.ts",
-        "c:/wtt-/doconline/src/service/profile.service.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/dto/usersite.dto.ts": [
-        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/usersite.service.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/usersite.dto.ts",
-        "c:/wtt-/doconline/src/models/usersite.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/user.service.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/user.dto.ts",
-        "c:/wtt-/doconline/src/service/exam.service.ts",
-        "c:/wtt-/doconline/src/service/login.service.ts",
-        "c:/wtt-/doconline/src/service/profile.service.ts",
-        "c:/wtt-/doconline/src/service/usersite.service.ts",
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/src/models/profile.model.ts",
-        "c:/wtt-/doconline/src/models/login.model.ts",
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/src/models/views.model.ts",
-        "c:/wtt-/doconline/src/models/insurance.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/dto/userinsurance.dto.ts": [
-        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/userinsurance.service.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/userinsurance.dto.ts",
-        "c:/wtt-/doconline/src/models/userinsurance.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/dto/insurance.dto.ts": [
-        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/insurance.service.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/insurance.dto.ts",
-        "c:/wtt-/doconline/src/models/insurance.model.ts",
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/dto/plan.dto.ts": [
-        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/plan.service.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/plan.dto.ts",
-        "c:/wtt-/doconline/src/models/plan.model.ts",
-        "c:/wtt-/doconline/src/models/insurance.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/dto/logexam.dto.ts": [
-        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/logexam.service.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/logexam.dto.ts",
-        "c:/wtt-/doconline/src/models/logexam.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "c:/wtt-/doconline/src/dto/exam.dto.ts": [
         "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
@@ -6098,20 +5875,84 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "c:/wtt-/doconline/src/dto/doctor.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/dto/insurance.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/dto/logexam.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/dto/login.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/dto/patient.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/dto/plan.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/dto/profile.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/dto/user.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/dto/userinsurance.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/dto/usersite.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/create.service.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/doctor.dto.ts",
+        "c:/wtt-/doconline/src/dto/insurance.dto.ts",
+        "c:/wtt-/doconline/src/dto/logexam.dto.ts",
+        "c:/wtt-/doconline/src/dto/login.dto.ts",
+        "c:/wtt-/doconline/src/dto/patient.dto.ts",
+        "c:/wtt-/doconline/src/dto/plan.dto.ts",
+        "c:/wtt-/doconline/src/dto/profile.dto.ts",
+        "c:/wtt-/doconline/src/dto/user.dto.ts",
+        "c:/wtt-/doconline/src/dto/userinsurance.dto.ts",
+        "c:/wtt-/doconline/src/dto/usersite.dto.ts",
+        "c:/wtt-/doconline/src/models/doctor.model.ts",
+        "c:/wtt-/doconline/src/models/insurance.model.ts",
+        "c:/wtt-/doconline/src/models/logexam.model.ts",
+        "c:/wtt-/doconline/src/models/login.model.ts",
+        "c:/wtt-/doconline/src/models/patient.model.ts",
+        "c:/wtt-/doconline/src/models/plan.model.ts",
+        "c:/wtt-/doconline/src/models/profile.model.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/models/userinsurance.model.ts",
+        "c:/wtt-/doconline/src/models/usersite.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "c:/wtt-/doconline/src/service/exam.service.ts": [
         "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
         "c:/wtt-/doconline/node_modules/sequelize/types/index.d.ts",
-        "c:/wtt-/doconline/src/service/site.service.ts",
-        "c:/wtt-/doconline/src/service/profile.service.ts",
-        "c:/wtt-/doconline/src/service/patient.service.ts",
-        "c:/wtt-/doconline/src/service/doctor.service.ts",
-        "c:/wtt-/doconline/src/service/user.service.ts",
-        "c:/wtt-/doconline/src/service/usersite.service.ts",
-        "c:/wtt-/doconline/src/service/login.service.ts",
-        "c:/wtt-/doconline/src/service/userinsurance.service.ts",
-        "c:/wtt-/doconline/src/service/insurance.service.ts",
-        "c:/wtt-/doconline/src/service/plan.service.ts",
-        "c:/wtt-/doconline/src/service/logexam.service.ts",
         "c:/wtt-/doconline/src/models/user.model.ts",
         "c:/wtt-/doconline/src/models/site.model.ts",
         "c:/wtt-/doconline/src/models/patient.model.ts",
@@ -6119,8 +5960,13 @@
         "c:/wtt-/doconline/src/models/insurance.model.ts",
         "c:/wtt-/doconline/src/models/views.model.ts",
         "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/src/models/plan.model.ts",
+        "c:/wtt-/doconline/src/models/login.model.ts",
+        "c:/wtt-/doconline/src/models/profile.model.ts",
+        "c:/wtt-/doconline/src/models/usersite.model.ts",
         "c:/wtt-/doconline/src/dto/exam.dto.ts",
         "c:/wtt-/doconline/src/dto/filter.dto.ts",
+        "c:/wtt-/doconline/src/service/create.service.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -6130,374 +5976,12 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "c:/wtt-/doconline/src/provider/exam.provider.ts": [
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/site.controller.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/site.dto.ts",
-        "c:/wtt-/doconline/src/service/site.service.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/site.provider.ts": [
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/site.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/database/database.module.ts",
-        "c:/wtt-/doconline/src/controller/site.controller.ts",
-        "c:/wtt-/doconline/src/service/site.service.ts",
-        "c:/wtt-/doconline/src/provider/site.provider.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/dto/siterule.dto.ts": [
-        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/siterule.service.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/siterule.dto.ts",
-        "c:/wtt-/doconline/src/models/siterule.model.ts",
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/siterule.controller.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/siterule.dto.ts",
-        "c:/wtt-/doconline/src/service/siterule.service.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/siterule.provider.ts": [
-        "c:/wtt-/doconline/src/models/siterule.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/siterule.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/database/database.module.ts",
-        "c:/wtt-/doconline/src/controller/siterule.controller.ts",
-        "c:/wtt-/doconline/src/service/siterule.service.ts",
-        "c:/wtt-/doconline/src/provider/siterule.provider.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/dto/sitenotification.dto.ts": [
-        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/sitenotification.service.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/sitenotification.dto.ts",
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/src/models/sitenotification.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/sitenotification.controller.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/sitenotification.dto.ts",
-        "c:/wtt-/doconline/src/service/sitenotification.service.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/sitenotification.provider.ts": [
-        "c:/wtt-/doconline/src/models/sitenotification.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/sitenotification.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/database/database.module.ts",
-        "c:/wtt-/doconline/src/service/sitenotification.service.ts",
-        "c:/wtt-/doconline/src/controller/sitenotification.controller.ts",
-        "c:/wtt-/doconline/src/provider/sitenotification.provider.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/profile.controllers.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/profile.dto.ts",
-        "c:/wtt-/doconline/src/service/profile.service.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/profile.provider.ts": [
-        "c:/wtt-/doconline/src/models/profile.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/profile.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/database/database.module.ts",
-        "c:/wtt-/doconline/src/controller/profile.controllers.ts",
-        "c:/wtt-/doconline/src/service/profile.service.ts",
-        "c:/wtt-/doconline/src/provider/profile.provider.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/user.controller.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/service/user.service.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/user.provider.ts": [
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/user.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/database/database.module.ts",
-        "c:/wtt-/doconline/src/controller/user.controller.ts",
-        "c:/wtt-/doconline/src/service/user.service.ts",
-        "c:/wtt-/doconline/src/provider/user.provider.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/login.controller.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/login.dto.ts",
-        "c:/wtt-/doconline/src/service/login.service.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/login.provider.ts": [
-        "c:/wtt-/doconline/src/models/login.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/shared/middlewares/auth.middleware.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/login.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/database/database.module.ts",
-        "c:/wtt-/doconline/src/module/profile.module.ts",
-        "c:/wtt-/doconline/src/module/user.module.ts",
-        "c:/wtt-/doconline/src/controller/login.controller.ts",
-        "c:/wtt-/doconline/src/service/login.service.ts",
-        "c:/wtt-/doconline/src/provider/login.provider.ts",
-        "c:/wtt-/doconline/src/shared/middlewares/auth.middleware.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/patient.controller.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/patient.dto.ts",
-        "c:/wtt-/doconline/src/service/patient.service.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/patient.provider.ts": [
-        "c:/wtt-/doconline/src/models/patient.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/patient.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/database/database.module.ts",
-        "c:/wtt-/doconline/src/service/patient.service.ts",
-        "c:/wtt-/doconline/src/controller/patient.controller.ts",
-        "c:/wtt-/doconline/src/provider/patient.provider.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/doctor.controller.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/doctor.dto.ts",
-        "c:/wtt-/doconline/src/service/doctor.service.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/doctor.provider.ts": [
-        "c:/wtt-/doconline/src/models/doctor.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/doctor.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/database/database.module.ts",
-        "c:/wtt-/doconline/src/controller/doctor.controller.ts",
-        "c:/wtt-/doconline/src/service/doctor.service.ts",
-        "c:/wtt-/doconline/src/provider/doctor.provider.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/usersite.controller.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/usersite.dto.ts",
-        "c:/wtt-/doconline/src/service/usersite.service.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/usersite.provider.ts": [
-        "c:/wtt-/doconline/src/models/usersite.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/usersite.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/database/database.module.ts",
-        "c:/wtt-/doconline/src/controller/usersite.controller.ts",
-        "c:/wtt-/doconline/src/service/usersite.service.ts",
-        "c:/wtt-/doconline/src/provider/usersite.provider.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/dto/views.dto.ts": [
-        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/views.service.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/views.dto.ts",
-        "c:/wtt-/doconline/src/models/views.model.ts",
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/views.controller.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/views.dto.ts",
-        "c:/wtt-/doconline/src/service/views.service.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/views.provider.ts": [
-        "c:/wtt-/doconline/src/models/views.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/views.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/database/database.module.ts",
-        "c:/wtt-/doconline/src/service/views.service.ts",
-        "c:/wtt-/doconline/src/controller/views.controller.ts",
-        "c:/wtt-/doconline/src/provider/views.provider.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/logexam.controller.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/logexam.dto.ts",
-        "c:/wtt-/doconline/src/service/logexam.service.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/logexam.provider.ts": [
-        "c:/wtt-/doconline/src/models/logexam.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/logexam.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/database/database.module.ts",
-        "c:/wtt-/doconline/src/controller/logexam.controller.ts",
-        "c:/wtt-/doconline/src/service/logexam.service.ts",
-        "c:/wtt-/doconline/src/provider/logexam.provider.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/insurance.controller.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/insurance.dto.ts",
-        "c:/wtt-/doconline/src/service/insurance.service.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/insurance.provider.ts": [
-        "c:/wtt-/doconline/src/models/insurance.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/insurance.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/database/database.module.ts",
-        "c:/wtt-/doconline/src/controller/insurance.controller.ts",
-        "c:/wtt-/doconline/src/service/insurance.service.ts",
-        "c:/wtt-/doconline/src/provider/insurance.provider.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/userinsurance.controller.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/userinsurance.dto.ts",
-        "c:/wtt-/doconline/src/service/userinsurance.service.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/userinsurance.provider.ts": [
-        "c:/wtt-/doconline/src/models/userinsurance.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/userinsurance.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/database/database.module.ts",
-        "c:/wtt-/doconline/src/controller/userinsurance.controller.ts",
-        "c:/wtt-/doconline/src/service/userinsurance.service.ts",
-        "c:/wtt-/doconline/src/provider/userinsurance.provider.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/plan.controller.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/dto/plan.dto.ts",
-        "c:/wtt-/doconline/src/service/plan.service.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/plan.provider.ts": [
-        "c:/wtt-/doconline/src/models/plan.model.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/plan.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
-        "c:/wtt-/doconline/src/database/database.module.ts",
-        "c:/wtt-/doconline/src/controller/plan.controller.ts",
-        "c:/wtt-/doconline/src/service/plan.service.ts",
-        "c:/wtt-/doconline/src/provider/plan.provider.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "c:/wtt-/doconline/src/module/exam.module.ts": [
         "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
         "c:/wtt-/doconline/src/database/database.module.ts",
         "c:/wtt-/doconline/src/controller/exam.controller.ts",
         "c:/wtt-/doconline/src/service/exam.service.ts",
-        "c:/wtt-/doconline/src/provider/exam.provider.ts",
-        "c:/wtt-/doconline/src/module/site.module.ts",
-        "c:/wtt-/doconline/src/module/siterule.module.ts",
-        "c:/wtt-/doconline/src/module/sitenotification.module.ts",
-        "c:/wtt-/doconline/src/module/profile.module.ts",
-        "c:/wtt-/doconline/src/module/user.module.ts",
-        "c:/wtt-/doconline/src/module/login.module.ts",
-        "c:/wtt-/doconline/src/module/patient.module.ts",
-        "c:/wtt-/doconline/src/module/doctor.module.ts",
-        "c:/wtt-/doconline/src/module/usersite.module.ts",
-        "c:/wtt-/doconline/src/module/views.module.ts",
-        "c:/wtt-/doconline/src/module/logexam.module.ts",
-        "c:/wtt-/doconline/src/module/insurance.module.ts",
-        "c:/wtt-/doconline/src/module/userinsurance.module.ts",
-        "c:/wtt-/doconline/src/module/plan.module.ts",
-        "c:/wtt-/doconline/src/provider/site.provider.ts",
+        "c:/wtt-/doconline/src/service/create.service.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -7198,12 +6682,398 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "c:/wtt-/doconline/src/dto/site.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/site.service.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/site.dto.ts",
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/src/models/siterule.model.ts",
+        "c:/wtt-/doconline/src/models/sitenotification.model.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/models/insurance.model.ts",
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/site.controller.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/site.dto.ts",
+        "c:/wtt-/doconline/src/service/site.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/module/site.module.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/database/database.module.ts",
+        "c:/wtt-/doconline/src/controller/site.controller.ts",
+        "c:/wtt-/doconline/src/service/site.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/dto/siterule.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/siterule.service.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/siterule.dto.ts",
+        "c:/wtt-/doconline/src/models/siterule.model.ts",
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/siterule.controller.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/siterule.dto.ts",
+        "c:/wtt-/doconline/src/service/siterule.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/module/siterule.module.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/database/database.module.ts",
+        "c:/wtt-/doconline/src/controller/siterule.controller.ts",
+        "c:/wtt-/doconline/src/service/siterule.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/dto/sitenotification.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/sitenotification.service.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/sitenotification.dto.ts",
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/src/models/sitenotification.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/sitenotification.controller.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/sitenotification.dto.ts",
+        "c:/wtt-/doconline/src/service/sitenotification.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/module/sitenotification.module.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/database/database.module.ts",
+        "c:/wtt-/doconline/src/service/sitenotification.service.ts",
+        "c:/wtt-/doconline/src/controller/sitenotification.controller.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/profile.service.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/profile.dto.ts",
+        "c:/wtt-/doconline/src/models/profile.model.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/models/patient.model.ts",
+        "c:/wtt-/doconline/src/models/doctor.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/profile.controllers.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/profile.dto.ts",
+        "c:/wtt-/doconline/src/service/profile.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/module/profile.module.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/database/database.module.ts",
+        "c:/wtt-/doconline/src/controller/profile.controllers.ts",
+        "c:/wtt-/doconline/src/service/profile.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/user.service.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/user.dto.ts",
+        "c:/wtt-/doconline/src/service/exam.service.ts",
+        "c:/wtt-/doconline/src/service/create.service.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/models/profile.model.ts",
+        "c:/wtt-/doconline/src/models/login.model.ts",
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/src/models/views.model.ts",
+        "c:/wtt-/doconline/src/models/insurance.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/user.controller.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/service/user.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/module/user.module.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/database/database.module.ts",
+        "c:/wtt-/doconline/src/controller/user.controller.ts",
+        "c:/wtt-/doconline/src/service/user.service.ts",
+        "c:/wtt-/doconline/src/service/create.service.ts",
+        "c:/wtt-/doconline/src/service/exam.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/login.service.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/crypto.d.ts",
+        "c:/wtt-/doconline/src/dto/login.dto.ts",
+        "c:/wtt-/doconline/src/models/login.model.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/models/profile.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/login.controller.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/login.dto.ts",
+        "c:/wtt-/doconline/src/service/login.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/shared/middlewares/auth.middleware.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/module/login.module.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/database/database.module.ts",
+        "c:/wtt-/doconline/src/controller/login.controller.ts",
+        "c:/wtt-/doconline/src/service/login.service.ts",
+        "c:/wtt-/doconline/src/shared/middlewares/auth.middleware.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/patient.service.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/patient.dto.ts",
+        "c:/wtt-/doconline/src/models/patient.model.ts",
+        "c:/wtt-/doconline/src/models/profile.model.ts",
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/patient.controller.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/patient.dto.ts",
+        "c:/wtt-/doconline/src/service/patient.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/module/patient.module.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/database/database.module.ts",
+        "c:/wtt-/doconline/src/service/patient.service.ts",
+        "c:/wtt-/doconline/src/controller/patient.controller.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/doctor.service.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/doctor.dto.ts",
+        "c:/wtt-/doconline/src/models/doctor.model.ts",
+        "c:/wtt-/doconline/src/models/profile.model.ts",
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/doctor.controller.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/doctor.dto.ts",
+        "c:/wtt-/doconline/src/service/doctor.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/module/doctor.module.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/database/database.module.ts",
+        "c:/wtt-/doconline/src/controller/doctor.controller.ts",
+        "c:/wtt-/doconline/src/service/doctor.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/usersite.service.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/usersite.dto.ts",
+        "c:/wtt-/doconline/src/models/usersite.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/usersite.controller.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/usersite.dto.ts",
+        "c:/wtt-/doconline/src/service/usersite.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/module/usersite.module.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/database/database.module.ts",
+        "c:/wtt-/doconline/src/controller/usersite.controller.ts",
+        "c:/wtt-/doconline/src/service/usersite.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/dto/views.dto.ts": [
+        "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/views.service.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/views.dto.ts",
+        "c:/wtt-/doconline/src/models/views.model.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/views.controller.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/views.dto.ts",
+        "c:/wtt-/doconline/src/service/views.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/module/views.module.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/database/database.module.ts",
+        "c:/wtt-/doconline/src/service/views.service.ts",
+        "c:/wtt-/doconline/src/controller/views.controller.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/logexam.service.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/logexam.dto.ts",
+        "c:/wtt-/doconline/src/models/logexam.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/logexam.controller.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/logexam.dto.ts",
+        "c:/wtt-/doconline/src/service/logexam.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/module/logexam.module.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/database/database.module.ts",
+        "c:/wtt-/doconline/src/controller/logexam.controller.ts",
+        "c:/wtt-/doconline/src/service/logexam.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/insurance.service.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/insurance.dto.ts",
+        "c:/wtt-/doconline/src/models/insurance.model.ts",
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/insurance.controller.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/insurance.dto.ts",
+        "c:/wtt-/doconline/src/service/insurance.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/module/insurance.module.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/database/database.module.ts",
+        "c:/wtt-/doconline/src/controller/insurance.controller.ts",
+        "c:/wtt-/doconline/src/service/insurance.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/userinsurance.service.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/userinsurance.dto.ts",
+        "c:/wtt-/doconline/src/models/userinsurance.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/userinsurance.controller.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/userinsurance.dto.ts",
+        "c:/wtt-/doconline/src/service/userinsurance.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/module/userinsurance.module.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/database/database.module.ts",
+        "c:/wtt-/doconline/src/controller/userinsurance.controller.ts",
+        "c:/wtt-/doconline/src/service/userinsurance.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/plan.service.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/plan.dto.ts",
+        "c:/wtt-/doconline/src/models/plan.model.ts",
+        "c:/wtt-/doconline/src/models/insurance.model.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/plan.controller.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/dto/plan.dto.ts",
+        "c:/wtt-/doconline/src/service/plan.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/module/plan.module.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
+        "c:/wtt-/doconline/src/database/database.module.ts",
+        "c:/wtt-/doconline/src/controller/plan.controller.ts",
+        "c:/wtt-/doconline/src/service/plan.service.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "c:/wtt-/doconline/src/module/app.module.ts": [
         "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
         "c:/wtt-/doconline/node_modules/@nestjs/core/index.d.ts",
         "c:/wtt-/doconline/src/module/exam.module.ts",
         "c:/wtt-/doconline/src/shared/filters/http-exception.filter.ts",
         "c:/wtt-/doconline/src/shared/interceptors/logger.interceptor.ts",
+        "c:/wtt-/doconline/src/module/site.module.ts",
+        "c:/wtt-/doconline/src/module/siterule.module.ts",
+        "c:/wtt-/doconline/src/module/sitenotification.module.ts",
+        "c:/wtt-/doconline/src/module/profile.module.ts",
+        "c:/wtt-/doconline/src/module/user.module.ts",
+        "c:/wtt-/doconline/src/module/login.module.ts",
+        "c:/wtt-/doconline/src/module/patient.module.ts",
+        "c:/wtt-/doconline/src/module/doctor.module.ts",
+        "c:/wtt-/doconline/src/module/usersite.module.ts",
+        "c:/wtt-/doconline/src/module/views.module.ts",
+        "c:/wtt-/doconline/src/module/logexam.module.ts",
+        "c:/wtt-/doconline/src/module/insurance.module.ts",
+        "c:/wtt-/doconline/src/module/userinsurance.module.ts",
+        "c:/wtt-/doconline/src/module/plan.module.ts",
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -10230,6 +10100,85 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "c:/wtt-/doconline/src/models/siterule.model.ts": [
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/sitenotification.model.ts": [
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/usersite.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/userinsurance.model.ts": [
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/plan.model.ts": [
+        "c:/wtt-/doconline/src/models/insurance.model.ts",
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/insurance.model.ts": [
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/src/models/plan.model.ts",
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/site.model.ts": [
+        "c:/wtt-/doconline/src/models/siterule.model.ts",
+        "c:/wtt-/doconline/src/models/sitenotification.model.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/models/insurance.model.ts",
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/doctor.model.ts": [
+        "c:/wtt-/doconline/src/models/profile.model.ts",
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/logexam.model.ts": [
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/views.model.ts": [
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/exam.model.ts": [
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/src/models/patient.model.ts",
+        "c:/wtt-/doconline/src/models/doctor.model.ts",
+        "c:/wtt-/doconline/src/models/insurance.model.ts",
+        "c:/wtt-/doconline/src/models/logexam.model.ts",
+        "c:/wtt-/doconline/src/models/views.model.ts",
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/patient.model.ts": [
+        "c:/wtt-/doconline/src/models/profile.model.ts",
+        "c:/wtt-/doconline/src/models/exam.model.ts",
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/profile.model.ts": [
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/models/patient.model.ts",
+        "c:/wtt-/doconline/src/models/doctor.model.ts",
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/login.model.ts": [
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
+      ],
+      "c:/wtt-/doconline/src/models/user.model.ts": [
+        "c:/wtt-/doconline/src/models/profile.model.ts",
+        "c:/wtt-/doconline/src/models/login.model.ts",
+        "c:/wtt-/doconline/src/models/views.model.ts",
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/src/models/insurance.model.ts",
+        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
+      ],
       "c:/wtt-/doconline/node_modules/class-validator/validation/validationerror.d.ts": [
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
@@ -10328,287 +10277,22 @@
         "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "c:/wtt-/doconline/src/models/siterule.model.ts": [
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/sitenotification.model.ts": [
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/doctor.model.ts": [
-        "c:/wtt-/doconline/src/models/profile.model.ts",
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/userinsurance.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/plan.model.ts": [
-        "c:/wtt-/doconline/src/models/insurance.model.ts",
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/insurance.model.ts": [
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/src/models/plan.model.ts",
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/logexam.model.ts": [
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/views.model.ts": [
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/exam.model.ts": [
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/src/models/patient.model.ts",
+      "c:/wtt-/doconline/src/service/create.service.ts": [
         "c:/wtt-/doconline/src/models/doctor.model.ts",
-        "c:/wtt-/doconline/src/models/insurance.model.ts",
-        "c:/wtt-/doconline/src/models/logexam.model.ts",
-        "c:/wtt-/doconline/src/models/views.model.ts",
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/patient.model.ts": [
-        "c:/wtt-/doconline/src/models/profile.model.ts",
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/profile.model.ts": [
-        "c:/wtt-/doconline/src/models/user.model.ts",
         "c:/wtt-/doconline/src/models/patient.model.ts",
-        "c:/wtt-/doconline/src/models/doctor.model.ts",
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/login.model.ts": [
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/usersite.model.ts": [
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/user.model.ts": [
         "c:/wtt-/doconline/src/models/profile.model.ts",
-        "c:/wtt-/doconline/src/models/login.model.ts",
-        "c:/wtt-/doconline/src/models/views.model.ts",
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/src/models/insurance.model.ts",
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/models/site.model.ts": [
-        "c:/wtt-/doconline/src/models/siterule.model.ts",
-        "c:/wtt-/doconline/src/models/sitenotification.model.ts",
         "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/src/models/insurance.model.ts",
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/node_modules/sequelize-typescript/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/site.service.ts": [
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/src/dto/site.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/service/profile.service.ts": [
-        "c:/wtt-/doconline/src/models/profile.model.ts",
-        "c:/wtt-/doconline/src/dto/profile.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/service/patient.service.ts": [
-        "c:/wtt-/doconline/src/models/patient.model.ts",
-        "c:/wtt-/doconline/src/dto/patient.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/service/doctor.service.ts": [
-        "c:/wtt-/doconline/src/models/doctor.model.ts",
-        "c:/wtt-/doconline/src/dto/doctor.dto.ts"
-      ],
-      "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts": [
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
-        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "c:/wtt-/doconline/src/service/login.service.ts": [
-        "c:/wtt-/doconline/src/models/login.model.ts",
-        "c:/wtt-/doconline/src/service/user.service.ts",
-        "c:/wtt-/doconline/src/service/profile.service.ts",
-        "c:/wtt-/doconline/src/dto/login.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/service/usersite.service.ts": [
-        "c:/wtt-/doconline/src/models/usersite.model.ts",
-        "c:/wtt-/doconline/src/dto/usersite.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/service/user.service.ts": [
-        "c:/wtt-/doconline/src/models/user.model.ts"
-      ],
-      "c:/wtt-/doconline/src/service/userinsurance.service.ts": [
-        "c:/wtt-/doconline/src/models/userinsurance.model.ts",
-        "c:/wtt-/doconline/src/dto/userinsurance.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/service/insurance.service.ts": [
-        "c:/wtt-/doconline/src/models/insurance.model.ts",
-        "c:/wtt-/doconline/src/dto/insurance.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/service/plan.service.ts": [
-        "c:/wtt-/doconline/src/models/plan.model.ts",
-        "c:/wtt-/doconline/src/dto/plan.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/service/logexam.service.ts": [
-        "c:/wtt-/doconline/src/models/logexam.model.ts",
-        "c:/wtt-/doconline/src/dto/logexam.dto.ts"
+        "c:/wtt-/doconline/src/models/usersite.model.ts"
       ],
       "c:/wtt-/doconline/src/service/exam.service.ts": [
-        "c:/wtt-/doconline/src/models/exam.model.ts",
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/src/service/site.service.ts",
-        "c:/wtt-/doconline/src/service/profile.service.ts",
-        "c:/wtt-/doconline/src/service/patient.service.ts",
-        "c:/wtt-/doconline/src/service/doctor.service.ts",
-        "c:/wtt-/doconline/src/service/user.service.ts",
-        "c:/wtt-/doconline/src/service/usersite.service.ts",
-        "c:/wtt-/doconline/src/service/login.service.ts",
-        "c:/wtt-/doconline/src/service/insurance.service.ts",
-        "c:/wtt-/doconline/src/service/userinsurance.service.ts",
-        "c:/wtt-/doconline/src/service/plan.service.ts",
-        "c:/wtt-/doconline/src/service/logexam.service.ts",
+        "c:/wtt-/doconline/src/service/create.service.ts",
         "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/src/dto/filter.dto.ts"
+        "c:/wtt-/doconline/src/dto/filter.dto.ts",
+        "c:/wtt-/doconline/src/models/exam.model.ts"
       ],
       "c:/wtt-/doconline/src/controller/exam.controller.ts": [
         "c:/wtt-/doconline/src/models/exam.model.ts",
         "c:/wtt-/doconline/src/service/exam.service.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/exam.provider.ts": [
-        "c:/wtt-/doconline/src/models/exam.model.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/site.controller.ts": [
-        "c:/wtt-/doconline/src/models/site.model.ts",
-        "c:/wtt-/doconline/src/service/site.service.ts",
-        "c:/wtt-/doconline/src/dto/site.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/site.provider.ts": [
-        "c:/wtt-/doconline/src/models/site.model.ts"
-      ],
-      "c:/wtt-/doconline/src/service/siterule.service.ts": [
-        "c:/wtt-/doconline/src/models/siterule.model.ts",
-        "c:/wtt-/doconline/src/dto/siterule.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/siterule.controller.ts": [
-        "c:/wtt-/doconline/src/models/siterule.model.ts",
-        "c:/wtt-/doconline/src/service/siterule.service.ts",
-        "c:/wtt-/doconline/src/dto/siterule.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/siterule.provider.ts": [
-        "c:/wtt-/doconline/src/models/siterule.model.ts"
-      ],
-      "c:/wtt-/doconline/src/service/sitenotification.service.ts": [
-        "c:/wtt-/doconline/src/models/sitenotification.model.ts",
-        "c:/wtt-/doconline/src/dto/sitenotification.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/sitenotification.controller.ts": [
-        "c:/wtt-/doconline/src/models/sitenotification.model.ts",
-        "c:/wtt-/doconline/src/service/sitenotification.service.ts",
-        "c:/wtt-/doconline/src/dto/sitenotification.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/sitenotification.provider.ts": [
-        "c:/wtt-/doconline/src/models/sitenotification.model.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/profile.controllers.ts": [
-        "c:/wtt-/doconline/src/models/profile.model.ts",
-        "c:/wtt-/doconline/src/service/profile.service.ts",
-        "c:/wtt-/doconline/src/dto/profile.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/profile.provider.ts": [
-        "c:/wtt-/doconline/src/models/profile.model.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/user.controller.ts": [
-        "c:/wtt-/doconline/src/models/user.model.ts",
-        "c:/wtt-/doconline/src/service/user.service.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/user.provider.ts": [
-        "c:/wtt-/doconline/src/models/user.model.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/login.controller.ts": [
-        "c:/wtt-/doconline/src/models/login.model.ts",
-        "c:/wtt-/doconline/src/service/login.service.ts",
-        "c:/wtt-/doconline/src/dto/login.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/login.provider.ts": [
-        "c:/wtt-/doconline/src/models/login.model.ts"
-      ],
-      "c:/wtt-/doconline/src/shared/middlewares/auth.middleware.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/module/login.module.ts": [
-        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/patient.controller.ts": [
-        "c:/wtt-/doconline/src/models/patient.model.ts",
-        "c:/wtt-/doconline/src/service/patient.service.ts",
-        "c:/wtt-/doconline/src/dto/patient.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/patient.provider.ts": [
-        "c:/wtt-/doconline/src/models/patient.model.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/doctor.controller.ts": [
-        "c:/wtt-/doconline/src/models/doctor.model.ts",
-        "c:/wtt-/doconline/src/service/doctor.service.ts",
-        "c:/wtt-/doconline/src/dto/doctor.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/doctor.provider.ts": [
-        "c:/wtt-/doconline/src/models/doctor.model.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/usersite.controller.ts": [
-        "c:/wtt-/doconline/src/models/usersite.model.ts",
-        "c:/wtt-/doconline/src/service/usersite.service.ts",
-        "c:/wtt-/doconline/src/dto/usersite.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/usersite.provider.ts": [
-        "c:/wtt-/doconline/src/models/usersite.model.ts"
-      ],
-      "c:/wtt-/doconline/src/service/views.service.ts": [
-        "c:/wtt-/doconline/src/models/views.model.ts",
-        "c:/wtt-/doconline/src/dto/views.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/views.controller.ts": [
-        "c:/wtt-/doconline/src/models/views.model.ts",
-        "c:/wtt-/doconline/src/service/views.service.ts",
-        "c:/wtt-/doconline/src/dto/views.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/views.provider.ts": [
-        "c:/wtt-/doconline/src/models/views.model.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/logexam.controller.ts": [
-        "c:/wtt-/doconline/src/models/logexam.model.ts",
-        "c:/wtt-/doconline/src/service/logexam.service.ts",
-        "c:/wtt-/doconline/src/dto/logexam.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/logexam.provider.ts": [
-        "c:/wtt-/doconline/src/models/logexam.model.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/insurance.controller.ts": [
-        "c:/wtt-/doconline/src/models/insurance.model.ts",
-        "c:/wtt-/doconline/src/service/insurance.service.ts",
-        "c:/wtt-/doconline/src/dto/insurance.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/insurance.provider.ts": [
-        "c:/wtt-/doconline/src/models/insurance.model.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/userinsurance.controller.ts": [
-        "c:/wtt-/doconline/src/models/userinsurance.model.ts",
-        "c:/wtt-/doconline/src/service/userinsurance.service.ts",
-        "c:/wtt-/doconline/src/dto/userinsurance.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/userinsurance.provider.ts": [
-        "c:/wtt-/doconline/src/models/userinsurance.model.ts"
-      ],
-      "c:/wtt-/doconline/src/controller/plan.controller.ts": [
-        "c:/wtt-/doconline/src/models/plan.model.ts",
-        "c:/wtt-/doconline/src/service/plan.service.ts",
-        "c:/wtt-/doconline/src/dto/plan.dto.ts"
-      ],
-      "c:/wtt-/doconline/src/provider/plan.provider.ts": [
-        "c:/wtt-/doconline/src/models/plan.model.ts"
       ],
       "c:/wtt-/doconline/src/shared/filters/http-exception.filter.ts": [
         "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts"
@@ -11302,6 +10986,144 @@
         "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts",
         "c:/wtt-/doconline/node_modules/rxjs/index.d.ts"
       ],
+      "c:/wtt-/doconline/src/service/site.service.ts": [
+        "c:/wtt-/doconline/src/dto/site.dto.ts",
+        "c:/wtt-/doconline/src/models/site.model.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/site.controller.ts": [
+        "c:/wtt-/doconline/src/models/site.model.ts",
+        "c:/wtt-/doconline/src/service/site.service.ts",
+        "c:/wtt-/doconline/src/dto/site.dto.ts"
+      ],
+      "c:/wtt-/doconline/src/service/siterule.service.ts": [
+        "c:/wtt-/doconline/src/dto/siterule.dto.ts",
+        "c:/wtt-/doconline/src/models/siterule.model.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/siterule.controller.ts": [
+        "c:/wtt-/doconline/src/models/siterule.model.ts",
+        "c:/wtt-/doconline/src/service/siterule.service.ts",
+        "c:/wtt-/doconline/src/dto/siterule.dto.ts"
+      ],
+      "c:/wtt-/doconline/src/service/sitenotification.service.ts": [
+        "c:/wtt-/doconline/src/dto/sitenotification.dto.ts",
+        "c:/wtt-/doconline/src/models/sitenotification.model.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/sitenotification.controller.ts": [
+        "c:/wtt-/doconline/src/models/sitenotification.model.ts",
+        "c:/wtt-/doconline/src/service/sitenotification.service.ts",
+        "c:/wtt-/doconline/src/dto/sitenotification.dto.ts"
+      ],
+      "c:/wtt-/doconline/src/service/profile.service.ts": [
+        "c:/wtt-/doconline/src/dto/profile.dto.ts",
+        "c:/wtt-/doconline/src/models/profile.model.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/profile.controllers.ts": [
+        "c:/wtt-/doconline/src/models/profile.model.ts",
+        "c:/wtt-/doconline/src/service/profile.service.ts",
+        "c:/wtt-/doconline/src/dto/profile.dto.ts"
+      ],
+      "c:/wtt-/doconline/src/service/user.service.ts": [
+        "c:/wtt-/doconline/src/service/exam.service.ts",
+        "c:/wtt-/doconline/src/service/create.service.ts",
+        "c:/wtt-/doconline/src/dto/user.dto.ts",
+        "c:/wtt-/doconline/src/models/user.model.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/user.controller.ts": [
+        "c:/wtt-/doconline/src/models/user.model.ts",
+        "c:/wtt-/doconline/src/service/user.service.ts"
+      ],
+      "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts": [
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/util.d.ts",
+        "c:/wtt-/doconline/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/login.service.ts": [
+        "c:/wtt-/doconline/src/dto/login.dto.ts",
+        "c:/wtt-/doconline/src/models/login.model.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/login.controller.ts": [
+        "c:/wtt-/doconline/src/models/login.model.ts",
+        "c:/wtt-/doconline/src/service/login.service.ts",
+        "c:/wtt-/doconline/src/dto/login.dto.ts"
+      ],
+      "c:/wtt-/doconline/src/shared/middlewares/auth.middleware.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts"
+      ],
+      "c:/wtt-/doconline/src/module/login.module.ts": [
+        "c:/wtt-/doconline/node_modules/@nestjs/common/index.d.ts"
+      ],
+      "c:/wtt-/doconline/src/service/patient.service.ts": [
+        "c:/wtt-/doconline/src/dto/patient.dto.ts",
+        "c:/wtt-/doconline/src/models/patient.model.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/patient.controller.ts": [
+        "c:/wtt-/doconline/src/models/patient.model.ts",
+        "c:/wtt-/doconline/src/service/patient.service.ts",
+        "c:/wtt-/doconline/src/dto/patient.dto.ts"
+      ],
+      "c:/wtt-/doconline/src/service/doctor.service.ts": [
+        "c:/wtt-/doconline/src/dto/doctor.dto.ts",
+        "c:/wtt-/doconline/src/models/doctor.model.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/doctor.controller.ts": [
+        "c:/wtt-/doconline/src/models/doctor.model.ts",
+        "c:/wtt-/doconline/src/service/doctor.service.ts",
+        "c:/wtt-/doconline/src/dto/doctor.dto.ts"
+      ],
+      "c:/wtt-/doconline/src/service/usersite.service.ts": [
+        "c:/wtt-/doconline/src/dto/usersite.dto.ts",
+        "c:/wtt-/doconline/src/models/usersite.model.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/usersite.controller.ts": [
+        "c:/wtt-/doconline/src/models/usersite.model.ts",
+        "c:/wtt-/doconline/src/service/usersite.service.ts",
+        "c:/wtt-/doconline/src/dto/usersite.dto.ts"
+      ],
+      "c:/wtt-/doconline/src/service/views.service.ts": [
+        "c:/wtt-/doconline/src/dto/views.dto.ts",
+        "c:/wtt-/doconline/src/models/views.model.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/views.controller.ts": [
+        "c:/wtt-/doconline/src/models/views.model.ts",
+        "c:/wtt-/doconline/src/service/views.service.ts",
+        "c:/wtt-/doconline/src/dto/views.dto.ts"
+      ],
+      "c:/wtt-/doconline/src/service/logexam.service.ts": [
+        "c:/wtt-/doconline/src/dto/logexam.dto.ts",
+        "c:/wtt-/doconline/src/models/logexam.model.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/logexam.controller.ts": [
+        "c:/wtt-/doconline/src/models/logexam.model.ts",
+        "c:/wtt-/doconline/src/service/logexam.service.ts",
+        "c:/wtt-/doconline/src/dto/logexam.dto.ts"
+      ],
+      "c:/wtt-/doconline/src/service/insurance.service.ts": [
+        "c:/wtt-/doconline/src/dto/insurance.dto.ts",
+        "c:/wtt-/doconline/src/models/insurance.model.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/insurance.controller.ts": [
+        "c:/wtt-/doconline/src/models/insurance.model.ts",
+        "c:/wtt-/doconline/src/service/insurance.service.ts",
+        "c:/wtt-/doconline/src/dto/insurance.dto.ts"
+      ],
+      "c:/wtt-/doconline/src/service/userinsurance.service.ts": [
+        "c:/wtt-/doconline/src/dto/userinsurance.dto.ts",
+        "c:/wtt-/doconline/src/models/userinsurance.model.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/userinsurance.controller.ts": [
+        "c:/wtt-/doconline/src/models/userinsurance.model.ts",
+        "c:/wtt-/doconline/src/service/userinsurance.service.ts",
+        "c:/wtt-/doconline/src/dto/userinsurance.dto.ts"
+      ],
+      "c:/wtt-/doconline/src/service/plan.service.ts": [
+        "c:/wtt-/doconline/src/dto/plan.dto.ts",
+        "c:/wtt-/doconline/src/models/plan.model.ts"
+      ],
+      "c:/wtt-/doconline/src/controller/plan.controller.ts": [
+        "c:/wtt-/doconline/src/models/plan.model.ts",
+        "c:/wtt-/doconline/src/service/plan.service.ts",
+        "c:/wtt-/doconline/src/dto/plan.dto.ts"
+      ],
       "c:/wtt-/doconline/node_modules/@types/connect/index.d.ts": [
         "c:/wtt-/doconline/node_modules/@types/node/http.d.ts",
         "c:/wtt-/doconline/node_modules/@types/node/ts3.2/index.d.ts",
@@ -11846,6 +11668,21 @@
       "c:/wtt-/doconline/node_modules/sequelize/types/lib/utils.d.ts",
       "c:/wtt-/doconline/node_modules/sequelize/types/lib/errors.d.ts",
       "c:/wtt-/doconline/node_modules/sequelize/types/index.d.ts",
+      "c:/wtt-/doconline/src/models/siterule.model.ts",
+      "c:/wtt-/doconline/src/models/sitenotification.model.ts",
+      "c:/wtt-/doconline/src/models/usersite.model.ts",
+      "c:/wtt-/doconline/src/models/userinsurance.model.ts",
+      "c:/wtt-/doconline/src/models/plan.model.ts",
+      "c:/wtt-/doconline/src/models/insurance.model.ts",
+      "c:/wtt-/doconline/src/models/site.model.ts",
+      "c:/wtt-/doconline/src/models/doctor.model.ts",
+      "c:/wtt-/doconline/src/models/logexam.model.ts",
+      "c:/wtt-/doconline/src/models/views.model.ts",
+      "c:/wtt-/doconline/src/models/exam.model.ts",
+      "c:/wtt-/doconline/src/models/patient.model.ts",
+      "c:/wtt-/doconline/src/models/profile.model.ts",
+      "c:/wtt-/doconline/src/models/login.model.ts",
+      "c:/wtt-/doconline/src/models/user.model.ts",
       "c:/wtt-/doconline/node_modules/class-validator/validation/validationerror.d.ts",
       "c:/wtt-/doconline/node_modules/class-validator/validation/validatoroptions.d.ts",
       "c:/wtt-/doconline/node_modules/class-validator/validation-schema/validationschema.d.ts",
@@ -11863,98 +11700,22 @@
       "c:/wtt-/doconline/node_modules/class-validator/metadata/constraintmetadata.d.ts",
       "c:/wtt-/doconline/node_modules/class-validator/metadata/metadatastorage.d.ts",
       "c:/wtt-/doconline/node_modules/class-validator/index.d.ts",
-      "c:/wtt-/doconline/src/dto/site.dto.ts",
-      "c:/wtt-/doconline/src/models/siterule.model.ts",
-      "c:/wtt-/doconline/src/models/sitenotification.model.ts",
-      "c:/wtt-/doconline/src/models/doctor.model.ts",
-      "c:/wtt-/doconline/src/models/userinsurance.model.ts",
-      "c:/wtt-/doconline/src/models/plan.model.ts",
-      "c:/wtt-/doconline/src/models/insurance.model.ts",
-      "c:/wtt-/doconline/src/models/logexam.model.ts",
-      "c:/wtt-/doconline/src/models/views.model.ts",
-      "c:/wtt-/doconline/src/models/exam.model.ts",
-      "c:/wtt-/doconline/src/models/patient.model.ts",
-      "c:/wtt-/doconline/src/models/profile.model.ts",
-      "c:/wtt-/doconline/src/models/login.model.ts",
-      "c:/wtt-/doconline/src/models/usersite.model.ts",
-      "c:/wtt-/doconline/src/models/user.model.ts",
-      "c:/wtt-/doconline/src/models/site.model.ts",
-      "c:/wtt-/doconline/src/service/site.service.ts",
-      "c:/wtt-/doconline/src/dto/profile.dto.ts",
-      "c:/wtt-/doconline/src/service/profile.service.ts",
-      "c:/wtt-/doconline/src/dto/patient.dto.ts",
-      "c:/wtt-/doconline/src/service/patient.service.ts",
-      "c:/wtt-/doconline/src/dto/doctor.dto.ts",
-      "c:/wtt-/doconline/src/service/doctor.service.ts",
-      "c:/wtt-/doconline/src/dto/user.dto.ts",
-      "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts",
-      "c:/wtt-/doconline/src/dto/login.dto.ts",
-      "c:/wtt-/doconline/src/service/login.service.ts",
-      "c:/wtt-/doconline/src/dto/usersite.dto.ts",
-      "c:/wtt-/doconline/src/service/usersite.service.ts",
-      "c:/wtt-/doconline/src/service/user.service.ts",
-      "c:/wtt-/doconline/src/dto/userinsurance.dto.ts",
-      "c:/wtt-/doconline/src/service/userinsurance.service.ts",
-      "c:/wtt-/doconline/src/dto/insurance.dto.ts",
-      "c:/wtt-/doconline/src/service/insurance.service.ts",
-      "c:/wtt-/doconline/src/dto/plan.dto.ts",
-      "c:/wtt-/doconline/src/service/plan.service.ts",
-      "c:/wtt-/doconline/src/dto/logexam.dto.ts",
-      "c:/wtt-/doconline/src/service/logexam.service.ts",
       "c:/wtt-/doconline/src/dto/exam.dto.ts",
       "c:/wtt-/doconline/src/dto/filter.dto.ts",
+      "c:/wtt-/doconline/src/dto/doctor.dto.ts",
+      "c:/wtt-/doconline/src/dto/insurance.dto.ts",
+      "c:/wtt-/doconline/src/dto/logexam.dto.ts",
+      "c:/wtt-/doconline/src/dto/login.dto.ts",
+      "c:/wtt-/doconline/src/dto/patient.dto.ts",
+      "c:/wtt-/doconline/src/dto/plan.dto.ts",
+      "c:/wtt-/doconline/src/dto/profile.dto.ts",
+      "c:/wtt-/doconline/src/dto/user.dto.ts",
+      "c:/wtt-/doconline/src/dto/userinsurance.dto.ts",
+      "c:/wtt-/doconline/src/dto/usersite.dto.ts",
+      "c:/wtt-/doconline/src/service/create.service.ts",
       "c:/wtt-/doconline/src/service/exam.service.ts",
       "c:/wtt-/doconline/src/controller/exam.controller.ts",
-      "c:/wtt-/doconline/src/provider/exam.provider.ts",
-      "c:/wtt-/doconline/src/controller/site.controller.ts",
-      "c:/wtt-/doconline/src/provider/site.provider.ts",
-      "c:/wtt-/doconline/src/module/site.module.ts",
-      "c:/wtt-/doconline/src/dto/siterule.dto.ts",
-      "c:/wtt-/doconline/src/service/siterule.service.ts",
-      "c:/wtt-/doconline/src/controller/siterule.controller.ts",
-      "c:/wtt-/doconline/src/provider/siterule.provider.ts",
-      "c:/wtt-/doconline/src/module/siterule.module.ts",
-      "c:/wtt-/doconline/src/dto/sitenotification.dto.ts",
-      "c:/wtt-/doconline/src/service/sitenotification.service.ts",
-      "c:/wtt-/doconline/src/controller/sitenotification.controller.ts",
-      "c:/wtt-/doconline/src/provider/sitenotification.provider.ts",
-      "c:/wtt-/doconline/src/module/sitenotification.module.ts",
-      "c:/wtt-/doconline/src/controller/profile.controllers.ts",
-      "c:/wtt-/doconline/src/provider/profile.provider.ts",
-      "c:/wtt-/doconline/src/module/profile.module.ts",
-      "c:/wtt-/doconline/src/controller/user.controller.ts",
-      "c:/wtt-/doconline/src/provider/user.provider.ts",
-      "c:/wtt-/doconline/src/module/user.module.ts",
-      "c:/wtt-/doconline/src/controller/login.controller.ts",
-      "c:/wtt-/doconline/src/provider/login.provider.ts",
-      "c:/wtt-/doconline/src/shared/middlewares/auth.middleware.ts",
-      "c:/wtt-/doconline/src/module/login.module.ts",
-      "c:/wtt-/doconline/src/controller/patient.controller.ts",
-      "c:/wtt-/doconline/src/provider/patient.provider.ts",
-      "c:/wtt-/doconline/src/module/patient.module.ts",
-      "c:/wtt-/doconline/src/controller/doctor.controller.ts",
-      "c:/wtt-/doconline/src/provider/doctor.provider.ts",
-      "c:/wtt-/doconline/src/module/doctor.module.ts",
-      "c:/wtt-/doconline/src/controller/usersite.controller.ts",
-      "c:/wtt-/doconline/src/provider/usersite.provider.ts",
-      "c:/wtt-/doconline/src/module/usersite.module.ts",
-      "c:/wtt-/doconline/src/dto/views.dto.ts",
-      "c:/wtt-/doconline/src/service/views.service.ts",
-      "c:/wtt-/doconline/src/controller/views.controller.ts",
-      "c:/wtt-/doconline/src/provider/views.provider.ts",
-      "c:/wtt-/doconline/src/module/views.module.ts",
-      "c:/wtt-/doconline/src/controller/logexam.controller.ts",
-      "c:/wtt-/doconline/src/provider/logexam.provider.ts",
-      "c:/wtt-/doconline/src/module/logexam.module.ts",
-      "c:/wtt-/doconline/src/controller/insurance.controller.ts",
-      "c:/wtt-/doconline/src/provider/insurance.provider.ts",
-      "c:/wtt-/doconline/src/module/insurance.module.ts",
-      "c:/wtt-/doconline/src/controller/userinsurance.controller.ts",
-      "c:/wtt-/doconline/src/provider/userinsurance.provider.ts",
-      "c:/wtt-/doconline/src/module/userinsurance.module.ts",
-      "c:/wtt-/doconline/src/controller/plan.controller.ts",
-      "c:/wtt-/doconline/src/provider/plan.provider.ts",
-      "c:/wtt-/doconline/src/module/plan.module.ts",
+      "c:/wtt-/doconline/src/module/exam.module.ts",
       "c:/wtt-/doconline/src/shared/filters/http-exception.filter.ts",
       "c:/wtt-/doconline/node_modules/rxjs/internal/operators/audit.d.ts",
       "c:/wtt-/doconline/node_modules/rxjs/internal/operators/audittime.d.ts",
@@ -12060,7 +11821,51 @@
       "c:/wtt-/doconline/node_modules/rxjs/internal/operators/zipall.d.ts",
       "c:/wtt-/doconline/node_modules/rxjs/operators/index.d.ts",
       "c:/wtt-/doconline/src/shared/interceptors/logger.interceptor.ts",
-      "c:/wtt-/doconline/src/module/app.module.ts",
+      "c:/wtt-/doconline/src/dto/site.dto.ts",
+      "c:/wtt-/doconline/src/service/site.service.ts",
+      "c:/wtt-/doconline/src/controller/site.controller.ts",
+      "c:/wtt-/doconline/src/module/site.module.ts",
+      "c:/wtt-/doconline/src/dto/siterule.dto.ts",
+      "c:/wtt-/doconline/src/service/siterule.service.ts",
+      "c:/wtt-/doconline/src/controller/siterule.controller.ts",
+      "c:/wtt-/doconline/src/module/siterule.module.ts",
+      "c:/wtt-/doconline/src/dto/sitenotification.dto.ts",
+      "c:/wtt-/doconline/src/service/sitenotification.service.ts",
+      "c:/wtt-/doconline/src/controller/sitenotification.controller.ts",
+      "c:/wtt-/doconline/src/module/sitenotification.module.ts",
+      "c:/wtt-/doconline/src/service/profile.service.ts",
+      "c:/wtt-/doconline/src/controller/profile.controllers.ts",
+      "c:/wtt-/doconline/src/module/profile.module.ts",
+      "c:/wtt-/doconline/src/service/user.service.ts",
+      "c:/wtt-/doconline/src/controller/user.controller.ts",
+      "c:/wtt-/doconline/src/module/user.module.ts",
+      "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts",
+      "c:/wtt-/doconline/src/service/login.service.ts",
+      "c:/wtt-/doconline/src/controller/login.controller.ts",
+      "c:/wtt-/doconline/src/shared/middlewares/auth.middleware.ts",
+      "c:/wtt-/doconline/src/module/login.module.ts",
+      "c:/wtt-/doconline/src/service/patient.service.ts",
+      "c:/wtt-/doconline/src/controller/patient.controller.ts",
+      "c:/wtt-/doconline/src/module/patient.module.ts",
+      "c:/wtt-/doconline/src/service/usersite.service.ts",
+      "c:/wtt-/doconline/src/controller/usersite.controller.ts",
+      "c:/wtt-/doconline/src/module/usersite.module.ts",
+      "c:/wtt-/doconline/src/dto/views.dto.ts",
+      "c:/wtt-/doconline/src/service/views.service.ts",
+      "c:/wtt-/doconline/src/controller/views.controller.ts",
+      "c:/wtt-/doconline/src/module/views.module.ts",
+      "c:/wtt-/doconline/src/service/logexam.service.ts",
+      "c:/wtt-/doconline/src/controller/logexam.controller.ts",
+      "c:/wtt-/doconline/src/module/logexam.module.ts",
+      "c:/wtt-/doconline/src/service/insurance.service.ts",
+      "c:/wtt-/doconline/src/controller/insurance.controller.ts",
+      "c:/wtt-/doconline/src/module/insurance.module.ts",
+      "c:/wtt-/doconline/src/service/userinsurance.service.ts",
+      "c:/wtt-/doconline/src/controller/userinsurance.controller.ts",
+      "c:/wtt-/doconline/src/module/userinsurance.module.ts",
+      "c:/wtt-/doconline/src/service/plan.service.ts",
+      "c:/wtt-/doconline/src/controller/plan.controller.ts",
+      "c:/wtt-/doconline/src/module/plan.module.ts",
       "c:/wtt-/doconline/src/main.ts",
       "c:/wtt-/doconline/node_modules/@types/connect/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/body-parser/index.d.ts",
@@ -12077,7 +11882,10 @@
       "c:/wtt-/doconline/node_modules/@types/supertest/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/uuid/interfaces.d.ts",
       "c:/wtt-/doconline/node_modules/@types/uuid/index.d.ts",
-      "c:/wtt-/doconline/src/module/exam.module.ts"
+      "c:/wtt-/doconline/src/service/doctor.service.ts",
+      "c:/wtt-/doconline/src/controller/doctor.controller.ts",
+      "c:/wtt-/doconline/src/module/doctor.module.ts",
+      "c:/wtt-/doconline/src/module/app.module.ts"
     ]
   },
   "version": "3.4.3"

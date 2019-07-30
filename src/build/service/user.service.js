@@ -24,32 +24,38 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
+const exam_service_1 = require("./exam.service");
+const create_service_1 = require("./create.service");
+const user_model_1 = __importDefault(require("../models/user.model"));
 const profile_model_1 = __importDefault(require("../models/profile.model"));
 const login_model_1 = __importDefault(require("../models/login.model"));
 const site_model_1 = __importDefault(require("../models/site.model"));
 const views_model_1 = __importDefault(require("../models/views.model"));
 const insurance_model_1 = __importDefault(require("../models/insurance.model"));
 let UserService = class UserService {
-    constructor(userRepository) {
-        this.userRepository = userRepository;
+    constructor(examService, createService) {
+        this.examService = examService;
+        this.createService = createService;
     }
-    createUser(profileId, lastAccess, profiles, active, recoveryKey, lastRecovery, termApproved) {
+    createAdmin(token, networkId, socialName, name, sex, birthdate, phone, email, lastAccess, profiles, active, recoveryKey, lastRecovery, termApproved, username, password) {
         return __awaiter(this, void 0, void 0, function* () {
-            let newUser = {
-                'profileId': profileId,
-                'lastAccess': lastAccess,
-                'profiles': profiles,
-                'active': active,
-                'recoveryKey': recoveryKey,
-                'lastRecovery': lastRecovery,
-                'termApproved': termApproved
-            };
-            return yield this.userRepository.create(newUser);
+            const siteId = yield this.examService.siteExists(networkId);
+            const profile = yield this.createService.createProfile(socialName, name, sex, birthdate, phone, email);
+            const user = yield this.createService.createUser(profile.id, lastAccess, profiles, active, recoveryKey, lastRecovery, termApproved);
+            yield this.createService.createLogin(user.id, username, password);
+            const createdBy = yield this.examService.createdBy(token.id);
+            yield this.createService.createUserSite(user.id, siteId, createdBy);
+        });
+    }
+    create(createUserDto) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield user_model_1.default.create(createUserDto);
+            ;
         });
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            const user = yield this.userRepository.findAll({
+            const user = yield user_model_1.default.findAll({
                 where: where, include: [profile_model_1.default, login_model_1.default, site_model_1.default, views_model_1.default, insurance_model_1.default]
             });
             return user;
@@ -60,7 +66,7 @@ let UserService = class UserService {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const user = yield this.userRepository.findOne({
+            const user = yield user_model_1.default.findOne({
                 where: where, include: [profile_model_1.default, login_model_1.default, site_model_1.default, views_model_1.default, insurance_model_1.default]
             });
             return user;
@@ -68,12 +74,12 @@ let UserService = class UserService {
     }
     updateOne(id, body) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.userRepository.update(body, { where: { 'id': id } });
+            return yield user_model_1.default.update(body, { where: { 'id': id } });
         });
     }
     deleteOne(userId) {
         return __awaiter(this, void 0, void 0, function* () {
-            const deletedUser = yield this.userRepository.destroy({
+            const deletedUser = yield user_model_1.default.destroy({
                 where: { 'id': userId }
             });
             return yield deletedUser;
@@ -82,7 +88,9 @@ let UserService = class UserService {
 };
 UserService = __decorate([
     common_1.Injectable(),
-    __param(0, common_1.Inject('UserRepository')),
-    __metadata("design:paramtypes", [Object])
+    __param(0, common_1.Inject('ExamService')),
+    __param(1, common_1.Inject('CreateService')),
+    __metadata("design:paramtypes", [exam_service_1.ExamService,
+        create_service_1.CreateService])
 ], UserService);
 exports.UserService = UserService;

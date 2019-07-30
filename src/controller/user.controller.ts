@@ -8,24 +8,24 @@ export class UserController {
 
     @Post()
     public async create(@Body() body, @Req() req) {
-        // return await this.userService.createAdmin(
-        //     req.token,
-        //     body.networkId,
-        //     body.socialName,
-        //     body.name,
-        //     body.sex,
-        //     body.birthdate,
-        //     body.phone,
-        //     body.email,
-        //     body.lastAccess,
-        //     body.profiles,
-        //     body.active,
-        //     body.recoveryKey,
-        //     body.lastRecovery,
-        //     body.termApproved,
-        //     body.username,
-        //     body.password,
-        // );
+        return await this.userService.createAdmin(
+            req.token,
+            body.networkId,
+            body.socialName,
+            body.name,
+            body.sex,
+            body.birthdate,
+            body.phone,
+            body.email,
+            body.lastAccess,
+            body.profiles,
+            body.active,
+            body.recoveryKey,
+            body.lastRecovery,
+            body.termApproved,
+            body.username,
+            body.password,
+        );
     }
 
     @Get()

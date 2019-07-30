@@ -1,4 +1,4 @@
-import { Injectable, Inject } from "@nestjs/common";
+import { Injectable } from "@nestjs/common";
 
 import { CreateUserSiteDto } from "../dto/userSite.dto";
 import UserSite from "../models/userSite.model";
@@ -6,25 +6,12 @@ import UserSite from "../models/userSite.model";
 @Injectable()
 export class UserSiteService {
 
-    constructor(
-        @Inject('UserSiteRepository') private readonly userSiteRepository: typeof UserSite
-    ) { }
-
     async create(createUserSiteDto: CreateUserSiteDto): Promise<UserSite> {
-        return await this.userSiteRepository.create<UserSite>(createUserSiteDto);;
+        return await UserSite.create<UserSite>(createUserSiteDto);;
     }
 
-    async createUserSite(userId, siteId, createdBy) {
-        let newUserSite = {
-            'userId': userId,
-            'siteId': siteId,
-            'createdBy': createdBy,
-        } as CreateUserSiteDto;
-        return await this.userSiteRepository.create(newUserSite)
-    };
-
     async find(where: any) {
-        const userSites = await this.userSiteRepository.findAll({
+        const userSites = await UserSite.findAll({
             where: where
         });
         return userSites;
@@ -34,18 +21,18 @@ export class UserSiteService {
         if (typeof where === 'string') {
             where = { 'id': where }
         }
-        const userSite = await this.userSiteRepository.findOne({
+        const userSite = await UserSite.findOne({
             where: where
         });
         return userSite;
     }
 
     async updateOne(id: number, body: any) {
-        return await this.userSiteRepository.update(body, { where: { 'id': id } });
+        return await UserSite.update(body, { where: { 'id': id } });
     }
 
     async deleteOne(userSiteId: number) {
-        const deletedUserSite = await this.userSiteRepository.destroy({
+        const deletedUserSite = await UserSite.destroy({
             where: { 'id': userSiteId }
         });
         return await deletedUserSite;

@@ -1,53 +1,37 @@
-import { Injectable, Inject, forwardRef } from '@nestjs/common';
+import { Injectable, UnauthorizedException } from '@nestjs/common';
 import * as jwt from 'jsonwebtoken';
 import crypto from 'crypto';
 
-import User from '../models/user.model';
+import { CreateLoginDto } from '../dto/login.dto';
 import Login from '../models/login.model';
 
-import { CreateLoginDto } from '../dto/login.dto';
-import { UserService } from './user.service';
-import { ProfileService } from './profile.service';
+import User from '../models/user.model';
+import Profile from '../models/profile.model';
 
 @Injectable()
 export class LoginService {
 
-    constructor(
-        @Inject('LoginRepository') private readonly loginRepository: typeof Login,
-        @Inject('UserService') private userService: UserService,
-        @Inject('ProfileService') private profileService: ProfileService
-    ) { }
-
     async create(createLoginDto: CreateLoginDto): Promise<Login> {
-        return await this.loginRepository.create<Login>(createLoginDto);;
-    }
-
-    async createLogin(userId, username, password) {
-        let login = {
-            'userId': userId,
-            'username': username,
-            'password': password
-        } as CreateLoginDto;
-        await this.loginRepository.create(login);
+        return await Login.create<Login>(createLoginDto);;
     }
 
     async authenticate(login: Login) {
-        const authLogin = await this.loginRepository.findOne({
+        const authLogin = await Login.findOne({
             where: {
                 'username': login.username,
                 'password': crypto.createHmac('sha256', login.password).digest('hex')
             }
         })
-        if (!login) {
-            throw new Error('Login not Found');
+        if (!authLogin) {
+            throw new UnauthorizedException('Login not Found');
         }
         return this.sendToken(authLogin);
     }
 
     async sendToken(login: Login) {
         login = await this.findOne(login.id);
-        const user = await this.userService.findOne(login.userId);
-        const profile = await this.profileService.findOne(user.profileId);
+        const user = await User.findByPk(login.userId);
+        const profile = await Profile.findByPk(user.profileId);
         const token = await this.createToken(login);
 
         const obj = {
@@ -73,7 +57,7 @@ export class LoginService {
     }
 
     async find(where: object) {
-        const logins = await this.loginRepository.findAll({
+        const logins = await Login.findAll({
             where: where, include: [User]
         });
         return logins;
@@ -83,10 +67,21 @@ export class LoginService {
         if (typeof where === 'string') {
             where = { 'id': where }
         }
-        const login = await this.loginRepository.findOne({
+        const login = await Login.findOne({
             where: where, include: [User]
         });
         return login;
+    }
+
+    async updateOne(id: number, body: any) {
+        return await Login.update(body, { where: { 'id': id } });
+    }
+
+    async deleteOne(loginId: number) {
+        const deletedLogin = await Login.destroy({
+            where: { 'id': loginId }
+        });
+        return await deletedLogin;
     }
 
 }
