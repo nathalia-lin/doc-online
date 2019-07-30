@@ -5,6 +5,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
@@ -31,6 +37,9 @@ const login_model_1 = __importDefault(require("../models/login.model"));
 const user_model_1 = __importDefault(require("../models/user.model"));
 const profile_model_1 = __importDefault(require("../models/profile.model"));
 let LoginService = class LoginService {
+    constructor(loginRepository) {
+        this.loginRepository = loginRepository;
+    }
     create(createLoginDto) {
         return __awaiter(this, void 0, void 0, function* () {
             return yield login_model_1.default.create(createLoginDto);
@@ -39,7 +48,7 @@ let LoginService = class LoginService {
     }
     authenticate(login) {
         return __awaiter(this, void 0, void 0, function* () {
-            const authLogin = yield login_model_1.default.findOne({
+            const authLogin = yield this.loginRepository.findOne({
                 where: {
                     'username': login.username,
                     'password': crypto_1.default.createHmac('sha256', login.password).digest('hex')
@@ -82,7 +91,7 @@ let LoginService = class LoginService {
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            const logins = yield login_model_1.default.findAll({
+            const logins = yield this.loginRepository.findAll({
                 where: where, include: [user_model_1.default]
             });
             return logins;
@@ -93,7 +102,7 @@ let LoginService = class LoginService {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const login = yield login_model_1.default.findOne({
+            const login = yield this.loginRepository.findOne({
                 where: where, include: [user_model_1.default]
             });
             return login;
@@ -106,7 +115,7 @@ let LoginService = class LoginService {
     }
     deleteOne(loginId) {
         return __awaiter(this, void 0, void 0, function* () {
-            const deletedLogin = yield login_model_1.default.destroy({
+            const deletedLogin = yield this.loginRepository.destroy({
                 where: { 'id': loginId }
             });
             return yield deletedLogin;
@@ -114,6 +123,8 @@ let LoginService = class LoginService {
     }
 };
 LoginService = __decorate([
-    common_1.Injectable()
+    common_1.Injectable(),
+    __param(0, common_1.Inject('LoginRepository')),
+    __metadata("design:paramtypes", [Object])
 ], LoginService);
 exports.LoginService = LoginService;

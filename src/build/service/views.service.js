@@ -5,6 +5,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
@@ -18,19 +24,21 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
-const views_model_1 = __importDefault(require("../models/views.model"));
 const user_model_1 = __importDefault(require("../models/user.model"));
 const exam_model_1 = __importDefault(require("../models/exam.model"));
 let ViewsService = class ViewsService {
+    constructor(viewsRepository) {
+        this.viewsRepository = viewsRepository;
+    }
     create(createViewsDto) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield views_model_1.default.create(createViewsDto);
+            return yield this.viewsRepository.create(createViewsDto);
             ;
         });
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            const views = yield views_model_1.default.findAll({
+            const views = yield this.viewsRepository.findAll({
                 where: where, include: [user_model_1.default, exam_model_1.default]
             });
             return views;
@@ -41,7 +49,7 @@ let ViewsService = class ViewsService {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const view = yield views_model_1.default.findOne({
+            const view = yield this.viewsRepository.findOne({
                 where: where, include: [user_model_1.default, exam_model_1.default]
             });
             return view;
@@ -49,12 +57,12 @@ let ViewsService = class ViewsService {
     }
     updateOne(id, body) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield views_model_1.default.update(body, { where: { 'id': id } });
+            return yield this.viewsRepository.update(body, { where: { 'id': id } });
         });
     }
     deleteOne(viewId) {
         return __awaiter(this, void 0, void 0, function* () {
-            const deletedView = yield views_model_1.default.destroy({
+            const deletedView = yield this.viewsRepository.destroy({
                 where: { 'id': viewId }
             });
             return yield deletedView;
@@ -62,6 +70,8 @@ let ViewsService = class ViewsService {
     }
 };
 ViewsService = __decorate([
-    common_1.Injectable()
+    common_1.Injectable(),
+    __param(0, common_1.Inject('ViewsRepository')),
+    __metadata("design:paramtypes", [Object])
 ], ViewsService);
 exports.ViewsService = ViewsService;

@@ -1,4 +1,4 @@
-import { Injectable, UnauthorizedException } from '@nestjs/common';
+import { Injectable, UnauthorizedException, Inject } from '@nestjs/common';
 import * as jwt from 'jsonwebtoken';
 import crypto from 'crypto';
 
@@ -11,12 +11,16 @@ import Profile from '../models/profile.model';
 @Injectable()
 export class LoginService {
 
+    constructor(
+        @Inject('LoginRepository') private readonly loginRepository: typeof Login
+    ) { }
+
     async create(createLoginDto: CreateLoginDto): Promise<Login> {
         return await Login.create<Login>(createLoginDto);;
     }
 
     async authenticate(login: Login) {
-        const authLogin = await Login.findOne({
+        const authLogin = await this.loginRepository.findOne({
             where: {
                 'username': login.username,
                 'password': crypto.createHmac('sha256', login.password).digest('hex')
@@ -57,7 +61,7 @@ export class LoginService {
     }
 
     async find(where: object) {
-        const logins = await Login.findAll({
+        const logins = await this.loginRepository.findAll({
             where: where, include: [User]
         });
         return logins;
@@ -67,7 +71,7 @@ export class LoginService {
         if (typeof where === 'string') {
             where = { 'id': where }
         }
-        const login = await Login.findOne({
+        const login = await this.loginRepository.findOne({
             where: where, include: [User]
         });
         return login;
@@ -78,7 +82,7 @@ export class LoginService {
     }
 
     async deleteOne(loginId: number) {
-        const deletedLogin = await Login.destroy({
+        const deletedLogin = await this.loginRepository.destroy({
             where: { 'id': loginId }
         });
         return await deletedLogin;

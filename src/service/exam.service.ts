@@ -21,6 +21,7 @@ import { CreateService } from './create.service';
 export class ExamService {
 
     constructor(
+        @Inject('ExamRepository') private readonly examRepository: typeof Exam,
         @Inject('CreateService') private createService: CreateService,
     ) { }
 
@@ -181,7 +182,7 @@ export class ExamService {
         if (exams.length > 0) {
             const login = await Login.findByPk(token.id);
             const user = await User.findByPk(login.userId);
-            const userSite = await UserSite.findOne({where: {userId: user.id}});
+            const userSite = await UserSite.findOne({ where: { userId: user.id } });
 
             const profiles = user.profiles.trim();
             const profileId = user.profileId;
@@ -192,7 +193,7 @@ export class ExamService {
                 const doctor = await Doctor.findOne({ where: { profileId } });
                 exams = await this.find({ [Op.or]: [{ 'requestingId': doctor.id }, { 'consultingId': doctor.id }] });
             } else if (profiles === 'ADMIN') {
-                const userSite = await UserSite.findOne({where: {userId: user.id}});
+                const userSite = await UserSite.findOne({ where: { userId: user.id } });
                 exams = await this.find({ 'siteId': userSite.siteId })
             }
         }
@@ -235,11 +236,11 @@ export class ExamService {
             'lastReportView': lastReportView,
             'lastImageView': lastImageView,
         } as CreateExamDto;
-        return await Exam.create(exam);
+        return await this.examRepository.create(exam);
     }
 
     async find(where: any) {
-        const exams = await Exam.findAll({
+        const exams = await this.examRepository.findAll({
             where: where,
             include: [Site, Patient, Insurance, Views, { model: Doctor, as: 'requestingDoctor' }, { model: Doctor, as: 'consultingDoctor' }]
         });
@@ -250,7 +251,7 @@ export class ExamService {
         if (typeof where === 'string') {
             where = { 'id': where }
         }
-        const exam = await Exam.findOne({
+        const exam = await this.examRepository.findOne({
             where: where,
             include: [Site, Patient, Insurance, Views, { model: Doctor, as: 'requestingDoctor' }, { model: Doctor, as: 'consultingDoctor' }]
         });
@@ -258,11 +259,11 @@ export class ExamService {
     }
 
     async updateOne(id: number, body: any) {
-        return await Exam.update(body, { where: { 'id': id } });
+        return await this.examRepository.update(body, { where: { 'id': id } });
     }
 
     async deleteOne(examId: number) {
-        const deletedExam = await Exam.destroy({
+        const deletedExam = await this.examRepository.destroy({
             where: { 'id': examId }
         });
         return await deletedExam;

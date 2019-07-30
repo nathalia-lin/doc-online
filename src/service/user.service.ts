@@ -16,6 +16,7 @@ import Insurance from "../models/insurance.model";
 export class UserService {
 
     constructor(
+        @Inject('UserRepository') private readonly userRepository: typeof User,
         @Inject('ExamService') private readonly examService: ExamService,
         @Inject('CreateService') private readonly createService: CreateService,
     ) { }
@@ -47,11 +48,11 @@ export class UserService {
     }
 
     async create(createUserDto: CreateUserDto): Promise<User> {
-        return await User.create<User>(createUserDto);;
+        return await this.userRepository.create<User>(createUserDto);;
     }
 
     async find(where: object) {
-        const user = await User.findAll({
+        const user = await this.userRepository.findAll({
             where: where, include: [Profile, Login, Site, Views, Insurance]
         });
         return user;
@@ -61,18 +62,18 @@ export class UserService {
         if (typeof where === 'string') {
             where = { 'id': where }
         }
-        const user = await User.findOne({
+        const user = await this.userRepository.findOne({
             where: where, include: [Profile, Login, Site, Views, Insurance]
         });
         return user;
     }
 
     async updateOne(id: number, body: any) {
-        return await User.update(body, { where: { 'id': id } });
+        return await this.userRepository.update(body, { where: { 'id': id } });
     }
 
     async deleteOne(userId: number) {
-        const deletedUser = await User.destroy({
+        const deletedUser = await this.userRepository.destroy({
             where: { 'id': userId }
         });
         return await deletedUser;

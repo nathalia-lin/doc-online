@@ -5,6 +5,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
@@ -19,16 +25,18 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const site_model_1 = __importDefault(require("../models/site.model"));
-const siteNotification_model_1 = __importDefault(require("../models/siteNotification.model"));
 let SiteNotificationService = class SiteNotificationService {
+    constructor(siteNotificationRepository) {
+        this.siteNotificationRepository = siteNotificationRepository;
+    }
     create(createSiteNotificationDto) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield siteNotification_model_1.default.create(createSiteNotificationDto);
+            return yield this.siteNotificationRepository.create(createSiteNotificationDto);
         });
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            const siteNotifications = yield siteNotification_model_1.default.findAll({
+            const siteNotifications = yield this.siteNotificationRepository.findAll({
                 where: where, include: [site_model_1.default]
             });
             return siteNotifications;
@@ -39,7 +47,7 @@ let SiteNotificationService = class SiteNotificationService {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const siteNotification = yield siteNotification_model_1.default.findOne({
+            const siteNotification = yield this.siteNotificationRepository.findOne({
                 where: where, include: [site_model_1.default]
             });
             return siteNotification;
@@ -47,12 +55,12 @@ let SiteNotificationService = class SiteNotificationService {
     }
     updateOne(id, body) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield siteNotification_model_1.default.update(body, { where: { 'id': id } });
+            return yield this.siteNotificationRepository.update(body, { where: { 'id': id } });
         });
     }
     deleteOne(siteNotificationId) {
         return __awaiter(this, void 0, void 0, function* () {
-            const deletedSiteNotification = yield siteNotification_model_1.default.destroy({
+            const deletedSiteNotification = yield this.siteNotificationRepository.destroy({
                 where: { 'id': siteNotificationId }
             });
             return yield deletedSiteNotification;
@@ -60,6 +68,8 @@ let SiteNotificationService = class SiteNotificationService {
     }
 };
 SiteNotificationService = __decorate([
-    common_1.Injectable()
+    common_1.Injectable(),
+    __param(0, common_1.Inject('SiteNotificationRepository')),
+    __metadata("design:paramtypes", [Object])
 ], SiteNotificationService);
 exports.SiteNotificationService = SiteNotificationService;

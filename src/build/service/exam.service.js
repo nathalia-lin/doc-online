@@ -31,14 +31,14 @@ const patient_model_1 = __importDefault(require("../models/patient.model"));
 const doctor_model_1 = __importDefault(require("../models/doctor.model"));
 const insurance_model_1 = __importDefault(require("../models/insurance.model"));
 const views_model_1 = __importDefault(require("../models/views.model"));
-const exam_model_1 = __importDefault(require("../models/exam.model"));
 const plan_model_1 = __importDefault(require("../models/plan.model"));
 const login_model_1 = __importDefault(require("../models/login.model"));
 const profile_model_1 = __importDefault(require("../models/profile.model"));
 const userSite_model_1 = __importDefault(require("../models/userSite.model"));
 const create_service_1 = require("./create.service");
 let ExamService = class ExamService {
-    constructor(createService) {
+    constructor(examRepository, createService) {
+        this.examRepository = examRepository;
         this.createService = createService;
     }
     create(token, networkId, studyInstanceUID, studyDate, accessionNum, modality, statusType, reqProcDescription, insuranceId, insuranceName, planId, planName, patientId, name, socialName, birthDate, sex, phone, email, pid, loginUsername, loginPassword, reqDoctorDocType, reqDoctorDocNum, reqDoctorDocIssuer, reqDoctorName, consDoctorDocType, consDoctorDocNum, consDoctorDocIssuer, consDoctorName) {
@@ -190,12 +190,12 @@ let ExamService = class ExamService {
                 'lastReportView': lastReportView,
                 'lastImageView': lastImageView,
             };
-            return yield exam_model_1.default.create(exam);
+            return yield this.examRepository.create(exam);
         });
     }
     find(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            const exams = yield exam_model_1.default.findAll({
+            const exams = yield this.examRepository.findAll({
                 where: where,
                 include: [site_model_1.default, patient_model_1.default, insurance_model_1.default, views_model_1.default, { model: doctor_model_1.default, as: 'requestingDoctor' }, { model: doctor_model_1.default, as: 'consultingDoctor' }]
             });
@@ -207,7 +207,7 @@ let ExamService = class ExamService {
             if (typeof where === 'string') {
                 where = { 'id': where };
             }
-            const exam = yield exam_model_1.default.findOne({
+            const exam = yield this.examRepository.findOne({
                 where: where,
                 include: [site_model_1.default, patient_model_1.default, insurance_model_1.default, views_model_1.default, { model: doctor_model_1.default, as: 'requestingDoctor' }, { model: doctor_model_1.default, as: 'consultingDoctor' }]
             });
@@ -216,12 +216,12 @@ let ExamService = class ExamService {
     }
     updateOne(id, body) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield exam_model_1.default.update(body, { where: { 'id': id } });
+            return yield this.examRepository.update(body, { where: { 'id': id } });
         });
     }
     deleteOne(examId) {
         return __awaiter(this, void 0, void 0, function* () {
-            const deletedExam = yield exam_model_1.default.destroy({
+            const deletedExam = yield this.examRepository.destroy({
                 where: { 'id': examId }
             });
             return yield deletedExam;
@@ -230,7 +230,8 @@ let ExamService = class ExamService {
 };
 ExamService = __decorate([
     common_1.Injectable(),
-    __param(0, common_1.Inject('CreateService')),
-    __metadata("design:paramtypes", [create_service_1.CreateService])
+    __param(0, common_1.Inject('ExamRepository')),
+    __param(1, common_1.Inject('CreateService')),
+    __metadata("design:paramtypes", [Object, create_service_1.CreateService])
 ], ExamService);
 exports.ExamService = ExamService;

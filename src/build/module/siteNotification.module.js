@@ -10,13 +10,14 @@ const common_1 = require("@nestjs/common");
 const database_module_1 = require("../database/database.module");
 const siteNotification_service_1 = require("../service/siteNotification.service");
 const siteNotification_controller_1 = require("../controller/siteNotification.controller");
+const siteNotification_provider_1 = require("../provider/siteNotification.provider");
 let SiteNotificationModule = class SiteNotificationModule {
 };
 SiteNotificationModule = __decorate([
     common_1.Module({
         imports: [database_module_1.DatabaseModule],
         controllers: [siteNotification_controller_1.SiteNotificationController],
-        providers: [siteNotification_service_1.SiteNotificationService],
+        providers: [siteNotification_service_1.SiteNotificationService, ...siteNotification_provider_1.SiteNotificationProvider],
         exports: [siteNotification_service_1.SiteNotificationService]
     })
 ], SiteNotificationModule);

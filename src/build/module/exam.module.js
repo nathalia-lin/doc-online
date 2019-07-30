@@ -11,13 +11,15 @@ const database_module_1 = require("../database/database.module");
 const exam_controller_1 = require("../controller/exam.controller");
 const exam_service_1 = require("../service/exam.service");
 const create_service_1 = require("../service/create.service");
+const exam_provider_1 = require("../provider/exam.provider");
 let ExamModule = class ExamModule {
 };
 ExamModule = __decorate([
     common_1.Module({
         imports: [database_module_1.DatabaseModule],
         controllers: [exam_controller_1.ExamController],
-        providers: [exam_service_1.ExamService, create_service_1.CreateService]
+        providers: [exam_service_1.ExamService, ...exam_provider_1.ExamProvider, create_service_1.CreateService],
+        exports: [exam_service_1.ExamService, create_service_1.CreateService]
     })
 ], ExamModule);
 exports.ExamModule = ExamModule;
