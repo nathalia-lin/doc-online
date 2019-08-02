@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable, Inject, NotFoundException } from '@nestjs/common';
 import { Op } from 'sequelize';
 
 import User from '../models/user.model';
@@ -34,18 +34,17 @@ export class ExamService {
         modality: string,
         statusType: string,
         reqProcDescription: string,
-        insuranceId: number,
+        insuranceId: string,
         insuranceName: string,
         planId: number,
         planName: string,
-        patientId: number,
+        patientId: string,
         name: string,
         socialName: string,
-        birthDate: Date,
+        birthDate: string,
         sex: string,
         phone: string,
         email: string,
-        pid: string,
         loginUsername: string,
         loginPassword: string,
         reqDoctorDocType: string,
@@ -64,109 +63,122 @@ export class ExamService {
         let siteId = await this.siteExists(networkId);
 
         // PATIENT
+        if (!patientId) { throw new NotFoundException('Patient not found') }
+
         let patientProfile, patientUser, patientUserSite;
-        let patient = await Patient.findByPk(patientId);
+        let patient = await Patient.findOne({ where: { 'pid': patientId } });
         if (!patient) {
             // é possível ter um profile sem ser um paciente? Precisa find profile primeiro antes de criar?
+            socialName = socialName.split(' ')[0];
             patientProfile = await this.createService.createProfile(name, socialName, sex, birthDate, phone, email);
-            patient = await this.createService.createPatient(patientId, patientProfile.id, pid);
+            patient = await this.createService.createPatient(patientProfile.id, patientId);
             patientUser = await this.createService.createUser(patientProfile.id, null, 'PATIENT', null, null, null, null);
-            patientUserSite = await this.createService.createUserSite(patientUser, siteId, createdBy);
+            patientUserSite = await this.createService.createUserSite(patientUser.id, siteId, createdBy);
         }
         await this.createLogin(patientUser, null, loginPassword, loginUsername);
 
-        let insurance = await Insurance.findByPk(insuranceId);
-        if (!insurance) {
-            await this.createService.createInsurance(insuranceId, siteId, insuranceName);
-            await this.createService.createUserInsurance(insuranceId, patientUser.id)
+        let insurance = await Insurance.findOne({ where: { 'insuranceId': insuranceId } });
+        if (!insurance && insuranceId) {
+            insurance = await this.createService.createInsurance(insuranceId, siteId, insuranceName);
+            await this.createService.createUserInsurance(insurance.id, patientUser.id);
         }
 
-        let plan = await Plan.findOne({ where: { 'insuranceId': insuranceId } });
-        if (!plan) { await this.createService.createPlan(planId, insuranceId, planName) }
+        let plan = await Plan.findOne({ where: { 'insuranceId': insurance.id } });
+        if (!plan && planId) { await this.createService.createPlan(planId, insurance.id, planName) }
 
         // REQUESTING DOCTOR
-        let reqDoctorProfile, reqDoctorUser, reqDoctorUserSite;
-        let reqDoctor = await Doctor.findOne({
-            where: {
-                'docType': reqDoctorDocType,
-                'docIssuer': reqDoctorDocIssuer,
-                'docNum': reqDoctorDocNum
+        let reqDoctorProfile, reqDoctorUser, reqDoctorUserSite, reqDoctor;
+        if (reqDoctorName && reqDoctorDocType && reqDoctorDocIssuer && reqDoctorDocNum) {
+            reqDoctor = await this.findDoctor(reqDoctorDocType, reqDoctorDocIssuer, reqDoctorDocNum); 
+            if (!reqDoctor) {
+                const reqDoctorSocialName = reqDoctorName.split(" ")[0];
+                reqDoctorProfile = await this.createService.createProfile(reqDoctorSocialName, reqDoctorName, null, null, null, null);
+                reqDoctor = await this.createService.createDoctor(reqDoctorProfile.id, reqDoctorDocType, reqDoctorDocIssuer, reqDoctorDocNum);
+                reqDoctorUser = await this.createService.createUser(reqDoctorProfile.id, null, 'DOCTOR', null, null, null, null);
+                reqDoctorUserSite = await this.createService.createUserSite(reqDoctorUser.id, siteId, createdBy);
             }
-        });
-
-        if (!reqDoctor) {
-            const reqDoctorSocialName = reqDoctorName.split(" ")[0];
-            reqDoctorProfile = await this.createService.createProfile(reqDoctorName, reqDoctorSocialName, null, null, null, null);
-            reqDoctor = await this.createService.createDoctor(reqDoctorProfile.id, reqDoctorDocType, reqDoctorDocIssuer, reqDoctorDocNum);
-            reqDoctorUser = await this.createService.createUser(reqDoctorProfile.id, null, 'DOCTOR', null, null, null, null);
-            reqDoctorUserSite = await this.createService.createUserSite(reqDoctorUser, siteId, createdBy);
+            await this.createLogin(reqDoctorUser, reqDoctor);
         }
-        await this.createLogin(reqDoctorUser, reqDoctor);
-
+        
+       
         // CONSULTING DOCTOR
-        let consDoctorProfile, consDoctorUser, consDoctorUserSite;
-        let consDoctor = await Doctor.findOne({ where: { 'docNum': consDoctorDocNum } });
-        if (consDoctorName && !consDoctor) {
-            const consDoctorSocialName = consDoctorName.split(" ")[0];
-            consDoctorProfile = await this.createService.createProfile(consDoctorName, consDoctorSocialName, null, null, null, null);
-            consDoctor = await this.createService.createDoctor(consDoctorProfile.id, consDoctorDocType, consDoctorDocIssuer, consDoctorDocNum);
-            consDoctorUser = await this.createService.createUser(consDoctorProfile.id, null, 'DOCTOR', null, null, null, null);
-            consDoctorUserSite = await this.createService.createUserSite(consDoctorUser, siteId, createdBy);
+        let consDoctorProfile, consDoctorUser, consDoctorUserSite, consDoctor;
+        if (consDoctorName && consDoctorDocType && consDoctorDocIssuer && consDoctorDocNum) {
+            consDoctor = await this.findDoctor(consDoctorDocType, consDoctorDocIssuer, consDoctorDocNum);
+            if (!consDoctor) {
+                const consDoctorSocialName = consDoctorName.split(" ")[0];
+                consDoctorProfile = await this.createService.createProfile(consDoctorSocialName, consDoctorName, null, null, null, null);
+                consDoctor = await this.createService.createDoctor(consDoctorProfile.id, consDoctorDocType, consDoctorDocIssuer, consDoctorDocNum);
+                consDoctorUser = await this.createService.createUser(consDoctorProfile.id, null, 'DOCTOR', null, null, null, null);
+                consDoctorUserSite = await this.createService.createUserSite(consDoctorUser.id, siteId, createdBy);
+            }
+            await this.createLogin(consDoctorUser, consDoctor);
         }
-        let consDoctorId = await this.getConsDoctorId(consDoctorName, consDoctor);
-        await this.createLogin(consDoctorUser, consDoctor);
 
         // Once you have all the information, create an exam
+        let reqDoctorId, consDoctorId
+        if (reqDoctor) {
+            reqDoctorId = reqDoctor.id;
+        } 
+        if (consDoctor) {
+            consDoctorId = consDoctor.id;
+        }
+    
         const exam = await this.createExam(
-            pid, accessionNum, studyInstanceUID, networkId, siteId,
-            modality, reqProcDescription, studyDate, statusType, patientId,
-            reqDoctor.id, consDoctorId, insuranceId, null, null);
+            patientId, accessionNum, studyInstanceUID, networkId, siteId,
+            modality, reqProcDescription, studyDate, statusType, patient.id,
+            reqDoctorId, consDoctorId, insurance.id, null, null);
 
         await this.createService.createLogExam(exam.id);
     }
 
     // Check if user exists
     async createdBy(loginId: number) {
-        if (loginId) {
+        try {
             let login = await Login.findByPk(loginId);
             let user = await User.findByPk(login.userId);
             return user.id;
-        } else {
+        }
+        catch (err) {
             throw new Error('User does not exist');
         }
     }
 
     // Check if site exists
     async siteExists(networkId: string) {
-        let site = await Site.findOne({
-            where: {
-                'networkId': networkId
-            }
-        });
-        if (site) {
+        try {
+            let site = await Site.findOne({
+                where: {
+                    'networkId': networkId
+                }
+            });
             return site.id;
-        } else {
+        } catch (err) {
             throw new Error('Site does not exist');
         }
     }
 
     async createLogin(user: User, doctor, password = null, username = null) {
         if (!user) {
-            return null
+            return null;
         }
-        let profile = await Profile.findByPk(user.profileId)
         if (!password) {
+            let profile = await Profile.findByPk(user.profileId);
             username = doctor.docNum;
             password = doctor.docNum + '@' + profile.socialName;
         }
         await this.createService.createLogin(user.id, username, password);
     }
 
-    async getConsDoctorId(consDoctorName, consDoctor) {
-        if (consDoctorName) {
-            return consDoctor.id;
-        }
-        return null;
+    async findDoctor(type, issuer, num) {
+        let doctor = await Doctor.findOne({
+                where: {
+                    'docType': type,
+                    'docIssuer': issuer,
+                    'docNum': num
+            }
+        });
+        return doctor;
     }
 
     // ========================================================================================================
@@ -196,6 +208,7 @@ export class ExamService {
                 const userSite = await UserSite.findOne({ where: { userId: user.id } });
                 exams = await this.find({ 'siteId': userSite.siteId })
             }
+            console.log(exams.length);
         }
         return exams;
     }

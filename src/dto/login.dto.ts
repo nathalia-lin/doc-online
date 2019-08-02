@@ -13,5 +13,9 @@ export class CreateLoginDto {
     @IsNotEmpty()
     @IsString()
     readonly password: string;
+
+    @IsNotEmpty()
+    @IsString()
+    readonly passwordHash: string;
     
 }

@@ -13,10 +13,8 @@ export default class Login extends Model<Login> {
     }) public id: number;
 
     @ForeignKey(() => User)
-    @Column({
-        defaultValue: DataType.UUIDV4,
-        type: DataType.UUID
-    }) public userId: number;
+    @Column(DataType.UUID) 
+    public userId: number;
 
     @BelongsTo(() => User)
     public user: User;
@@ -24,12 +22,15 @@ export default class Login extends Model<Login> {
     @Column(DataType.STRING(25))
     public username?: string;
 
+    @Column(DataType.STRING(150))
+    public password?: string;
+
     @BeforeCreate
     public static async hashPassword(login: Login) {
-        login.password = crypto.createHmac('sha256', login.password).digest('hex');
+        login.passwordHash = crypto.createHmac('sha256', login.password).digest('hex');
     }
 
     @Column(DataType.STRING(150))
-    public password?: string;
+    public passwordHash?: string;
 
 }

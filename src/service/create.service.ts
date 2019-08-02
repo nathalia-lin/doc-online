@@ -27,7 +27,7 @@ export class CreateService {
 
     async createDoctor(profileId, docType, docIssuer, docNum) {
         let newDoctor = {
-            'profileId': profileId.id,
+            'profileId': profileId,
             'docType': docType,
             'docIssuer': docIssuer,
             'docNum': docNum,
@@ -37,11 +37,11 @@ export class CreateService {
 
     async createInsurance(insuranceId, siteId, insuranceName) {
         let insurance = {
-            'id': insuranceId,
+            'insuranceId': insuranceId,
             'siteId': siteId,
             'name': insuranceName
         } as CreateInsuranceDto;
-        await Insurance.create(insurance);
+        return await Insurance.create(insurance);
     }
 
     async createLogExam(examId) {
@@ -49,7 +49,7 @@ export class CreateService {
             'examId': examId,
             'postedData': null
         } as CreateLogExamDto;
-        await LogExam.create(logExam);
+        return await LogExam.create(logExam);
     }
 
     async createLogin(userId, username, password) {
@@ -58,12 +58,11 @@ export class CreateService {
             'username': username,
             'password': password
         } as CreateLoginDto;
-        await Login.create(login);
+        return await Login.create(login);
     }
 
-    async createPatient(id: number, profileId: number, pid: string) {
+    async createPatient(profileId: number, pid: string) {
         let newPatient = {
-            'id': id,
             'profileId': profileId,
             'pid': pid,
         } as CreatePatientDto;
@@ -72,14 +71,14 @@ export class CreateService {
 
     async createPlan(planId, insuranceId, planName) {
         let plan = {
-            'id': planId,
+            'planId': planId,
             'insuranceId': insuranceId,
             'name': planName
         } as CreatePlanDto;
-        await Plan.create(plan);
+        return await Plan.create(plan);
     }
 
-    async createProfile(socialName: string, name: string, sex: string, birthdate: Date, phone: string, email: string) {
+    async createProfile(socialName: string, name: string, sex: string, birthdate: string, phone: string, email: string) {
         let newProfile = {
           'name': name,
           'socialName': socialName,
@@ -109,7 +108,7 @@ export class CreateService {
             'insuranceId': insuranceId,
             'userId': userId,
         } as CreateUserInsuranceDto;
-        await UserInsurance.create(userInsurance);
+        return await UserInsurance.create(userInsurance);
     }
 
     async createUserSite(userId, siteId, createdBy) {

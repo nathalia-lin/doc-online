@@ -28,7 +28,7 @@ __decorate([
     __metadata("design:type", String)
 ], CreateUserDto.prototype, "profiles", void 0);
 __decorate([
-    class_validator_1.IsNotEmpty(),
+    class_validator_1.IsOptional(),
     class_validator_1.IsBoolean(),
     __metadata("design:type", Boolean)
 ], CreateUserDto.prototype, "active", void 0);

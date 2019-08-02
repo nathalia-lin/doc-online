@@ -29,7 +29,7 @@ let ExamController = class ExamController {
     create(req, body) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                return yield this.examService.create(req.token, body.networkID, body.studyInstanceUID, body.studyDate, body.accessionNumber, body.modality, body.studyStatus, body.reqProcDescription, body.insuranceID, body.insuranceName, body.planID, body.planName, body.patientID, body.patientName, body.patientSocialName, body.patientBirthDate, body.patientSex, body.patientPhone, body.patientEmail, body.patientPID, body.protocolID, body.protocolPwd, body.reqPhysicianType, body.reqPhysicianNum, body.reqPhysicianUF, body.reqPhysicianName, body.refPhysicianType, body.refPhysicianNum, body.refPhysicianUF, body.refPhysicianName);
+                return yield this.examService.create(req.token, body.networkID, body.studyInstanceUID, body.studyDate, body.accessionNumber, body.modality, body.studyStatus, body.reqProcDescription, body.insuranceID, body.insuranceName, body.planID, body.planName, body.patientID, body.patientName, body.patientSocialName, body.patientBirthDate, body.patientSex, body.patientPhone, body.patientEmail, body.protocolID, body.protocolPwd, body.reqPhysicianType, body.reqPhysicianNum, body.reqPhysicianUF, body.reqPhysicianName, body.refPhysicianType, body.refPhysicianNum, body.refPhysicianUF, body.refPhysicianName);
             }
             catch (SequelizeDatabaseError) {
                 throw new common_1.BadRequestException(SequelizeDatabaseError);

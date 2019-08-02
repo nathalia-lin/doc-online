@@ -32,7 +32,7 @@ let CreateService = class CreateService {
     createDoctor(profileId, docType, docIssuer, docNum) {
         return __awaiter(this, void 0, void 0, function* () {
             let newDoctor = {
-                'profileId': profileId.id,
+                'profileId': profileId,
                 'docType': docType,
                 'docIssuer': docIssuer,
                 'docNum': docNum,
@@ -43,11 +43,11 @@ let CreateService = class CreateService {
     createInsurance(insuranceId, siteId, insuranceName) {
         return __awaiter(this, void 0, void 0, function* () {
             let insurance = {
-                'id': insuranceId,
+                'insuranceId': insuranceId,
                 'siteId': siteId,
                 'name': insuranceName
             };
-            yield insurance_model_1.default.create(insurance);
+            return yield insurance_model_1.default.create(insurance);
         });
     }
     createLogExam(examId) {
@@ -56,7 +56,7 @@ let CreateService = class CreateService {
                 'examId': examId,
                 'postedData': null
             };
-            yield logExam_model_1.default.create(logExam);
+            return yield logExam_model_1.default.create(logExam);
         });
     }
     createLogin(userId, username, password) {
@@ -66,13 +66,12 @@ let CreateService = class CreateService {
                 'username': username,
                 'password': password
             };
-            yield login_model_1.default.create(login);
+            return yield login_model_1.default.create(login);
         });
     }
-    createPatient(id, profileId, pid) {
+    createPatient(profileId, pid) {
         return __awaiter(this, void 0, void 0, function* () {
             let newPatient = {
-                'id': id,
                 'profileId': profileId,
                 'pid': pid,
             };
@@ -82,11 +81,11 @@ let CreateService = class CreateService {
     createPlan(planId, insuranceId, planName) {
         return __awaiter(this, void 0, void 0, function* () {
             let plan = {
-                'id': planId,
+                'planId': planId,
                 'insuranceId': insuranceId,
                 'name': planName
             };
-            yield plan_model_1.default.create(plan);
+            return yield plan_model_1.default.create(plan);
         });
     }
     createProfile(socialName, name, sex, birthdate, phone, email) {
@@ -122,7 +121,7 @@ let CreateService = class CreateService {
                 'insuranceId': insuranceId,
                 'userId': userId,
             };
-            yield userInsurance_model_1.default.create(userInsurance);
+            return yield userInsurance_model_1.default.create(userInsurance);
         });
     }
     createUserSite(userId, siteId, createdBy) {

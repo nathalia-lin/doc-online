@@ -29,8 +29,8 @@ __decorate([
 ], CreateProfileDto.prototype, "sex", void 0);
 __decorate([
     class_validator_1.IsNotEmpty(),
-    class_validator_1.IsDate(),
-    __metadata("design:type", Date)
+    class_validator_1.IsString(),
+    __metadata("design:type", String)
 ], CreateProfileDto.prototype, "birthdate", void 0);
 __decorate([
     class_validator_1.IsOptional(),

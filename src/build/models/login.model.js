@@ -26,7 +26,7 @@ const user_model_1 = __importDefault(require("./user.model"));
 let Login = class Login extends sequelize_typescript_1.Model {
     static hashPassword(login) {
         return __awaiter(this, void 0, void 0, function* () {
-            login.password = crypto_1.default.createHmac('sha256', login.password).digest('hex');
+            login.passwordHash = crypto_1.default.createHmac('sha256', login.password).digest('hex');
         });
     }
 };
@@ -40,10 +40,7 @@ __decorate([
 ], Login.prototype, "id", void 0);
 __decorate([
     sequelize_typescript_1.ForeignKey(() => user_model_1.default),
-    sequelize_typescript_1.Column({
-        defaultValue: sequelize_typescript_1.DataType.UUIDV4,
-        type: sequelize_typescript_1.DataType.UUID
-    }),
+    sequelize_typescript_1.Column(sequelize_typescript_1.DataType.UUID),
     __metadata("design:type", Number)
 ], Login.prototype, "userId", void 0);
 __decorate([
@@ -58,6 +55,10 @@ __decorate([
     sequelize_typescript_1.Column(sequelize_typescript_1.DataType.STRING(150)),
     __metadata("design:type", String)
 ], Login.prototype, "password", void 0);
+__decorate([
+    sequelize_typescript_1.Column(sequelize_typescript_1.DataType.STRING(150)),
+    __metadata("design:type", String)
+], Login.prototype, "passwordHash", void 0);
 __decorate([
     sequelize_typescript_1.BeforeCreate,
     __metadata("design:type", Function),

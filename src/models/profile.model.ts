@@ -22,8 +22,8 @@ export default class Profile extends Model<Profile> {
   @Column(DataType.STRING(1))
   public sex?: string;
 
-  @Column(DataType.DATE)
-  public birthdate?: Date;
+  @Column(DataType.STRING(20))
+  public birthdate?: string;
 
   @Column(DataType.STRING(12))
   public phone?: string;

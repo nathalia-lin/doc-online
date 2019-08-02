@@ -38,6 +38,10 @@ __decorate([
     __metadata("design:type", site_model_1.default)
 ], Insurance.prototype, "site", void 0);
 __decorate([
+    sequelize_typescript_1.Column(sequelize_typescript_1.DataType.STRING(100)),
+    __metadata("design:type", String)
+], Insurance.prototype, "insuranceId", void 0);
+__decorate([
     sequelize_typescript_1.Column(sequelize_typescript_1.DataType.STRING(200)),
     __metadata("design:type", String)
 ], Insurance.prototype, "name", void 0);

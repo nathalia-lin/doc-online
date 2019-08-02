@@ -14,6 +14,11 @@ class CreatePlanDto {
 }
 __decorate([
     class_validator_1.IsNotEmpty(),
+    class_validator_1.IsString(),
+    __metadata("design:type", Number)
+], CreatePlanDto.prototype, "planId", void 0);
+__decorate([
+    class_validator_1.IsNotEmpty(),
     class_validator_1.IsUUID(),
     __metadata("design:type", Number)
 ], CreatePlanDto.prototype, "insuranceId", void 0);

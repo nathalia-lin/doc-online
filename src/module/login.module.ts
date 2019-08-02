@@ -24,7 +24,8 @@ export class LoginModule implements NestModule {
             .forRoutes(
                 { path: '/exam', method: RequestMethod.ALL },
                 { path: '/exam/search', method: RequestMethod.ALL },
-                { path: '/user', method: RequestMethod.ALL },
+                // Se limpar o banco, comment out /user 
+                // { path: '/user', method: RequestMethod.ALL },
             )
     }
 }

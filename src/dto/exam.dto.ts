@@ -26,27 +26,27 @@ export class CreateExamDto {
     @IsUUID()
     readonly siteId: number;
 
-    @IsNotEmpty()
+    @IsOptional()
     @IsString()
     readonly modality: string;
 
-    @IsNotEmpty()
+    @IsOptional()
     @IsString()
     readonly description: string;
 
-    @IsNotEmpty()
+    @IsOptional()
     @IsDate()
     readonly examDate: Date;
 
-    @IsNotEmpty()
+    @IsOptional()
     @IsString()
     readonly statusType: string;
 
-    @IsNotEmpty()
+    @IsOptional()
     @IsUUID()
     readonly patientId: number;
 
-    @IsNotEmpty()
+    @IsOptional()
     @IsUUID()
     readonly requestingId: number;
 
@@ -54,15 +54,15 @@ export class CreateExamDto {
     @IsUUID()
     readonly consultingId: number;
 
-    @IsNotEmpty()
+    @IsOptional()
     @IsUUID()
     readonly insuranceId: number;
 
-    @IsNotEmpty()
+    @IsOptional()
     @IsDate()
     readonly lastReportView: Date;
 
-    @IsNotEmpty()
+    @IsOptional()
     @IsNumber()
     readonly lastImageView: number;
 

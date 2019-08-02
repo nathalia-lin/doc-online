@@ -14,7 +14,7 @@ export class CreateUserDto {
     @IsString()
     readonly profiles: string;
 
-    @IsNotEmpty()
+    @IsOptional()
     @IsBoolean()
     readonly active: boolean;
 

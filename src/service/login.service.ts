@@ -23,7 +23,8 @@ export class LoginService {
         const authLogin = await this.loginRepository.findOne({
             where: {
                 'username': login.username,
-                'password': crypto.createHmac('sha256', login.password).digest('hex')
+                'password': login.password,
+                'passwordHash': crypto.createHmac('sha256', login.password).digest('hex')
             }
         })
         if (!authLogin) {

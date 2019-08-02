@@ -43,32 +43,32 @@ __decorate([
     __metadata("design:type", Number)
 ], CreateExamDto.prototype, "siteId", void 0);
 __decorate([
-    class_validator_1.IsNotEmpty(),
+    class_validator_1.IsOptional(),
     class_validator_1.IsString(),
     __metadata("design:type", String)
 ], CreateExamDto.prototype, "modality", void 0);
 __decorate([
-    class_validator_1.IsNotEmpty(),
+    class_validator_1.IsOptional(),
     class_validator_1.IsString(),
     __metadata("design:type", String)
 ], CreateExamDto.prototype, "description", void 0);
 __decorate([
-    class_validator_1.IsNotEmpty(),
+    class_validator_1.IsOptional(),
     class_validator_1.IsDate(),
     __metadata("design:type", Date)
 ], CreateExamDto.prototype, "examDate", void 0);
 __decorate([
-    class_validator_1.IsNotEmpty(),
+    class_validator_1.IsOptional(),
     class_validator_1.IsString(),
     __metadata("design:type", String)
 ], CreateExamDto.prototype, "statusType", void 0);
 __decorate([
-    class_validator_1.IsNotEmpty(),
+    class_validator_1.IsOptional(),
     class_validator_1.IsUUID(),
     __metadata("design:type", Number)
 ], CreateExamDto.prototype, "patientId", void 0);
 __decorate([
-    class_validator_1.IsNotEmpty(),
+    class_validator_1.IsOptional(),
     class_validator_1.IsUUID(),
     __metadata("design:type", Number)
 ], CreateExamDto.prototype, "requestingId", void 0);
@@ -78,17 +78,17 @@ __decorate([
     __metadata("design:type", Number)
 ], CreateExamDto.prototype, "consultingId", void 0);
 __decorate([
-    class_validator_1.IsNotEmpty(),
+    class_validator_1.IsOptional(),
     class_validator_1.IsUUID(),
     __metadata("design:type", Number)
 ], CreateExamDto.prototype, "insuranceId", void 0);
 __decorate([
-    class_validator_1.IsNotEmpty(),
+    class_validator_1.IsOptional(),
     class_validator_1.IsDate(),
     __metadata("design:type", Date)
 ], CreateExamDto.prototype, "lastReportView", void 0);
 __decorate([
-    class_validator_1.IsNotEmpty(),
+    class_validator_1.IsOptional(),
     class_validator_1.IsNumber(),
     __metadata("design:type", Number)
 ], CreateExamDto.prototype, "lastImageView", void 0);

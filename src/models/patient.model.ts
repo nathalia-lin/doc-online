@@ -13,10 +13,8 @@ export default class Patient extends Model<Patient> {
     }) public id: number;
 
     @ForeignKey(() => Profile)
-    @Column({
-        defaultValue: DataType.UUIDV4,
-        type: DataType.UUID
-    }) public profileId: number;
+    @Column(DataType.UUID) 
+    public profileId: number;
 
     @BelongsTo(() => Profile)
     public profile: Profile;

@@ -25,6 +25,7 @@ const logExam_module_1 = require("./logExam.module");
 const insurance_module_1 = require("./insurance.module");
 const userInsurance_module_1 = require("./userInsurance.module");
 const plan_module_1 = require("./plan.module");
+const app_controller_1 = require("../controller/app.controller");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -46,6 +47,7 @@ AppModule = __decorate([
             userInsurance_module_1.UserInsuranceModule,
             plan_module_1.PlanModule
         ],
+        controllers: [app_controller_1.AppController],
         providers: [
             {
                 provide: core_1.APP_PIPE,

@@ -27,10 +27,7 @@ __decorate([
 ], Patient.prototype, "id", void 0);
 __decorate([
     sequelize_typescript_1.ForeignKey(() => profile_model_1.default),
-    sequelize_typescript_1.Column({
-        defaultValue: sequelize_typescript_1.DataType.UUIDV4,
-        type: sequelize_typescript_1.DataType.UUID
-    }),
+    sequelize_typescript_1.Column(sequelize_typescript_1.DataType.UUID),
     __metadata("design:type", Number)
 ], Patient.prototype, "profileId", void 0);
 __decorate([

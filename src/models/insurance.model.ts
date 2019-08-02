@@ -22,6 +22,9 @@ export default class Insurance extends Model<Insurance> {
     @BelongsTo(() => Site)
     public site?: Site;
 
+    @Column(DataType.STRING(100))
+    public insuranceId: string;
+
     @Column(DataType.STRING(200))
     public name?: string;
 

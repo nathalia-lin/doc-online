@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsString, IsOptional, IsDate } from 'class-validator';
+import { IsNotEmpty, IsString, IsOptional } from 'class-validator';
 
 export class CreateProfileDto {
 
@@ -15,8 +15,8 @@ export class CreateProfileDto {
     readonly sex: string;
 
     @IsNotEmpty()
-    @IsDate()
-    readonly birthdate: Date;
+    @IsString()
+    readonly birthdate: string;
 
     @IsOptional()
     @IsString()

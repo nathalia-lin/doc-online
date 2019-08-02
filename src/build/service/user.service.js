@@ -43,7 +43,10 @@ let UserService = class UserService {
             const profile = yield this.createService.createProfile(socialName, name, sex, birthdate, phone, email);
             const user = yield this.createService.createUser(profile.id, lastAccess, profiles, active, recoveryKey, lastRecovery, termApproved);
             yield this.createService.createLogin(user.id, username, password);
-            const createdBy = yield this.examService.createdBy(token.id);
+            let createdBy = null;
+            if (token) {
+                createdBy = yield this.examService.createdBy(token.id);
+            }
             yield this.createService.createUserSite(user.id, siteId, createdBy);
         });
     }

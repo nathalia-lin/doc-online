@@ -27,4 +27,9 @@ __decorate([
     class_validator_1.IsString(),
     __metadata("design:type", String)
 ], CreateLoginDto.prototype, "password", void 0);
+__decorate([
+    class_validator_1.IsNotEmpty(),
+    class_validator_1.IsString(),
+    __metadata("design:type", String)
+], CreateLoginDto.prototype, "passwordHash", void 0);
 exports.CreateLoginDto = CreateLoginDto;

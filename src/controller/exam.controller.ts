@@ -36,7 +36,6 @@ export class ExamController {
                 body.patientSex,
                 body.patientPhone,
                 body.patientEmail,
-                body.patientPID,
                 body.protocolID,
                 body.protocolPwd,
                 // body.reportextension,

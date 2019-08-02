@@ -27,7 +27,7 @@ export class UserService {
         socialName: string,
         name: string,
         sex: string,
-        birthdate: Date,
+        birthdate: string,
         phone: string,
         email: string,
         lastAccess: Date,
@@ -43,7 +43,10 @@ export class UserService {
         const profile = await this.createService.createProfile(socialName, name, sex, birthdate, phone, email);
         const user = await this.createService.createUser(profile.id, lastAccess, profiles, active, recoveryKey, lastRecovery, termApproved);
         await this.createService.createLogin(user.id, username, password);
-        const createdBy = await this.examService.createdBy(token.id);
+        let createdBy = null;
+        if (token) {
+            createdBy = await this.examService.createdBy(token.id);
+        }
         await this.createService.createUserSite(user.id, siteId, createdBy);
     }
 

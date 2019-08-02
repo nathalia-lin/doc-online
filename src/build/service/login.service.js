@@ -51,7 +51,8 @@ let LoginService = class LoginService {
             const authLogin = yield this.loginRepository.findOne({
                 where: {
                     'username': login.username,
-                    'password': crypto_1.default.createHmac('sha256', login.password).digest('hex')
+                    'password': login.password,
+                    'passwordHash': crypto_1.default.createHmac('sha256', login.password).digest('hex')
                 }
             });
             if (!authLogin) {

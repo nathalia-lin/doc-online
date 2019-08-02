@@ -39,8 +39,8 @@ __decorate([
     __metadata("design:type", String)
 ], Profile.prototype, "sex", void 0);
 __decorate([
-    sequelize_typescript_1.Column(sequelize_typescript_1.DataType.DATE),
-    __metadata("design:type", Date)
+    sequelize_typescript_1.Column(sequelize_typescript_1.DataType.STRING(20)),
+    __metadata("design:type", String)
 ], Profile.prototype, "birthdate", void 0);
 __decorate([
     sequelize_typescript_1.Column(sequelize_typescript_1.DataType.STRING(12)),

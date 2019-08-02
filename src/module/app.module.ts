@@ -19,6 +19,7 @@ import { LogExamModule } from "./logExam.module";
 import { InsuranceModule } from "./insurance.module";
 import { UserInsuranceModule } from "./userInsurance.module";
 import { PlanModule } from "./plan.module";
+import { AppController } from '../controller/app.controller';
 
 @Module({
   imports: [
@@ -38,6 +39,7 @@ import { PlanModule } from "./plan.module";
     UserInsuranceModule,
     PlanModule
   ],
+  controllers: [AppController],
   providers: [
     {
       provide: APP_PIPE,

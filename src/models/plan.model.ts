@@ -20,5 +20,4 @@ export default class Plan extends Model<Plan> {
 
     @Column(DataType.STRING(200))
     public name?: string;
-
 }
