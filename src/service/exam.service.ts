@@ -89,7 +89,7 @@ export class ExamService {
         // REQUESTING DOCTOR
         let reqDoctorProfile, reqDoctorUser, reqDoctorUserSite, reqDoctor;
         if (reqDoctorName && reqDoctorDocType && reqDoctorDocIssuer && reqDoctorDocNum) {
-            reqDoctor = await this.findDoctor(reqDoctorDocType, reqDoctorDocIssuer, reqDoctorDocNum); 
+            reqDoctor = await this.findDoctor(reqDoctorDocType, reqDoctorDocIssuer, reqDoctorDocNum);
             if (!reqDoctor) {
                 const reqDoctorSocialName = reqDoctorName.split(" ")[0];
                 reqDoctorProfile = await this.createService.createProfile(reqDoctorSocialName, reqDoctorName, null, null, null, null);
@@ -99,8 +99,8 @@ export class ExamService {
             }
             await this.createLogin(reqDoctorUser, reqDoctor);
         }
-        
-       
+
+
         // CONSULTING DOCTOR
         let consDoctorProfile, consDoctorUser, consDoctorUserSite, consDoctor;
         if (consDoctorName && consDoctorDocType && consDoctorDocIssuer && consDoctorDocNum) {
@@ -119,11 +119,11 @@ export class ExamService {
         let reqDoctorId, consDoctorId
         if (reqDoctor) {
             reqDoctorId = reqDoctor.id;
-        } 
+        }
         if (consDoctor) {
             consDoctorId = consDoctor.id;
         }
-    
+
         const exam = await this.createExam(
             patientId, accessionNum, studyInstanceUID, networkId, siteId,
             modality, reqProcDescription, studyDate, statusType, patient.id,
@@ -172,10 +172,10 @@ export class ExamService {
 
     async findDoctor(type, issuer, num) {
         let doctor = await Doctor.findOne({
-                where: {
-                    'docType': type,
-                    'docIssuer': issuer,
-                    'docNum': num
+            where: {
+                'docType': type,
+                'docIssuer': issuer,
+                'docNum': num
             }
         });
         return doctor;
@@ -260,7 +260,7 @@ export class ExamService {
         return exams;
     }
 
-    async findOne(where: any) {
+    async findOne(where: any, token) {
         if (typeof where === 'string') {
             where = { 'id': where }
         }
@@ -268,6 +268,11 @@ export class ExamService {
             where: where,
             include: [Site, Patient, Insurance, Views, { model: Doctor, as: 'requestingDoctor' }, { model: Doctor, as: 'consultingDoctor' }]
         });
+
+        const viewer = await this.createdBy(token.id);
+        const view = await this.createService.createViews(exam.id, viewer, null);
+        exam.views.push(view);
+
         return exam;
     }
 

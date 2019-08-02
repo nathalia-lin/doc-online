@@ -26,8 +26,10 @@ export default class Views extends Model<Views> {
     @BelongsTo(() => User)
     public user?: User;
 
-    @Column(DataType.DATE)
-    public dateViewed?: Date;
+    @Column({
+        defaultValue: Date.now(),
+        type: DataType.DATE
+    }) public dateViewed?: Date;
 
     @Column(DataType.STRING(15))
     public typeViewed?: string;

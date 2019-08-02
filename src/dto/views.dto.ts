@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsString, IsDate, IsUUID } from 'class-validator';
+import { IsNotEmpty, IsString, IsDate, IsUUID, IsOptional } from 'class-validator';
 
 export class CreateViewsDto {
 
@@ -14,7 +14,7 @@ export class CreateViewsDto {
     @IsDate()
     readonly dateViewed: Date;
 
-    @IsNotEmpty()
+    @IsOptional()
     @IsString()
     readonly typeViewed: string;
 }

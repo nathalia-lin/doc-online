@@ -10,6 +10,7 @@ import { CreateProfileDto } from '../dto/profile.dto';
 import { CreateUserDto } from '../dto/user.dto';
 import { CreateUserInsuranceDto } from '../dto/userInsurance.dto';
 import { CreateUserSiteDto } from '../dto/userSite.dto';
+import { CreateViewsDto } from '../dto/views.dto';
 
 import Doctor from '../models/doctor.model';
 import Insurance from '../models/insurance.model';
@@ -21,6 +22,7 @@ import Profile from '../models/profile.model';
 import User from '../models/user.model';
 import UserInsurance from '../models/userInsurance.model';
 import UserSite from '../models/userSite.model';
+import Views from '../models/views.model';
 
 @Injectable()
 export class CreateService {
@@ -61,7 +63,7 @@ export class CreateService {
         return await Login.create(login);
     }
 
-    async createPatient(profileId: number, pid: string) {
+    async createPatient(profileId, pid) {
         let newPatient = {
             'profileId': profileId,
             'pid': pid,
@@ -78,7 +80,7 @@ export class CreateService {
         return await Plan.create(plan);
     }
 
-    async createProfile(socialName: string, name: string, sex: string, birthdate: string, phone: string, email: string) {
+    async createProfile(socialName, name, sex, birthdate, phone, email) {
         let newProfile = {
           'name': name,
           'socialName': socialName,
@@ -118,5 +120,14 @@ export class CreateService {
             'createdBy': createdBy,
         } as CreateUserSiteDto;
         return await UserSite.create(newUserSite)
+    };
+
+    async createViews(examId, userId, typeViewed) {
+        let newView = {
+            'examId': examId,
+            'userId': userId,
+            'typeViewed': typeViewed,
+        } as CreateViewsDto;
+        return await Views.create(newView)
     };
 }

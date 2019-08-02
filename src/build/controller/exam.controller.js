@@ -51,9 +51,9 @@ let ExamController = class ExamController {
             return yield this.examService.find({});
         });
     }
-    showOne(id) {
+    showOne(id, req) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.examService.findOne(id);
+            return yield this.examService.findOne(id, req.token);
         });
     }
     update(id, body) {
@@ -90,9 +90,9 @@ __decorate([
 ], ExamController.prototype, "show", null);
 __decorate([
     common_1.Get(':id'),
-    __param(0, common_1.Param('id')),
+    __param(0, common_1.Param('id')), __param(1, common_1.Req()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
+    __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], ExamController.prototype, "showOne", null);
 __decorate([

@@ -1,6 +1,7 @@
 import { Controller, Get, Post, Body, Delete, Param, Req, Patch, BadRequestException } from '@nestjs/common';
 
 import { ExamService } from '../service/exam.service';
+import Views from '../models/views.model';
 
 @Controller('exam')
 export class ExamController {
@@ -74,8 +75,8 @@ export class ExamController {
     }
 
     @Get(':id')
-    public async showOne(@Param('id') id) {
-        return await this.examService.findOne(id);
+    public async showOne(@Param('id') id, @Req() req) {
+        return await this.examService.findOne(id, req.token);
     }
 
     @Patch(':id')

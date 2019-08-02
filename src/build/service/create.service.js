@@ -28,6 +28,7 @@ const profile_model_1 = __importDefault(require("../models/profile.model"));
 const user_model_1 = __importDefault(require("../models/user.model"));
 const userInsurance_model_1 = __importDefault(require("../models/userInsurance.model"));
 const userSite_model_1 = __importDefault(require("../models/userSite.model"));
+const views_model_1 = __importDefault(require("../models/views.model"));
 let CreateService = class CreateService {
     createDoctor(profileId, docType, docIssuer, docNum) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -132,6 +133,17 @@ let CreateService = class CreateService {
                 'createdBy': createdBy,
             };
             return yield userSite_model_1.default.create(newUserSite);
+        });
+    }
+    ;
+    createViews(examId, userId, typeViewed) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let newView = {
+                'examId': examId,
+                'userId': userId,
+                'typeViewed': typeViewed,
+            };
+            return yield views_model_1.default.create(newView);
         });
     }
     ;

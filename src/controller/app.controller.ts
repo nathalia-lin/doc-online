@@ -7,5 +7,6 @@ export class AppController {
     @Get()
     public async main() {
         console.log('Hello World');
+        return 'Hello World';
     }
 }

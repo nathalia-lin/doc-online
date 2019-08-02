@@ -215,7 +215,7 @@ let ExamService = class ExamService {
             return exams;
         });
     }
-    findOne(where) {
+    findOne(where, token) {
         return __awaiter(this, void 0, void 0, function* () {
             if (typeof where === 'string') {
                 where = { 'id': where };
@@ -224,6 +224,9 @@ let ExamService = class ExamService {
                 where: where,
                 include: [site_model_1.default, patient_model_1.default, insurance_model_1.default, views_model_1.default, { model: doctor_model_1.default, as: 'requestingDoctor' }, { model: doctor_model_1.default, as: 'consultingDoctor' }]
             });
+            const viewer = yield this.createdBy(token.id);
+            const view = yield this.createService.createViews(exam.id, viewer, null);
+            exam.views.push(view);
             return exam;
         });
     }

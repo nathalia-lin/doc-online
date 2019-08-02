@@ -22,6 +22,7 @@ let AppController = class AppController {
     main() {
         return __awaiter(this, void 0, void 0, function* () {
             console.log('Hello World');
+            return 'Hello World';
         });
     }
 };

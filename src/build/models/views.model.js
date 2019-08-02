@@ -44,7 +44,10 @@ __decorate([
     __metadata("design:type", user_model_1.default)
 ], Views.prototype, "user", void 0);
 __decorate([
-    sequelize_typescript_1.Column(sequelize_typescript_1.DataType.DATE),
+    sequelize_typescript_1.Column({
+        defaultValue: Date.now(),
+        type: sequelize_typescript_1.DataType.DATE
+    }),
     __metadata("design:type", Date)
 ], Views.prototype, "dateViewed", void 0);
 __decorate([

@@ -39,7 +39,7 @@ __decorate([
 ], CreateProfileDto.prototype, "phone", void 0);
 __decorate([
     class_validator_1.IsOptional(),
-    class_validator_1.IsString(),
+    class_validator_1.IsEmail(),
     __metadata("design:type", String)
 ], CreateProfileDto.prototype, "email", void 0);
 exports.CreateProfileDto = CreateProfileDto;
