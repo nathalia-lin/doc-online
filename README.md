@@ -105,11 +105,12 @@ This applications uses JSON Web Token (JWT) to handle authentication.
 This application uses Compodoc for documentation
 
 On your terminal run:
+
 ```bash
-$ npx compodoc -p tsconfig.json -s
+$ npm run compodoc
 ```
 
-Go to localhost:8080 to access the documentation
+Then go to localhost:8080 to access the documentation
 
 
 ## Support
