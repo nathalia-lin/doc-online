@@ -54,6 +54,7 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+
 ## Database
 
 The example codebase uses Sequelize with a postgres database.
@@ -61,6 +62,7 @@ The example codebase uses Sequelize with a postgres database.
 Create a new postgres database with the name doc-online (or the name you specified in the config.json)
 
 On application start, tables for all entities will be created.
+
 
 ## Authentication
 This applications uses JSON Web Token (JWT) to handle authentication.
@@ -98,15 +100,18 @@ This applications uses JSON Web Token (JWT) to handle authentication.
     ├── tsconfig.json             # Configuration of the TypeScript compiler (tsc)
     └── tslint.json               # Checks Typescript code quality
 
+
 ## Documentation
+
 This application uses Compodoc for documentation
 
 On your terminal run:
 ```bash
-npx compodoc -p tsconfig.json -s
+$ npx compodoc -p tsconfig.json -s
 ```
 
 Go to localhost:8080 to access the documentation
+
 
 ## Support
 
