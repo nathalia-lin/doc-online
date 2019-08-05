@@ -21,21 +21,29 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-### Test
-Currently no tests
+### Database
 
-```bash
-# unit tests
-$ npm run test
+The example codebase uses Sequelize with a postgres database.
 
-# e2e tests
-$ npm run test:e2e
+Create a new postgres database with the name doc-online (or the name you specified in the config.json)
 
-# test coverage
-$ npm run test:cov
-```
+Copy config example file for database settings
 
-### A typical top-level directory layout
+cp config.json.example ``
+Set mysql database settings in config.json
+
+{
+  "dialect": "postgres",
+  "host": "localhost",
+  "port": 3000,
+  "username": "your-postgres-username",
+  "password": "your-postgres-password",
+  "database": "doc-online"
+}
+
+On application start, tables for all entities will be created.``
+
+## A typical top-level directory layout
 
     .src
     ├── build                     # Compiled files 
