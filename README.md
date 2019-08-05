@@ -34,7 +34,7 @@
 
 Clone the repository
 ```bash
-$ git clone 
+$ git clone https://github.com/nathalia-lin/doc-online.git
 ```
 Install dependencies
 ```bash
