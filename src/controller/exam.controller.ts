@@ -1,7 +1,6 @@
 import { Controller, Get, Post, Body, Delete, Param, Req, Patch, BadRequestException } from '@nestjs/common';
 
 import { ExamService } from '../service/exam.service';
-import Views from '../models/views.model';
 
 @Controller('exam')
 export class ExamController {

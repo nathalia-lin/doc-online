@@ -100,7 +100,6 @@ export class ExamService {
             await this.createLogin(reqDoctorUser, reqDoctor);
         }
 
-
         // CONSULTING DOCTOR
         let consDoctorProfile, consDoctorUser, consDoctorUserSite, consDoctor;
         if (consDoctorName && consDoctorDocType && consDoctorDocIssuer && consDoctorDocNum) {
@@ -117,12 +116,8 @@ export class ExamService {
 
         // Once you have all the information, create an exam
         let reqDoctorId, consDoctorId
-        if (reqDoctor) {
-            reqDoctorId = reqDoctor.id;
-        }
-        if (consDoctor) {
-            consDoctorId = consDoctor.id;
-        }
+        if (reqDoctor) { reqDoctorId = reqDoctor.id }
+        if (consDoctor) { consDoctorId = consDoctor.id }
 
         const exam = await this.createExam(
             patientId, accessionNum, studyInstanceUID, networkId, siteId,
@@ -187,7 +182,7 @@ export class ExamService {
         const where = {};
         body.filters.forEach(field => {
             // what if you filter through same key, but different values?
-            where[field['key']] = field['value']
+            where[field['key']] = field['value'];
         })
         let exams = await this.find({ ...where });
 
@@ -208,7 +203,6 @@ export class ExamService {
                 const userSite = await UserSite.findOne({ where: { userId: user.id } });
                 exams = await this.find({ 'siteId': userSite.siteId })
             }
-            console.log(exams.length);
         }
         return exams;
     }

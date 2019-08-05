@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsOptional, IsString, IsUUID } from 'class-validator';
+import { IsNotEmpty, IsString, IsUUID } from 'class-validator';
 
 
 export class CreateDoctorDto {
@@ -7,15 +7,15 @@ export class CreateDoctorDto {
     @IsUUID()
     readonly profileId: number;
 
-    @IsOptional()
+    @IsNotEmpty()
     @IsString()
     readonly docType: string;
 
-    @IsOptional()
+    @IsNotEmpty()
     @IsString()
     readonly docIssuer: string;
 
-    @IsOptional()
+    @IsNotEmpty()
     @IsString()
     readonly docNum: string;
 

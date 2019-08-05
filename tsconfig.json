@@ -5,7 +5,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es6",
-    "outDir": "src/build",
+    "outDir": "build",
     "baseUrl": "./",
     "incremental": true,
     "esModuleInterop": true

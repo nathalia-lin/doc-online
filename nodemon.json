@@ -1,5 +1,5 @@
 {
   "watch": ["build"],
   "ext": "js",
-  "exec": "node src/build/main"
+  "exec": "node build/main"
 }
