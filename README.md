@@ -35,19 +35,39 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
+### A typical top-level directory layout
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+    .src
+    ├── build                     # Compiled files 
+    ├── config                    
+    ├── controller                # Handles incoming requests and returns responses to the client
+    ├── database                  # Initialize database
+    ├── dto                       # Validation
+    ├── migrations                # Make changes in database
+    ├── models                    # Outline of the objects
+    ├── module                    # Organize the application structure
+    ├── provider                  # Custom repositories
+    ├── service                   # Injectable dependencies
+    ├── shared                    # Shared between all routes
+        ├── filters                     # Handled after the route handler is called
+        ├── interceptors                # Handled before and after route handler is called
+        ├── middlewares                 # Handled before route handler is called
+    ├── main.ts                   # Entry file of the application
+    ├── .gitignore                
+    ├── .prettierrc               
+    ├── nest-cli.json             # Used by nest-cli to generate new project
+    ├── nodemon.debug.json        
+    ├── nodemon.json              # Monitor changes and restart server
+    ├── package-lock.json         
+    ├── package.json              # Manage dependencies and scripts
+    ├── README.md
+    ├── tsconfig.build.json       
+    ├── tsconfig.json             # Configuration of the TypeScript compiler (tsc)
+    └── tslint.json               # Checks Typescript code quality
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-  Nest is [MIT licensed](LICENSE).
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
+</p>
 
 [travis-image]: https://api.travis-ci.org/nestjs/nest.svg?branch=master
 [travis-url]: https://travis-ci.org/nestjs/nest
@@ -68,9 +88,20 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
   <a href="https://paypal.me/kamilmysliwiec"><img src="https://img.shields.io/badge/Donate-PayPal-dc3d53.svg"/></a>
   <a href="https://twitter.com/nestframework"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
 </p>
-<p align="right">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+
+## Support
+
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+
+## Stay in touch
+
+- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
+
+## License
+
+  Nest is [MIT licensed](LICENSE).
 
