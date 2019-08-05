@@ -1,16 +1,14 @@
 # DOC-ONLINE
 
-## Description
+## Getting Started
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
+### Installation
 
 ```bash
 $ npm install
 ```
 
-## Running the app
+### Running the app
 
 ```bash
 # development
@@ -23,7 +21,8 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
+### Test
+Currently no tests
 
 ```bash
 # unit tests
@@ -49,10 +48,6 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
   Nest is [MIT licensed](LICENSE).
-  
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
 
 [travis-image]: https://api.travis-ci.org/nestjs/nest.svg?branch=master
 [travis-url]: https://travis-ci.org/nestjs/nest
@@ -72,6 +67,9 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 <a href="https://opencollective.com/nest#sponsor"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
   <a href="https://paypal.me/kamilmysliwiec"><img src="https://img.shields.io/badge/Donate-PayPal-dc3d53.svg"/></a>
   <a href="https://twitter.com/nestframework"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+</p>
+<p align="right">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
