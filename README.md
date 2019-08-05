@@ -21,27 +21,14 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-### Database
+## Database
 
 The example codebase uses Sequelize with a postgres database.
 
 Create a new postgres database with the name doc-online (or the name you specified in the config.json)
 
-Copy config example file for database settings
+On application start, tables for all entities will be created.
 
-cp config.json.example ``
-Set mysql database settings in config.json
-
-{
-  "dialect": "postgres",
-  "host": "localhost",
-  "port": 3000,
-  "username": "your-postgres-username",
-  "password": "your-postgres-password",
-  "database": "doc-online"
-}
-
-On application start, tables for all entities will be created.``
 
 ## A typical top-level directory layout
 
