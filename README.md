@@ -1,67 +1,5 @@
 # DOC-ONLINE
 
-## Getting Started
-
-### Installation
-
-```bash
-$ npm install
-```
-
-### Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Database
-
-The example codebase uses Sequelize with a postgres database.
-
-Create a new postgres database with the name doc-online (or the name you specified in the config.json)
-
-On application start, tables for all entities will be created.
-
-
-## A typical top-level directory layout
-
-    .src
-    ├── build                     # Compiled files 
-    ├── config                    
-    ├── controller                # Handles incoming requests and returns responses to the client
-    ├── database                  # Initialize database
-    ├── dto                       # Validation
-    ├── migrations                # Make changes in database
-    ├── models                    # Outline of the objects
-    ├── module                    # Organize the application structure
-    ├── provider                  # Custom repositories
-    ├── service                   # Injectable dependencies
-    ├── shared                    # Shared between all routes
-        ├── filters                     # Handled after the route handler is called
-        ├── interceptors                # Handled before and after route handler is called
-        ├── middlewares                 # Handled before route handler is called
-    ├── main.ts                   # Entry file of the application
-    ├── .gitignore                
-    ├── .prettierrc               
-    ├── nest-cli.json             # Used by nest-cli to generate new project
-    ├── nodemon.debug.json        
-    ├── nodemon.json              # Monitor changes and restart server
-    ├── package-lock.json         
-    ├── package.json              # Manage dependencies and scripts
-    ├── README.md
-    ├── tsconfig.build.json       
-    ├── tsconfig.json             # Configuration of the TypeScript compiler (tsc)
-    └── tslint.json               # Checks Typescript code quality
-
-
-
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
@@ -87,6 +25,88 @@ On application start, tables for all entities will be created.
 </p>
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+
+
+
+## Getting Started
+
+### Installation
+
+Clone the repository
+```bash
+$ git clone 
+```
+Install dependencies
+```bash
+$ npm install
+```
+
+### Running the app
+
+```bash
+# development
+$ npm run start
+
+# watch mode
+$ npm run start:dev
+
+# production mode
+$ npm run start:prod
+```
+
+## Database
+
+The example codebase uses Sequelize with a postgres database.
+
+Create a new postgres database with the name doc-online (or the name you specified in the config.json)
+
+On application start, tables for all entities will be created.
+
+## Authentication
+This applications uses JSON Web Token (JWT) to handle authentication.
+
+
+## A typical top-level directory layout
+
+    .
+    ├── build                     # Compiled files 
+    ├── config 
+    ├── documentation             
+    ├── src
+        ├── controller                # Handles incoming requests and returns responses to the client
+        ├── database                  # Initialize database
+        ├── dto                       # Validation
+        ├── migrations                # Make changes in database
+        ├── models                    # Outline of the objects
+        ├── module                    # Organize the application structure
+        ├── provider                  # Custom repositories
+        ├── service                   # Injectable dependencies
+        ├── shared                    # Shared between all routes
+            ├── filters                     # Handled after the route handler is called
+            ├── interceptors                # Handled before and after route handler is called
+            ├── middlewares                 # Handled before route handler is called
+        ├── main.ts                   # Entry file of the application
+    ├── .gitignore                
+    ├── .prettierrc               
+    ├── nest-cli.json             # Used by nest-cli to generate new project
+    ├── nodemon.debug.json        
+    ├── nodemon.json              # Monitor changes and restart server
+    ├── package-lock.json         
+    ├── package.json              # Manage dependencies and scripts
+    ├── README.md
+    ├── tsconfig.build.json       
+    ├── tsconfig.json             # Configuration of the TypeScript compiler (tsc)
+    └── tslint.json               # Checks Typescript code quality
+
+## Documentation
+This application uses Compodoc for documentation
+
+On your terminal run:
+```bash
+npx compodoc -p tsconfig.json -s
+```
+
+Go to localhost:8080 to access the documentation
 
 ## Support
 
