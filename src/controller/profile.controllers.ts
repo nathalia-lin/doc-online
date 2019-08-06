@@ -3,6 +3,14 @@ import { Controller, Get, Post, Body, Param, Delete, Patch } from '@nestjs/commo
 import { CreateProfileDto } from '../dto/profile.dto';
 import { ProfileService } from '../service/profile.service';
 
+/**
+ * - POST /profile             
+ * - GET /profile             
+ * - GET /profile/:id        
+ * - PATCH /profile/:id       
+ * - DELETE /profile/:id      
+ */
+
 @Controller('profile')
 export class ProfileController {
     constructor(private readonly profileService: ProfileService) { }

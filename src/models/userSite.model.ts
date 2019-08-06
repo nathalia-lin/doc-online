@@ -3,6 +3,12 @@ import { Table, Column, Model, ForeignKey, CreatedAt, DataType, PrimaryKey } fro
 import Site from './site.model';
 import User from './user.model';
 
+/**
+ * Relationships:
+ * - has one User
+ * - has one Site
+*/
+
 @Table({ tableName: 'userSite' })
 export default class UserSite extends Model<UserSite> {
 

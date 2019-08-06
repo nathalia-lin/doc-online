@@ -193,14 +193,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="22"
-                            class="link-to-prism">src/service/login.service.ts:22</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="30"
+                            class="link-to-prism">src/service/login.service.ts:30</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Looks for one user with the username, password, and hashed password posted</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -229,6 +231,13 @@
                         </table>
                     </div>
                     <div>
+                        <b>Example :</b>
+                        <div>
+                            <pre class="line-numbers"><code class="language-html">{
+username: 351000,
+password: 19720307
+}</code></pre>
+                        </div>
                     </div>
                     <div class="io-description">
                         <b>Returns : </b>    <code>{}</code>
@@ -337,14 +346,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="51"
-                            class="link-to-prism">src/service/login.service.ts:51</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">src/service/login.service.ts:65</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Creates the token  </p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -409,8 +420,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="85"
-                            class="link-to-prism">src/service/login.service.ts:85</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="99"
+                            class="link-to-prism">src/service/login.service.ts:99</a></div>
                 </td>
             </tr>
 
@@ -481,8 +492,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="64"
-                            class="link-to-prism">src/service/login.service.ts:64</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">src/service/login.service.ts:78</a></div>
                 </td>
             </tr>
 
@@ -553,8 +564,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="71"
-                            class="link-to-prism">src/service/login.service.ts:71</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">src/service/login.service.ts:85</a></div>
                 </td>
             </tr>
 
@@ -625,14 +636,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="36"
-                            class="link-to-prism">src/service/login.service.ts:36</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="47"
+                            class="link-to-prism">src/service/login.service.ts:47</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Send token inside an object with other information</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -697,8 +710,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="81"
-                            class="link-to-prism">src/service/login.service.ts:81</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="95"
+                            class="link-to-prism">src/service/login.service.ts:95</a></div>
                 </td>
             </tr>
 
@@ -784,6 +797,14 @@ export class LoginService {
         return await Login.create&lt;Login&gt;(createLoginDto);;
     }
 
+    /**
+    * Looks for one user with the username, password, and hashed password posted
+    * @example
+    * {
+    *    username: 351000,
+    *    password: 19720307
+    * }
+    */
     async authenticate(login: Login) {
         const authLogin &#x3D; await this.loginRepository.findOne({
             where: {
@@ -798,6 +819,9 @@ export class LoginService {
         return this.sendToken(authLogin);
     }
 
+    /**
+    * Send token inside an object with other information
+    */
     async sendToken(login: Login) {
         login &#x3D; await this.findOne(login.id);
         const user &#x3D; await User.findByPk(login.userId);
@@ -812,7 +836,10 @@ export class LoginService {
         }
         return obj;
     }
-
+    
+    /**
+    * Creates the token  
+    */
     async createToken(login: Login) {
         const options &#x3D; {
             algorithm: &#x27;HS256&#x27;,

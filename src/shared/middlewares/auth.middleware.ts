@@ -1,7 +1,9 @@
 import { Injectable, NestMiddleware, NotFoundException, UnauthorizedException } from "@nestjs/common";
 import * as jwt from 'jsonwebtoken'
 
-// change this to a guard? 
+/**
+ * Checks the token with the password
+ */
 
 @Injectable()
 export class AuthMiddleware implements NestMiddleware {

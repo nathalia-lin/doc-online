@@ -1,5 +1,10 @@
 import { Catch, HttpException, ArgumentsHost, ExceptionFilter, Logger } from '@nestjs/common';
 
+/**
+ * Catches defined errors
+ * Creates an error response (Not the best response right now)
+ */
+
 @Catch(HttpException)
 export class HttpErrorFilter implements ExceptionFilter {
     catch(exception: HttpException, host: ArgumentsHost) {

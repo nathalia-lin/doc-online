@@ -3,6 +3,12 @@ import { Table, Column, Model, ForeignKey, DataType, PrimaryKey, BelongsTo } fro
 import User from './user.model';
 import Exam from './exam.model';
 
+/**
+ * Relationships:
+ * - belongs to Exam
+ * - belongs to User
+*/
+
 @Table({ tableName: 'views' })
 export default class Views extends Model<Views> {
 

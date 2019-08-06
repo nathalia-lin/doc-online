@@ -3,6 +3,14 @@ import { Controller, Get, Post, Body, Delete, Param, Patch } from '@nestjs/commo
 import { CreateLogExamDto } from '../dto/logExam.dto';
 import { LogExamService } from '../service/logExam.service';
 
+/**
+ * - POST /logexam             
+ * - GET /logexam              
+ * - GET /logexam/:id          
+ * - PATCH /logexam/:id       
+ * - DELETE /logexam/:id     
+ */
+
 @Controller('logexam')
 export class LogExamController {
     constructor(private readonly logExamService: LogExamService) { }

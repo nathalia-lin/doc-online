@@ -64,6 +64,19 @@
                 <code>sitenotification</code>
             </p>
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <ul>
+<li>POST /sitenotification            </li>
+<li>GET /sitenotification              </li>
+<li>GET /sitenotification/:id         </li>
+<li>PATCH /sitenotification/:id       </li>
+<li>DELETE /sitenotification/:id      </li>
+</ul>
+
+            </p>
 
 
 
@@ -155,8 +168,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="11"
-                            class="link-to-prism">src/controller/siteNotification.controller.ts:11</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/controller/siteNotification.controller.ts:19</a></div>
                 </td>
             </tr>
 
@@ -235,8 +248,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="31"
-                            class="link-to-prism">src/controller/siteNotification.controller.ts:31</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="39"
+                            class="link-to-prism">src/controller/siteNotification.controller.ts:39</a></div>
                 </td>
             </tr>
 
@@ -315,8 +328,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="16"
-                            class="link-to-prism">src/controller/siteNotification.controller.ts:16</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/controller/siteNotification.controller.ts:24</a></div>
                 </td>
             </tr>
 
@@ -364,8 +377,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="21"
-                            class="link-to-prism">src/controller/siteNotification.controller.ts:21</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/controller/siteNotification.controller.ts:29</a></div>
                 </td>
             </tr>
 
@@ -440,8 +453,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="26"
-                            class="link-to-prism">src/controller/siteNotification.controller.ts:26</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="34"
+                            class="link-to-prism">src/controller/siteNotification.controller.ts:34</a></div>
                 </td>
             </tr>
 
@@ -501,6 +514,14 @@
 
 import { CreateSiteNotificationDto } from &#x27;../dto/siteNotification.dto&#x27;;
 import { SiteNotificationService } from &#x27;../service/siteNotification.service&#x27;;
+
+/**
+ * - POST /sitenotification            
+ * - GET /sitenotification              
+ * - GET /sitenotification/:id         
+ * - PATCH /sitenotification/:id       
+ * - DELETE /sitenotification/:id      
+ */
 
 @Controller(&#x27;sitenotification&#x27;)
 export class SiteNotificationController {

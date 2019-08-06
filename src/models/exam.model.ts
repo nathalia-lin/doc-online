@@ -7,6 +7,17 @@ import Insurance from './insurance.model';
 import LogExam from './logExam.model';
 import Views from './views.model';
 
+/**
+ * Relationships:
+ * - belongs to Site
+ * - belongs to Patient
+ * - belongs to requesting Doctor
+ * - belongs to consulting Doctor
+ * - belongs to Insurance
+ * - has one LogExam
+ * - has many Views
+ */
+
 @Table({ tableName: 'exam' })
 export default class Exam extends Model<Exam> {
 

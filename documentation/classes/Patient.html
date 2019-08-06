@@ -63,6 +63,17 @@
             <code>src/models/patient.model.ts</code>
         </p>
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Relationships:</p>
+<ul>
+<li>belongs to Profile</li>
+<li>has many Exam</li>
+</ul>
+
+            </p>
 
             <p class="comment">
                 <h3>Extends</h3>
@@ -157,7 +168,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/models/patient.model.ts:23</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/models/patient.model.ts:29</a></div>
                             </td>
                         </tr>
 
@@ -194,7 +205,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/models/patient.model.ts:13</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/models/patient.model.ts:19</a></div>
                             </td>
                         </tr>
 
@@ -232,7 +243,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/models/patient.model.ts:26</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/models/patient.model.ts:32</a></div>
                             </td>
                         </tr>
 
@@ -269,7 +280,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/models/patient.model.ts:20</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/models/patient.model.ts:26</a></div>
                             </td>
                         </tr>
 
@@ -306,7 +317,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/models/patient.model.ts:17</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/models/patient.model.ts:23</a></div>
                             </td>
                         </tr>
 
@@ -329,6 +340,12 @@
 
 import Profile from &#x27;./profile.model&#x27;;
 import Exam from &#x27;./exam.model&#x27;;
+
+/**
+ * Relationships:
+ * - belongs to Profile
+ * - has many Exam
+ */
 
 @Table({ tableName: &#x27;patient&#x27; })
 export default class Patient extends Model&lt;Patient&gt; {

@@ -3,6 +3,14 @@ import { Controller, Get, Post, Body, Param, Delete, Patch } from '@nestjs/commo
 import { CreateSiteRuleDto } from '../dto/siteRule.dto';
 import { SiteRuleService } from '../service/siteRule.service';
 
+/**
+ * - POST /siterule            
+ * - GET /siterule            
+ * - GET /siterule/:id        
+ * - PATCH /siterule/:id     
+ * - DELETE /siterule/:id     
+ */
+
 @Controller('siterule')
 export class SiteRuleController {
     constructor(private readonly siteRuleService: SiteRuleService) { }

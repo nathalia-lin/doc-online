@@ -2,6 +2,14 @@ import { Controller, Get, Post, Body, Delete, Param, Patch, Req } from '@nestjs/
 
 import { UserService } from '../service/user.service';
 
+/**
+ * - POST /user             
+ * - GET /user              
+ * - GET /user/:id         
+ * - PATCH /user/:id       
+ * - DELETE /user/:id       
+ */
+
 @Controller('user')
 export class UserController {
     constructor(private readonly userService: UserService) { }

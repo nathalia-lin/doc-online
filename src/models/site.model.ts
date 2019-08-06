@@ -7,6 +7,15 @@ import UserSite from './userSite.model';
 import Insurance from './insurance.model';
 import Exam from './exam.model';
 
+/**
+ * Relationships:
+ * - belongs to many User
+ * - belongs to many UserSite
+ * - has one SiteRule
+ * - has many Insurance
+ * - has many Exam
+*/
+
 @Table({ tableName: 'site' })
 export default class Site extends Model<Site> {
 

@@ -63,6 +63,16 @@
             <code>src/models/login.model.ts</code>
         </p>
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Relationships:</p>
+<ul>
+<li>belongs to User</li>
+</ul>
+
+            </p>
 
             <p class="comment">
                 <h3>Extends</h3>
@@ -177,7 +187,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/models/login.model.ts:13</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/models/login.model.ts:18</a></div>
                             </td>
                         </tr>
 
@@ -215,7 +225,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/models/login.model.ts:26</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/models/login.model.ts:31</a></div>
                             </td>
                         </tr>
 
@@ -253,7 +263,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/models/login.model.ts:34</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/models/login.model.ts:39</a></div>
                             </td>
                         </tr>
 
@@ -290,7 +300,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/models/login.model.ts:20</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/models/login.model.ts:25</a></div>
                             </td>
                         </tr>
 
@@ -327,7 +337,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/models/login.model.ts:17</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/models/login.model.ts:22</a></div>
                             </td>
                         </tr>
 
@@ -365,7 +375,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/models/login.model.ts:23</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/models/login.model.ts:28</a></div>
                             </td>
                         </tr>
 
@@ -411,8 +421,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="29"
-                            class="link-to-prism">src/models/login.model.ts:29</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="34"
+                            class="link-to-prism">src/models/login.model.ts:34</a></div>
                 </td>
             </tr>
 
@@ -473,6 +483,11 @@
 import crypto from &#x27;crypto&#x27;;
 
 import User from &#x27;./user.model&#x27;;
+
+/**
+ * Relationships:
+ * - belongs to User
+ */
 
 @Table({ tableName: &#x27;login&#x27; })
 export default class Login extends Model&lt;Login&gt; {

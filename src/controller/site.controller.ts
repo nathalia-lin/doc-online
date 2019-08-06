@@ -3,6 +3,14 @@ import { Controller, Get, Post, Body, Param, Delete, Patch } from '@nestjs/commo
 import { CreateSiteDto } from '../dto/site.dto';
 import { SiteService } from '../service/site.service';
 
+/**
+ * - POST /site             
+ * - GET /site             
+ * - GET /site/:id          
+ * - PATCH /site/:id       
+ * - DELETE /site/:id      
+ */
+
 @Controller('site')
 export class SiteController {
     constructor(private readonly siteService: SiteService) { }

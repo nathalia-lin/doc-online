@@ -3,6 +3,14 @@ import { Controller, Get, Post, Body, Delete, Param, Patch } from '@nestjs/commo
 import { CreatePatientDto } from '../dto/patient.dto';
 import { PatientService } from '../service/patient.service';
 
+/**
+ * - POST /patient             
+ * - GET /patient             
+ * - GET /patient/:id         
+ * - PATCH /patient/:id      
+ * - DELETE /patient/:id     
+ */
+
 @Controller('patient')
 export class PatientController {
     constructor(private readonly patientService: PatientService) { }

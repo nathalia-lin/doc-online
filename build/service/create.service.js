@@ -29,6 +29,7 @@ const user_model_1 = __importDefault(require("../models/user.model"));
 const userInsurance_model_1 = __importDefault(require("../models/userInsurance.model"));
 const userSite_model_1 = __importDefault(require("../models/userSite.model"));
 const views_model_1 = __importDefault(require("../models/views.model"));
+const exam_model_1 = __importDefault(require("../models/exam.model"));
 let CreateService = class CreateService {
     createDoctor(profileId, docType, docIssuer, docNum) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -147,6 +148,28 @@ let CreateService = class CreateService {
         });
     }
     ;
+    createExam(pid, accessionNum, studyInstanceUID, networkId, siteId, modality, reqProcDescription, studyDate, statusType, patientId, reqDoctorId, consDoctorId, insuranceId, lastReportView, lastImageView) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let exam = {
+                'pid': pid,
+                'accessionNum': accessionNum,
+                'studyInstanceUID': studyInstanceUID,
+                'networkId': networkId,
+                'siteId': siteId,
+                'modality': modality,
+                'description': reqProcDescription,
+                'examDate': studyDate,
+                'statusType': statusType,
+                'patientId': patientId,
+                'requestingId': reqDoctorId,
+                'consultingId': consDoctorId,
+                'insuranceId': insuranceId,
+                'lastReportView': lastReportView,
+                'lastImageView': lastImageView,
+            };
+            return yield exam_model_1.default.create(exam);
+        });
+    }
 };
 CreateService = __decorate([
     common_1.Injectable()

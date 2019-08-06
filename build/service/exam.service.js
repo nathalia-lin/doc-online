@@ -98,7 +98,7 @@ let ExamService = class ExamService {
             if (consDoctor) {
                 consDoctorId = consDoctor.id;
             }
-            const exam = yield this.createExam(patientId, accessionNum, studyInstanceUID, networkId, siteId, modality, reqProcDescription, studyDate, statusType, patient.id, reqDoctorId, consDoctorId, insurance.id, null, null);
+            const exam = yield this.createService.createExam(patientId, accessionNum, studyInstanceUID, networkId, siteId, modality, reqProcDescription, studyDate, statusType, patient.id, reqDoctorId, consDoctorId, insurance.id, null, null);
             yield this.createService.createLogExam(exam.id);
         });
     }
@@ -181,28 +181,6 @@ let ExamService = class ExamService {
                 }
             }
             return exams;
-        });
-    }
-    createExam(pid, accessionNum, studyInstanceUID, networkId, siteId, modality, reqProcDescription, studyDate, statusType, patientId, reqDoctorId, consDoctorId, insuranceId, lastReportView, lastImageView) {
-        return __awaiter(this, void 0, void 0, function* () {
-            let exam = {
-                'pid': pid,
-                'accessionNum': accessionNum,
-                'studyInstanceUID': studyInstanceUID,
-                'networkId': networkId,
-                'siteId': siteId,
-                'modality': modality,
-                'description': reqProcDescription,
-                'examDate': studyDate,
-                'statusType': statusType,
-                'patientId': patientId,
-                'requestingId': reqDoctorId,
-                'consultingId': consDoctorId,
-                'insuranceId': insuranceId,
-                'lastReportView': lastReportView,
-                'lastImageView': lastImageView,
-            };
-            return yield this.examRepository.create(exam);
         });
     }
     find(where) {

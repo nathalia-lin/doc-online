@@ -3,6 +3,12 @@ import { Table, Column, Model, ForeignKey, PrimaryKey, DataType } from 'sequeliz
 import User from './user.model';
 import Insurance from './insurance.model';
 
+/**
+ * Relationships:
+ * - has one Insurance
+ * - has one User
+*/
+
 @Table({ tableName: 'userInsurance' })
 export default class UserInsurance extends Model<UserInsurance> {
 

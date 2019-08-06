@@ -19,6 +19,14 @@ export class LoginService {
         return await Login.create<Login>(createLoginDto);;
     }
 
+    /**
+    * Looks for one user with the username, password, and hashed password posted
+    * @example
+    * {
+    *    username: 351000,
+    *    password: 19720307
+    * }
+    */
     async authenticate(login: Login) {
         const authLogin = await this.loginRepository.findOne({
             where: {
@@ -33,6 +41,9 @@ export class LoginService {
         return this.sendToken(authLogin);
     }
 
+    /**
+    * Send token inside an object with other information
+    */
     async sendToken(login: Login) {
         login = await this.findOne(login.id);
         const user = await User.findByPk(login.userId);
@@ -47,7 +58,10 @@ export class LoginService {
         }
         return obj;
     }
-
+    
+    /**
+    * Creates the token  
+    */
     async createToken(login: Login) {
         const options = {
             algorithm: 'HS256',

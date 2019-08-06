@@ -1,5 +1,8 @@
 import { Controller, Get } from '@nestjs/common';
 
+/**
+ * Main page
+ */
 
 @Controller()
 export class AppController {

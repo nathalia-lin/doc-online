@@ -3,6 +3,13 @@ import { Table, Column, Model, BelongsTo, ForeignKey, PrimaryKey, HasMany, DataT
 import Profile from './profile.model';
 import Exam from './exam.model';
 
+/**
+ * Relationships:
+ * - belongs to Profile
+ * - has many consulted Exam
+ * - has many requested Exam
+ */
+
 @Table({ tableName: 'doctor' })
 export default class Doctor extends Model<Doctor> {
 

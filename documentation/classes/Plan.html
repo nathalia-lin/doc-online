@@ -63,6 +63,16 @@
             <code>src/models/plan.model.ts</code>
         </p>
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Relationships:</p>
+<ul>
+<li>belongs to Insurance</li>
+</ul>
+
+            </p>
 
             <p class="comment">
                 <h3>Extends</h3>
@@ -153,7 +163,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/models/plan.model.ts:12</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/models/plan.model.ts:17</a></div>
                             </td>
                         </tr>
 
@@ -191,7 +201,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/models/plan.model.ts:19</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/models/plan.model.ts:24</a></div>
                             </td>
                         </tr>
 
@@ -229,7 +239,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/models/plan.model.ts:16</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/models/plan.model.ts:21</a></div>
                             </td>
                         </tr>
 
@@ -267,7 +277,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/models/plan.model.ts:22</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/models/plan.model.ts:27</a></div>
                             </td>
                         </tr>
 
@@ -289,6 +299,11 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Table, Column, Model, ForeignKey, PrimaryKey, DataType, BelongsTo } from &#x27;sequelize-typescript&#x27;;
 
 import Insurance from &#x27;./insurance.model&#x27;;
+
+/**
+ * Relationships:
+ * - belongs to Insurance
+ */
 
 @Table({ tableName: &#x27;plan&#x27; })
 export default class Plan extends Model&lt;Plan&gt; {

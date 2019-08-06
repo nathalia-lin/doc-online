@@ -3,6 +3,15 @@ import { Controller, Get, Post, Body, Param, Res, HttpStatus, Patch, Delete } fr
 import { CreateLoginDto } from '../dto/login.dto';
 import { LoginService } from '../service/login.service';
 
+/**
+ * - POST /login            
+ * - POST /login/auth       
+ * - GET /login            
+ * - GET /login/:id          
+ * - PATCH /login/:id       
+ * - DELETE /login/:id       
+ */
+
 @Controller('login')
 export class LoginController {
     constructor(private readonly loginService: LoginService) { }

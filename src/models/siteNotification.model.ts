@@ -2,6 +2,11 @@ import { Table, Column, Model, ForeignKey, BelongsTo, PrimaryKey, DataType } fro
 
 import Site from './site.model';
 
+/**
+ * Relationships:
+ * - belongs to Site
+*/
+
 @Table({ tableName: 'siteNotification' })
 export default class SiteNotification extends Model<SiteNotification> {
 

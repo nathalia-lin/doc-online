@@ -3,6 +3,14 @@ import { Controller, Get, Post, Body, Delete, Param, Patch } from '@nestjs/commo
 import { CreateUserSiteDto } from '../dto/userSite.dto';
 import { UserSiteService } from '../service/userSite.service';
 
+/**
+ * - POST /usersite             
+ * - GET /usersite              
+ * - GET /usersite/:id         
+ * - PATCH /usersite/:id       
+ * - DELETE /usersite/:id      
+ */
+
 @Controller('usersite')
 export class UserSiteController {
     constructor(private readonly userSiteService: UserSiteService) { }

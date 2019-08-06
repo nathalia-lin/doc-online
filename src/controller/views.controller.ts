@@ -3,6 +3,14 @@ import { Controller, Get, Post, Body, Delete, Param, Patch } from '@nestjs/commo
 import { CreateViewsDto } from '../dto/views.dto';
 import { ViewsService } from '../service/views.service';
 
+/**
+ * - POST /views            
+ * - GET /views             
+ * - GET /views/:id          
+ * - PATCH /views/:id        
+ * - DELETE /views/:id       
+ */
+
 @Controller('views')
 export class ViewsController {
     constructor(private readonly viewsService: ViewsService) { }

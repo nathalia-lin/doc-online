@@ -64,6 +64,19 @@
                 <code>user</code>
             </p>
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <ul>
+<li>POST /user             </li>
+<li>GET /user              </li>
+<li>GET /user/:id         </li>
+<li>PATCH /user/:id       </li>
+<li>DELETE /user/:id       </li>
+</ul>
+
+            </p>
 
 
 
@@ -155,8 +168,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="10"
-                            class="link-to-prism">src/controller/user.controller.ts:10</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="18"
+                            class="link-to-prism">src/controller/user.controller.ts:18</a></div>
                 </td>
             </tr>
 
@@ -240,8 +253,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="47"
-                            class="link-to-prism">src/controller/user.controller.ts:47</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/controller/user.controller.ts:55</a></div>
                 </td>
             </tr>
 
@@ -320,8 +333,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="32"
-                            class="link-to-prism">src/controller/user.controller.ts:32</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/controller/user.controller.ts:40</a></div>
                 </td>
             </tr>
 
@@ -369,8 +382,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="37"
-                            class="link-to-prism">src/controller/user.controller.ts:37</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/controller/user.controller.ts:45</a></div>
                 </td>
             </tr>
 
@@ -445,8 +458,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="42"
-                            class="link-to-prism">src/controller/user.controller.ts:42</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/controller/user.controller.ts:50</a></div>
                 </td>
             </tr>
 
@@ -505,6 +518,14 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Controller, Get, Post, Body, Delete, Param, Patch, Req } from &#x27;@nestjs/common&#x27;;
 
 import { UserService } from &#x27;../service/user.service&#x27;;
+
+/**
+ * - POST /user             
+ * - GET /user              
+ * - GET /user/:id         
+ * - PATCH /user/:id       
+ * - DELETE /user/:id       
+ */
 
 @Controller(&#x27;user&#x27;)
 export class UserController {

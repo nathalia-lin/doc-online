@@ -63,6 +63,17 @@
             <code>src/models/userSite.model.ts</code>
         </p>
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Relationships:</p>
+<ul>
+<li>has one User</li>
+<li>has one Site</li>
+</ul>
+
+            </p>
 
             <p class="comment">
                 <h3>Extends</h3>
@@ -159,7 +170,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/models/userSite.model.ts:28</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/models/userSite.model.ts:34</a></div>
                             </td>
                         </tr>
 
@@ -197,7 +208,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/models/userSite.model.ts:24</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/models/userSite.model.ts:30</a></div>
                             </td>
                         </tr>
 
@@ -234,7 +245,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/models/userSite.model.ts:13</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/models/userSite.model.ts:19</a></div>
                             </td>
                         </tr>
 
@@ -272,7 +283,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/models/userSite.model.ts:21</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/models/userSite.model.ts:27</a></div>
                             </td>
                         </tr>
 
@@ -310,7 +321,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/models/userSite.model.ts:17</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/models/userSite.model.ts:23</a></div>
                             </td>
                         </tr>
 
@@ -333,6 +344,12 @@
 
 import Site from &#x27;./site.model&#x27;;
 import User from &#x27;./user.model&#x27;;
+
+/**
+ * Relationships:
+ * - has one User
+ * - has one Site
+*/
 
 @Table({ tableName: &#x27;userSite&#x27; })
 export default class UserSite extends Model&lt;UserSite&gt; {

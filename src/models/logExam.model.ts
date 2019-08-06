@@ -2,6 +2,11 @@ import { Table, Column, Model, ForeignKey, DataType, PrimaryKey, BelongsTo, Crea
 
 import Exam from './exam.model';
 
+/**
+ * Relationships:
+ * - belongs to Exam
+ */
+
 @Table({ tableName: 'logExam' })
 export default class LogExam extends Model<LogExam> {
 

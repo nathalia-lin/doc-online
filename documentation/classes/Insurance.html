@@ -63,6 +63,19 @@
             <code>src/models/insurance.model.ts</code>
         </p>
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Relationships:</p>
+<ul>
+<li>belongs to Site</li>
+<li>belongs to many User, UserInsurance</li>
+<li>has many Exam</li>
+<li>has many Plan</li>
+</ul>
+
+            </p>
 
             <p class="comment">
                 <h3>Extends</h3>
@@ -172,7 +185,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/models/insurance.model.ts:35</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/models/insurance.model.ts:43</a></div>
                             </td>
                         </tr>
 
@@ -209,7 +222,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/models/insurance.model.ts:16</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/models/insurance.model.ts:24</a></div>
                             </td>
                         </tr>
 
@@ -246,7 +259,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/models/insurance.model.ts:26</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/models/insurance.model.ts:34</a></div>
                             </td>
                         </tr>
 
@@ -284,7 +297,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/models/insurance.model.ts:29</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/models/insurance.model.ts:37</a></div>
                             </td>
                         </tr>
 
@@ -322,7 +335,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/models/insurance.model.ts:38</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/models/insurance.model.ts:46</a></div>
                             </td>
                         </tr>
 
@@ -360,7 +373,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/models/insurance.model.ts:23</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/models/insurance.model.ts:31</a></div>
                             </td>
                         </tr>
 
@@ -398,7 +411,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/models/insurance.model.ts:20</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/models/insurance.model.ts:28</a></div>
                             </td>
                         </tr>
 
@@ -435,7 +448,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/models/insurance.model.ts:32</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/models/insurance.model.ts:40</a></div>
                             </td>
                         </tr>
 
@@ -461,6 +474,14 @@ import User from &#x27;./user.model&#x27;;
 import UserInsurance from &#x27;./userInsurance.model&#x27;;
 import Exam from &#x27;./exam.model&#x27;;
 import Plan from &#x27;./plan.model&#x27;;
+
+/**
+ * Relationships:
+ * - belongs to Site
+ * - belongs to many User, UserInsurance
+ * - has many Exam
+ * - has many Plan
+ */
 
 @Table({ tableName: &#x27;insurance&#x27; })
 export default class Insurance extends Model&lt;Insurance&gt; {

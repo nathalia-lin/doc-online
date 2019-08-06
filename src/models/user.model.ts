@@ -8,6 +8,17 @@ import Views from './views.model';
 import Insurance from './insurance.model';
 import UserInsurance from './userInsurance.model';
 
+/**
+ * Relationships:
+ * - belongs to Profile
+ * - belongs to many User
+ * - belongs to many UserSite
+ * - belongs to many Insurance
+ * - belongs to many UserInsurance
+ * - has many Login
+ * - has many Views
+ */
+
 @Table({ tableName: 'user' })
 export default class User extends Model<User> {
 

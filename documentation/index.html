@@ -30,7 +30,6 @@
                <div class="content getting-started">
                    <div class="content-data">
 
-<h1 id="doc-online">DOC-ONLINE</h1>
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
@@ -52,6 +51,7 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+<h1 id="doc-online">DOC-ONLINE</h1>
 <h2 id="getting-started">Getting Started</h2>
 <h3 id="installation">Installation</h3>
 <p>Clone the repository</p>
@@ -64,13 +64,7 @@ $ npm run start
 $ npm run start:dev
 
 # production mode
-$ npm run start:prod</code></pre></div><h2 id="database">Database</h2>
-<p>The example codebase uses Sequelize with a postgres database.</p>
-<p>Create a new postgres database with the name doc-online (or the name you specified in the config.json)</p>
-<p>On application start, tables for all entities will be created.</p>
-<h2 id="authentication">Authentication</h2>
-<p>This applications uses JSON Web Token (JWT) to handle authentication.</p>
-<h2 id="a-typical-top-level-directory-layout">A typical top-level directory layout</h2>
+$ npm run start:prod</code></pre></div><h2 id="a-typical-top-level-directory-layout">A typical top-level directory layout</h2>
 <div><pre class="line-numbers"><code class="language-none">.
 ├── build                     # Compiled files 
 ├── config 
@@ -99,10 +93,28 @@ $ npm run start:prod</code></pre></div><h2 id="database">Database</h2>
 ├── README.md
 ├── tsconfig.build.json       
 ├── tsconfig.json             # Configuration of the TypeScript compiler (tsc)
-└── tslint.json               # Checks Typescript code quality</code></pre></div><h2 id="documentation">Documentation</h2>
-<p>This application uses Compodoc for documentation</p>
-<p>On your terminal run:</p>
-<div><pre class="line-numbers"><code class="language-bash">$ npx compodoc -p tsconfig.json -s</code></pre></div><p>Go to localhost:8080 to access the documentation</p>
+└── tslint.json               # Checks Typescript code quality</code></pre></div><h2 id="example">Example</h2>
+<p>To restart the database:</p>
+<ol>
+<li>Go to database/database.provider.ts and clean the database</li>
+<li>Create a site</li>
+<li>Comment out /user path inside login.module.ts</li>
+<li>Create an user</li>
+<li>Login into user account (get the token)</li>
+<li>Create exams (with the same networkId as the site you created and token)</li>
+</ol>
+<h2 id="about-doc-online">About doc-online</h2>
+<h3 id="database">Database</h3>
+<p>The example codebase uses Sequelize with a postgres database.</p>
+<p>Create a new postgres database with the name doc-online (or the name you specified in the config.json)</p>
+<p>On application start, tables for all entities will be created.</p>
+<h3 id="authentication">Authentication</h3>
+<p>This applications uses JSON Web Token (JWT) to handle authentication.</p>
+<h3 id="model">Model</h3>
+<p>To access the model overview: <a href="https://app.genmymodel.com/edit/c7a504ce-562d-474b-a87a-a7f13a05095b#">https://app.genmymodel.com/edit/c7a504ce-562d-474b-a87a-a7f13a05095b#</a> </p>
+<h2 id="documentation">Documentation</h2>
+<p>This application utilizes compodoc for more documentation:</p>
+<div><pre class="line-numbers"><code class="language-bash">$ npm run compodoc</code></pre></div><p>Then head to <a href="localhost:8080">localhost:8080</a> to access the documentation</p>
 <h2 id="support">Support</h2>
 <p>Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you&#39;d like to join them, please <a href="https://docs.nestjs.com/support">read more here</a>.</p>
 <h2 id="stay-in-touch">Stay in touch</h2>

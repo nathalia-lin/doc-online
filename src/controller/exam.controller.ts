@@ -2,6 +2,15 @@ import { Controller, Get, Post, Body, Delete, Param, Req, Patch, BadRequestExcep
 
 import { ExamService } from '../service/exam.service';
 
+/**
+ * - POST /exam             
+ * - POST /exam/serach     
+ * - GET /exam             
+ * - GET /exam/:id          
+ * - PATCH /exam/:id       
+ * - DELETE /exam/:id      
+ */
+
 @Controller('exam')
 export class ExamController {
     constructor(private readonly examService: ExamService) { }

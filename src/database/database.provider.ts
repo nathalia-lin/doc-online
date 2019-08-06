@@ -14,6 +14,9 @@ export const databaseProviders = [
       });
       
       await sequelize.sync({});
+      // Clean out database
+      // await sequelize.sync({force:true});
+
       return sequelize;
     },
   },

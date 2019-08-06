@@ -1,5 +1,3 @@
-# DOC-ONLINE
-
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
@@ -26,6 +24,8 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+# DOC-ONLINE
+
 ## Getting Started
 
 ### Installation
@@ -51,21 +51,6 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
-
-
-## Database
-
-The example codebase uses Sequelize with a postgres database.
-
-Create a new postgres database with the name doc-online (or the name you specified in the config.json)
-
-On application start, tables for all entities will be created.
-
-
-## Authentication
-
-This applications uses JSON Web Token (JWT) to handle authentication.
-
 
 ## A typical top-level directory layout
 
@@ -99,19 +84,43 @@ This applications uses JSON Web Token (JWT) to handle authentication.
     ├── tsconfig.json             # Configuration of the TypeScript compiler (tsc)
     └── tslint.json               # Checks Typescript code quality
 
+## Example
+To restart the database:
+  1. Go to database/database.provider.ts and clean the database
+  2. Create a site
+  3. Comment out /user path inside login.module.ts
+  4. Create an user
+  5. Login into user account (get the token)
+  6. Create exams (with the same networkId as the site you created and token)
+
+## About doc-online
+
+### Database
+
+The example codebase uses Sequelize with a postgres database.
+
+Create a new postgres database with the name doc-online (or the name you specified in the config.json)
+
+On application start, tables for all entities will be created.
+
+
+### Authentication
+
+This applications uses JSON Web Token (JWT) to handle authentication.
+
+### Model
+
+To access the model overview: https://app.genmymodel.com/edit/c7a504ce-562d-474b-a87a-a7f13a05095b# 
 
 ## Documentation
 
-This application uses Compodoc for documentation
-
-On your terminal run:
+This application utilizes compodoc for more documentation:
 
 ```bash
 $ npm run compodoc
 ```
 
-Then go to localhost:8080 to access the documentation
-
+Then head to [localhost:8080](localhost:8080) to access the documentation
 
 ## Support
 

@@ -21,6 +21,13 @@ import { UserInsuranceModule } from "./userInsurance.module";
 import { PlanModule } from "./plan.module";
 import { AppController } from '../controller/app.controller';
 
+/**
+ * Providers:
+ * - Validation Pipe (all DTO files)
+ * - HttpErrorFilter (found at src/shared/filters/http-exception.filter.ts)
+ * - LoggerInterceptor (found at src/shared/interceptors/logger.interceptor.ts)
+*/
+
 @Module({
   imports: [
     ExamModule,

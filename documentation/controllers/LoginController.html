@@ -64,6 +64,20 @@
                 <code>login</code>
             </p>
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <ul>
+<li>POST /login            </li>
+<li>POST /login/auth       </li>
+<li>GET /login            </li>
+<li>GET /login/:id          </li>
+<li>PATCH /login/:id       </li>
+<li>DELETE /login/:id       </li>
+</ul>
+
+            </p>
 
 
 
@@ -160,8 +174,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="16"
-                            class="link-to-prism">src/controller/login.controller.ts:16</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="25"
+                            class="link-to-prism">src/controller/login.controller.ts:25</a></div>
                 </td>
             </tr>
 
@@ -245,8 +259,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="11"
-                            class="link-to-prism">src/controller/login.controller.ts:11</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/controller/login.controller.ts:20</a></div>
                 </td>
             </tr>
 
@@ -325,8 +339,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="41"
-                            class="link-to-prism">src/controller/login.controller.ts:41</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/controller/login.controller.ts:50</a></div>
                 </td>
             </tr>
 
@@ -405,8 +419,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="26"
-                            class="link-to-prism">src/controller/login.controller.ts:26</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="35"
+                            class="link-to-prism">src/controller/login.controller.ts:35</a></div>
                 </td>
             </tr>
 
@@ -454,8 +468,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="31"
-                            class="link-to-prism">src/controller/login.controller.ts:31</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/controller/login.controller.ts:40</a></div>
                 </td>
             </tr>
 
@@ -530,8 +544,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="36"
-                            class="link-to-prism">src/controller/login.controller.ts:36</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/controller/login.controller.ts:45</a></div>
                 </td>
             </tr>
 
@@ -591,6 +605,15 @@
 
 import { CreateLoginDto } from &#x27;../dto/login.dto&#x27;;
 import { LoginService } from &#x27;../service/login.service&#x27;;
+
+/**
+ * - POST /login            
+ * - POST /login/auth       
+ * - GET /login            
+ * - GET /login/:id          
+ * - PATCH /login/:id       
+ * - DELETE /login/:id       
+ */
 
 @Controller(&#x27;login&#x27;)
 export class LoginController {

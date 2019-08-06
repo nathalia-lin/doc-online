@@ -3,6 +3,11 @@ import crypto from 'crypto';
 
 import User from './user.model';
 
+/**
+ * Relationships:
+ * - belongs to User
+ */
+
 @Table({ tableName: 'login' })
 export default class Login extends Model<Login> {
 

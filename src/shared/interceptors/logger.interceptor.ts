@@ -2,6 +2,9 @@ import { Injectable, NestInterceptor, ExecutionContext, CallHandler, Logger } fr
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
+/**
+ * Logger that tells your request and how long it took
+ */
 @Injectable()
 export class LoggerInterceptor implements NestInterceptor {
     intercept(

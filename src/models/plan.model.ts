@@ -2,6 +2,11 @@ import { Table, Column, Model, ForeignKey, PrimaryKey, DataType, BelongsTo } fro
 
 import Insurance from './insurance.model';
 
+/**
+ * Relationships:
+ * - belongs to Insurance
+ */
+
 @Table({ tableName: 'plan' })
 export default class Plan extends Model<Plan> {
 

@@ -6,6 +6,15 @@ import { LoginService } from "../service/login.service";
 import { AuthMiddleware } from "../shared/middlewares/auth.middleware";
 import { LoginProvider } from "../provider/login.provider";
 
+/**
+ * Authentication Middleware routes:
+ * - /exam
+ * - /exam/search
+ * - /user
+ * 
+ * - NOTE: If you clean the database, comment out /user to add an admin without login
+*/
+
 @Module({
     imports: [DatabaseModule],
     controllers: [LoginController],
@@ -23,9 +32,8 @@ export class LoginModule implements NestModule {
             )
             .forRoutes(
                 { path: '/exam', method: RequestMethod.ALL },
-                { path: '/exam/search', method: RequestMethod.ALL },
-                // Se limpar o banco, comment out /user 
-                // { path: '/user', method: RequestMethod.ALL },
+                { path: '/exam/search', method: RequestMethod.ALL }, 
+                { path: '/user', method: RequestMethod.ALL },
             )
     }
 }

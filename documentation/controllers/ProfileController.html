@@ -64,6 +64,19 @@
                 <code>profile</code>
             </p>
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <ul>
+<li>POST /profile             </li>
+<li>GET /profile             </li>
+<li>GET /profile/:id        </li>
+<li>PATCH /profile/:id       </li>
+<li>DELETE /profile/:id      </li>
+</ul>
+
+            </p>
 
 
 
@@ -155,8 +168,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="11"
-                            class="link-to-prism">src/controller/profile.controllers.ts:11</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/controller/profile.controllers.ts:19</a></div>
                 </td>
             </tr>
 
@@ -235,8 +248,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="31"
-                            class="link-to-prism">src/controller/profile.controllers.ts:31</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="39"
+                            class="link-to-prism">src/controller/profile.controllers.ts:39</a></div>
                 </td>
             </tr>
 
@@ -315,8 +328,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="16"
-                            class="link-to-prism">src/controller/profile.controllers.ts:16</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/controller/profile.controllers.ts:24</a></div>
                 </td>
             </tr>
 
@@ -364,8 +377,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="21"
-                            class="link-to-prism">src/controller/profile.controllers.ts:21</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/controller/profile.controllers.ts:29</a></div>
                 </td>
             </tr>
 
@@ -440,8 +453,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="26"
-                            class="link-to-prism">src/controller/profile.controllers.ts:26</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="34"
+                            class="link-to-prism">src/controller/profile.controllers.ts:34</a></div>
                 </td>
             </tr>
 
@@ -501,6 +514,14 @@
 
 import { CreateProfileDto } from &#x27;../dto/profile.dto&#x27;;
 import { ProfileService } from &#x27;../service/profile.service&#x27;;
+
+/**
+ * - POST /profile             
+ * - GET /profile             
+ * - GET /profile/:id        
+ * - PATCH /profile/:id       
+ * - DELETE /profile/:id      
+ */
 
 @Controller(&#x27;profile&#x27;)
 export class ProfileController {

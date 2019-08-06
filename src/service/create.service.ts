@@ -11,6 +11,7 @@ import { CreateUserDto } from '../dto/user.dto';
 import { CreateUserInsuranceDto } from '../dto/userInsurance.dto';
 import { CreateUserSiteDto } from '../dto/userSite.dto';
 import { CreateViewsDto } from '../dto/views.dto';
+import { CreateExamDto } from '../dto/exam.dto';
 
 import Doctor from '../models/doctor.model';
 import Insurance from '../models/insurance.model';
@@ -23,6 +24,12 @@ import User from '../models/user.model';
 import UserInsurance from '../models/userInsurance.model';
 import UserSite from '../models/userSite.model';
 import Views from '../models/views.model';
+import Exam from '../models/exam.model';
+
+/**
+ * Creates all instances of the model.
+ * Helped solve problems of circular dependency.
+ */
 
 @Injectable()
 export class CreateService {
@@ -130,4 +137,41 @@ export class CreateService {
         } as CreateViewsDto;
         return await Views.create(newView)
     };
+
+    async createExam(
+        pid,
+        accessionNum,
+        studyInstanceUID,
+        networkId,
+        siteId,
+        modality,
+        reqProcDescription,
+        studyDate,
+        statusType,
+        patientId,
+        reqDoctorId,
+        consDoctorId,
+        insuranceId,
+        lastReportView,
+        lastImageView
+    ) {
+        let exam = {
+            'pid': pid,
+            'accessionNum': accessionNum,
+            'studyInstanceUID': studyInstanceUID,
+            'networkId': networkId,
+            'siteId': siteId,
+            'modality': modality,
+            'description': reqProcDescription,
+            'examDate': studyDate,
+            'statusType': statusType,
+            'patientId': patientId,
+            'requestingId': reqDoctorId,
+            'consultingId': consDoctorId,
+            'insuranceId': insuranceId,
+            'lastReportView': lastReportView,
+            'lastImageView': lastImageView,
+        } as CreateExamDto;
+        return await Exam.create(exam);
+    }
 }

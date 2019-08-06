@@ -59,6 +59,13 @@
             <code>src/shared/middlewares/auth.middleware.ts</code>
         </p>
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Checks the token with the password</p>
+
+            </p>
 
 
 
@@ -123,8 +130,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="8"
-                            class="link-to-prism">src/shared/middlewares/auth.middleware.ts:8</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="10"
+                            class="link-to-prism">src/shared/middlewares/auth.middleware.ts:10</a></div>
                 </td>
             </tr>
 
@@ -194,7 +201,9 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable, NestMiddleware, NotFoundException, UnauthorizedException } from &quot;@nestjs/common&quot;;
 import * as jwt from &#x27;jsonwebtoken&#x27;
 
-// change this to a guard? 
+/**
+ * Checks the token with the password
+ */
 
 @Injectable()
 export class AuthMiddleware implements NestMiddleware {

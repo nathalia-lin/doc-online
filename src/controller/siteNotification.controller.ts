@@ -3,6 +3,14 @@ import { Controller, Get, Post, Body, Param, Delete, Patch } from '@nestjs/commo
 import { CreateSiteNotificationDto } from '../dto/siteNotification.dto';
 import { SiteNotificationService } from '../service/siteNotification.service';
 
+/**
+ * - POST /sitenotification            
+ * - GET /sitenotification              
+ * - GET /sitenotification/:id         
+ * - PATCH /sitenotification/:id       
+ * - DELETE /sitenotification/:id      
+ */
+
 @Controller('sitenotification')
 export class SiteNotificationController {
     constructor(private readonly siteNotificationService: SiteNotificationService) { }
