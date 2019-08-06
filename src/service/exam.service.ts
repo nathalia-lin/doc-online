@@ -25,7 +25,7 @@ export class ExamService {
     ) { }
 
     /**
-     * Create an exam and any relationship needed
+     * Creates an exam and all the relationships 
      */
     async create(
         token: any,

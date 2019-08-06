@@ -2010,7 +2010,7 @@
         "signature": "1c6c041c350e37e441a7b04d1d6f90552d9de7df27fdd17fc260d288bdd98560"
       },
       "c:/wtt-/doconline/src/service/exam.service.ts": {
-        "version": "798984a00e663535c614e0618612e6f494011dc89a6aeec08c0eb0c462f28b25",
+        "version": "158bf1b2c4325efccb2a140808e43dcacca53d1529feeeab49c521a2a5753d85",
         "signature": "672429c5ff405e66d4186c406ab5e0589104c7cad1154826266f776610a3d9be"
       },
       "c:/wtt-/doconline/src/controller/exam.controller.ts": {
@@ -2522,7 +2522,7 @@
         "signature": "b1145de5eb088c161f02e1857c40c57fe9d72ea9bab34a7e439e204f10682527"
       },
       "c:/wtt-/doconline/src/service/user.service.ts": {
-        "version": "4e2f5e686ebc455cb1fae2d007bd20e3c87626c8190cbcfb1842b110651e599e",
+        "version": "cbcf268dc5857ccd90eb873e07197cd79caed7d0981beb580865a68f2aab73a5",
         "signature": "def6b9c32b05cb73447a2bd39e615c9b7e616471e3357321b3ee3f5ec38678b4"
       },
       "c:/wtt-/doconline/src/controller/user.controller.ts": {
@@ -12057,13 +12057,13 @@
       "c:/wtt-/doconline/src/controller/profile.controllers.ts",
       "c:/wtt-/doconline/src/provider/profile.provider.ts",
       "c:/wtt-/doconline/src/module/profile.module.ts",
-      "c:/wtt-/doconline/src/service/user.service.ts",
       "c:/wtt-/doconline/src/controller/user.controller.ts",
       "c:/wtt-/doconline/src/provider/user.provider.ts",
       "c:/wtt-/doconline/src/module/user.module.ts",
       "c:/wtt-/doconline/node_modules/@types/jsonwebtoken/index.d.ts",
       "c:/wtt-/doconline/src/service/login.service.ts",
       "c:/wtt-/doconline/src/controller/login.controller.ts",
+      "c:/wtt-/doconline/src/shared/middlewares/auth.middleware.ts",
       "c:/wtt-/doconline/src/provider/login.provider.ts",
       "c:/wtt-/doconline/src/module/login.module.ts",
       "c:/wtt-/doconline/src/service/patient.service.ts",
@@ -12116,7 +12116,7 @@
       "c:/wtt-/doconline/node_modules/@types/supertest/index.d.ts",
       "c:/wtt-/doconline/node_modules/@types/uuid/interfaces.d.ts",
       "c:/wtt-/doconline/node_modules/@types/uuid/index.d.ts",
-      "c:/wtt-/doconline/src/shared/middlewares/auth.middleware.ts"
+      "c:/wtt-/doconline/src/service/user.service.ts"
     ]
   },
   "version": "3.4.3"

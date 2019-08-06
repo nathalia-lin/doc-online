@@ -12,10 +12,6 @@ import Site from "../models/site.model";
 import Views from "../models/views.model";
 import Insurance from "../models/insurance.model";
 
-/**
- * 
- */
-
 @Injectable()
 export class UserService {
 
@@ -25,6 +21,9 @@ export class UserService {
         @Inject('CreateService') private readonly createService: CreateService,
     ) { }
 
+    /**
+     * To create an admin, create a profile, user, service, and user site
+     */
     public async createAdmin(
         token,
         networkId: string,
